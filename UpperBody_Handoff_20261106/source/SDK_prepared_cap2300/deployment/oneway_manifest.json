@@ -1,0 +1,59 @@
+{
+  "date_kst": "2026-11-05",
+  "input_zip": "/home/scps-ubuntu1/Downloads/DexHandRight.zip",
+  "input_zip_sha256": "d9b7b84c610aa04d75cd1187a8de3c9136deca3a70b8a5d1bb3aed4a6443aa1e",
+  "firmware_package_sha256": "6a4bc049ddd3fb9ed3e1c6e73ea134d198134dbbcd26f3c5374d44a5ae94dde9",
+  "firmware_profile_tag": "79610de6",
+  "application_can_tx": false,
+  "can_hardware_ack": true,
+  "can_rx_core": 1,
+  "pwm_core": 0,
+  "pwm_hz": 50,
+  "pending_goal_capacity": 1,
+  "sdk_pair_config": "dexhand_oneway.yaml",
+  "feedback_enabled_right": false,
+  "pins": [
+    19,
+    21,
+    23,
+    26,
+    33,
+    22,
+    32,
+    25,
+    16,
+    17,
+    4,
+    27,
+    13,
+    14,
+    18
+  ],
+  "thumb_open_us": [
+    2100,
+    700,
+    2300
+  ],
+  "thumb_close_us": [
+    700,
+    1900,
+    700
+  ],
+  "validation": {
+    "arduino_core": "3.3.12",
+    "board": "esp32:esp32:esp32",
+    "warnings": 0,
+    "compile_output": "Sketch uses 275451 bytes (21%) of program storage space. Maximum is 1310720 bytes.\nGlobal variables use 22616 bytes (6%) of dynamic memory, leaving 305064 bytes for local variables. Maximum is 327680 bytes.",
+    "application_bin_sha256": "96a3bdd4f031f0c2f192928d4b58cfb02182089d312a39acfcea2006d65ebb83",
+    "sdk_tests_local": "198 passed",
+    "sdk_tests_server": "198 passed",
+    "native": "PASS blocked-PWM/CAN independence, pending cancellation, latest-only, HOLD/resume",
+    "gui": "simulated oneway/SENT/no invented feedback/reconnect no auto resume; visually reviewed"
+  },
+  "server_sdk": "/home/sunrise/humanoid_sdk_oneway",
+  "server_hand_tools": "/home/sunrise/dexhand_control_oneway",
+  "existing_active_sdk_changed": false,
+  "firmware_uploaded": false,
+  "physical_motion_by_agent": false,
+  "physical_latency_measured_after_change": false
+}

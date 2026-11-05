@@ -1,0 +1,2712 @@
+{
+  "prepared_kst": "2026-11-06T00:54:26.557918+09:00",
+  "sdk_source": "/home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261105_camera_retarget",
+  "source_omissions": [
+    "DexHandRight_RXOnly_PWMTask_20261105.zip"
+  ],
+  "history_files_copied": 200,
+  "raw_frames_in_snapshot_instead_of_duplicate_copies": [
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004613.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004613.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004693.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004693.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004772.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004772.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004652.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004652.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004691.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004691.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004855.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004855.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004695.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004695.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004687.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004687.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004817.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004817.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004888.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004888.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004736.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004736.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004692.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004692.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004903.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004903.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004627.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004627.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004738.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004738.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004681.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004681.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004898.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004898.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004607.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004607.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004760.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004760.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004769.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004769.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004735.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004735.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004824.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004824.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004784.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004784.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004839.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004839.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004836.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004836.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004889.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004889.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004865.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004865.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004608.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004608.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004805.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004805.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004896.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004896.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004680.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004680.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004843.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004843.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004759.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004759.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004628.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004628.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004727.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004727.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004757.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004757.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004718.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004718.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004852.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004852.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004694.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004694.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004825.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004825.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004891.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004891.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004614.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004614.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004812.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004812.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004797.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004797.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004648.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004648.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004629.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004629.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004698.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004698.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004704.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004704.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004657.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004657.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004751.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004751.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004721.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004721.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004647.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004647.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004790.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004790.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004854.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004854.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004603.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004603.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004905.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004905.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004723.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004723.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004832.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004832.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004807.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004807.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004705.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004705.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004654.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004654.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004722.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004722.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004782.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004782.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004674.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004674.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004666.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004666.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004646.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004646.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004881.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004881.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004643.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004643.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004605.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004605.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004801.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004801.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004770.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004770.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004816.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004816.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004806.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004806.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004882.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004882.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004867.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004867.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004610.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004610.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004857.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004857.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004725.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004725.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004775.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004775.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004774.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004774.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004668.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004668.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004773.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004773.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004783.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004783.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004758.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004758.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004788.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004788.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004673.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004673.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004786.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004786.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004810.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004810.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004708.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004708.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004831.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004831.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004633.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004633.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004669.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004669.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004778.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004778.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004747.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004747.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004901.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004901.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004709.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004709.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004616.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004616.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004823.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004823.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004900.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004900.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004873.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004873.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004653.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004653.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004875.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004875.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004696.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004696.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004822.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004822.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004787.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004787.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004641.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004641.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004847.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004847.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004885.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004885.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004743.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004743.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004869.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004869.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004861.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004861.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004624.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004624.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004802.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004802.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004685.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004685.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004662.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004662.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004604.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004604.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004684.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004684.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004655.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004655.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004748.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004748.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004630.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004630.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004611.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004611.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004789.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004789.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004858.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004858.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004661.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004661.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004878.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004878.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004710.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004710.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004688.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004688.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004886.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004886.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004720.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004720.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004734.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004734.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004848.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004848.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004863.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004863.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004634.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004634.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004623.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004623.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004637.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004637.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004726.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004726.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004840.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004840.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004828.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004828.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004686.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004686.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004835.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004835.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004640.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004640.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004626.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004626.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004899.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004899.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004670.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004670.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004870.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004870.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004711.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004711.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004777.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004777.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004880.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004880.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004749.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004749.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004809.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004809.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004872.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004872.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004845.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004845.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004833.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004833.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004724.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004724.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004877.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004877.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004700.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004700.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004712.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004712.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004619.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004619.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004617.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004617.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004800.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004800.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004690.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004690.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004719.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004719.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004622.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004622.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004675.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004675.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004829.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004829.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004868.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004868.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004819.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004819.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004714.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004714.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004761.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004761.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004677.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004677.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004834.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004834.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004754.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004754.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004671.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004671.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004742.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004742.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004762.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004762.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004791.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004791.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004799.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004799.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004765.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004765.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004715.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004715.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004706.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004706.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004649.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004649.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004667.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004667.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004713.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004713.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004856.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004856.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004851.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004851.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004717.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004717.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004864.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004864.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004664.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004664.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004702.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004702.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004744.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004744.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004658.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004658.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004814.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004814.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004636.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004636.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004644.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004644.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004642.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004642.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004781.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004781.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004764.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004764.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004745.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004745.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004683.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004683.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004697.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004697.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004804.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004804.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004659.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004659.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004842.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004842.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004895.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004895.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004844.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004844.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004621.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004621.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004682.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004682.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004730.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004730.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004862.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004862.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004609.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004609.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004818.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004818.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004672.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004672.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004859.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004859.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004750.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004750.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004766.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004766.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004771.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004771.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004656.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004656.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004699.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004699.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004846.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004846.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004796.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004796.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004733.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004733.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004866.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004866.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004884.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004884.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004808.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004808.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004853.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004853.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004795.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004795.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004740.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004740.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004707.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004707.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004676.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004676.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004821.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004821.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004779.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004779.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004650.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004650.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004660.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004660.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004798.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004798.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004850.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004850.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004606.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004606.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004737.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004737.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004632.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004632.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004879.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004879.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004732.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004732.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004902.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004902.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004639.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004639.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004837.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004837.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004618.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004618.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004631.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004631.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004830.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004830.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004793.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004793.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004739.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004739.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004890.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004890.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004753.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004753.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004794.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004794.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004785.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004785.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004887.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004887.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004767.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004767.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004820.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004820.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004731.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004731.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004841.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004841.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004874.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004874.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004645.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004645.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004894.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004894.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004897.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004897.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004746.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004746.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004701.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004701.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004811.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004811.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004776.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004776.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004663.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004663.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004813.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004813.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004876.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004876.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004752.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004752.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004612.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004612.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004635.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004635.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004728.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004728.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004679.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004679.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004763.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004763.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004892.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004892.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004826.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888408529114785/frame_00004826.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000978.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000978.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000933.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000933.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001042.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001042.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001064.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001064.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001080.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001080.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000987.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000987.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000935.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000935.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000979.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000979.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001029.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001029.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000948.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000948.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000984.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000984.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001071.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001071.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001047.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001047.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001061.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001061.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000999.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000999.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000995.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000995.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001001.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001001.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001073.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001073.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000993.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000993.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001041.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001041.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000983.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000983.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001015.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001015.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000974.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000974.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001004.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001004.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001036.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001036.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001068.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001068.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001074.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001074.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001081.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001081.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001056.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001056.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000960.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000960.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001053.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001053.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001032.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001032.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001024.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001024.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001033.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001033.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001020.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001020.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001067.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001067.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000934.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000934.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000977.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000977.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001052.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001052.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000959.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000959.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000956.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000956.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001078.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001078.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000970.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000970.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001034.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001034.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001045.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001045.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000966.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000966.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001048.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001048.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001062.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001062.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001023.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001023.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001038.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001038.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001079.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001079.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000990.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000990.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000943.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000943.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000964.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000964.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000986.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000986.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000985.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000985.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001022.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001022.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000938.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000938.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001016.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001016.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000992.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000992.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001072.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001072.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000996.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000996.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000965.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000965.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001010.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001010.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000988.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000988.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001007.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001007.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001000.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001000.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001003.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001003.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000946.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000946.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000975.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000975.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000941.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000941.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001021.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001021.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000962.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000962.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001040.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001040.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000950.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000950.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001025.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001025.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000991.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000991.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001044.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001044.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000932.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000932.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000952.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000952.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000955.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000955.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001013.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001013.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000945.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000945.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000957.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000957.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001075.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001075.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000989.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000989.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000963.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000963.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001050.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001050.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001028.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001028.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000998.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000998.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001065.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001065.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001014.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001014.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000961.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000961.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000951.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000951.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001017.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001017.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001070.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001070.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000976.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000976.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001027.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001027.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001012.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001012.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001059.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001059.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001031.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001031.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001055.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001055.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000980.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000980.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000997.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000997.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000981.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000981.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000949.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000949.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001026.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001026.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001058.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001058.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000972.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000972.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001019.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001019.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001046.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001046.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001039.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001039.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001060.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001060.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000937.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000937.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000939.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000939.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000954.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000954.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001076.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001076.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000940.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000940.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001005.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001005.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001051.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001051.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001037.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001037.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001008.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001008.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001049.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001049.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001057.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001057.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001069.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001069.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001035.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001035.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000931.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000931.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000973.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000973.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001063.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001063.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000971.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000971.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000968.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000968.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001002.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001002.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001011.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00001011.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000953.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000953.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000967.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000967.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000944.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_lower_1793888074306159028/frame_00000944.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020223.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020223.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020225.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020225.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020255.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020255.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020330.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020330.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020306.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020306.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020320.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020320.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020291.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020291.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020305.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020305.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020311.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020311.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020220.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020220.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020254.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020254.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020275.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020275.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020297.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020297.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020207.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020207.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020324.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020324.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020213.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020213.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020273.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020273.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020287.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020287.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020290.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020290.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020260.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020260.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020301.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020301.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020221.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020221.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020296.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020296.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020271.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020271.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020323.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020323.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020316.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020316.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020331.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020331.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020244.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020244.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020197.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020197.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020294.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020294.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020237.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020237.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020262.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020262.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020239.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020239.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020211.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020211.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020246.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020246.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020328.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020328.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020298.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020298.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020276.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020276.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020337.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020337.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020336.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020336.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020332.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020332.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020247.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020247.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020236.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020236.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020293.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020293.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020235.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020235.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020319.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020319.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020230.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020230.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020282.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020282.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020259.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020259.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020252.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020252.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020222.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020222.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020224.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020224.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020210.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020210.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020314.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020314.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020283.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020283.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020318.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020318.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020203.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020203.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020251.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020251.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020285.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020285.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020325.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020325.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020240.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020240.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020303.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020303.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020264.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020264.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020202.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020202.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020281.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020281.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020304.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020304.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020309.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020309.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020300.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020300.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020219.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020219.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020232.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020232.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020307.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020307.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020263.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020263.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020212.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020212.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020317.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020317.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020315.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020315.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020216.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020216.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020335.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020335.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020238.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020238.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020258.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020258.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020270.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020270.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020269.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020269.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020200.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020200.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020302.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020302.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020312.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020312.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020245.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020245.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020308.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020308.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020199.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020199.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020248.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020248.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020242.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020242.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020284.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020284.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020250.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020250.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020196.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020196.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020313.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020313.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020286.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020286.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020277.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020277.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020279.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020279.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020243.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020243.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020215.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020215.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020267.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020267.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020217.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020217.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020261.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020261.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020274.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020274.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020209.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020209.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020292.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020292.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020326.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020326.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020228.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020228.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020227.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020227.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020327.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020327.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020333.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020333.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020295.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020295.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020205.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020205.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020198.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020198.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020257.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020257.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020226.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020226.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020234.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020234.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020272.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020272.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020280.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020280.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020288.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020288.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020231.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020231.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020249.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020249.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020204.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020204.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020268.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020268.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020214.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020214.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020201.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020201.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020256.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020256.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020265.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020265.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020329.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020329.jpg"
+    },
+    {
+      "original_record": "outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020233.jpg",
+      "archive": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "member": "data/observations/middle_flex_1793889842114565353/frame_00020233.jpg"
+    }
+  ],
+  "excluded_development_caches": "work/arduino_oneway/data and other tool caches; .venv/build/install/.git",
+  "credentials_included": false
+}

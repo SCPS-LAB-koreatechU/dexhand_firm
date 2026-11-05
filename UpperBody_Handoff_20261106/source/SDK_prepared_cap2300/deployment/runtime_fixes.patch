@@ -1,0 +1,213 @@
+--- a/bhl_arm_sdk/bhl_arm_sdk/node.py
++++ b/bhl_arm_sdk/bhl_arm_sdk/node.py
+@@ -37,6 +37,7 @@
+ 
+ from __future__ import annotations
+ 
++from functools import partial
+ import json
+ import math
+ import time
+@@ -88,7 +89,7 @@
+             raise ValueError("required_hands must contain left/right")
+         self.peers = PeerMonitor(expected, dry_run=dry_run)
+         for side in expected:
+-            self.create_subscription(String, f"/hand_{side}/status", lambda m, n=side: self._on_peer(n, m), 10)
++            self.create_subscription(String, f"/hand_{side}/status", partial(self._on_peer, side), 10)
+ 
+         # One parameter per joint: target.<joint> in degrees, with the joint's limits.
+         for spec in config.joints:
+--- a/bhl_arm_sdk/bhl_arm_sdk/sequence.py
++++ b/bhl_arm_sdk/bhl_arm_sdk/sequence.py
+@@ -24,7 +24,8 @@
+ 
+ import rclpy
+ from rclpy.node import Node
+-from sensor_msgs.msg import JointState
++from rcl_interfaces.msg import Parameter as ParameterMsg, ParameterType, ParameterValue
++from rcl_interfaces.srv import SetParametersAtomically
+ from std_msgs.msg import String
+ from std_srvs.srv import SetBool
+ 
+@@ -35,7 +36,7 @@
+         self.status: dict | None = None
+         self.create_subscription(String, f"{controller}/status",
+                                  lambda m: setattr(self, "status", json.loads(m.data)), 10)
+-        self.target_pub = self.create_publisher(JointState, f"{controller}/target", 10)
++        self.target_client = self.create_client(SetParametersAtomically, f"{controller}/set_parameters_atomically")
+         self.enable_client = self.create_client(SetBool, f"{controller}/enable")
+ 
+     def spin_for(self, seconds: float) -> None:
+@@ -49,25 +50,33 @@
+         future = self.enable_client.call_async(SetBool.Request(data=on))
+         rclpy.spin_until_future_complete(self, future, timeout_sec=5.0)
+         result = future.result()
+-        return result.message if result else "no reply"
++        if result is None or not result.success:
++            raise SystemExit("enable/disable failed: " + (result.message if result else "no reply"))
++        return result.message
+ 
+     def send(self, goals: dict[str, float]) -> None:
+-        message = JointState()
+-        message.header.stamp = self.get_clock().now().to_msg()
+-        message.name = list(goals)
+-        message.position = [math.radians(v) for v in goals.values()]
+-        self.target_pub.publish(message)
++        if not self.target_client.wait_for_service(timeout_sec=5.0):
++            raise SystemExit("target parameter service unavailable")
++        parameters = [ParameterMsg(name=f"target.{name}", value=ParameterValue(
++            type=ParameterType.PARAMETER_DOUBLE, double_value=float(degrees))) for name, degrees in goals.items()]
++        future = self.target_client.call_async(SetParametersAtomically.Request(parameters=parameters))
++        rclpy.spin_until_future_complete(self, future, timeout_sec=5.0)
++        response = future.result() if future.done() else None
++        if response is None or not response.result.successful:
++            raise SystemExit("target rejected: " + (response.result.reason if response else "no reply"))
+ 
+     def wait_reached(self, goals: dict[str, float], tolerance: float, timeout: float) -> bool:
+         end = time.monotonic() + timeout
+         while time.monotonic() < end:
+             self.spin_for(0.05)
+             joints = (self.status or {}).get("joints", {})
+-            if (self.status or {}).get("estop"):
++            if (self.status or {}).get("estop") or (self.status or {}).get("motion_stopped"):
+                 print(f"E-STOP: {self.status.get('message')}")
+                 return False
+             if all(n in joints and joints[n]["live"] and
+-                   abs(joints[n]["measured_deg"] - joints[n]["goal_deg"]) <= tolerance and
++                   not joints[n].get("fault") and
++                   abs(joints[n]["goal_deg"] - goals[n]) <= 1e-3 and
++                   abs(joints[n]["measured_deg"] - goals[n]) <= tolerance and
+                    abs(joints[n]["goal_deg"] - joints[n]["command_deg"]) <= 1e-3 for n in goals):
+                 return True
+         return False
+@@ -112,8 +121,8 @@
+         joints = node.status["joints"]
+         print("      " + ", ".join(f"{n} {joints[n]['measured_deg']:+.1f}°" for n in pose)
+               + ("" if reached else "  (not reached in time)"))
+-        if not reached and node.status.get("estop"):
+-            return
++        if not reached:
++            raise SystemExit("requested pose was not reached; no automatic return/release")
+         print(f"[3/5] hold {args.hold:.1f} s")
+         node.spin_for(args.hold)
+         if args.no_release:
+@@ -122,7 +131,8 @@
+         home = {n: 0.0 for n in pose}
+         print("[4/5] release: back to 0 deg")
+         node.send(home)
+-        node.wait_reached(home, args.tolerance, args.timeout)
++        if not node.wait_reached(home, args.tolerance, args.timeout):
++            raise SystemExit("return pose was not reached; refusing automatic output release")
+         print(f"[5/5] stop: {node.call_enable(False)}")
+     finally:
+         node.destroy_node()
+--- a/bhl_arm_sdk/bhl_arm_sdk/slider_gui.py
++++ b/bhl_arm_sdk/bhl_arm_sdk/slider_gui.py
+@@ -1,6 +1,6 @@
+ """Slider panel for arm_controller: one slider per motor, in degrees.
+ 
+-Dragging a slider publishes that joint's goal to `/arm_controller/target`; the
++Dragging a slider sets a finite target parameter (degrees); the
+ controller slews to it at its max speed. Each row also shows the measured
+ angle and the joint's state (live / fault). Buttons: enable, disable, E-STOP,
+ reset E-STOP, home (all 0 deg). A speed slider sets `max_speed_deg`.
+@@ -52,10 +52,9 @@
+         self.controller = controller
+         self.status: dict | None = None
+         self.create_subscription(String, f"{controller}/status", self._on_status, 10)
+-        self.target_pub = self.create_publisher(JointState, f"{controller}/target", 10)
+         self.enable_client = self.create_client(SetBool, f"{controller}/enable")
+         self.triggers = {name: self.create_client(Trigger, f"{controller}/{name}")
+-                         for name in ("estop", "reset_estop", "home")}
++                         for name in ("estop", "reset_estop", "home", "hold", "resume")}
+         self.param_client = self.create_client(SetParameters, f"{controller}/set_parameters")
+         self.last_reply = ""
+ 
+@@ -66,11 +65,24 @@
+             pass
+ 
+     def send_goal(self, name: str, degrees: float) -> None:
+-        message = JointState()
+-        message.header.stamp = self.get_clock().now().to_msg()
+-        message.name = [name]
+-        message.position = [math.radians(degrees)]
+-        self.target_pub.publish(message)
++        # Finite bench goals use parameters; /target retains its streaming TTL.
++        if not self.param_client.service_is_ready():
++            self.last_reply = "arm_controller 파라미터 서비스 응답 없음"
++            return
++        value = ParameterValue(type=ParameterType.PARAMETER_DOUBLE, double_value=float(degrees))
++        request = SetParameters.Request(parameters=[ParameterMsg(name=f"target.{name}", value=value)])
++        def received(future):
++            try:
++                reply = future.result()
++                if reply is None:
++                    self.last_reply = "목표 응답 없음"
++                elif all(result.successful for result in reply.results):
++                    self.last_reply = f"목표 설정: {name} {degrees:+.1f}°"
++                else:
++                    self.last_reply = "목표 거절: " + "; ".join(result.reason for result in reply.results if not result.successful)
++            except Exception as error:
++                self.last_reply = "목표 전송 실패: " + str(error)
++        self.param_client.call_async(request).add_done_callback(received)
+ 
+     def _done(self, future) -> None:
+         result = future.result()
+@@ -174,6 +186,8 @@
+ 
+         buttons = QHBoxLayout()
+         for text, slot in (("토크 켜기", lambda: node.enable(True)), ("토크 끄기", lambda: node.enable(False)),
++                           ("HOLD", lambda: node.trigger("hold")),
++                           ("이동 재개", lambda: node.trigger("resume")),
+                            ("비상정지", lambda: node.trigger("estop")),
+                            ("비상정지 해제", lambda: node.trigger("reset_estop")),
+                            ("모두 0°", lambda: node.trigger("home"))):
+--- a/bhl_arm_sdk/bhl_arm_sdk/trace_node.py
++++ b/bhl_arm_sdk/bhl_arm_sdk/trace_node.py
+@@ -1,4 +1,5 @@
+ """Read-only ROS status recorder, separate process so file I/O cannot block control."""
++from functools import partial
+ import json
+ import logging
+ from logging.handlers import RotatingFileHandler
+@@ -22,7 +23,7 @@
+         self.handler.setFormatter(logging.Formatter("%(message)s"))
+         self.sink.addHandler(self.handler)
+         for name, topic in (("arm", "/arm_controller/status"), ("left", "/hand_left/status"), ("right", "/hand_right/status")):
+-            self.create_subscription(String, topic, lambda m, n=name: self.record(n, m), 20)
++            self.create_subscription(String, topic, partial(self.record, name), 20)
+         self.get_logger().info("Read-only status trace: " + str(path))
+ 
+     def record(self, name, message):
+--- a/bhl_upper_body_sdk/bhl_upper_body_sdk/node.py
++++ b/bhl_upper_body_sdk/bhl_upper_body_sdk/node.py
+@@ -2,6 +2,7 @@
+ 
+ No CAN ownership, motor enable, automatic fault clearing, or blocking service wait.
+ """
++from functools import partial
+ import json
+ import time
+ 
+@@ -32,7 +33,7 @@
+         self.create_subscription(String, "~/receipt", self._receipt, 30)
+         for part in self.parts:
+             topic = "/arm_controller/status" if part == "arms" else f"/{part}/status"
+-            self.create_subscription(String, topic, lambda m, p=part: self._state(p, m), 1)
++            self.create_subscription(String, topic, partial(self._state, part), 1)
+         self.create_service(Trigger, "~/hold", self._hold)
+         self.create_service(Trigger, "~/clear_fault", self._clear)
+         self.create_timer(0.01, self._tick)
+--- a/bhl_upper_body_sdk/examples/validate_ros_dry_run.py
++++ b/bhl_upper_body_sdk/examples/validate_ros_dry_run.py
+@@ -65,7 +65,9 @@
+         process = subprocess.Popen(["ros2", "launch", "bhl_bringup", "robot.launch.py",
+             "hands:=both", "upper_body:=true", "dry_run:=true", "publish_tf:=false"],
+             stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
+-        wait(lambda: client.state is not None)
++        wait(lambda: client.state is not None and all(
++            client.state.get("parts", {}).get(part, {}).get("state") is not None
++            for part in ("arms", "hand_left", "hand_right")), timeout=30)
+         call("/hand_left/open", Trigger)
+         call("/hand_right/open", Trigger)
+         call("/hand_left/enable", SetBool, data=True)

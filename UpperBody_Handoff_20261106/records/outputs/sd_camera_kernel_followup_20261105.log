@@ -1,0 +1,946 @@
+[    0.191666] noc_qos 20510500.sif0_qos: qos doesn't have consumer device
+[    0.191713] noc_qos 20510500.sif0_qos: noc qos init finished.
+[    0.191783] noc_qos 20510580.sif1_qos: qos doesn't have consumer device
+[    0.191827] noc_qos 20510580.sif1_qos: noc qos init finished.
+[    0.191900] noc_qos 20510600.sif2_qos: qos doesn't have consumer device
+[    0.191940] noc_qos 20510600.sif2_qos: noc qos init finished.
+[    0.192015] noc_qos 20510680.sif3_qos: qos doesn't have consumer device
+[    0.192061] noc_qos 20510680.sif3_qos: noc qos init finished.
+[    0.192132] noc_qos 20510700.sif_disp_qos: qos doesn't have consumer device
+[    0.192174] noc_qos 20510700.sif_disp_qos: noc qos init finished.
+[    0.192245] noc_qos 20550000.dma0_qos: qos doesn't have consumer device
+[    0.192288] noc_qos 20550000.dma0_qos: noc qos init finished.
+[    0.192364] noc_qos 20550080.emmc_qos: qos doesn't have consumer device
+[    0.192410] noc_qos 20550080.emmc_qos: noc qos init finished.
+[    0.192475] noc_qos 20550100.gmac_qos: qos doesn't have consumer device
+[    0.192515] noc_qos 20550100.gmac_qos: noc qos init finished.
+[    0.192583] noc_qos 20550180.sd_qos: qos doesn't have consumer device
+[    0.192624] noc_qos 20550180.sd_qos: noc qos init finished.
+[    0.192699] noc_qos 20550200.sdio_qos: qos doesn't have consumer device
+[    0.192758] noc_qos 20550200.sdio_qos: noc qos init finished.
+[    0.192828] noc_qos 20550280.security_qos: qos doesn't have consumer device
+[    0.192867] noc_qos 20550280.security_qos: noc qos init finished.
+[    0.192943] noc_qos 20550300.usb2_qos: qos doesn't have consumer device
+[    0.192984] noc_qos 20550300.usb2_qos: noc qos init finished.
+[    0.193056] noc_qos 20550380.usb3_qos: qos doesn't have consumer device
+[    0.193099] noc_qos 20550380.usb3_qos: noc qos init finished.
+[    0.193169] noc_qos 20550400.etr_qos: qos doesn't have consumer device
+[    0.193204] noc_qos 20550400.etr_qos: noc qos init finished.
+[    0.193590] adc_1v8: 1800 mV, enabled
+[    0.193695] reg-fixed-voltage 34000000.a55_apb0:regulator-1v8: adc_1v8 supplying 1800000uV
+[    0.194004] iommu: Default domain type: Translated 
+[    0.194019] iommu: DMA domain TLB invalidation policy: strict mode 
+[    0.196035] SCSI subsystem initialized
+[    0.196165] usbcore: registered new interface driver usbfs
+[    0.196208] usbcore: registered new interface driver hub
+[    0.196244] usbcore: registered new device driver usb
+[    0.196848] platform 3e000000.disp_apb:bt1120_bridge: Fixed dependency cycle(s) with /soc/dsp_apb/i2c@320a0000/hdmi_bridge@3b
+[    0.196973] i2c 7-003b: Fixed dependency cycle(s) with /soc/disp_apb/bt1120_bridge
+[    0.197957] hpu3501 2-001c: Found hpu3501-regulator node, register regulator
+[    0.198106] hpu3501-regulator hpu3501-regulator.0.auto: fault_cfgr will be default value
+[    0.198124] hpu3501-regulator hpu3501-regulator.0.auto: ocp_cfg1r will be default value
+[    0.198142] hpu3501-regulator hpu3501-regulator.0.auto: ocp_cfg2r will be default value
+[    0.198158] hpu3501-regulator hpu3501-regulator.0.auto: reg 0x53 will be default value 0x4
+[    0.199636] VCC_BPU: 800 mV, enabled
+[    0.206502] VDD08_CPU: 600 <--> 1000 mV at 800 mV, enabled
+[    0.207284] hpu3501 set reg 0x53 to 0x4
+[    0.207603] hpu3501 2-001c: Found hpu3501-rtc node, register rtc
+[    0.209078] mc: Linux media interface: v0.10
+[    0.209126] videodev: Linux video capture interface: v2.00
+[    0.209173] pps_core: LinuxPPS API ver. 1 registered
+[    0.209185] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.209213] PTP clock support registered
+[    0.209661] hobot_ion: Reserved ion-pool MEM start 0xa4100000, size 0x14000000
+[    0.209728] hobot_ion: Reserved ion-carveout MEM start 0xb8100000, size 0x14000000
+[    0.209832] hobot_ion: Reserved ion-cma MEM start 0xcc100000, size 0x8000000
+[    0.240329] Advanced Linux Sound Architecture Driver Initialized.
+[    0.240938] clocksource: Switched to clocksource arch_sys_counter
+[    0.241119] VFS: Disk quotas dquot_6.6.0
+[    0.241163] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.241232] FS-Cache: Loaded
+[    0.241431] CacheFiles: Loaded
+[    0.247191] NET: Registered PF_INET protocol family
+[    0.247393] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.251530] tcp_listen_portaddr_hash hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.251624] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.251649] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.251954] TCP bind hash table entries: 65536 (order: 10, 4194304 bytes, linear)
+[    0.254257] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.254412] UDP hash table entries: 4096 (order: 6, 393216 bytes, linear)
+[    0.254701] UDP-Lite hash table entries: 4096 (order: 6, 393216 bytes, linear)
+[    0.255122] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.255508] RPC: Registered named UNIX socket transport module.
+[    0.255527] RPC: Registered udp transport module.
+[    0.255537] RPC: Registered tcp transport module.
+[    0.255548] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.256427] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.258655] Initialise system trusted keyrings
+[    0.258766] workingset: timestamp_bits=46 max_order=21 bucket_order=0
+[    0.262181] zbud: loaded
+[    0.263071] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.263536] NFS: Registering the id_resolver key type
+[    0.263570] Key type id_resolver registered
+[    0.263585] Key type id_legacy registered
+[    0.263646] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.263666] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.264753] pstore: success mode=2
+[    0.293323] NET: Registered PF_ALG protocol family
+[    0.293347] xor: measuring software checksum speed
+[    0.296476]    8regs           :  3165 MB/sec
+[    0.299881]    32regs          :  2899 MB/sec
+[    0.302996]    arm64_neon      :  3183 MB/sec
+[    0.303011] xor: using function: arm64_neon (3183 MB/sec)
+[    0.303028] async_tx: api initialized (async)
+[    0.303042] Key type asymmetric registered
+[    0.303054] Asymmetric key parser 'x509' registered
+[    0.303103] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    0.303208] io scheduler mq-deadline registered
+[    0.303222] io scheduler kyber registered
+[    0.306243] phy phy-3e0a0028.phy.0: Looking up phy-supply from device tree
+[    0.306272] phy phy-3e0a0028.phy.0: Looking up phy-supply property in node /soc/disp_apb/phy@3e0a0028 failed
+[    0.307300] hpu3501 2-001c: Failed to create device link (0x180) with gpiochip0
+[    0.310816] drobot-pwm 34170000.pwm: D-Robotics PWM register done!
+[    0.313010] dw_axi_dmac_platform 32080000.dma-controller: DesignWare AXI DMA Controller, 8 channels
+[    0.313710] dw_axi_dmac_platform 34200000.dma-controller: DesignWare AXI DMA Controller, 12 channels
+[    0.313785] Start socinfo driver init
+[    0.313837] socinfo 31021008.socinfo: Start socinfo probe.
+[    0.313903] socinfo 31021008.socinfo: Socinfo probe end with retval: 0
+[    0.314564] axi_monitor 38100000.axi-mon: AXI-Clk: 800000000Hz
+[    0.314590] axi_monitor 38100000.axi-mon: APB-Clk: 100000000Hz
+[    0.314606] axi_monitor 38100000.axi-mon: Maximum session time 687000 millisecs
+[    0.314636] axi_monitor 38100000.axi-mon: Got axi-port num:5
+[    0.314651] axi_monitor 38100000.axi-mon: Got new axi-port:cpu, idx:0
+[    0.314667] axi_monitor 38100000.axi-mon: Got new axi-port:bpu, idx:1
+[    0.314685] axi_monitor 38100000.axi-mon: Got new axi-port:vin, idx:2
+[    0.314702] axi_monitor 38100000.axi-mon: Got new axi-port:codec, idx:3
+[    0.314720] axi_monitor 38100000.axi-mon: Got new axi-port:gpu, idx:4
+[    0.314912] axi_monitor 38100000.axi-mon: DDR Perf Monitor probed successfully.
+[    0.315921] Serial: 8250/16550 driver, 8 ports, IRQ sharing enabled
+[    0.318052] printk: console [ttyS0] disabled
+[    0.318114] 32120000.serial: ttyS0 at MMIO 0x32120000 (irq = 32, base_baud = 12656250) is a 16550A
+[    2.586783] printk: console [ttyS0] enabled
+[    2.591659] 34070000.serial: ttyS1 at MMIO 0x34070000 (irq = 33, base_baud = 6250000) is a 16550A
+[    2.601203] 341a0000.serial: ttyS5 at MMIO 0x341a0000 (irq = 34, base_baud = 6250000) is a 16550A
+[    2.618038] brd: module loaded
+[    2.625972] loop: module loaded
+[    2.630979] dw_spi_mmio 35000000.spi: bit_offset = 0
+[    2.636024] dw_spi_mmio 35000000.spi: DMA init failed
+[    2.641815] spi-nand spi7.0: GigaDevice SPI NAND was found.
+[    2.647402] spi-nand spi7.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 128
+[    2.655791] 2 cmdlinepart partitions found on MTD device spi7.0
+[    2.661732] Creating 2 MTD partitions on "spi7.0":
+[    2.666536] 0x000000000000-0x000000700000 : "miniboot"
+[    2.679349] 0x000000700000-0x000000880000 : "ubootenv"
+[    2.687549] dw_spi_mmio 34010000.spi: bit_offset = 0
+[    2.693462] dw_spi_mmio 34050000.spi: bit_offset = 0
+[    2.701213] hobot_gmac 35010000.horizon_tsn: No wol_irq resouce.
+[    2.707486] hobot_gmac 35010000.horizon_tsn (unnamed net_device) (uninitialized): (using random mac adress)
+[    2.717257] hobot_gmac 35010000.horizon_tsn (unnamed net_device) (uninitialized): devicec MAC addr 16:c5:f8:4d:9c:3e
+[    2.727807] hobot_gmac 35010000.horizon_tsn: Wake-Up On Lan supported
+[    2.738287] pps pps0: new PPS source ptp0
+[    2.913242] usbcore: registered new interface driver uas
+[    2.918604] usbcore: registered new interface driver usb-storage
+[    2.924688] usbcore: registered new interface driver usbserial_generic
+[    2.931256] usbserial: USB Serial support registered for generic
+[    2.937293] usbcore: registered new interface driver usb_serial_simple
+[    2.943850] usbserial: USB Serial support registered for carelink
+[    2.949968] usbserial: USB Serial support registered for flashloader
+[    2.956354] usbserial: USB Serial support registered for funsoft
+[    2.962391] usbserial: USB Serial support registered for google
+[    2.968335] usbserial: USB Serial support registered for hp4x
+[    2.974113] usbserial: USB Serial support registered for kaufmann
+[    2.980230] usbserial: USB Serial support registered for libtransistor
+[    2.986791] usbserial: USB Serial support registered for moto_modem
+[    2.993092] usbserial: USB Serial support registered for motorola_tetra
+[    2.999730] usbserial: USB Serial support registered for nokia
+[    3.005599] usbserial: USB Serial support registered for novatel_gps
+[    3.011989] usbserial: USB Serial support registered for siemens_mpi
+[    3.018363] usbserial: USB Serial support registered for suunto
+[    3.024323] usbserial: USB Serial support registered for vivopay
+[    3.030352] usbserial: USB Serial support registered for zio
+[    3.036192] mousedev: PS/2 mouse device common for all mice
+[    3.041995] i2c_dev: i2c /dev entries driver
+[    3.047132] pps pps1: new PPS source hobot_pps.-1
+[    3.051863] hobot-pps hobot_pps: register PPS source name:hobot_pps.-1
+[    3.058400] pps pps1: Registered IRQ 0 as PPS source
+[    3.065832] hwmon hwmon0: temp2_input not attached to any thermal zone
+[    3.072887] dw_wdt 34250000.watchdog: No valid TOPs array specified
+[    3.079481] device-mapper: uevent: version 1.0.3
+[    3.084293] device-mapper: ioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[    3.092942] cpu cpu0: Looking up cpu-supply from device tree
+[    3.101124] sdhci: Secure Digital Host Controller Interface driver
+[    3.107320] sdhci: Copyright(c) Pierre Ossman
+[    3.111697] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.118074] sdhci-dwcmshc 35030000.sdhci: mmc set to fixed voltage 1800
+[    3.141050] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.147433] KERNEL  host[1] waits sw_init_done...
+[    3.149443] KERNEL  [DONE]
+[    3.157619] KERNEL  SRAM Pool Base: 0x80000000, size: 0x2000, alignment: 0x10
+[    3.158158] sdhci-dwcmshc 35020000.sdhci: MSHC_CTRL:0x0
+[    3.164791] KERNEL   ACA driver init success!
+[    3.164845] sdhci-dwcmshc 35030000.sdhci: MSHC_CTRL:0x0
+[    3.164859] sdhci-dwcmshc 35030000.sdhci: Looking up vmmc-supply from device tree
+[    3.164866] sdhci-dwcmshc 35030000.sdhci: Looking up vmmc-supply property in node /soc/hsio_apb/sdhci@35030000 failed
+[    3.164888] sdhci-dwcmshc 35030000.sdhci: Looking up vqmmc-supply from device tree
+[    3.164893] sdhci-dwcmshc 35030000.sdhci: Looking up vqmmc-supply property in node /soc/hsio_apb/sdhci@35030000 failed
+[    3.169998] sdhci-dwcmshc 35020000.sdhci: Looking up vmmc-supply from device tree
+[    3.175428] te 20300000.te600: Arm China te device initialized
+[    3.176034] random: crng init done
+[    3.179581] sdhci-dwcmshc 35020000.sdhci: Looking up vmmc-supply property in node /soc/hsio_apb/sdhci@35020000 failed
+[    3.187559] hid: raw HID events driver (C) Jiri Kosina
+[    3.197687] sdhci-dwcmshc 35020000.sdhci: Looking up vqmmc-supply from device tree
+[    3.199967] mmc2: SDHCI controller on 35030000.sdhci [35030000.sdhci] using ADMA 64-bit
+[    3.205425] usbcore: registered new interface driver usbhid
+[    3.215958] sdhci-dwcmshc 35020000.sdhci: Looking up vqmmc-supply property in node /soc/hsio_apb/sdhci@35020000 failed
+[    3.280510] usbhid: USB HID core driver
+[    3.284488] logger: created 2048K log 'log_main'
+[    3.289188] logger: created 256K log 'log_events'
+[    3.293991] logger: created 256K log 'log_radio'
+[    3.298688] logger: created 256K log 'log_system'
+[    3.301000] mmc2: new ultra high speed SDR104 SDIO card at address 390b
+[    3.303486] bootloader-log soc:membuff: log stored in 0x87ffc000, size 0x2000
+[    3.318016] x5-ddrc-devfreq soc:ddrc-freq: userspace_gov: 1
+[    3.324532] x5-dfi 38200000.dfi-monitor: apb clk rate: 100000000, interval: 1
+[    3.330945] mmc1: SDHCI controller on 35020000.sdhci [35020000.sdhci] using ADMA 64-bit
+[    3.340300]  cs_system_cfg: CoreSight Configuration manager initialised
+[    3.347604] coresight-tmc 2c003000.etr: Detected dma mask 40bits
+[    3.356306] CSCFG registered etm0
+[    3.356314] coresight etm0: CPU0: etm v4.2 initialized
+[    3.365325] CSCFG registered etm1
+[    3.365331] coresight etm1: CPU1: etm v4.2 initialized
+[    3.374232] CSCFG registered etm2
+[    3.374238] coresight etm2: CPU2: etm v4.2 initialized
+[    3.383133] CSCFG registered etm3
+[    3.383138] coresight etm3: CPU3: etm v4.2 initialized
+[    3.390352] mmc1: new ultra high speed SDR104 SDXC card at address 59b4
+[    3.392059] CSCFG registered etm4
+[    3.398244] coresight etm4: CPU4: etm v4.2 initialized
+[    3.398634] mmcblk1: mmc1:59b4 EC1S5 59.7 GiB 
+[    3.402012] CSCFG registered etm5
+[    3.408349]  mmcblk1: p1 p2
+[    3.411168] coresight etm5: CPU5: etm v4.2 initialized
+[    3.422917] CSCFG registered etm6
+[    3.422922] coresight etm6: CPU6: etm v4.2 initialized
+[    3.431842] CSCFG registered etm7
+[    3.431847] coresight etm7: CPU7: etm v4.2 initialized
+[    3.441066] coresight cti_sys0: CTI initialized
+[    3.445905] coresight cti_cpu0: CTI initialized
+[    3.450728] coresight cti_cpu1: CTI initialized
+[    3.455562] coresight cti_cpu2: CTI initialized
+[    3.460402] coresight cti_cpu3: CTI initialized
+[    3.465242] coresight cti_cpu4: CTI initialized
+[    3.470062] coresight cti_cpu5: CTI initialized
+[    3.474879] coresight cti_cpu6: CTI initialized
+[    3.479700] coresight cti_cpu7: CTI initialized
+[    3.484887] optee: probing for conduit method.
+[    3.489362] optee: revision 3.20 (aa2db5ff)
+[    3.489559] optee: dynamic shared memory is enabled
+[    3.499406] optee: initialized driver
+[    3.503548] usbcore: registered new interface driver snd-usb-audio
+[    3.510965] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    3.516903] Initializing XFRM netlink socket
+[    3.521456] NET: Registered PF_INET6 protocol family
+[    3.527208] Segment Routing with IPv6
+[    3.530893] In-situ OAM (IOAM) with IPv6
+[    3.534879] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    3.541160] NET: Registered PF_PACKET protocol family
+[    3.546343] 8021q: 802.1Q VLAN Support v1.8
+[    3.550568] Key type dns_resolver registered
+[    3.554865] Found lo, alias (efault) on irq 0
+[    3.559231] MAC: 00:00:00:00:00:00
+[    3.559235] Tx queue length: 1000
+[    3.565974] Invalid capabilities for NIC (lo), dropping from TSN list
+[    3.572435] Found eth0, alias (efault) on irq 38
+[    3.577061] MAC: 16:c5:f8:4d:9c:3e
+[    3.577067] Tx queue length: 1000
+[    3.583803] Invalid capabilities for NIC (eth0), dropping from TSN list
+[    3.590426] Found tunl0, alias (efault) on irq 0
+[    3.595064] MAC: 00:00:00:00:00:00
+[    3.595068] Tx queue length: 1000
+[    3.601806] Invalid capabilities for NIC (tunl0), dropping from TSN list
+[    3.608515] Found sit0, alias (efault) on irq 0
+[    3.613065] MAC: 00:00:00:00:00:00
+[    3.613071] Tx queue length: 1000
+[    3.619797] Invalid capabilities for NIC (sit0), dropping from TSN list
+[    3.626430] tsn_init_module: No capable NIC found. Perhaps load with in_debug=1 ?
+[    3.634227] registered taskstats version 1
+[    3.638349] Loading compiled-in X.509 certificates
+[    3.643588] zswap: loaded using pool lzo/zbud
+[    3.648097] Key type .fscrypt registered
+[    3.652045] Key type fscrypt-provisioning registered
+[    3.657884] pstore: Using crash dump compression: deflate
+
+[    3.671620] ********************************************************************
+[    3.679024] **     NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE           **
+[    3.686440] **                                                                **
+[    3.693855] **  WRITEABLE clk DebugFS SUPPORT HAS BEEN ENABLED IN THIS KERNEL **
+[    3.701269] **                                                                **
+[    3.708671] ** This means that this kernel is built to expose clk operations  **
+[    3.716085] ** such as parent or rate setting, enabling, disabling, etc.      **
+[    3.723498] ** to userspace, which may compromise security on your system.    **
+[    3.730905] **                                                                **
+[    3.738317] ** If you see this message and you are not debugging the          **
+[    3.745731] ** kernel, report this immediately to your vendor!                **
+[    3.753142] **                                                                **
+[    3.760546] **     NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE           **
+[    3.767959] ********************************************************************
+[    3.786977] dr-power-domain 31030000.power-controller: Looking up bpu-supply from device tree
+[    3.795809] dr-power-domain 31030000.power-controller: Looking up gpu-supply from device tree
+[    3.805337] VCC_GPU: 800 mV, disabled
+[    3.809786] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[    3.812962] x5-ddrc-devfreq soc:ddrc-freq: userspace_gov: 1
+[    3.815303] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 1
+[    3.821372] guc 34190000.adc: Looking up vref-supply from device tree
+[    3.828852] xhci-hcd xhci-hcd.2.auto: hcc params 0x0220fe6d hci version 0x110 quirks 0x0000008000010090
+[    3.835107] guc 34190000.adc: ADC calibration: 4
+[    3.844403] xhci-hcd xhci-hcd.2.auto: irq 47, io mem 0x35100000
+[    3.848988] guc 34190000.adc: ADC trimming: 7
+[    3.855020] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[    3.859917] guc 34190000.adc: GUC Initialize Finish
+[    3.864759] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 2
+[    3.869788] dr-power-domain 31030000.power-controller: Looking up bpu-supply from device tree
+[    3.877299] xhci-hcd xhci-hcd.2.auto: Host supports USB 3.0 SuperSpeed
+[    3.885962] dr-power-domain 31030000.power-controller: Looking up gpu-supply from device tree
+[    3.892461] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.01
+[    3.902530] noc_qos 20530000.video_qos: noc qos init finished.
+[    3.909150] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    3.916162] noc_qos 20530080.jpeg_qos: noc qos init finished.
+[    3.922213] usb usb1: Product: xHCI Host Controller
+[    3.922217] usb usb1: Manufacturer: Linux 6.1.83 xhci-hcd
+[    3.929144] noc_qos 20510280.isp_axi5_hdr_qos: noc qos init finished.
+[    3.932842] usb usb1: SerialNumber: xhci-hcd.2.auto
+[    3.933201] hub 1-0:1.0: USB hub found
+[    3.939426] noc_qos 20510300.isp_axi4_mcm_qos: noc qos init finished.
+[    3.944723] hub 1-0:1.0: 1 port detected
+[    3.950749] noc_qos 20510380.isp_axi3_sp2_qos: noc qos init finished.
+[    3.953597] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    3.960969] noc_qos 20510480.isp_axi1_mp_qos: noc qos init finished.
+[    3.963771] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.01
+[    3.974483] noc_qos 20540080.gpu3d_qos: noc qos init finished.
+[    3.978225] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    3.988908] noc_qos 20540000.gpu2d_qos: noc qos init finished.
+[    3.992847] usb usb2: Product: xHCI Host Controller
+[    3.992851] usb usb2: Manufacturer: Linux 6.1.83 xhci-hcd
+[    3.992856] usb usb2: SerialNumber: xhci-hcd.2.auto
+[    4.000977] noc_qos 20520000.bpu_qos: noc qos init finished.
+[    4.006228] hub 2-0:1.0: USB hub found
+[    4.012991] noc_qos 20560000.hifi5_qos: noc qos init finished.
+[    4.016644] hub 2-0:1.0: 1 port detected
+[    4.046521] printk: console [netcon0] enabled
+[    4.050896] netconsole: network logging started
+[    4.056065] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    4.063365] ALSA device list:
+[    4.066351]   No soundcards found.
+[    4.069926] dw-apb-uart 32120000.serial: forbid DMA for kernel console
+[    4.076526] md: Waiting for all devices to be available before autodetect
+[    4.083345] md: If you don't use raid, use raid=noautodetect
+[    4.089018] md: Autodetecting RAID arrays.
+[    4.093139] md: autorun ...
+[    4.095942] md: ... autorun DONE.
+[    4.261004] usb 1-1: new high-speed USB device number 2 using xhci-hcd
+[    4.382111] EXT4-fs (mmcblk1p2): 4 orphan inodes deleted
+[    4.387466] EXT4-fs (mmcblk1p2): recovery complete
+[    4.416571] EXT4-fs (mmcblk1p2): mounted filesystem with ordered data mode. Quota mode: none.
+[    4.425189] VFS: Mounted root (ext4 filesystem) on device 179:2.
+[    4.431993] devtmpfs: mounted
+[    4.435646] Freeing unused kernel memory: 2560K
+[    4.440305] Run /sbin/init as init process
+[    4.443596] usb 1-1: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice= 6.63
+[    4.444438]   with arguments:
+[    4.452607] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.455568]     /sbin/init
+[    4.462711] usb 1-1: Product: USB2.1 Hub
+[    4.462717] usb 1-1: Manufacturer: GenesysLogic
+[    4.465423]   with environment:
+[    4.477098]     HOME=/
+[    4.479466]     TERM=linux
+[    4.532655] hub 1-1:1.0: USB hub found
+[    4.536761] hub 1-1:1.0: 4 ports detected
+[    4.591085] usb 2-1: new SuperSpeed USB device number 2 using xhci-hcd
+[    4.628091] usb 2-1: New USB device found, idVendor=05e3, idProduct=0626, bcdDevice= 6.63
+[    4.636316] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.643486] usb 2-1: Product: USB3.1 Hub
+[    4.647427] usb 2-1: Manufacturer: GenesysLogic
+[    4.677364] hub 2-1:1.0: USB hub found
+[    4.681957] hub 2-1:1.0: 4 ports detected
+[    4.718360] systemd[1]: System time before build time, advancing clock.
+[    4.791583] systemd[1]: systemd 249.11-0ubuntu3.23 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    4.824325] systemd[1]: Detected architecture arm64.
+[    4.861934] systemd[1]: Hostname set to <ubuntu>.
+[    4.881038] usb 1-1.1: new high-speed USB device number 3 using xhci-hcd
+[    5.043065] usb 1-1.1: New USB device found, idVendor=2109, idProduct=2211, bcdDevice= 3.f4
+[    5.051515] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    5.051521] usb 1-1.1: Product: USB2.0 Hub             
+[    5.051526] usb 1-1.1: Manufacturer: VIA Labs, Inc.         
+[    5.108573] hub 1-1.1:1.0: USB hub found
+[    5.112927] hub 1-1.1:1.0: 4 ports detected
+[    5.172334] usb 2-1.1: new SuperSpeed USB device number 3 using xhci-hcd
+[    5.278895] systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    5.317458] systemd[1]: Configuration file /etc/systemd/system/systemd-udevd.service.d/00-hobot-private.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+[    5.335120] systemd[1]: Configuration file /etc/systemd/system/systemd-udevd.service.d/delay_load_usb_uvc_driver.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+[    5.395571] systemd[1]: Configuration file /etc/systemd/system/apt-daily.timer.d/disable-apt-daily.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+[    5.580992] systemd[1]: Queued start job for default target Graphical Interface.
+[    5.618977] usb 2-1.1: New USB device found, idVendor=2109, idProduct=0211, bcdDevice= 3.f4
+[    5.627400] usb 2-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    5.634745] usb 2-1.1: Product: USB3.0 Hub             
+[    5.639988] usb 2-1.1: Manufacturer: VIA Labs, Inc.         
+[    5.668658] hub 2-1.1:1.0: USB hub found
+[    5.672828] hub 2-1.1:1.0: 1 port detected
+[    5.673775] systemd[1]: Created slice Slice /system/modprobe.
+[    5.712714] systemd[1]: Created slice Slice /system/serial-getty.
+[    5.741001] usb 1-1.3: new full-speed USB device number 4 using xhci-hcd
+[    5.752050] systemd[1]: Created slice User and Session Slice.
+[    5.791464] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    5.832658] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    5.871952] systemd[1]: Reached target User and Group Name Lookups.
+[    5.906043] usb 1-1.3: New USB device found, idVendor=32c2, idProduct=0012, bcdDevice= 2.00
+[    5.914499] usb 1-1.3: New USB device strings: Mfr=2, Product=1, SerialNumber=0
+[    5.914755] systemd[1]: Reached target Slice Units.
+[    5.921849] usb 1-1.3: Product: 2.4G Wireless Receiver
+[    5.921862] usb 1-1.3: Manufacturer: HS6209
+[    5.961352] systemd[1]: Reached target Swaps.
+[    5.991480] systemd[1]: Reached target Local Verity Protected Volumes.
+[    6.009205] input: HS6209 2.4G Wireless Receiver as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.0/0003:32C2:0012.0001/input/input1
+[    6.091239] hid-generic 0003:32C2:0012.0001: input,hidraw0: USB HID v1.11 Keyboard [HS6209 2.4G Wireless Receiver] on usb-xhci-hcd.2.auto-1.3/input0
+[    6.110062] input: HS6209 2.4G Wireless Receiver as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0002/input/input2
+[    6.111483] systemd[1]: Listening on RPCbind Server Activation Socket.
+[    6.127482] input: HS6209 2.4G Wireless Receiver Mouse as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0002/input/input3
+[    6.151822] input: HS6209 2.4G Wireless Receiver Consumer Control as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0002/input/input4
+[    6.202227] systemd[1]: Listening on Syslog Socket.
+[    6.231632] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    6.241088] input: HS6209 2.4G Wireless Receiver System Control as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0002/input/input5
+[    6.262392] usb 1-1.1.1: new high-speed USB device number 5 using xhci-hcd
+[    6.270989] hid-generic 0003:32C2:0012.0002: input,hiddev96,hidraw1: USB HID v1.11 Mouse [HS6209 2.4G Wireless Receiver] on usb-xhci-hcd.2.auto-1.3/input1
+[    6.301878] systemd[1]: Listening on Journal Audit Socket.
+[    6.341959] systemd[1]: Listening on Journal Socket (/dev/log).
+[    6.383029] systemd[1]: Listening on Journal Socket.
+[    6.413078] systemd[1]: Listening on udev Control Socket.
+[    6.452719] systemd[1]: Listening on udev Kernel Socket.
+[    6.463445] usb 1-1.1.1: New USB device found, idVendor=2109, idProduct=2211, bcdDevice= 3.f4
+[    6.472566] usb 1-1.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.480250] usb 1-1.1.1: Product: USB2.0 Hub             
+[    6.485779] usb 1-1.1.1: Manufacturer: VIA Labs, Inc.         
+[    6.501063] systemd[1]: Reached target Socket Units.
+[    6.548462] hub 1-1.1.1:1.0: USB hub found
+[    6.552829] hub 1-1.1.1:1.0: 4 ports detected
+[    6.580234] usb 2-1.1.1: new SuperSpeed USB device number 4 using xhci-hcd
+[    6.591376] systemd[1]: Mounting Huge Pages File System...
+[    6.623905] systemd[1]: Mounting POSIX Message Queue File System...
+[    6.666948] systemd[1]: Mounting Kernel Debug File System...
+[    6.701795] systemd[1]: Condition check resulted in Kernel Trace File System being skipped.
+[    6.720648] systemd[1]: Starting Journal Service...
+[    6.751291] systemd[1]: Condition check resulted in Kernel Module supporting RPCSEC_GSS being skipped.
+[    6.764949] systemd[1]: Starting Set the console keyboard layout...
+[    6.804495] systemd[1]: Starting Create List of Static Device Nodes...
+[    6.844443] systemd[1]: Starting Load Kernel Module configfs...
+[    6.874434] systemd[1]: Starting Load Kernel Module drm...
+[    6.904493] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    6.954431] systemd[1]: Starting Load Kernel Module fuse...
+[    6.960074] usb 2-1.1.1: New USB device found, idVendor=2109, idProduct=0211, bcdDevice= 3.f4
+[    6.968711] usb 2-1.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.968717] usb 2-1.1.1: Product: USB3.0 Hub             
+[    6.968722] usb 2-1.1.1: Manufacturer: VIA Labs, Inc.         
+[    6.982000] fuse: init (API version 7.37)
+[    7.018259] hub 2-1.1.1:1.0: USB hub found
+[    7.028108] systemd[1]: Starting Load Kernel Modules...
+[    7.048403] hub 2-1.1.1:1.0: 1 port detected
+[    7.064514] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    7.080157] Bluetooth: Core ver 2.22
+[    7.083916] NET: Registered PF_BLUETOOTH protocol family
+[    7.089255] Bluetooth: HCI device and connection manager initialized
+[    7.095671] Bluetooth: HCI socket layer initialized
+[    7.100567] Bluetooth: L2CAP socket layer initialized
+[    7.105673] Bluetooth: SCO socket layer initialized
+[    7.114664] systemd[1]: Starting Coldplug All udev Devices...
+[    7.123444] Bluetooth: HCI UART driver ver 2.3
+[    7.130285] Bluetooth: HCI UART protocol H4 registered
+[    7.135929] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[    7.156235] systemd[1]: Started Journal Service.
+[    7.161313] usbcore: registered new interface driver uvcvideo
+[    7.660979] usb 1-1.1.1.1: new high-speed USB device number 6 using xhci-hcd
+[    7.677203] systemd-journald[276]: Received client request to flush runtime journal.
+[    7.689873] systemd-journald[276]: File /var/log/journal/93376d30162346569ffd698a59b4b039/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    7.861128] usb 1-1.1.1.1: New USB device found, idVendor=0424, idProduct=2512, bcdDevice= b.b3
+[    7.861153] usb 1-1.1.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    7.924349] hub 1-1.1.1.1:1.0: USB hub found
+[    7.924408] hub 1-1.1.1.1:1.0: 2 ports detected
+[    9.061000] usb 1-1.1.1.1.2: new full-speed USB device number 8 using xhci-hcd
+[    9.212389] usb 1-1.1.1.1.2: New USB device found, idVendor=2b03, idProduct=f881, bcdDevice= 3.09
+[    9.212407] usb 1-1.1.1.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    9.212415] usb 1-1.1.1.1.2: Product: ZED-2i HID INTERFACE
+[    9.212420] usb 1-1.1.1.1.2: Manufacturer: STEREOLABS
+[    9.212430] usb 1-1.1.1.1.2: SerialNumber: 39153075
+[    9.302745] hid-generic 0003:2B03:F881.0003: hiddev97,hidraw2: USB HID v1.11 Device [STEREOLABS ZED-2i HID INTERFACE] on usb-xhci-hcd.2.auto-1.1.1.1.2/input0
+[    9.593306] es8326 7-0018: assuming static mclk
+[    9.657937] CAN device driver interface
+[    9.688915] sii902x 7-003b: Looking up iovcc-supply from device tree
+[    9.688940] sii902x 7-003b: Looking up iovcc-supply property in node /soc/dsp_apb/i2c@320a0000/hdmi_bridge@3b failed
+[    9.688969] sii902x 7-003b: supply iovcc not found, using dummy regulator
+[    9.694507] sii902x 7-003b: Looking up cvcc12-supply from device tree
+[    9.694537] sii902x 7-003b: Looking up cvcc12-supply property in node /soc/dsp_apb/i2c@320a0000/hdmi_bridge@3b failed
+[    9.694565] sii902x 7-003b: supply cvcc12 not found, using dummy regulator
+[    9.704919] tcan4x5x spi5.0: Looking up vsup-supply from device tree
+[    9.704943] tcan4x5x spi5.0: Looking up vsup-supply property in node /soc/a55_apb0/spi@34050000/tcan4x5x@0 failed
+[    9.704978] tcan4x5x spi5.0: no clock found
+[    9.704984] tcan4x5x spi5.0: no CAN clock source defined
+[    9.735536] i2c i2c-7: Added multiplexed i2c bus 8
+[    9.800914] tcan4x5x spi5.0: m_can device registered (irq=55, version=32)
+[    9.801108] tcan4x5x spi5.0 can0: TCAN4X5X successfully initialized.
+[    9.818604] mtdblock_open: Access to 'miniboot' is not allowed.
+[    9.820224] mtdblock_open: Access to 'ubootenv' is not allowed.
+[    9.835972] aicbsp_init
+[    9.835989] RELEASE_DATE:2025_0410_b99ca8b6
+[    9.835994] aicbsp_resv_mem_init 
+[    9.858457] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    9.876483] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    9.877314] cfg80211: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    9.911184] IPv6: ADDRCONF(NETDEV_CHANGE): can0: link becomes ready
+[    9.915996] aicbsp: aicbsp_set_subsys, subsys: AIC_WIFI, state to: 1
+[    9.916017] aicbsp: aicbsp_set_subsys, power state change to 1 dure to AIC_WIFI
+[    9.916022] aicbsp: aicbsp_platform_power_on
+[    9.916267] aicbsp: aicbsp_sdio_probe:1 vid:0xC8A1  did:0x0082
+[    9.917365] aicbsp: aicbsp_sdio_probe:2 vid:0xC8A1  did:0x0182
+[    9.917388] aicbsp: aicbsp_sdio_probe after replace:1
+[    9.917396] aicbsp: aicbsp_get_feature, set FEATURE_SDIO_CLOCK 150 MHz
+[    9.917402] aicbsp: aicwf_sdio_reg_init
+[    9.918270] rwnx_load_firmware :firmware path = /vendor/etc/firmware/fw_patch_table_8800d80_u02.bin  
+[    9.919820] file md5:12bbc49f5fa6c6176b64da0d2aab183e
+[    9.919924] rwnx_plat_bin_fw_upload_android
+[    9.919932] rwnx_load_firmware :firmware path = /vendor/etc/firmware/fw_adid_8800d80_u02.bin  
+[    9.920265] file md5:f546881a81b960d89a672578eb45a809
+[    9.920881] rwnx_plat_bin_fw_upload_android
+[    9.920897] rwnx_load_firmware :firmware path = /vendor/etc/firmware/fw_patch_8800d80_u02.bin  
+[    9.921969] file md5:455c18bb5c3a0fd796ed5f69f739fedc
+[    9.937712] rwnx_plat_bin_fw_upload_android
+[    9.937733] rwnx_load_firmware :firmware path = /vendor/etc/firmware/fw_patch_8800d80_u02_ext0.bin  
+[    9.938499] file md5:5366c9bced7dd6e4ec3731803312ac79
+[    9.952770] aicbt_patch_table_load bt btmode[3]:5 
+[    9.952790] aicbt_patch_table_load bt uart_baud[3]:1500000 
+[    9.952795] aicbt_patch_table_load bt uart_flowctrl[3]:0 
+[    9.952800] aicbt_patch_table_load bt lpm_enable[3]:0 
+[    9.952804] aicbt_patch_table_load bt tx_pwr[3]:28463 
+[    9.958390] aicbsp: bt patch version: - Apr 25 2025 16:25:07 - git 6a3aefa
+[    9.958476] rwnx_plat_bin_fw_upload_android
+[    9.958483] rwnx_load_firmware :firmware path = /vendor/etc/firmware/fmacfw_8800d80_u02.bin  
+[    9.965239] file md5:2a1b4cfb1d8f590b719f43b10ff65a89
+[   10.016575] rd_version_val=06090101
+[   10.035416] aicbsp: aicbsp_get_feature, set FEATURE_SDIO_CLOCK 150 MHz
+[   10.035436] aicsdio: aicwf_sdio_reg_init
+[   10.040580] aicwf_prealloc_init enter
+[   10.040721] pre alloc rxbuff list len: 30
+[   10.040763] aicbsp: aicbsp_resv_mem_alloc_skb, alloc resv_mem_txdata succuss, id: 0, size: 98304
+[   10.041112] aicbsp: aicbsp_get_feature, set FEATURE_SDIO_CLOCK 150 MHz
+[   10.041258] tcp_ack_init 
+[   10.042687] AICWFDBG(LOGERROR)	invalid cmd: loss_enable
+[   10.042698] AICWFDBG(LOGERROR)	invalid cmd: loss_value
+[   10.070939] aicbsp: sdio_err:<aicwf_sdio_bus_pwrctl,1402>: bus down
+[   10.933139] ieee80211 phy0: HT supp 1, VHT supp 1, HE supp 1
+[   10.933793] ieee80211 phy0: 
+               *******************************************************
+               ** CAUTION: USING PERMISSIVE CUSTOM REGULATORY RULES **
+               *******************************************************
+[   10.981900] get_txpwr_max:txpwr_max:18 
+[   11.532855] Starting load kernel driver, soc_gen X5 board ID: 302 ...
+[   11.551581] dw-apb-uart 341a0000.serial: failed to request DMA
+[   11.610393] [CODEC_NODE]:[L647]hobot_codec_node_probe start
+[   11.610428] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit1 is used
+[   11.610586] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit2 is used
+[   11.610675] [CODEC_NODE]:[L670][FRT:D] hobot_codec_node_probe(0)
+[   11.629439] hb_vpu 3b000000.vpu: Adding to iommu group 6
+[   11.649012] hobot_vpu_dev: [VPUDRV]vpu_init_system_mem:7158: vpu IO memory resource: physical base addr = 0x3b000000,virtual base addr = ffff80000a0a0000
+[   11.666983] hb_jpu 3b010000.jpu: Adding to iommu group 7
+[   11.679921] [INFO][HOBOT_OSD](osd_probe) done
+[   11.694578] [VIN_NODE]:[L1078]hobot_vin_node_probe hw_id 0 done
+[   11.694600] VIN_NODE soc:cam:vin_node@0: [FRT:D] hobot_vin_node_probe(0)
+[   11.694792] [VIN_NODE]:[L1078]hobot_vin_node_probe hw_id 1 done
+[   11.694812] VIN_NODE soc:cam:vin_node@1: [FRT:D] hobot_vin_node_probe(0)
+[   11.694961] [VIN_NODE]:[L1078]hobot_vin_node_probe hw_id 2 done
+[   11.694971] VIN_NODE soc:cam:vin_node@2: [FRT:D] hobot_vin_node_probe(0)
+[   11.695099] [VIN_NODE]:[L1078]hobot_vin_node_probe hw_id 3 done
+[   11.695108] VIN_NODE soc:cam:vin_node@3: [FRT:D] hobot_vin_node_probe(0)
+[   11.711102] vin vcon0: self rx0 attr 0x5a1 bus 6 probe
+[   11.711251] vin vcon1: self rx1 attr 0x501 bus 6 probe
+[   11.711383] vin vcon2: self rx2 attr 0x5a1 bus 4 probe
+[   11.711453] vin vcon3: self rx3 attr 0x501 bus 4 probe
+[   11.711890] [VIN_NODE]:[L610]type 2 vin_register_device_node done
+[   11.711902] vin vcon: init 4 vcon done
+[   11.719817] vs-cam-pulse 3d0b008c.cam_pulse: cam_pulse_probe successfully done!
+[   11.726546] hobot-sif 3d020000.sif: Adding to iommu group 1
+[   11.726942] [VIN_NODE]:[L845]hw_id 0 vin_device_node_init done
+[   11.726980] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit3 is used
+[   11.727153] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit4 is used
+[   11.728102] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit5 is used
+[   11.728379] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit6 is used
+[   11.728522] [VIN_NODE]:[L999][S0]vin_node_device_node_init hw_id 0 done
+[   11.728580] hobot-sif 3d020000.sif: [FRT:D] cim_probe(0)
+[   11.728591] [CIM]:[L1014]cim_probe hw_id 0 done, time used: 1980us
+[   11.729118] hobot-sif 3d030000.sif: Adding to iommu group 1
+[   11.729531] [VIN_NODE]:[L845]hw_id 1 vin_device_node_init done
+[   11.729572] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit7 is used
+[   11.739968] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit8 is used
+[   11.740881] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit9 is used
+[   11.744052] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit10 is used
+[   11.746942] [VIN_NODE]:[L999][S0]vin_node_device_node_init hw_id 1 done
+[   11.747017] hobot-sif 3d030000.sif: [FRT:D] cim_probe(0)
+[   11.747027] [CIM]:[L1014]cim_probe hw_id 1 done, time used: 17847us
+[   11.747314] hobot-sif 3d040000.sif: Adding to iommu group 1
+[   11.747635] [VIN_NODE]:[L845]hw_id 2 vin_device_node_init done
+[   11.747668] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit11 is used
+[   11.747874] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit12 is used
+[   11.748016] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit13 is used
+[   11.754317] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit14 is used
+[   11.755512] [VIN_NODE]:[L999][S0]vin_node_device_node_init hw_id 2 done
+[   11.755581] hobot-sif 3d040000.sif: [FRT:D] cim_probe(0)
+[   11.755590] [CIM]:[L1014]cim_probe hw_id 2 done, time used: 8234us
+[   11.764009] hobot-sif 3d050000.sif: Adding to iommu group 1
+[   11.772408] [VIN_NODE]:[L845]hw_id 3 vin_device_node_init done
+[   11.772449] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit15 is used
+[   11.772660] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit16 is used
+[   11.772797] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit17 is used
+[   11.772911] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit18 is used
+[   11.777652] [VIN_NODE]:[L999][S0]vin_node_device_node_init hw_id 3 done
+[   11.779113] hobot-sif 3d050000.sif: [FRT:D] cim_probe(0)
+[   11.779136] [CIM]:[L1014]cim_probe hw_id 3 done, time used: 13293us
+[   11.780100] [VIN_NODE]:[L610]type 0 vin_register_device_node done
+[   11.856276] vin sensor: init 24 sensor v1.0 done
+[   11.881579] vin mipi0: probe with x5sys done
+[   11.913864] CAM_SUBSYS soc:cam:cam_sys@0: [FRT:D] camsys_probe(0)
+[   11.936261] vin mipi0: snrclk set en not support
+[   11.936295] vin mipi0: ver 0154 port0(0:0)
+[   11.936592] vin mipi1: snrclk set en not support
+[   11.936618] vin mipi1: ver 0154 port1(0:1)
+[   11.936846] vin mipi2: snrclk set en not support
+[   11.936866] vin mipi2: ver 0154 port2(1:0)
+[   11.937069] vin mipi3: snrclk set en not support
+[   11.937086] vin mipi3: ver 0154 port3(1:1)
+[   11.938525] [VIN_NODE]:[L610]type 1 vin_register_device_node done
+[   11.938548] vin mipi-tx: dev0 dummy setcb
+[   11.938553] vin mipi-tx: dev1 dummy setcb
+[   11.938557] vin mipi: init 4 rx 2 tx done
+[   11.979278] vin mipi: phy debug probed
+[   11.983938] vin mipi0: debug probed
+[   11.988149] vin mipi1: debug probed
+[   11.989003] vin mipi2: debug probed
+[   11.990118] vin mipi3: debug probed
+[   12.017769] vs-isp 3d000000.isp: Adding to iommu group 8
+[   12.018567] vs-isp 3d000000.isp: assigned reserved memory node linux,cma@88000000
+[   12.018611] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit19 is used
+[   12.018835] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit20 is used
+[   12.024089] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit21 is used
+[   12.026437] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit22 is used
+[   12.031100] vs-isp 3d000000.isp: VS ISP driver (native) probed done, time used: 13059us
+[   12.094583] vs-vse 3d010000.vse: Adding to iommu group 0
+[   12.095528] vs-vse 3d010000.vse: cannot get reset control (err=-6)
+[   12.095765] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit23 is used
+[   12.097217] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit24 is used
+[   12.100616] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit25 is used
+[   12.104631] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit26 is used
+[   12.104797] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit27 is used
+[   12.104926] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit28 is used
+[   12.110310] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit29 is used
+[   12.117237] vs-vse 3d010000.vse: VS VSE driver (native) probed done, time used: 22069us
+[   12.143364] vin deserial: init 6 deserial v1.0 done
+[   12.195748] HOBOT GDC 3d0c0000.gdc: Adding to iommu group 2
+[   12.201055] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit30 is used
+[   12.201324] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[0] bit31 is used
+[   12.206397] HOBOT GDC 3d0c0000.gdc: [FRT:D] hobot_gdc_probe(0)
+[   12.232663] [ISI_Sensor]:isi_sensor_init end
+[   12.264660] [HOBOT_LPWM-1] (lpwm_platform_init): ctrl_reg = 4
+[   12.270840] [VIN_NODE]:[L610]type 3 vin_register_device_node done
+[   12.270863] [HOBOT_LPWM-1] (hobot_lpwm_probe): Probe success
+[   12.320344] bpu-core 3a000000.bpu: Adding to iommu group 10
+[   12.324335] bpu-core 3a000000.bpu: Can't get bpu power delay, use default
+[   12.324360] bpu-core 3a000000.bpu: Looking up cnn-supply from device tree
+[   12.341317] bpu_hw_io_x5: loading out-of-tree module taints kernel.
+[   12.341342] bpu_hw_io_x5: module license 'Proprietary' taints kernel.
+[   12.341347] Disabling lock debugging due to kernel taint
+[   12.345082] bpu-core: hw-io: git commit: 42566cb
+[   12.460257] hpu3501-rtc hpu3501-rtc.1.auto: registered as rtc0
+[   12.461175] hpu3501-rtc hpu3501-rtc.1.auto: setting system clock to 2026-11-05T04:24:46 UTC (1793852686)
+[   12.651278] 20510500.sif_qos QoS not initialized! Skipping!
+[   12.651588] 20510280.isp_qos QoS not initialized! Skipping!
+[   12.651860] 20510100.dw230_qos QoS not initialized! Skipping!
+[   12.676519] Config 20540080.gpu3d_qos qos read: 0 write: 0 done
+[   12.684269] Config 20520000.bpu_qos qos read: 0 write: 0 done
+[   12.708934] Config 20540000.gpu2d_qos qos read: 0 write: 0 done
+[   12.716203] Config 20550100.gmac_qos qos read: 0 write: 0 done
+[   12.723967] Config 20510000.bt1120_qos qos read: 0 write: 0 done
+[   12.732176] Config 20510080.dc8000_qos qos read: 0 write: 0 done
+[   12.744453] Config 20530000.video_qos qos read: 0 write: 0 done
+[   12.757884] Config 20530080.jpeg_qos qos read: 0 write: 0 done
+[   12.884707] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   12.884730] Bluetooth: BNEP filters: protocol multicast
+[   12.884747] Bluetooth: BNEP socket layer initialized
+[   12.889913] Bluetooth: MGMT ver 1.22
+[   13.178179] asoc-duplex-host-card snd0: asoc_simple_probe end
+[   13.206685] start to add opp table.
+[   13.206705] finish to add opp table 4.
+[   13.206749] Galcore version 6.4.14.9.674707
+[   13.243594] nano2d 3c010000.gc820: Adding to iommu group 9
+[   13.243688] nano2d 3c010000.gc820: clk name: pclk, freq = 100000000.
+[   13.243701] nano2d 3c010000.gc820: clk name: aclk, freq = 750000000.
+[   13.243713] nano2d 3c010000.gc820: clk name: clk1x, freq = 750000000.
+[   13.243851] gpu_parse_dt: register base(3c010000), irq(78).
+[   13.244379] create /dev/nano2d device.
+[   13.244464] Insmod parameters:
+[   13.244469] device[0] core[0]
+[   13.244473]   irq line:78
+[   13.244477]   register base:0x3c010000
+[   13.244482]   register size:0x10000
+
+[   13.244489]   iommu enabled
+[   13.244492]   contiguous base:0x0
+[   13.244496]   contiguous size:0x0
+[   13.244499]   command contiguous base:0x0
+[   13.244503]   command contiguous size:0x0
+
+[   13.245717] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[1] bit0 is used
+[   13.245914] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[1] bit1 is used
+[   13.246026] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[1] bit2 is used
+[   13.246123] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[1] bit3 is used
+[   13.246226] [VPF mgr]:[L271]vpf_alloc_minor_number: minor[1] bit4 is used
+[   13.246317] nano2D: after probe, allocate_count = 28
+[   13.292300] vs-disp-sif 3e080000.vs-sif: Adding to iommu group 3
+[   13.294723] vs-dc 3e000000.dc8000Nano: Adding to iommu group 4
+[   13.297139] vs-bt1120 3e010000.bt1120: Adding to iommu group 5
+[   13.317327] vs-drm 3e000000.disp_apb:display-subsystem: bound 3e080000.vs-sif (ops sif_component_ops [vs_drm])
+[   13.317484] drivers/gpu/drm/verisilicon/dc/dc_proc/gc_proc.c: 593
+[   13.321785] drivers/gpu/drm/verisilicon/dc/dc_proc/gc_proc.c: 604
+[   13.321987] vs-drm 3e000000.disp_apb:display-subsystem: bound 3e000000.dc8000Nano (ops dc_component_ops [vs_drm])
+[   13.322143] vs-drm 3e000000.disp_apb:display-subsystem: bound 3e010000.bt1120 (ops bt1120_component_ops [vs_drm])
+[   13.322187] vs-drm 3e000000.disp_apb:display-subsystem: bound 3e000000.disp_apb:bt1120_bridge (ops bt1120_bridge_component_ops [vs_drm])
+[   13.322229] vs-drm 3e000000.disp_apb:display-subsystem: bound 3e000000.disp_apb:bt1120_bridge_wb (ops bt1120_bridge_component_ops [vs_drm])
+[   13.322347] vs-drm 3e000000.disp_apb:display-subsystem: bound 3e000000.disp_apb:dsi-encoder (ops encoder_component_ops [vs_drm])
+[   13.322424] vs-drm 3e000000.disp_apb:display-subsystem: bound 3e000000.disp_apb:hdmi-encoder (ops encoder_component_ops [vs_drm])
+[   13.323533] [drm] Initialized vs-drm 1.0.0 20191101 for 3e000000.disp_apb:display-subsystem on minor 0
+[   13.430985] hobot_gmac 35010000.horizon_tsn eth0: PHY [hobot-mac-mdio-35010000:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   13.440447] hobot_gmac 35010000.horizon_tsn eth0: mac_config_rx_queues_routing, not support packet mode :\x02
+[   13.440521] hobot_gmac 35010000.horizon_tsn eth0: configuring for phy/rgmii-id link mode
+[   13.581945] get_txpwr_max:txpwr_max:18 
+[   13.595865] get_txpwr_max:txpwr_max:18 
+[   13.623107] get_txpwr_max:txpwr_max:18 
+[   13.623221] get_txpwr_max:txpwr_max:18 
+[   13.623714] get_txpwr_max:txpwr_max:18 
+[   13.623772] get_txpwr_max:txpwr_max:18 
+[   13.626557] get_txpwr_max:txpwr_max:18 
+[   13.844030] rwnx_virtual_interface_add: 10, p2p-dev-wlan0
+[   13.844056] rwnx_virtual_interface_add, ifname=p2p-dev-wlan0, wdev=000000007a4c4bd3, vif_idx=1
+[   13.844067] p2p dev addr=18 ce df 79 2e bc
+[   13.844083] get_txpwr_max:txpwr_max:18 
+[   13.844098] get_txpwr_max:txpwr_max:18 
+[   13.856423] get_txpwr_max:txpwr_max:18 
+[   13.856896] get_txpwr_max:txpwr_max:18 
+[   13.856956] get_txpwr_max:txpwr_max:18 
+[   13.857047] get_txpwr_max:txpwr_max:18 
+[   13.858174] get_txpwr_max:txpwr_max:18 
+[   13.858757] get_txpwr_max:txpwr_max:18 
+[   13.858813] P2P interface started
+[   15.529884] rwnx_send_sm_connect_req drv_vif_index:0 connect to Smart_CPS_2.4G(14) channel:2452 auth_type:0
+[   15.754351] get_txpwr_max:txpwr_max:18 
+[   15.779539] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   15.780187] get_txpwr_max:txpwr_max:18 
+[   16.430139] dw-apb-uart 32120000.serial: forbid DMA for kernel console
+[   16.732531] hobot_gmac 35010000.horizon_tsn eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[   16.732581] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   20.379641] es8326 7-0018: Clock coefficients do not match
+[   20.732608] es8326 7-0018: Clock coefficients do not match
+[   20.762061] es8326 7-0018: Clock coefficients do not match
+[   21.090040] es8326 7-0018: Clock coefficients do not match
+[   21.119434] es8326 7-0018: Clock coefficients do not match
+[   22.356845] Bluetooth: RFCOMM TTY layer initialized
+[   22.356880] Bluetooth: RFCOMM socket layer initialized
+[   22.356909] Bluetooth: RFCOMM ver 1.11
+[   35.109964] FAT-fs (mmcblk1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   35.462849] using random self ethernet address
+[   35.462868] using random host ethernet address
+[   35.489879] Mass Storage Function, version: 2009/09/11
+[   35.489899] LUN: removable file: (no medium)
+[   35.505026] using random self ethernet address
+[   35.505045] using random host ethernet address
+[   35.618145] usb0: HOST MAC 7a:76:ad:8f:81:42
+[   35.618167] usb0: MAC be:74:11:da:c0:2e
+[   35.619042] usb1: HOST MAC a2:20:f4:d0:55:28
+[   35.619062] usb1: MAC 12:ee:dc:87:74:fa
+[  316.686385] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[  616.702013] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[  916.691255] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 1216.692136] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 1516.695077] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 1816.695851] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 1965.679163] usb 1-1.3: USB disconnect, device number 4
+[ 2000.038592] usb 1-1.3: new full-speed USB device number 9 using xhci-hcd
+[ 2000.193447] usb 1-1.3: New USB device found, idVendor=32c2, idProduct=0012, bcdDevice= 2.00
+[ 2000.193505] usb 1-1.3: New USB device strings: Mfr=2, Product=1, SerialNumber=0
+[ 2000.193539] usb 1-1.3: Product: 2.4G Wireless Receiver
+[ 2000.193567] usb 1-1.3: Manufacturer: HS6209
+[ 2000.271722] input: HS6209 2.4G Wireless Receiver as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.0/0003:32C2:0012.0004/input/input7
+[ 2000.341135] hid-generic 0003:32C2:0012.0004: input,hidraw0: USB HID v1.11 Keyboard [HS6209 2.4G Wireless Receiver] on usb-xhci-hcd.2.auto-1.3/input0
+[ 2000.350676] input: HS6209 2.4G Wireless Receiver as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0005/input/input8
+[ 2000.351545] input: HS6209 2.4G Wireless Receiver Mouse as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0005/input/input9
+[ 2000.353234] input: HS6209 2.4G Wireless Receiver Consumer Control as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0005/input/input10
+[ 2000.419361] input: HS6209 2.4G Wireless Receiver System Control as /devices/platform/soc/35000000.hsio_apb/35100000.usb3/35100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.3/1-1.3:1.1/0003:32C2:0012.0005/input/input11
+[ 2000.420656] hid-generic 0003:32C2:0012.0005: input,hiddev96,hidraw1: USB HID v1.11 Mouse [HS6209 2.4G Wireless Receiver] on usb-xhci-hcd.2.auto-1.3/input1
+[ 2116.705128] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 2416.699625] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 2716.702044] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 3016.708797] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 3316.695414] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 3616.700835] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 3761.781737] usb 2-1.1: USB disconnect, device number 3
+[ 3761.781792] usb 2-1.1.1: USB disconnect, device number 4
+[ 3761.849517] usb 1-1.1: USB disconnect, device number 3
+[ 3761.849542] usb 1-1.1.1: USB disconnect, device number 5
+[ 3761.849551] usb 1-1.1.1.1: USB disconnect, device number 6
+[ 3761.849560] usb 1-1.1.1.1.2: USB disconnect, device number 8
+[ 3765.471582] usb 2-1.1: new SuperSpeed USB device number 5 using xhci-hcd
+[ 3765.503460] usb 2-1.1: New USB device found, idVendor=2109, idProduct=0211, bcdDevice= 3.f4
+[ 3765.503519] usb 2-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 3765.503552] usb 2-1.1: Product: USB3.0 Hub             
+[ 3765.503580] usb 2-1.1: Manufacturer: VIA Labs, Inc.         
+[ 3765.528942] hub 2-1.1:1.0: USB hub found
+[ 3765.529213] hub 2-1.1:1.0: 1 port detected
+[ 3765.621248] usb 1-1.1: new high-speed USB device number 10 using xhci-hcd
+[ 3765.792814] usb 1-1.1: New USB device found, idVendor=2109, idProduct=2211, bcdDevice= 3.f4
+[ 3765.792838] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 3765.792845] usb 1-1.1: Product: USB2.0 Hub             
+[ 3765.792851] usb 1-1.1: Manufacturer: VIA Labs, Inc.         
+[ 3765.848923] hub 1-1.1:1.0: USB hub found
+[ 3765.849153] hub 1-1.1:1.0: 4 ports detected
+[ 3766.411375] usb 2-1.1.1: new SuperSpeed USB device number 6 using xhci-hcd
+[ 3766.443366] usb 2-1.1.1: New USB device found, idVendor=2109, idProduct=0211, bcdDevice= 3.f4
+[ 3766.443388] usb 2-1.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 3766.443395] usb 2-1.1.1: Product: USB3.0 Hub             
+[ 3766.443402] usb 2-1.1.1: Manufacturer: VIA Labs, Inc.         
+[ 3766.472587] hub 2-1.1.1:1.0: USB hub found
+[ 3766.472870] hub 2-1.1.1:1.0: 1 port detected
+[ 3766.961397] usb 1-1.1.1: new high-speed USB device number 11 using xhci-hcd
+[ 3767.143039] usb 1-1.1.1: New USB device found, idVendor=2109, idProduct=2211, bcdDevice= 3.f4
+[ 3767.143101] usb 1-1.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 3767.143136] usb 1-1.1.1: Product: USB2.0 Hub             
+[ 3767.143164] usb 1-1.1.1: Manufacturer: VIA Labs, Inc.         
+[ 3767.192750] hub 1-1.1.1:1.0: USB hub found
+[ 3767.193032] hub 1-1.1.1:1.0: 4 ports detected
+[ 3768.331307] usb 1-1.1.1.1: new high-speed USB device number 12 using xhci-hcd
+[ 3768.511617] usb 1-1.1.1.1: New USB device found, idVendor=0424, idProduct=2512, bcdDevice= b.b3
+[ 3768.511676] usb 1-1.1.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[ 3768.568653] hub 1-1.1.1.1:1.0: USB hub found
+[ 3768.568787] hub 1-1.1.1.1:1.0: 2 ports detected
+[ 3768.951291] usb 1-1.1.1.1.2: new full-speed USB device number 13 using xhci-hcd
+[ 3769.083273] usb 1-1.1.1.1.2: New USB device found, idVendor=2b03, idProduct=f881, bcdDevice= 3.09
+[ 3769.083337] usb 1-1.1.1.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 3769.083371] usb 1-1.1.1.1.2: Product: ZED-2i HID INTERFACE
+[ 3769.083400] usb 1-1.1.1.1.2: Manufacturer: STEREOLABS
+[ 3769.083427] usb 1-1.1.1.1.2: SerialNumber: 39153075
+[ 3769.181836] hid-generic 0003:2B03:F881.0006: hiddev97,hidraw2: USB HID v1.11 Device [STEREOLABS ZED-2i HID INTERFACE] on usb-xhci-hcd.2.auto-1.1.1.1.2/input0
+[ 3916.694761] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 4216.697936] done=1 retry_required=0 sw_retry_required=0 acknowledged=1
+[ 4318.337372] usb 1-1.1: USB disconnect, device number 10
+[ 4318.337401] usb 1-1.1.1: USB disconnect, device number 11
+[ 4318.337410] usb 1-1.1.1.1: USB disconnect, device number 12
+[ 4318.337419] usb 1-1.1.1.1.2: USB disconnect, device number 13
+[ 4318.399406] usb 2-1.1: USB disconnect, device number 5
+[ 4318.399429] usb 2-1.1.1: USB disconnect, device number 6
+[ 4323.119533] usb 2-1.2: new SuperSpeed USB device number 7 using xhci-hcd
+[ 4323.151572] usb 2-1.2: New USB device found, idVendor=2109, idProduct=0211, bcdDevice= 3.f4
+[ 4323.151631] usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 4323.151665] usb 2-1.2: Product: USB3.0 Hub             
+[ 4323.151693] usb 2-1.2: Manufacturer: VIA Labs, Inc.         
+[ 4323.184207] hub 2-1.2:1.0: USB hub found
+[ 4323.184308] hub 2-1.2:1.0: 1 port detected
+[ 4323.269112] usb 1-1.2: new high-speed USB device number 14 using xhci-hcd
+[ 4323.430679] usb 1-1.2: New USB device found, idVendor=2109, idProduct=2211, bcdDevice= 3.f4
+[ 4323.430740] usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 4323.430773] usb 1-1.2: Product: USB2.0 Hub             
+[ 4323.430801] usb 1-1.2: Manufacturer: VIA Labs, Inc.         
+[ 4323.488294] hub 1-1.2:1.0: USB hub found
+[ 4323.488575] hub 1-1.2:1.0: 4 ports detected
+[ 4324.059357] usb 2-1.2.1: new SuperSpeed USB device number 8 using xhci-hcd
+[ 4324.091357] usb 2-1.2.1: New USB device found, idVendor=2109, idProduct=0211, bcdDevice= 3.f4
+[ 4324.091415] usb 2-1.2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 4324.091449] usb 2-1.2.1: Product: USB3.0 Hub             
+[ 4324.091477] usb 2-1.2.1: Manufacturer: VIA Labs, Inc.         
+[ 4324.112609] hub 2-1.2.1:1.0: USB hub found
+[ 4324.112919] hub 2-1.2.1:1.0: 1 port detected
+[ 4324.599378] usb 1-1.2.1: new high-speed USB device number 15 using xhci-hcd
+[ 4324.780824] usb 1-1.2.1: New USB device found, idVendor=2109, idProduct=2211, bcdDevice= 3.f4
+[ 4324.780885] usb 1-1.2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 4324.780918] usb 1-1.2.1: Product: USB2.0 Hub             
+[ 4324.780946] usb 1-1.2.1: Manufacturer: VIA Labs, Inc.         
+[ 4324.832444] hub 1-1.2.1:1.0: USB hub found
+[ 4324.832705] hub 1-1.2.1:1.0: 4 ports detected
+[ 4325.949170] usb 1-1.2.1.1: new high-speed USB device number 16 using xhci-hcd
+[ 4326.129486] usb 1-1.2.1.1: New USB device found, idVendor=0424, idProduct=2512, bcdDevice= b.b3
+[ 4326.129544] usb 1-1.2.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[ 4326.176209] hub 1-1.2.1.1:1.0: USB hub found
+[ 4326.176348] hub 1-1.2.1.1:1.0: 2 ports detected
+[ 4326.559157] usb 1-1.2.1.1.2: new full-speed USB device number 17 using xhci-hcd
+[ 4326.691138] usb 1-1.2.1.1.2: New USB device found, idVendor=2b03, idProduct=f881, bcdDevice= 3.09
+[ 4326.691200] usb 1-1.2.1.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 4326.691233] usb 1-1.2.1.1.2: Product: ZED-2i HID INTERFACE
+[ 4326.691262] usb 1-1.2.1.1.2: Manufacturer: STEREOLABS
+[ 4326.691289] usb 1-1.2.1.1.2: SerialNumber: 39153075
+[ 4326.789344] hid-generic 0003:2B03:F881.0007: hiddev97,hidraw2: USB HID v1.11 Device [STEREOLABS ZED-2i HID INTERFACE] on usb-xhci-hcd.2.auto-1.2.1.1.2/input0
+[ 4329.011497] sdhci-dwcmshc 35020000.sdhci: All sample phases bad!
+[ 4329.017568] mmc1: tuning execution failed: -5
+[ 4339.693974] sdhci-dwcmshc 35020000.sdhci: All sample phases bad!
+[ 4339.700032] mmc1: tuning execution failed: -5
+[ 4350.376179] sdhci-dwcmshc 35020000.sdhci: All sample phases bad!
+[ 4350.382247] mmc1: tuning execution failed: -5
+[ 4351.219586] I/O error, dev mmcblk1, sector 20070400 op 0x1:(WRITE) flags 0x800 phys_seg 1 prio class 2
+[ 4351.228934] EXT4-fs warning (device mmcblk1p2): ext4_end_bio:343: I/O error 10 writing to inode 393629 starting block 2508800)
+[ 4351.228950] Buffer I/O error on device mmcblk1p2, logical block 2442240
+[ 4351.575347] I/O error, dev mmcblk1, sector 9204280 op 0x1:(WRITE) flags 0x9800 phys_seg 4 prio class 2
+[ 4351.584820] Aborting journal on device mmcblk1p2-8.
+[ 4351.589826] EXT4-fs error (device mmcblk1p2): ext4_journal_check_start:83: comm systemd-journal: Detected aborted journal
+[ 4351.590240] EXT4-fs error (device mmcblk1p2): ext4_journal_check_start:83: comm rs:main Q:Reg: Detected aborted journal
+[ 4351.599347] EXT4-fs error (device mmcblk1p2): ext4_journal_check_start:83: comm thunar-volman: Detected aborted journal
+[ 4351.753231] I/O error, dev mmcblk1, sector 42945824 op 0x1:(WRITE) flags 0x0 phys_seg 1 prio class 2
+[ 4351.762447] EXT4-fs warning (device mmcblk1p2): ext4_end_bio:343: I/O error 10 writing to inode 131981 starting block 5368228)
+[ 4351.762465] Buffer I/O error on device mmcblk1p2, logical block 5301668
+[ 4353.014903] I/O error, dev mmcblk1, sector 32406392 op 0x1:(WRITE) flags 0x0 phys_seg 2 prio class 2
+[ 4353.024101] EXT4-fs warning (device mmcblk1p2): ext4_end_bio:343: I/O error 10 writing to inode 347905 starting block 4050799)
+[ 4353.024118] Buffer I/O error on device mmcblk1p2, logical block 3984239
+[ 4353.030822] EXT4-fs warning (device mmcblk1p2): ext4_end_bio:343: I/O error 10 writing to inode 347905 starting block 4050800)
+[ 4353.030926] EXT4-fs error (device mmcblk1p2): ext4_journal_check_start:83: comm kworker/u16:3: Detected aborted journal
+[ 4353.192803] I/O error, dev mmcblk1, sector 32412728 op 0x1:(WRITE) flags 0x0 phys_seg 2 prio class 2
+[ 4353.202030] EXT4-fs warning (device mmcblk1p2): ext4_end_bio:343: I/O error 10 writing to inode 347906 starting block 4051591)
+[ 4353.202047] Buffer I/O error on device mmcblk1p2, logical block 3985031
+[ 4353.208717] EXT4-fs warning (device mmcblk1p2): ext4_end_bio:343: I/O error 10 writing to inode 347906 starting block 4051592)
+[ 4353.386726] I/O error, dev mmcblk1, sector 9183232 op 0x1:(WRITE) flags 0x9800 phys_seg 1 prio class 2
+[ 4353.396148] Buffer I/O error on dev mmcblk1p2, logical block 1081344, lost sync page write
+[ 4353.404514] JBD2: I/O error when updating journal superblock for mmcblk1p2-8.
+[ 4353.945936] I/O error, dev mmcblk1, sector 532480 op 0x1:(WRITE) flags 0x3800 phys_seg 1 prio class 2
+[ 4353.955251] Buffer I/O error on dev mmcblk1p2, logical block 0, lost sync page write
+[ 4353.963079] EXT4-fs (mmcblk1p2): I/O error while writing superblock
+[ 4353.963102] EXT4-fs (mmcblk1p2): previous I/O error to superblock detected
+[ 4353.969405] EXT4-fs (mmcblk1p2): Remounting filesystem read-only
+[ 4354.516156] I/O error, dev mmcblk1, sector 532480 op 0x1:(WRITE) flags 0x3800 phys_seg 1 prio class 2
+[ 4354.525457] Buffer I/O error on dev mmcblk1p2, logical block 0, lost sync page write
+[ 4354.533284] EXT4-fs (mmcblk1p2): I/O error while writing superblock
+[ 4354.533301] EXT4-fs (mmcblk1p2): previous I/O error to superblock detected
+[ 4355.080389] I/O error, dev mmcblk1, sector 532480 op 0x1:(WRITE) flags 0x3800 phys_seg 1 prio class 2
+[ 4355.089738] Buffer I/O error on dev mmcblk1p2, logical block 0, lost sync page write
+[ 4355.097513] EXT4-fs (mmcblk1p2): I/O error while writing superblock
+[ 4355.097534] EXT4-fs (mmcblk1p2): previous I/O error to superblock detected
+[ 4355.103853] EXT4-fs (mmcblk1p2): failed to convert unwritten extents to written extents -- potential data loss!  (inode 347905, error -30)
+[ 4355.123345] Buffer I/O error on device mmcblk1p2, logical block 3984240
+[ 4355.130082] EXT4-fs (mmcblk1p2): failed to convert unwritten extents to written extents -- potential data loss!  (inode 347906, error -30)
+[ 4355.142561] Buffer I/O error on device mmcblk1p2, logical block 3985032
+[ 4355.644695] I/O error, dev mmcblk1, sector 532480 op 0x1:(WRITE) flags 0x3800 phys_seg 1 prio class 2
+[ 4355.654015] Buffer I/O error on dev mmcblk1p2, logical block 0, lost sync page write
+[ 4355.661863] EXT4-fs (mmcblk1p2): I/O error while writing superblock
+[ 4395.750488] I/O error, dev mmcblk1, sector 4827864 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4395.934719] I/O error, dev mmcblk1, sector 4827865 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4396.118991] I/O error, dev mmcblk1, sector 4827866 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4396.303218] I/O error, dev mmcblk1, sector 4827867 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4396.487449] I/O error, dev mmcblk1, sector 4827868 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4396.671671] I/O error, dev mmcblk1, sector 4827869 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4396.855885] I/O error, dev mmcblk1, sector 4827870 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4397.040101] I/O error, dev mmcblk1, sector 4827871 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4397.049391] EXT4-fs error (device mmcblk1p2): __ext4_find_entry:1682: inode #182953: comm python3: reading directory lblock 0
+[ 4397.944586] I/O error, dev mmcblk1, sector 532480 op 0x1:(WRITE) flags 0x3800 phys_seg 1 prio class 2
+[ 4397.953870] Buffer I/O error on dev mmcblk1p2, logical block 0, lost sync page write
+[ 4397.961728] EXT4-fs (mmcblk1p2): I/O error while writing superblock
+[ 4398.294508] I/O error, dev mmcblk1, sector 4827864 op 0x0:(READ) flags 0x3000 phys_seg 1 prio class 2
+[ 4398.306233] EXT4-fs error (device mmcblk1p2): __ext4_find_entry:1682: inode #182953: comm python3: reading directory lblock 0
+[ 4516.710390] done=1 retry_required=0 sw_retry_required=0 acknowledged=1

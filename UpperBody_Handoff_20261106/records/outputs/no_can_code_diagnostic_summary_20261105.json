@@ -1,0 +1,33 @@
+{
+  "test_completed": true,
+  "boot_id_unchanged": true,
+  "gui_elapsed_s": 75.8,
+  "camera_phase_seconds": 65.8,
+  "camera_frames": 647,
+  "camera_alive": true,
+  "gui_visible": true,
+  "live_output": false,
+  "physical_motor_output": false,
+  "simulated_controller_active": true,
+  "can_socket_attempts": [],
+  "callback_errors": [],
+  "trace_error": "",
+  "storage_error": "",
+  "can_before": {
+    "can0": {
+      "tx_packets": 0,
+      "rx_packets": 0
+    }
+  },
+  "can_after": {
+    "can0": {
+      "tx_packets": 0,
+      "rx_packets": 0
+    }
+  },
+  "new_kernel_storage_or_oom_errors": [],
+  "root_after": [
+    "/dev/root / ext4 rw,relatime 0 0"
+  ],
+  "max_soc_temperature_c": 69.964
+}

@@ -1,0 +1,39 @@
+# Reference comparison profile, NOT validated for the user's DexHand payload.
+# Upstream run_teleop.py: kp=30, kd=2, torque_limit=2 in output-joint units.
+# With firmware gear=+1 and mechanical reduction N=15:
+# kp=30/N^2, kd=2/N^2, torque_limit=2/N (ideal lossless equivalence).
+# Lower torque cap than bhl_arms.yaml: support the arm during comparison.
+# Do not swap profiles while holding a suspended load.
+buses:
+  left: can0
+  right: can0
+control:
+  zero: start
+  control_rate_hz: 50.0
+  max_speed_deg: 5.0   # provisional slow bench comparison, not an upstream value
+  reply_timeout: 0.004
+  heartbeat_period: 0.2
+  health_timeout: 0.002
+defaults:
+  gear_ratio: 15.0
+  firmware_gear_ratio: 1.0
+  kp: 0.13333333333333333
+  kd: 0.008888888888888889
+  torque_limit: 0.13333333333333333
+payload:
+  name: DexHand V1 with wrist and bracket
+  mass_kg: null
+  com_from_mount_m: null
+  validated: false
+  note: Metadata only. No gravity feedforward is computed or transmitted.
+joints:
+  arm_left_shoulder_pitch_joint:  {bus: left,  device_id: 1,  direction: -1, lower_deg: -90.0, upper_deg: 45.0}
+  arm_left_shoulder_roll_joint:   {bus: left,  device_id: 3,  direction: -1, lower_deg: -15.0, upper_deg: 75.0}
+  arm_left_shoulder_yaw_joint:    {bus: left,  device_id: 5,  direction: 1,  lower_deg: -45.0, upper_deg: 45.0}
+  arm_left_elbow_pitch_joint:     {bus: left,  device_id: 7,  direction: 1,  lower_deg: 0.0, upper_deg: 90.0}
+  arm_left_elbow_roll_joint:      {bus: left,  device_id: 9,  direction: 1,  lower_deg: -45.0, upper_deg: 45.0}
+  arm_right_shoulder_pitch_joint: {bus: right, device_id: 2,  direction: 1,  lower_deg: -45.0, upper_deg: 90.0}
+  arm_right_shoulder_roll_joint:  {bus: right, device_id: 4,  direction: -1, lower_deg: -75.0, upper_deg: 15.0}
+  arm_right_shoulder_yaw_joint:   {bus: right, device_id: 6,  direction: 1,  lower_deg: -45.0, upper_deg: 45.0}
+  arm_right_elbow_pitch_joint:    {bus: right, device_id: 8,  direction: 1, lower_deg: -90.0, upper_deg: 0.0}
+  arm_right_elbow_roll_joint:     {bus: right, device_id: 10, direction: 1, lower_deg: -45.0, upper_deg: 45.0}

@@ -1,0 +1,52 @@
+{
+  "physical_trial_started": true,
+  "user_confirmed_physical_index_movement": true,
+  "channel": "can1",
+  "boot_id_unchanged": true,
+  "can_state_after": "ERROR-ACTIVE",
+  "can_error_counter_delta": {
+    "restarts": 0,
+    "bus_error": 0,
+    "arbitration_lost": 0,
+    "error_warning": 0,
+    "error_passive": 0,
+    "bus_off": 0
+  },
+  "final_state": "HOLD",
+  "stop_reason": "capture-to-trial age exceeded 350 ms cutoff",
+  "stop_age_s": 0.3601235179999094,
+  "active_seconds": 16.11008644104004,
+  "pose_sets_sent": 799,
+  "delivery_results": [
+    "SENT"
+  ],
+  "board_application_ack": false,
+  "actual_servo_position_measured": false,
+  "index_channels_one_based": [
+    7,
+    8,
+    9
+  ],
+  "index_command_us_ranges": {
+    "7": [
+      1592,
+      1750
+    ],
+    "8": [
+      700,
+      854
+    ],
+    "9": [
+      700,
+      722
+    ]
+  },
+  "other_fingers_target": "open",
+  "max_pull_fraction": 0.15,
+  "max_speed_fraction_s": 0.1,
+  "source_max_age_s": 0.35,
+  "physical_pwm_state": "HOLD requested, physical PWM not measured",
+  "auto_restart": false,
+  "raw_log": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/index_camera_physical_trial_20261105_retry2.jsonl",
+  "storage": "robot runtime in RAM; local source, bundle and logs preserved"
+}

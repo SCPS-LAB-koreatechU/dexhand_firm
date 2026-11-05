@@ -1,0 +1,6 @@
+# X5 Cortex-A55 / CPython 3.10. Validated by model inference, not import alone.
+mediapipe==0.10.18
+numpy==1.26.4
+opencv-contrib-python==4.10.0.84
+jax==0.4.38
+jaxlib==0.4.38

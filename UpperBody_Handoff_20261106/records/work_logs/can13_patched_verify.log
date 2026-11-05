@@ -1,0 +1,13 @@
+PASS: BoardConfig.h matches the selected profile
+PASS: both sketch(es) match shared sources and their own profiles
+PASS: SDK profiles match firmware profile source
+PASS: central and installed SDK documents match
+PASS: complete sets, duplicates, missing/out-of-order groups, limits, deadlines, sequence and timer wrap
+PASS: battery boot, immediate complete-pose output, frame filters, range rejection, controls, watchdog, CAN reset and output failure
+PASS: 17 cases (status per sequence, rejects, HOLD/OFF, ping, heartbeat, watchdog, drops)
+........................................................................ [ 36%]
+........................................................................ [ 72%]
+........................................................                 [100%]
+200 passed in 4.69s
+PASS: 76 Python sources parse on Python 3.10 syntax, package XML and current documentation links
+PASS: offline verification complete; no hardware accessed

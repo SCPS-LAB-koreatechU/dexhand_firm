@@ -1,0 +1,9 @@
+1. CAN 연결 확인: PONG·프로토콜·프로필 확인만 진행. 출력 시작하지 않음.
+2. 손 펼치기: 명시적으로 출력 시작 및 15개 모터 풀림 목표 전송.
+3. 슬라이더: 각 모터 목표%·PWM을 실시간 전송.
+연결 해제 / HOLD(Esc) 버튼 제공.
+목표PWM·전송명령PWM·마지막확인PWM은 µs이며 실제 위치 측정값이 아님.
+실제22~39ms ACK 기록을 근거로 GUI 응답대기50ms 설정. 응답 없음은 계속오류처리.
+UI/응답 통계 및 실패 단계 로그: /home/sunrise/bhl_logs/hand_gui/
+원본CAN 수신기록: /home/sunrise/bhl_logs/can_audit/
+실행: cd ~/humanoid_sdk/../dexhand_control && bash gui_hand.sh --hand right --channel can1

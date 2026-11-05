@@ -1,0 +1,82 @@
+{
+  "open": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020208.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 20208,
+      "captured_at": 6069.623518328,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 67.94434699986596
+      },
+      "published_at": 6069.695482149
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ]
+  },
+  "flexed": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020322.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 20322,
+      "captured_at": 6080.116032067,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 68.90510100038227
+      },
+      "published_at": 6080.189347226
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      825,
+      1750,
+      1750,
+      700,
+      700,
+      2000,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ]
+  }
+}

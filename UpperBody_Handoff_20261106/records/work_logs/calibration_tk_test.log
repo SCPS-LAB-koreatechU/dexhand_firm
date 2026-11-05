@@ -1,0 +1,1 @@
+PASS: calibration popup, labels/GPIO32-25, hold before calibration, explicit resume without open, selected TIP only, out-of-range guard, draft isolated/save, close HOLD, reconnect has zero pose sets; simulated only

@@ -1,0 +1,20 @@
+{
+  "ssh": "connected",
+  "release": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_camera_retarget",
+  "active_sdk": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_thumbfix2/humanoid_sdk-main",
+  "can_interfaces": [
+    "can0"
+  ],
+  "video_devices": [],
+  "profile_tag": "79610de6",
+  "feedback": false,
+  "file_sha256": {
+    "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/hand_tracking_gui.py": "df72d5339fbc355c4d3410ed9c784783287559588c07747fb1acfa4db879b2cb",
+    "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/hand_retarget.py": "063e8b99febeec2cea07976eba90899b03cad922f0b3627f57e337015f76e38b",
+    "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_camera.yaml": "216ee63cc6b29b9424c5dfba7ec93935cb18390c6822a45f45ef8c5b0d4dc8c1",
+    "dexhand_control/setup_hand_camera.sh": "df217f5f6068940e1b2f7f4e5ffb8cbb6c5f9bd642d319f460d3b9d8e7d3d948",
+    "dexhand_control/tools/check_hand_model.py": "1176f112825ec84cea08885bd62b9cbe7802ecccffbd1f7decde8d9598da5629",
+    "dexhand_control/requirements_camera_rdk_x5.txt": "6c051375d030c8da0444e17d27f011a7be2e551fb62cab6ff6258b494256e3a5"
+  },
+  "unchanged_old_environment_mediapipe": "1.2.2"
+}

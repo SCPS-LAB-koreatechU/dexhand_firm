@@ -1,0 +1,53 @@
+{
+  "socket_open_only": {
+    "passed": true,
+    "seconds": 5.030314913000041,
+    "tx_packets": 0
+  },
+  "one_query": {
+    "board_boot_unchanged": true,
+    "state": "ERROR-PASSIVE",
+    "errors": [
+      {
+        "id": "0x4",
+        "data": "0030000000000000",
+        "error": true
+      }
+    ]
+  },
+  "ucan_internal_loopback": {
+    "supported": true,
+    "received": {
+      "id": "0x23d",
+      "data": "ca",
+      "error": false
+    },
+    "state": "ERROR-ACTIVE"
+  },
+  "confirmed_by_user": {
+    "servo_power_connected": true,
+    "esp32_can_pins": "GPIO1 TX0 / GPIO3 RX0, wiring unchanged",
+    "firmware_upload": "receive-only PWM-task version"
+  },
+  "firmware_source_checked": {
+    "tx_gpio": 1,
+    "rx_gpio": 3,
+    "bitrate": 1000000,
+    "twai_mode": "NORMAL"
+  },
+  "actual_motor_control_frames_sent": null,
+  "follow_trial_started": true,
+  "current_bus": "can1 UP / ERROR-ACTIVE",
+  "pending": null,
+  "physical_index_movement_confirmed_by_user": true,
+  "motor_control_frames_sent": true,
+  "result_artifact": "outputs/index_camera_trial_result_20261105.json",
+  "can_error_counter_delta_after_reset": {
+    "restarts": 0,
+    "bus_error": 0,
+    "arbitration_lost": 0,
+    "error_warning": 0,
+    "error_passive": 0,
+    "bus_off": 0
+  }
+}

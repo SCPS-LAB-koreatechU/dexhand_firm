@@ -1,0 +1,1 @@
+PASS: isolated ROS visualization publishes 21 estimated joints, explicit estimate metadata, and prefixed model transforms. CAN never opened.

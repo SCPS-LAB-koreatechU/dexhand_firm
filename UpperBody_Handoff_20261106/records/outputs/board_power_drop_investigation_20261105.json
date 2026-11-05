@@ -1,0 +1,9 @@
+{
+  "remote_can_access_stopped": true,
+  "automatic_ssh_backup_retries_stopped": [
+    2454081
+  ],
+  "user_reports_battery_not_connected": true,
+  "motor_enable_or_pose_frames_sent": 0,
+  "next_step": "isolate boot and USB-CAN connection without adding motor power"
+}

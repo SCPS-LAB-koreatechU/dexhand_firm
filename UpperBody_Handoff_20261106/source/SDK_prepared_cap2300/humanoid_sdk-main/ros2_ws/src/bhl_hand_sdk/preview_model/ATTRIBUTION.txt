@@ -1,0 +1,3 @@
+DexHand v2 description/meshes from the existing local dexhandv2_description package. Original maintainer: Trent Shumay, IoT Design Shop. Assets license CC BY-NC-SA 4.0; see LICENSE.
+Original: ~/Desktop/dexhand_moveit_ws/src/dexhandv2_description
+This separate preview model prefixes links to avoid TF collisions and removes mimic declarations so estimated calibrated joint combinations can be displayed. It is not a dynamics/contact simulation or measured state.

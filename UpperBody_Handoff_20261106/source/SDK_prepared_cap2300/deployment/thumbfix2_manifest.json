@@ -1,0 +1,63 @@
+{
+  "date_kst": "2026-11-05",
+  "previous_release": "UpperBody_SDK_0.2.0_20261105_calibration",
+  "profile_tag": "79610de6",
+  "thumb": [
+    {
+      "channel": 13,
+      "gpio": 13,
+      "name": "엄지 왼쪽 당김",
+      "open_us": 2100,
+      "close_us": 700
+    },
+    {
+      "channel": 14,
+      "gpio": 14,
+      "name": "엄지 끝",
+      "open_us": 700,
+      "close_us": 1900
+    },
+    {
+      "channel": 15,
+      "gpio": 18,
+      "name": "엄지 오른쪽 당김",
+      "open_us": 2300,
+      "close_us": 700
+    }
+  ],
+  "pins_changed": false,
+  "first_twelve_channels_changed": false,
+  "thumb_calibration_ui": false,
+  "firmware_uploaded": false,
+  "physical_motion_by_agent": false,
+  "activated_utc": "20261104_161608_UTC",
+  "previous_sdk": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_calibration/humanoid_sdk-main",
+  "rollback_link": "/home/sunrise/humanoid_sdk.link_before_thumbfix2_20261104_161608_UTC",
+  "validation": {
+    "server_sdk": "190 passed",
+    "local_pc_sender": "17 passed",
+    "simulated_tk": "passed"
+  },
+  "gui_pid": 254026,
+  "gui_start": "read-only CAN check only; no ARM/OPEN/POSE",
+  "user_confirmed_endpoint_pair_move": true,
+  "observed_gui": {
+    "connected": false,
+    "active": false,
+    "error": "connect · PROFILE_MISMATCH: 보드=b09f98b0, SDK=79610de6 · 같은 보정 JSON을 반영한 펌웨어가 필요합니다",
+    "profile_tag": "79610de6",
+    "trace_path": "/home/sunrise/bhl_logs/hand_gui/20261105_011609_447299.jsonl"
+  },
+  "firmware_update_required": true,
+  "thumb_calibration_removed": true,
+  "pinky_diagnostics": {
+    "gui_speed_override_removed": true,
+    "sdk_max_speed_fraction_s": 2.0,
+    "full_range_command_duration_s": 0.5,
+    "warm_open_rearm_removed": true,
+    "host_and_firmware_telemetry_added": true,
+    "server_sdk_tests": "194 passed",
+    "physical_pinky_specific_cause": "not yet established; requires shaft/hand observation",
+    "motor_motion_by_agent": false
+  }
+}

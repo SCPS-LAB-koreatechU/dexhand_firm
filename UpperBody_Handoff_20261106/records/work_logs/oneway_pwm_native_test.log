@@ -1,0 +1,1 @@
+PASS: CAN receive 0.001ms while PWM is blocked; HOLD cancels pending/in-flight remainder; stale goal never replays; latest-only mailbox; explicit resume

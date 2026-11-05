@@ -1,0 +1,244 @@
+{
+  "hardware_max_us": 2300,
+  "before_tag": "79610de6",
+  "after_tag": "bdad07a4",
+  "motors": [
+    {
+      "id": 1,
+      "name": "소지 위",
+      "calibration_motor_id": 7,
+      "gpio": 19,
+      "open_us": 850,
+      "close_us": 1775
+    },
+    {
+      "id": 2,
+      "name": "소지 아래",
+      "calibration_motor_id": 8,
+      "gpio": 21,
+      "open_us": 1700,
+      "close_us": 800
+    },
+    {
+      "id": 3,
+      "name": "약지 위",
+      "calibration_motor_id": 5,
+      "gpio": 23,
+      "open_us": 850,
+      "close_us": 1725
+    },
+    {
+      "id": 4,
+      "name": "약지 아래",
+      "calibration_motor_id": 6,
+      "gpio": 26,
+      "open_us": 1700,
+      "close_us": 800
+    },
+    {
+      "id": 5,
+      "name": "중지 위",
+      "calibration_motor_id": 3,
+      "gpio": 33,
+      "open_us": 1750,
+      "close_us": 825
+    },
+    {
+      "id": 6,
+      "name": "중지 아래",
+      "calibration_motor_id": 4,
+      "gpio": 22,
+      "open_us": 850,
+      "close_us": 1750
+    },
+    {
+      "id": 7,
+      "name": "검지 위",
+      "calibration_motor_id": 1,
+      "gpio": 32,
+      "open_us": 1750,
+      "close_us": 700
+    },
+    {
+      "id": 8,
+      "name": "검지 아래",
+      "calibration_motor_id": 2,
+      "gpio": 25,
+      "open_us": 700,
+      "close_us": 1725
+    },
+    {
+      "id": 9,
+      "name": "검지 끝",
+      "gpio": 16,
+      "open_us": 700,
+      "close_us": 2100
+    },
+    {
+      "id": 10,
+      "name": "중지 끝",
+      "gpio": 17,
+      "open_us": 700,
+      "close_us": 2000
+    },
+    {
+      "id": 11,
+      "name": "약지 끝",
+      "gpio": 4,
+      "open_us": 2000,
+      "close_us": 750
+    },
+    {
+      "id": 12,
+      "name": "소지 끝",
+      "gpio": 27,
+      "open_us": 2000,
+      "close_us": 800
+    },
+    {
+      "id": 13,
+      "name": "엄지 왼쪽 당김",
+      "gpio": 13,
+      "open_us": 2100,
+      "close_us": 700
+    },
+    {
+      "id": 14,
+      "name": "엄지 끝",
+      "gpio": 14,
+      "open_us": 700,
+      "close_us": 1900
+    },
+    {
+      "id": 15,
+      "name": "엄지 오른쪽 당김",
+      "gpio": 18,
+      "open_us": 2300,
+      "close_us": 700
+    }
+  ],
+  "files": [
+    {
+      "path": "dexhand_control/firmware/DexHandRight/BoardConfig.h",
+      "sha256": "9aec75546fef02cfbcfb3560b130b87209b2f3d54177b5309798275162e2e373",
+      "before_sha256": "fa804fa67365d562c101b43b7cb23cda35deb837f711bc73ea439c63d3482815"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/DexHandRight.ino",
+      "sha256": "7499f1a010d62b6933476d9be7b2c04a0ca7786da3e762423fb204baa084b6c6",
+      "before_sha256": "7499f1a010d62b6933476d9be7b2c04a0ca7786da3e762423fb204baa084b6c6"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/HandController.h",
+      "sha256": "7937cf9a02867ba68843a0788203f752f42161d48afa1be0761f2fb2fcb3f7b4",
+      "before_sha256": "7937cf9a02867ba68843a0788203f752f42161d48afa1be0761f2fb2fcb3f7b4"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/LatestPoseMailbox.h",
+      "sha256": "5451bab17c814d31486831febdfc421177b3858df81cbec4046d91e9cf350951",
+      "before_sha256": "5451bab17c814d31486831febdfc421177b3858df81cbec4046d91e9cf350951"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/PoseReceiver.h",
+      "sha256": "7168f2f71f080072b18da9ae3cb771cf29dbe53d54e26d40ab604786b8b984bf",
+      "before_sha256": "7168f2f71f080072b18da9ae3cb771cf29dbe53d54e26d40ab604786b8b984bf"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/SDK_설정값.md",
+      "sha256": "2890ef19287015ac11da1e1df10e376328529fa9ba53e195dfcd44b300e5ad6f",
+      "before_sha256": "e8170ddba0e41450fd493cede23489afb6c39640e65990e021b571252c2127bf"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/ServoOutput.h",
+      "sha256": "d1d10afc063774978b8c9e2cc87a0e8b4e7438db890a6e16655769a8abdaea0f",
+      "before_sha256": "d1d10afc063774978b8c9e2cc87a0e8b4e7438db890a6e16655769a8abdaea0f"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/StatusReport.h",
+      "sha256": "3c8c352c6895a8a26c6f546540b488c25eb65825607ccf7322f31d0698dc0f0d",
+      "before_sha256": "3c8c352c6895a8a26c6f546540b488c25eb65825607ccf7322f31d0698dc0f0d"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/calibration.json",
+      "sha256": "f7ce50935eb087a1d40a8bf0bdffd2da796663bc4281fc87c7d45b390a20c1a3",
+      "before_sha256": "2643df6e8640eefee8082701a957e1e15e1920d226a4d49ee7b3b5d9ba9e9253"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/update_config.py",
+      "sha256": "c1bc8278f2cf3cae8051d4e750a28332c04f5ed0db40fefae23a1c30e63f81d9",
+      "before_sha256": "72a0ea80d2e50bc73ef3ee0567a1bb66d0cba3c4131b0e9b5f3e9b8a3cd6c174"
+    },
+    {
+      "path": "dexhand_control/firmware/DexHandRight/엄지_재캘리브레이션.md",
+      "sha256": "4572cc88ec97dcde36761bff1be57845bf9e0cd5ffd2546dde19474ec59e740d",
+      "before_sha256": "4572cc88ec97dcde36761bff1be57845bf9e0cd5ffd2546dde19474ec59e740d"
+    },
+    {
+      "path": "dexhand_control/pc/hand_can.py",
+      "sha256": "e6d228ca9af72cfe43cefd76b43357b7ee5a1096c0fd23ad9ffa37c91d310943",
+      "before_sha256": "1f03627fcc36cc206b6a0cb04c92dd69592d4e740d3272ff864ff9b9500dac69"
+    },
+    {
+      "path": "dexhand_control/profiles/right_hand.json",
+      "sha256": "f7ce50935eb087a1d40a8bf0bdffd2da796663bc4281fc87c7d45b390a20c1a3",
+      "before_sha256": "2643df6e8640eefee8082701a957e1e15e1920d226a4d49ee7b3b5d9ba9e9253"
+    },
+    {
+      "path": "dexhand_control/tests/right_hardware_bounds_test.cpp",
+      "sha256": "256c9345e12974381d18f67bb19d2a09449397164be2efffda71a64e40431c9e",
+      "before_sha256": null
+    },
+    {
+      "path": "dexhand_control/tests/test_hand_can.py",
+      "sha256": "522f1c605fdb1c5ba95fbd6d3f85b3c0792a45f69f04237e635ba85f99da5710",
+      "before_sha256": "d6cff3aeb78e401208cc6c0dd4144fa0a19fd18ac7b55765d38e45283aa3319a"
+    },
+    {
+      "path": "dexhand_control/tools/generate_board_config.py",
+      "sha256": "2aedad616c59f110fcc6a47b04a089449947ad67469c47e668999254d79c10a4",
+      "before_sha256": "b79d1b62659725a4fd8d529d57dfcd277e77b81f9e97e0265ee96d20ccab7003"
+    },
+    {
+      "path": "dexhand_control/tools/generate_sdk_config.py",
+      "sha256": "80291b7cf8269726aea1de3ae41670e7301a6e184f2e61a4e7fea922bf332623",
+      "before_sha256": "0b15f2f257bfbc6c7b7accd3e677782f76506f58cd6bc9643a8b23d0bdd42638"
+    },
+    {
+      "path": "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/config.py",
+      "sha256": "9520ff7e01ff61c0c4cee55c8868e5ff0c7b41674f6582b1656e75a7a83a2e80",
+      "before_sha256": "e26bc1dbced86fd27f7a54b64bca1dd734600189a9124e8270c46f5f3a0f746f"
+    },
+    {
+      "path": "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand.yaml",
+      "sha256": "5e3af8b43aa1ec08636714772d9bfa666b78306b294180754838aa54b09cf4b6",
+      "before_sha256": "384212ae124f3558c087218e6ba695152d022f607045e914818382d55e78cb1f"
+    },
+    {
+      "path": "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_camera.yaml",
+      "sha256": "4d28f73e093d93989272a0a448c8bdf45d06cc7b875bc2b919468193bc45276c",
+      "before_sha256": "cb577dcf8f4f96609bf17f013f55d9d9f70ab940603daa081ccfaaddf5ff1a3f"
+    },
+    {
+      "path": "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_oneway.yaml",
+      "sha256": "15fca89583da67797e964e9b1c8f7896d9b4713ff1e9abfe8e4de55c52b62923",
+      "before_sha256": "04bb6a76411f4bf05342b6132794c31e1d2033bb41e799e793127b5250ca2ac4"
+    },
+    {
+      "path": "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hardware_ceiling.py",
+      "sha256": "b19e2cf6ad62279ba604f7efc1ecf901f9ef70c64d2372d1b370080152eb1711",
+      "before_sha256": null
+    },
+    {
+      "path": "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_oneway.py",
+      "sha256": "2cf745a9918e85e9ca42952391e1fab4b5f3e29745bc7b70f33704eca0d4711f",
+      "before_sha256": "ab7c38592c2e4f47a483be39bac69d43d9e9ffb26b4514933da63deaa483562f"
+    },
+    {
+      "path": "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_rightfix1.py",
+      "sha256": "6f1fe9fb623a792a78ee02ea07a2be1fc065b76d1ad81dbf2295dad9cbcc282b",
+      "before_sha256": "f2318130ab8f6c6b0e1989fecfb4736f395d86ef5191d35796f7c2dd899c2d87"
+    }
+  ],
+  "live_esp32_flashed": false,
+  "live_ram_sdk_activated": false
+}

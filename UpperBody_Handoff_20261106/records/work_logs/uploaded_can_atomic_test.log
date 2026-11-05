@@ -1,0 +1,1 @@
+PASS: actual uploaded receiver applies all 15 only after 5 groups; delayed/missing group holds all; deadline rejects; next sequence recovers; failed ACK enqueue does not delay PWM

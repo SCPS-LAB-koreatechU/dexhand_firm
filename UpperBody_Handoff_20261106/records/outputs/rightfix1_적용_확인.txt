@@ -1,0 +1,48 @@
+rightfix1 SDK 적용 확인
+
+변경 기준: /home/scps-ubuntu1/Downloads/SDK_수정안내_rightfix1.md 한 파일.
+문서의 변경값만 적용하고 이전 채팅의 추측값은 사용하지 않음.
+로컬 작업 폴더: /home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261104_rightfix1
+로봇 활성 SDK: /home/sunrise/humanoid_sdk
+실제 경로: /home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_rightfix1/humanoid_sdk-main
+이전 can13 릴리스 보존, 실행 링크 백업: ~/humanoid_sdk.link_before_rightfix1_시각
+
+오른손 적용:
+CAN3 약지 위 GPIO23: 풀림850 → 당김1725 µs
+CAN4 약지 아래 GPIO26: 풀림1700 → 당김800 µs
+CAN7 검지 위 GPIO32, CAN8 검지 아래 GPIO25 유지.
+CAN13 GPIO13 = 엄지 왼쪽 당김 (2300→700)
+CAN14 GPIO14 = 엄지 끝 (2100→700)
+CAN15 GPIO18 = 엄지 오른쪽 당김 (700→1900)
+GPIO 순서/배선 변경 없음. 엄지는 이름/의미만 수정, GPIO별 끝점 유지.
+오른손 대항 쌍13·15, 왼손13·14 유지. 오른손14번 끝 모터를 좌우 제한에 넣지 않음.
+각 컨트롤러의 config를 deepcopy하여 공통 설정/왼손/다른 인스턴스에 변경이 전파되지 않음.
+공통 grip 템플릿 [오른쪽,왼쪽,끝] → 오른손에서 [왼쪽,끝,오른쪽] 한 번만 변환.
+set_goal / raw CAN / ROS 목표 배열은 실제 CAN 순서 유지, 중복 변환 없음.
+통합 계약 검증과 HandAdapter에도 손별 제한 적용.
+오른손 API 채널 이름: thumb_pull_left, thumb_tip, thumb_pull_right.
+
+해시와 실물 읽기:
+수정 JSON 전체 canonical SHA256의 앞8자리가 문서의 b09f98b0와 정확히 일치.
+오른손 보드에서 실제 PONG node61/protocol3/profile=b09f98b0 확인.
+왼손 JSON은 바이트 단위 동일, profile a5b23746 유지.
+로봇의 기존 CAN 인터페이스/팔 설정/손 control/왼손 값 유지.
+펌웨어 업로드 및 손 구동은 에이전트가 실행하지 않음.
+
+검수:
+기존 테스트의 오른손13·14 가정을13·15로 수정하고, 끝 모터 독립 동작·왼손 유지·설정 격리·한 번만 grip 변환·raw/adapter/통합 계약 검증·프로필 해시 검사를 추가.
+전체 SDK 테스트185개 통과. 실제 Tk 모의 GUI에서 연결/출력 분리, 약지 값·엄지 이름, 슬라이더, 펼침, HOLD, 오류 잠금 확인.
+로봇 PC 4패키지 빌드 및185개 테스트 통과. 실제 ROS 통합 dry_run 목표 수락/응답 연관/TTL HOLD 검증 통과.
+실제 약지·엄지의 물리적 방향/장력은 이번 작업에서 구동 검사하지 않음.
+
+펌웨어 내보내기 주의:
+문서에 명시된 DexHand_Firmware_20261104_rightfix1.zip은 Downloads에서 찾지 못함.
+기존 firmware/ 폴더는 can13 템플릿이며 rightfix1 펌웨어가 아님. 그 파일로 재업로드하지 말 것.
+이미 사용자가 업로드한 rightfix1 펌웨어를 SDK가 새 태그로 정상 확인함.
+구형 템플릿에서 잘못된13·14 제한의 펌웨어를 내보내지 않도록 캘리브레이션 내보내기를 명시적으로 차단함. 실제 rightfix1 펌웨어 원본을 반영한 뒤 내보내기 복구 필요.
+기존 펌웨어 전체 verify.py는 구형 템플릿과 새 프로필 불일치로 이번 SDK 검수 기준으로 사용하지 않음. 실제 펌웨어 검사는 원본 ZIP이 필요.
+
+GUI 실행:
+cd ~/humanoid_sdk/../dexhand_control
+bash gui_hand.sh --hand right --channel can1
+CAN 연결 확인은 출력 시작과 분리되어 있음. 실제 움직임은 사용자가 손 펼치기/슬라이더로 명시적으로 실행.

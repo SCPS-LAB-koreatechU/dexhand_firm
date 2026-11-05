@@ -1,0 +1,71 @@
+팔 위치 유지 개선 — 2026-11-02 (Asia/Seoul)
+
+서버: sunrise@172.18.49.21
+적용 경로: /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk
+원본 백업: /home/sunrise/humanoid_sdk/backups/arm_hold_20261102T081306Z/before_source_install.tgz
+사용자의 기존 env.sh 등 변경은 보존했으며 git commit/push는 하지 않았다.
+
+1. 확인된 사실
+
+과거 로그에서 20도 추종 오차를 이유로 전체 관절을 DAMPING으로 바꾼 실제 기록을 찾았다.
+- /home/sunrise/.ros/log/python3_7152_1793192890420.log
+  오른 어깨 yaw: 측정 +0.1도, 명령 +20.3도, 전체 정지. 유사 사건 반복.
+  오른 팔꿈치 pitch: 측정 -55.7도, 명령 -75.7도, 전체 정지.
+- /home/sunrise/bhl_logs/ros_all_1647/python3_36419_1793263647689.log
+  오른 팔꿈치 pitch: 측정 +10.1도, 명령 -9.9도, 전체 정지.
+
+이것은 힘이 풀리는 소프트웨어 경로의 실물 기록이다. 최초 추종 실패를 일으킨 하중 부족, 진동, 보드 오류 또는 기계적 문제를 확정하는 기록은 아니다.
+
+현재 연결 설정 오류도 확인했다. 기존 기본 프로필은 양팔 모두 내장 can0을 사용했으나 can0은 ERROR-PASSIVE이고 수신이 없었다. 사용자가 실제 어댑터를 left로 확인하여 can_left로 수정했다. 이 오류는 최근 NO_REPLY를 설명하지만, 과거 움직임 중 고장의 원인이라고 단정하지 않는다.
+
+읽기 전용으로 실제 조회한 결과:
+왼팔 ID 1,3,5,7,9: firmware 0x20250226, MODE IDLE, ERROR 0, board gear ratio +1, current_limit 20A, bus voltage 약 23.7~24.0V.
+오른팔 ID 2,4,6,8,10: 이 버스에서 NO_REPLY. 오른팔의 전류 설정이나 모드를 확인한 것이 아니다.
+20A는 dq 상전류 설정이며 배터리/BMS/전원공급기 전류 상한과 다르다. 전류 설정은 변경하지 않았다.
+
+2. 적용한 개선
+
+- can_left 매핑 수정. 기본 속도 10도/s, 가속도 30도/s^2로 출발·감속 완화.
+- 측정 대비 명령이 5도 앞서면 추가 진행을 기다림. 기존 위치 지령을 떨어지는 측정값 쪽으로 낮추지 않음. 명령이 정상적으로 따라오면 진행 재개.
+- 목표 도달 후 PDO 위치 지령 계속 전송. arm_sequence 기본 동작도 목표 유지로 변경; 원점 복귀/출력 해제는 명시적 --release에서만 수행.
+- enable 전 펌웨어·보드 기어비·오류·전류 상한·Kt·전압·게인 점검. 게인 쓰기 후 읽기 비교, POSITION 명령 후 실제 MODE 확인.
+- MODE/ERROR 주기 조회. MODE_LOST는 자동 재활성화하지 않고, 이 사유만으로 다른 정상 관절까지 해제하지 않음.
+- Iq 측정/지령, 토크 추정/지령, 전압, 상한 근접 플래그, 개별 값 경과시간, 목표/명령/측정 각도, 오류, 주기 및 이벤트를 JSONL에 기록.
+- 로그는 비동기로 저장. 100MB x 최대 10파일/세션으로 회전하며 오래된 회전분은 삭제한다. 다른 세션 로그는 지우지 않는다. log_dropped/log_error 표시.
+- SDO는 버스별 하나의 요청만 유지. 짧은 지연은 기존 요청의 응답을 추적하고 다른 레지스터로 해석하지 않음. 100ms 무응답/경쟁 요청/모호한 응답은 추가 SDO 조회 차단 및 경고. 해당 경고만으로 위치 출력을 해제하지 않음.
+- inspect 서비스는 읽기 전용. 어떤 관절도 활성화하지 않고 MODE·게인·Flash를 쓰지 않음. 읽기 전용 점검 후 종료도 다른 모터에 IDLE을 보내지 않음.
+- 관절 범위·토크/전류 상한·기존 TRACKING/RANGE/LOST/비상정지 보호는 유지. 제한 전체 해제는 하지 않음. 기존 모터별 Kp/Kd/torque_limit은 자동 증폭하지 않음.
+
+3. 검증 결과와 한계
+
+서버 회귀 테스트 48개 통과. 기존 17개 포함.
+서버 colcon build 성공.
+분리한 ROS 도메인 193의 dry_run에서 arm_sequence 기본 유지, --release 복귀/해제, 상태·이벤트 로그 생성 확인.
+실제 can_left 읽기 전용 90초 점검: 4469 주기, 최대 조회 처리 5.76ms, 임시 조회 경고 0건, 로그 누락 0건, 로그 오류 없음. 5모터 모두 IDLE 유지, Iq/토크/전압 값과 경과시간 갱신 확인.
+기본 샘플 기록은 10Hz. SDO 항목은 순환 측정하며 10모터/50Hz에서 각 MODE/ERROR 약0.4초, 각 전류/토크/전압 약1.25초 간격이다. 실제 지연에 따라 달라지고 고속 과도현상을 모두 측정하는 계측기는 아니다.
+토크 값은 Kt와 전류로 계산한 추정값이며 기계 출력 토크 센서 값이 아니다. ideal_joint_torque_estimate는 감속기 효율·미끄러짐을 반영하지 않는다.
+실물 모터 enable/목표 이동은 수행하지 않았다. 하중을 지탱하는 능력과 드르륵거림의 개선 여부는 아직 실물 검증 전이다.
+
+4. 현재 실행 상태 및 다음 검증
+
+이번에 시작했던 서버 실물 모니터는 출력 off 확인 후 종료했다. 별도의 기존 arm_controller 발행자가 도메인92에 남아 있었다. 실물 실행 전 중복 컨트롤러를 종료해야 한다.
+다음 실물 검증은 현장 팔 받침과 즉시 정지 준비가 확인된 경우에만 ID3 하나, 최대3도·2도/s 이동 및10초 유지로 제한하여 진행한다. 전용 bhl_left_shoulder_hold_test.yaml은 다른 관절을 enabled:false로 지정했다. 이 프로필은 아직 실물로 구동하지 않았다.
+
+5. 로그 위치
+
+서버 기본 로그 디렉터리: /home/sunrise/bhl_logs/arm_telemetry/
+90초 읽기 전용 기록: /home/sunrise/bhl_logs/arm_telemetry/arm_20261102T081959.137665Z.jsonl
+초기 설치본 모니터 기록(2ms 일시 지연 관찰 포함): /home/sunrise/bhl_logs/arm_telemetry/arm_20261102T081450.825710Z.jsonl
+이 첨부의 arm-current-torque-log.jsonl.gz는 90초 기록의 압축 복사본이다.
+
+6. 참고 원본
+
+Main 984741a3623c93b0583ccfdc479f1f8b1c4d900e
+https://github.com/HybridRobotics/Berkeley-Humanoid-Lite
+Lowlevel 652777cc7c49884e7cd7ddfada758dc1979bf627
+https://github.com/HybridRobotics/Berkeley-Humanoid-Lite-Lowlevel
+Firmware 3571ab60a05951561abbab2e27c816b67b315bb0
+https://github.com/T-K-233/Recoil-Motor-Controller-BESC
+https://berkeley-humanoid-lite.gitbook.io/docs/in-depth-contents/can-communication
+
+측정 확장 후 최종 변경: 전체 내용은 함께 제공한 실물 실행과 측정 확인.txt 참조. 엔코더/전류/전압/제어 내부값 등68항목, 전기적 보정 테이블128개, CAN 원본, 매 제어 주기 각도 및 arm_log 뷰어·CSV 기능을 추가했다. env.sh에는 기존 사용자 변경을 보존하면서 description 경로 fallback만 추가하고 별도 백업했다. 최신 점검에서 ID7이 미응답으로 바뀌었으며 나머지4모터는 응답한다. 실제 구동은 수행하지 않았다.

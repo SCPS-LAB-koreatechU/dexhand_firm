@@ -1,0 +1,5 @@
+CALIBRATION_SAMPLES 11 ages [0.629, 0.527, 0.495, 0.465, 0.403, 0.356, 0.3, 0.237, 0.168, 0.1, 0.061]
+Traceback (most recent call last):
+  File "/home/sunrise/upperbody_releases/test_camera_retarget_gui_robot.py", line 30, in <module>
+    assert len(a.model.anchors)==5*(1+('펴기','중간','접기').index(name)),a.note.get()
+AssertionError: 같은 손 자세를 약 0.5초 이상 유지하세요

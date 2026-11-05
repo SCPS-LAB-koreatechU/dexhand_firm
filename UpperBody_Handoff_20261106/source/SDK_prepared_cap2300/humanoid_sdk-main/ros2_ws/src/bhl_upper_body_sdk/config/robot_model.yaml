@@ -1,0 +1,14 @@
+# Fill with measured values. No gravity torque is generated from this file yet.
+# COM is a 3-vector in metres in the explicitly named mounting frame.
+urdf: null
+payloads:
+  left:
+    mass_kg: null
+    com_m: null
+    mount_frame: null
+    verified: false
+  right:
+    mass_kg: null
+    com_m: null
+    mount_frame: null
+    verified: false

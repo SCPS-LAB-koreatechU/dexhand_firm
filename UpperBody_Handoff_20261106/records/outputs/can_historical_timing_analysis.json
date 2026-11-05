@@ -1,0 +1,95 @@
+{
+  "capture": "/home/sunrise/bhl_logs/can_audit/20261104_231923.jsonl",
+  "frames": 45808,
+  "matched_sets": 7236,
+  "five_frame_span": {
+    "n": 7236,
+    "min_ms": 0.281,
+    "median_ms": 1.42,
+    "p95_ms": 1.998,
+    "max_ms": 4.451
+  },
+  "ack_after_last_local_tx": {
+    "n": 7236,
+    "min_ms": 0.818,
+    "median_ms": 35.469,
+    "p95_ms": 38.136,
+    "max_ms": 38.649
+  },
+  "ping_pong": {
+    "n": 32,
+    "min_ms": 0.203,
+    "median_ms": 0.807,
+    "p95_ms": 1.134,
+    "max_ms": 1.177
+  },
+  "result_counts": {
+    "32": 1220,
+    "16": 23,
+    "0": 7236
+  },
+  "flags_counts": {
+    "35": 1236,
+    "33": 7243
+  },
+  "error_frame_count": 98,
+  "interface_first": [
+    [
+      "2026-11-04T14:19:23.384150+00:00",
+      "ERROR-WARNING",
+      null
+    ],
+    [
+      "2026-11-04T14:19:24.405659+00:00",
+      "ERROR-WARNING",
+      null
+    ]
+  ],
+  "interface_last": [
+    [
+      "2026-11-04T14:34:21.356602+00:00",
+      "ERROR-ACTIVE",
+      null
+    ],
+    [
+      "2026-11-04T14:34:22.357081+00:00",
+      "ERROR-ACTIVE",
+      null
+    ]
+  ],
+  "tx_examples": [
+    {
+      "utc": "2026-11-04T14:21:19.692827+00:00",
+      "monotonic_s": 121401.880777743,
+      "kind": "frame",
+      "id_hex": "0x33d",
+      "error": false,
+      "extended": false,
+      "local_origin": true,
+      "data_hex": "01105203a406a406",
+      "kernel_timestamp_ns": 1793802079692746809
+    },
+    {
+      "utc": "2026-11-04T14:21:19.693095+00:00",
+      "monotonic_s": 121401.881045119,
+      "kind": "frame",
+      "id_hex": "0x33d",
+      "error": false,
+      "extended": false,
+      "local_origin": true,
+      "data_hex": "01115203d6065203",
+      "kernel_timestamp_ns": 1793802079692976518
+    },
+    {
+      "utc": "2026-11-04T14:21:19.693400+00:00",
+      "monotonic_s": 121401.881350912,
+      "kind": "frame",
+      "id_hex": "0x33d",
+      "error": false,
+      "extended": false,
+      "local_origin": true,
+      "data_hex": "0112d606bc02bc02",
+      "kernel_timestamp_ns": 1793802079693065602
+    }
+  ]
+}

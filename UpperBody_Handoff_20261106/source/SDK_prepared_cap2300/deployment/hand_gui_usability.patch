@@ -1,0 +1,173 @@
+--- gui.before.py
++++ gui.py
+@@ -39,6 +39,9 @@
+         self.worker = GuiWorker(args.config)
+         self.connected = self.active = self.refreshing = self.closing = False
+         self.dirty = set()
++        self.dragging = set()
++        self.move_tokens = {}
++        self.guide_text = tk.StringVar(value="")
+         self.last_status = None
+         self.photo = None
+         self.mode = 'manual'
+@@ -67,8 +70,8 @@
+     def _build(self):
+         root = self.root
+         root.title('DexHand · 개별 모터 / 카메라 / 캘리브레이션')
+-        root.geometry('1320x850')
+-        root.minsize(1120, 740)
++        root.geometry('1420x940')
++        root.minsize(1180, 850)
+         style = ttk.Style(root)
+         if 'clam' in style.theme_names():
+             style.theme_use('clam')
+@@ -78,6 +81,9 @@
+         outer.pack(fill='both', expand=True)
+         ttk.Label(outer, text='DexHand 손 제어', style='Title.TLabel').pack(anchor='w')
+         ttk.Label(outer, text='µs와 적용 응답은 PWM 명령입니다. 손가락의 실제 각도·도달 위치는 측정하지 않습니다.').pack(anchor='w', pady=(3, 10))
++        guide = ttk.LabelFrame(outer, text='사용 순서 · 슬라이더가 잠긴 이유', padding=10)
++        guide.pack(fill='x', pady=(0, 10))
++        ttk.Label(guide, textvariable=self.guide_text, font=('Arial', 12, 'bold'), foreground='#172b4d', wraplength=1320).pack(anchor='w')
+         top = ttk.Frame(outer)
+         top.pack(fill='x')
+         ttk.Label(top, text='손').pack(side='left')
+@@ -87,17 +93,17 @@
+         ttk.Label(top, text='CAN').pack(side='left')
+         self.channel_entry = ttk.Entry(top, textvariable=self.channel, width=9)
+         self.channel_entry.pack(side='left', padx=6)
+-        self.sim_box = ttk.Checkbutton(top, text='모의 실행 · 실제 CAN 연결 없음', variable=self.simulated)
++        self.sim_box = ttk.Checkbutton(top, text='모의 실행 · 실제 CAN 연결 없음', variable=self.simulated, command=self._guide)
+         self.sim_box.pack(side='left', padx=8)
+-        self.connect_button = ttk.Button(top, text='CAN 연결 확인', command=self.connect)
++        self.connect_button = ttk.Button(top, text='1. CAN 연결 확인', command=self.connect)
+         self.connect_button.pack(side='left', padx=5)
+         self.disconnect_button = ttk.Button(top, text='연결 해제', command=lambda: self.post('disconnect'))
+         self.disconnect_button.pack(side='left')
+         actions = ttk.Frame(outer)
+         actions.pack(fill='x', pady=10)
+-        self.cold_box = ttk.Checkbutton(actions, text='처음 켠 빈손을 펼침으로 시작', variable=self.initial_open)
++        self.cold_box = ttk.Checkbutton(actions, text='처음 켠 빈손: 펼침으로 시작 (확인 후 체크)', variable=self.initial_open)
+         self.cold_box.pack(side='left')
+-        self.arm_button = ttk.Button(actions, text='출력 시작 / 다시 시작', command=lambda: self.post('arm', initial_open=self.initial_open.get()))
++        self.arm_button = ttk.Button(actions, text='2. 출력 시작 / 재개', command=lambda: self.post('arm', initial_open=self.initial_open.get()))
+         self.arm_button.pack(side='left', padx=8)
+         ttk.Button(actions, text='유지 HOLD  [Esc]', command=lambda: self.post('hold')).pack(side='left', padx=5)
+         ttk.Button(actions, text='PWM 끄기 · 유지력 해제', command=lambda: self.post('off')).pack(side='left', padx=5)
+@@ -114,25 +120,27 @@
+         for frame, label in zip((manual, camera, calibration), ('개별 모터', '카메라 제어', '캘리브레이션')):
+             self.tabs.add(frame, text=label)
+         self.tabs.bind('<<NotebookTabChanged>>', self.mode_changed)
+-        headers = ('손가락·위치 / GPIO', '당김 비율 0 → 100%', '목표 µs', '마지막 적용 µs')
++        headers = ('손가락·위치 / GPIO', '당김 비율 0 → 100%', '당김% / 목표 µs', '마지막 적용 µs')
+         for column, label in enumerate(headers):
+             ttk.Label(manual, text=label).grid(row=0, column=column, sticky='w', padx=4, pady=(0, 8))
+         manual.columnconfigure(1, weight=1)
+         for index in range(15):
+-            name = ttk.Label(manual, width=23)
++            name = ttk.Label(manual, width=20)
+             name.grid(row=index+1, column=0, sticky='w', pady=3)
+             fraction, target, applied = tk.DoubleVar(value=0), tk.StringVar(value='—'), tk.StringVar(value='—')
+-            slider = ttk.Scale(manual, from_=0, to=1, variable=fraction,
+-                               command=lambda value, i=index: self.slider(i, float(value)))
++            slider = ttk.Scale(manual, from_=0, to=100, variable=fraction,
++                               command=lambda value, i=index: self.slider(i, float(value)/100.0))
++            slider.bind("<ButtonPress-1>", lambda event, i=index: self.dragging.add(i), add="+")
++            slider.bind("<ButtonRelease-1>", lambda event, i=index: self.dragging.discard(i), add="+")
+             slider.grid(row=index+1, column=1, sticky='ew', padx=5)
+-            ttk.Label(manual, textvariable=target, width=8).grid(row=index+1, column=2)
++            ttk.Label(manual, textvariable=target, width=12).grid(row=index+1, column=2)
+             ttk.Label(manual, textvariable=applied, width=13).grid(row=index+1, column=3)
+             self.row_labels.append(name)
+             self.scales.append(fraction)
+             self.targets.append(target)
+             self.applied.append(applied)
+             self.motor_widgets.append(slider)
+-        ttk.Label(manual, text='슬라이더를 움직이면 해당 모터의 목표만 변경합니다.\n나머지 모터는 기존 목표를 유지합니다. 속도 제한: 초당 전체 범위의 25%.\n엄지 양쪽 당김의 합이 허용치를 넘으면 출력을 유지하고 오류를 표시합니다.',
++        ttk.Label(manual, text='3. 손잡이를 드래그하거나 ← → 키로 1%씩 조절하세요. 0%=풀림, 100%=보정된 최대 당김.\n슬라이더를 움직이면 해당 모터의 목표만 변경합니다.\n나머지 모터는 기존 목표를 유지합니다. 속도 제한: 초당 전체 범위의 25%.\n엄지 양쪽 당김의 합이 허용치를 넘으면 출력을 유지하고 오류를 표시합니다.',
+                   wraplength=650).grid(row=17, column=0, columnspan=4, sticky='w', pady=14)
+         ttk.Label(camera, text='USB 카메라 → MediaPipe → CAN → 선택한 손', style='Status.TLabel').pack(anchor='w', pady=8)
+         ttk.Label(camera, text='현재 카메라 모드는 손 전체의 펴짐 / 주먹을 따라갑니다.\n개별 손가락 각도를 그대로 복사하는 모드는 아닙니다.\n주먹을 쥐면 보정 범위의 최대 25%까지 당깁니다.\n\n1. 미리보기를 시작합니다.\n2. 카메라에 편 손 하나를 보여줍니다.\n3. 위의 출력 시작 버튼을 누릅니다.\n\n손이 사라지거나 둘 이상 보이거나 영상이 늦어지면 HOLD합니다.\n다시 인식돼도 자동으로 움직이지 않습니다.', wraplength=640).pack(anchor='w')
+@@ -191,7 +199,7 @@
+         for i, motor in enumerate(motors):
+             self.row_labels[i].configure(text=f"{i+1:02}  {motor['name']}  / {motor['gpio']}")
+             self.scales[i].set(0)
+-            self.targets[i].set(str(motor['open_us']))
++            self.targets[i].set(f"0% | {motor['open_us']}")
+             self.applied[i].set('—')
+             draft = self.draft.profile['motors'][i]
+             self.cal_table.insert('', 'end', iid=str(i), values=(motor['name'], motor['gpio'],
+@@ -212,6 +220,27 @@
+     def _motor_states(self):
+         for slider in self.motor_widgets:
+             slider.configure(state='normal' if self.connected and self.active and self.mode == 'manual' else 'disabled')
++        self._guide()
++
++    def _guide(self):
++        prefix = '모의 실행 · 실물 손은 움직이지 않음\n' if self.simulated.get() else ''
++        if not self.connected:
++            text = '① 손 보드 전원 연결 → ② [1. CAN 연결 확인]을 누르세요.\n슬라이더 잠김: 아직 CAN 연결이 확인되지 않았습니다.'
++        elif not self.active:
++            text = 'CAN 연결 확인됨 · 아직 슬라이더는 잠겨 있습니다.\n처음 켠 빈손만 [펼침으로 시작]을 체크하고 [2. 출력 시작 / 재개]를 누르세요. 이미 구동 중이던 손은 체크 없이 이어받습니다.'
++        elif self.mode != 'manual':
++            text = '현재 카메라/캘리브레이션 모드입니다. 개별 슬라이더는 [개별 모터] 탭에서 사용하세요. 탭 변경 시 HOLD되므로 출력 시작을 다시 눌러야 합니다.'
++        else:
++            text = '슬라이더 사용 가능 · 손잡이를 드래그하거나 ← → 키로 1%씩 조절하세요.\n0%=풀림, 100%=보정된 최대 당김. 실제 이동은 속도 제한에 따라 천천히 진행됩니다. 멈추려면 [유지 HOLD] 또는 Esc.'
++        self.guide_text.set(prefix+text)
++
++    def _finish_move(self, index, token):
++        if self.move_tokens.get(index) != token:
++            return
++        if index in self.dragging:
++            self.root.after(100, lambda: self._finish_move(index, token))
++            return
++        self.dirty.discard(index)
+ 
+     def post(self, action, **kwargs):
+         try:
+@@ -225,6 +254,7 @@
+         # during connection must never pair the left UI with the right CAN node.
+         for widget in (self.side_box, self.channel_entry, self.sim_box, self.connect_button):
+             widget.configure(state='disabled')
++        self.guide_text.set('CAN 응답 확인 중… 손가락 출력은 아직 시작하지 않습니다.')
+         self.post('connect', hand=self.side.get(), channel=self.channel.get(), dry_run=self.simulated.get())
+ 
+     def mode_changed(self, _=None):
+@@ -242,10 +272,12 @@
+             return
+         motor = self.draft.original['motors'][index]
+         pulse = round(motor['open_us']+fraction*(motor['close_us']-motor['open_us']))
+-        self.targets[index].set(str(pulse))
++        self.targets[index].set(f"{fraction*100:.0f}% | {pulse}")
+         self.dirty.add(index)
+         self.worker.move(index, pulse)
+-        self.root.after(180, lambda: self.dirty.discard(index))
++        token = self.move_tokens.get(index, 0)+1
++        self.move_tokens[index] = token
++        self.root.after(250, lambda: self._finish_move(index, token))
+ 
+     def selected(self):
+         selection = self.cal_table.selection()
+@@ -389,16 +421,19 @@
+                 spec = self.config.hand(self.side.get())
+                 for i, pulse in enumerate(event['goal_us']):
+                     self.applied[i].set('—' if event['applied_us'] is None else str(event['applied_us'][i]))
+-                    if i not in self.dirty:
+-                        self.targets[i].set(str(pulse) if event['command_known'] else '—')
+-                        self.scales[i].set((pulse-spec.open_us[i])/(spec.close_us[i]-spec.open_us[i]))
++                    if i not in self.dirty and i not in self.dragging:
++                        fraction = (pulse-spec.open_us[i])/(spec.close_us[i]-spec.open_us[i])
++                        self.targets[i].set(f'{fraction*100:.0f}% | {pulse}' if event['command_known'] else '—')
++                        self.scales[i].set(fraction*100)
+                 self.refreshing = False
+             elif kind in ('error', 'export_error'):
+                 self.log_message(event['message'])
+                 if kind == 'error':
+                     self.active = False
+                     self._motor_states()
+-                    self.connection_text.set(event['message'])
++                    friendly = ('손 보드 응답 없음 · 손 보드/트랜시버 전원, CAN 배선, can13 펌웨어를 확인한 뒤 다시 연결하세요.' if 'NO_PONG' in event['message'] else
++                                '펌웨어와 PC 프로필이 다릅니다. 같은 can13 버전으로 맞춰주세요.' if 'PROFILE_MISMATCH' in event['message'] else event['message'])
++                    self.connection_text.set(friendly)
+                 if kind == 'error' and not self.connected:
+                     self._set_connected(False)
+                 if kind == 'export_error':

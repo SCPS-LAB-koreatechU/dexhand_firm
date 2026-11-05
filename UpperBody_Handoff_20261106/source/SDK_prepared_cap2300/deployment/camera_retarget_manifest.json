@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-05",
+  "right_profile_tag": "79610de6",
+  "pwm_endpoints_unchanged": true,
+  "gpio_unchanged": true,
+  "default_output": "simulated CAN",
+  "firmware_changed_by_camera_work": false,
+  "physical_motion": false,
+  "camera_device_available": false,
+  "unit_tests": {
+    "passed": 129,
+    "skipped": 6,
+    "skip_reason": "legacy native wire harness not configured"
+  },
+  "tk_simulation": "passed",
+  "ros_estimated_jointstate_and_tf": "passed on localhost ROS domain 194",
+  "mediapipe_blank_image_inference": "passed; no hand detected",
+  "server": {
+    "host": "sunrise@172.18.49.21",
+    "status": "deployed and verified in separate camera release",
+    "active_sdk_switched": false,
+    "aliases": [
+      "~/humanoid_sdk_camera",
+      "~/dexhand_control_camera"
+    ],
+    "unit_tests": {
+      "passed": 129,
+      "skipped": 6
+    },
+    "tk_simulated_can": "passed",
+    "ros_estimate_and_tf": "passed",
+    "model_blank_image_inference": "passed with mediapipe 0.10.18",
+    "hardware_available": {
+      "can1": false,
+      "video_devices": []
+    }
+  },
+  "motor_ranges": [
+    {
+      "id": 1,
+      "name": "소지 위",
+      "calibration_motor_id": 7,
+      "gpio": 19,
+      "open_us": 850,
+      "close_us": 1775
+    },
+    {
+      "id": 2,
+      "name": "소지 아래",
+      "calibration_motor_id": 8,
+      "gpio": 21,
+      "open_us": 1700,
+      "close_us": 800
+    },
+    {
+      "id": 3,
+      "name": "약지 위",
+      "calibration_motor_id": 5,
+      "gpio": 23,
+      "open_us": 850,
+      "close_us": 1725
+    },
+    {
+      "id": 4,
+      "name": "약지 아래",
+      "calibration_motor_id": 6,
+      "gpio": 26,
+      "open_us": 1700,
+      "close_us": 800
+    },
+    {
+      "id": 5,
+      "name": "중지 위",
+      "calibration_motor_id": 3,
+      "gpio": 33,
+      "open_us": 1750,
+      "close_us": 825
+    },
+    {
+      "id": 6,
+      "name": "중지 아래",
+      "calibration_motor_id": 4,
+      "gpio": 22,
+      "open_us": 850,
+      "close_us": 1750
+    },
+    {
+      "id": 7,
+      "name": "검지 위",
+      "calibration_motor_id": 1,
+      "gpio": 32,
+      "open_us": 1750,
+      "close_us": 700
+    },
+    {
+      "id": 8,
+      "name": "검지 아래",
+      "calibration_motor_id": 2,
+      "gpio": 25,
+      "open_us": 700,
+      "close_us": 1725
+    },
+    {
+      "id": 9,
+      "name": "검지 끝",
+      "gpio": 16,
+      "open_us": 700,
+      "close_us": 2100
+    },
+    {
+      "id": 10,
+      "name": "중지 끝",
+      "gpio": 17,
+      "open_us": 700,
+      "close_us": 2000
+    },
+    {
+      "id": 11,
+      "name": "약지 끝",
+      "gpio": 4,
+      "open_us": 2000,
+      "close_us": 750
+    },
+    {
+      "id": 12,
+      "name": "소지 끝",
+      "gpio": 27,
+      "open_us": 2000,
+      "close_us": 800
+    },
+    {
+      "id": 13,
+      "name": "엄지 왼쪽 당김",
+      "gpio": 13,
+      "open_us": 2100,
+      "close_us": 700
+    },
+    {
+      "id": 14,
+      "name": "엄지 끝",
+      "gpio": 14,
+      "open_us": 700,
+      "close_us": 1900
+    },
+    {
+      "id": 15,
+      "name": "엄지 오른쪽 당김",
+      "gpio": 18,
+      "open_us": 2300,
+      "close_us": 700
+    }
+  ],
+  "board_compatibility_fix": {
+    "original_mediapipe": "1.2.2 aborts on missing AES at model creation",
+    "camera_venv_mediapipe": "0.10.18",
+    "old_environment_unchanged": true,
+    "stable_pose_check": ">=0.45 seconds, >=5 samples, no gap >0.3 seconds",
+    "gui_status": "coalesced paint; every status still logged"
+  }
+}

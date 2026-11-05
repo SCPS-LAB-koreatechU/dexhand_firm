@@ -1,0 +1,170 @@
+"""Joint map: which motor drives which joint, and how to turn degrees into motor units.
+
+    motor_position = motor_zero + direction * gear_ratio * joint_rad
+    joint_rad      = direction * (motor_position - motor_zero) / gear_ratio
+
+`gear_ratio` is in motor units per joint radian. This lab's actuators keep the
+firmware gear ratio at 1, so they report rotor radians and the 15:1 gearbox
+goes here. `motor_zero` is the motor reading at joint 0: taken from the pose
+the arm is in when control starts (`zero: start`, what the upstream Bimanual
+class does) or fixed per joint (`zero: config` + `motor_zero`).
+"""
+
+from __future__ import annotations
+
+import math
+from dataclasses import dataclass, field
+from pathlib import Path
+
+import yaml
+
+
+@dataclass
+class JointSpec:
+    name: str
+    bus: str                    # key into `buses`
+    device_id: int
+    direction: int = 1
+    gear_ratio: float = 15.0
+    lower_deg: float = -45.0
+    upper_deg: float = 45.0
+    kp: float = 0.3
+    kd: float = 0.01
+    torque_limit: float = 0.5
+    enabled: bool = True
+    motor_zero: float | None = None   # [motor units]; None = take it at start
+    firmware_gear_ratio: float = 1.0  # must match board readback; never written here
+
+    def to_motor(self, joint_rad: float, zero: float) -> float:
+        return zero + self.direction * self.gear_ratio * joint_rad
+
+    def to_joint(self, motor: float, zero: float) -> float:
+        return self.direction * (motor - zero) / self.gear_ratio
+
+    def clamp_deg(self, value: float) -> float:
+        return min(max(value, self.lower_deg), self.upper_deg)
+
+
+@dataclass
+class ArmConfig:
+    buses: dict[str, str]                     # bus key -> socketcan channel
+    joints: list[JointSpec]
+    zero: str = "start"                       # start | config
+    control_rate_hz: float = 50.0             # G1 example: 50 Hz (control_dt 0.02)
+    max_speed_deg: float = 30.0               # per-joint slew limit [deg/s]
+    init_duration: float = 2.0                # [s] ramp of the "go to pose" call (G1: 2 s)
+    reply_timeout: float = 0.004              # [s] PDO reply wait
+    heartbeat_period: float = 0.2             # [s] firmware watchdog is 1 s
+    health_timeout: float = 0.002             # one MODE or ERROR read per control cycle
+    extra: dict = field(default_factory=dict)
+    max_acceleration_deg: float = 0.0        # 0: legacy slew; shipped profile enables acceleration limiting
+    feedback_timeout: float = 0.15
+    command_timeout: float = 0.5
+    tracking_action: str = "damping"        # shipped profile: hold verified healthy joints
+    stop_on_joint_fault: bool = False
+    require_fixed_zero_for_streaming: bool = False
+
+    def joint(self, name: str) -> JointSpec:
+        for spec in self.joints:
+            if spec.name == name:
+                return spec
+        raise KeyError(name)
+
+    @property
+    def names(self) -> list[str]:
+        return [j.name for j in self.joints]
+
+
+def load_config(path: str | Path) -> ArmConfig:
+    data = yaml.safe_load(Path(path).read_text(encoding="utf-8"))
+    defaults = data.get("defaults") or {}
+    joints = []
+    for name, spec in (data.get("joints") or {}).items():
+        merged = {**defaults, **(spec or {})}
+        joints.append(JointSpec(
+            name=name,
+            bus=str(merged["bus"]),
+            device_id=int(merged["device_id"]),
+            direction=int(merged.get("direction", 1)),
+            gear_ratio=float(merged.get("gear_ratio", 15.0)),
+            lower_deg=float(merged.get("lower_deg", -45.0)),
+            upper_deg=float(merged.get("upper_deg", 45.0)),
+            kp=float(merged.get("kp", 0.3)),
+            kd=float(merged.get("kd", 0.01)),
+            torque_limit=float(merged.get("torque_limit", 0.5)),
+            enabled=bool(merged.get("enabled", True)),
+            motor_zero=None if merged.get("motor_zero") is None else float(merged["motor_zero"]),
+            firmware_gear_ratio=float(merged.get("firmware_gear_ratio", 1.0)),
+        ))
+        if joints[-1].direction not in (-1, 1):
+            raise ValueError(f"{name}: direction must be +1 or -1")
+        if joints[-1].lower_deg > joints[-1].upper_deg:
+            raise ValueError(f"{name}: lower_deg > upper_deg")
+        joint = joints[-1]
+        values = [joint.gear_ratio, joint.firmware_gear_ratio, joint.kp, joint.kd,
+                  joint.torque_limit, joint.lower_deg, joint.upper_deg]
+        if joint.motor_zero is not None:
+            values.append(joint.motor_zero)
+        if not all(math.isfinite(v) for v in values):
+            raise ValueError(f"{name}: non-finite configuration")
+        if joint.gear_ratio <= 0 or joint.firmware_gear_ratio == 0 or joint.kp < 0 or joint.kd < 0 or joint.torque_limit <= 0:
+            raise ValueError(f"{name}: invalid gear ratio, gains or torque limit")
+    control = data.get("control") or {}
+    config = ArmConfig(
+        buses={str(k): str(v) for k, v in (data.get("buses") or {}).items()},
+        joints=joints,
+        zero=str(control.get("zero", "start")),
+        control_rate_hz=float(control.get("control_rate_hz", 50.0)),
+        max_speed_deg=float(control.get("max_speed_deg", 30.0)),
+        init_duration=float(control.get("init_duration", 2.0)),
+        reply_timeout=float(control.get("reply_timeout", 0.004)),
+        heartbeat_period=float(control.get("heartbeat_period", 0.2)),
+        health_timeout=float(control.get("health_timeout", 0.002)),
+        max_acceleration_deg=float(control.get("max_acceleration_deg", 0.0)),
+        feedback_timeout=float(control.get("feedback_timeout", 0.15)),
+        command_timeout=float(control.get("command_timeout", 0.5)),
+        tracking_action=str(control.get("tracking_action", "damping")),
+        stop_on_joint_fault=bool(control.get("stop_on_joint_fault", False)),
+        require_fixed_zero_for_streaming=bool(control.get("require_fixed_zero_for_streaming", False)),
+        extra={k: v for k, v in data.items() if k not in ("buses", "joints", "defaults", "control")},
+    )
+    if config.zero not in ("start", "config"):
+        raise ValueError("control.zero must be start or config")
+    for name in ("control_rate_hz", "max_speed_deg", "reply_timeout", "heartbeat_period", "health_timeout", "feedback_timeout", "command_timeout"):
+        value = getattr(config, name)
+        if not math.isfinite(value) or value <= 0:
+            raise ValueError(f"control.{name} must be finite and positive")
+    if not math.isfinite(config.max_acceleration_deg) or config.max_acceleration_deg < 0:
+        raise ValueError("max_acceleration_deg must be finite and nonnegative")
+    if config.tracking_action not in ("hold", "damping"):
+        raise ValueError("tracking_action must be hold or damping")
+    seen = set()
+    for joint in joints:
+        if not 1 <= joint.device_id <= 127:
+            raise ValueError("CAN node must be 1..127")
+        key = (config.buses.get(joint.bus), joint.device_id)
+        if key in seen:
+            raise ValueError(f"duplicate motor on bus: {key}")
+        seen.add(key)
+    missing = {j.bus for j in joints} - set(config.buses)
+    if missing:
+        raise ValueError(f"joints use buses with no channel: {sorted(missing)}")
+    if config.zero == "config":
+        unset = [j.name for j in joints if j.enabled and j.motor_zero is None]
+        if unset:
+            raise ValueError(f"zero: config needs motor_zero for {unset}")
+    record = config.extra.get("commissioning", {})
+    if not isinstance(record, dict):
+        raise ValueError("commissioning must be a mapping")
+    for field in ("reference_pose_verified", "encoder_reference_persistent_verified"):
+        if field in record and type(record[field]) is not bool:
+            raise ValueError("commissioning verification flags must be booleans")
+    return config
+
+
+def deg(rad: float) -> float:
+    return math.degrees(rad)
+
+
+def rad(degrees: float) -> float:
+    return math.radians(degrees)

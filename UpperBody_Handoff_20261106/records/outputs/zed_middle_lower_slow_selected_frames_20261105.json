@@ -1,0 +1,122 @@
+{
+  "open": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004620.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 4620,
+      "captured_at": 4636.51191472,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 68.24688899996545
+      },
+      "published_at": 4636.584245875
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ]
+  },
+  "max_pull": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004755.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 4755,
+      "captured_at": 4649.05072419,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 70.2554389999932
+      },
+      "published_at": 4649.125084269
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      1750,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ]
+  },
+  "returned": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004906.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 4906,
+      "captured_at": 4662.926959599,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 67.5411370002621
+      },
+      "published_at": 4662.999410172
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ]
+  }
+}

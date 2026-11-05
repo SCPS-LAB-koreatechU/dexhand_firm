@@ -1,0 +1,132 @@
+{
+  "profile_version": 1,
+  "hand": "right",
+  "device_id": 61,
+  "can": {
+    "tx_gpio": 1,
+    "rx_gpio": 3,
+    "bitrate": 1000000
+  },
+  "pwm_frequency_hz": 50,
+  "watchdog_ms": 1000,
+  "assembly_timeout_ms": 20,
+  "calibration_source": "User-provided assembled right-hand PWM endpoints, recorded 2026-11-03",
+  "wiring_status": "User wiring update with required correction: index upper GPIO32 and lower GPIO25 replace input-only GPIO34/35. Move these two signal wires; not physically verified.",
+  "wiring_revision": 2,
+  "numbering_note": "id is the CAN array position in the same anatomical order as the left hand. calibration_motor_id preserves the user's original right-hand upper/lower test labels.",
+  "motors": [
+    {
+      "id": 1,
+      "name": "소지 위",
+      "calibration_motor_id": 7,
+      "gpio": 19,
+      "open_us": 850,
+      "close_us": 1775
+    },
+    {
+      "id": 2,
+      "name": "소지 아래",
+      "calibration_motor_id": 8,
+      "gpio": 21,
+      "open_us": 1700,
+      "close_us": 800
+    },
+    {
+      "id": 3,
+      "name": "약지 위",
+      "calibration_motor_id": 5,
+      "gpio": 23,
+      "open_us": 850,
+      "close_us": 1725
+    },
+    {
+      "id": 4,
+      "name": "약지 아래",
+      "calibration_motor_id": 6,
+      "gpio": 26,
+      "open_us": 1700,
+      "close_us": 800
+    },
+    {
+      "id": 5,
+      "name": "중지 위",
+      "calibration_motor_id": 3,
+      "gpio": 33,
+      "open_us": 1750,
+      "close_us": 825
+    },
+    {
+      "id": 6,
+      "name": "중지 아래",
+      "calibration_motor_id": 4,
+      "gpio": 22,
+      "open_us": 850,
+      "close_us": 1750
+    },
+    {
+      "id": 7,
+      "name": "검지 위",
+      "calibration_motor_id": 1,
+      "gpio": 32,
+      "open_us": 1750,
+      "close_us": 700
+    },
+    {
+      "id": 8,
+      "name": "검지 아래",
+      "calibration_motor_id": 2,
+      "gpio": 25,
+      "open_us": 700,
+      "close_us": 1725
+    },
+    {
+      "id": 9,
+      "name": "검지 끝",
+      "gpio": 16,
+      "open_us": 700,
+      "close_us": 2100
+    },
+    {
+      "id": 10,
+      "name": "중지 끝",
+      "gpio": 17,
+      "open_us": 700,
+      "close_us": 2000
+    },
+    {
+      "id": 11,
+      "name": "약지 끝",
+      "gpio": 4,
+      "open_us": 2000,
+      "close_us": 750
+    },
+    {
+      "id": 12,
+      "name": "소지 끝",
+      "gpio": 27,
+      "open_us": 2000,
+      "close_us": 800
+    },
+    {
+      "id": 13,
+      "name": "엄지 왼쪽 당김",
+      "gpio": 13,
+      "open_us": 2100,
+      "close_us": 700
+    },
+    {
+      "id": 14,
+      "name": "엄지 끝",
+      "gpio": 14,
+      "open_us": 700,
+      "close_us": 1900
+    },
+    {
+      "id": 15,
+      "name": "엄지 오른쪽 당김",
+      "gpio": 18,
+      "open_us": 2300,
+      "close_us": 700
+    }
+  ]
+}

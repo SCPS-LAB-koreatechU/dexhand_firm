@@ -1,0 +1,186 @@
+{
+  "basis": "Existing active SDK/expected RX-only firmware profile 79610de6; not the staged cap2300 firmware",
+  "unit": "microseconds",
+  "pin_numbering": "ESP32 GPIO, not connector position",
+  "hand_can_node_decimal": 61,
+  "hand_can_node_hex": "0x3D",
+  "can_interface_expected": "can1 (absent at last handoff inspection)",
+  "can_tx_gpio": 1,
+  "can_rx_gpio": 3,
+  "can_bitrate": 1000000,
+  "servo_pwm_frequency_hz": 50,
+  "motors": [
+    {
+      "channel": 7,
+      "name": "검지 위",
+      "gpio": 32,
+      "least_pull_open_us": 1750,
+      "max_pull_close_us": 700,
+      "allowed_min_us": 700,
+      "allowed_max_us": 1750,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": 1
+    },
+    {
+      "channel": 8,
+      "name": "검지 아래",
+      "gpio": 25,
+      "least_pull_open_us": 700,
+      "max_pull_close_us": 1725,
+      "allowed_min_us": 700,
+      "allowed_max_us": 1725,
+      "pull_direction": "PWM 증가",
+      "legacy_calibration_label": 2
+    },
+    {
+      "channel": 9,
+      "name": "검지 TIP",
+      "gpio": 16,
+      "least_pull_open_us": 700,
+      "max_pull_close_us": 2100,
+      "allowed_min_us": 700,
+      "allowed_max_us": 2100,
+      "pull_direction": "PWM 증가",
+      "legacy_calibration_label": null
+    },
+    {
+      "channel": 5,
+      "name": "중지 위",
+      "gpio": 33,
+      "least_pull_open_us": 1750,
+      "max_pull_close_us": 825,
+      "allowed_min_us": 825,
+      "allowed_max_us": 1750,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": 3
+    },
+    {
+      "channel": 6,
+      "name": "중지 아래",
+      "gpio": 22,
+      "least_pull_open_us": 850,
+      "max_pull_close_us": 1750,
+      "allowed_min_us": 850,
+      "allowed_max_us": 1750,
+      "pull_direction": "PWM 증가",
+      "legacy_calibration_label": 4
+    },
+    {
+      "channel": 10,
+      "name": "중지 TIP",
+      "gpio": 17,
+      "least_pull_open_us": 700,
+      "max_pull_close_us": 2000,
+      "allowed_min_us": 700,
+      "allowed_max_us": 2000,
+      "pull_direction": "PWM 증가",
+      "legacy_calibration_label": null
+    },
+    {
+      "channel": 3,
+      "name": "약지 위",
+      "gpio": 23,
+      "least_pull_open_us": 850,
+      "max_pull_close_us": 1725,
+      "allowed_min_us": 850,
+      "allowed_max_us": 1725,
+      "pull_direction": "PWM 증가",
+      "legacy_calibration_label": 5
+    },
+    {
+      "channel": 4,
+      "name": "약지 아래",
+      "gpio": 26,
+      "least_pull_open_us": 1700,
+      "max_pull_close_us": 800,
+      "allowed_min_us": 800,
+      "allowed_max_us": 1700,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": 6
+    },
+    {
+      "channel": 11,
+      "name": "약지 TIP",
+      "gpio": 4,
+      "least_pull_open_us": 2000,
+      "max_pull_close_us": 750,
+      "allowed_min_us": 750,
+      "allowed_max_us": 2000,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": null
+    },
+    {
+      "channel": 1,
+      "name": "소지 위",
+      "gpio": 19,
+      "least_pull_open_us": 850,
+      "max_pull_close_us": 1775,
+      "allowed_min_us": 850,
+      "allowed_max_us": 1775,
+      "pull_direction": "PWM 증가",
+      "legacy_calibration_label": 7
+    },
+    {
+      "channel": 2,
+      "name": "소지 아래",
+      "gpio": 21,
+      "least_pull_open_us": 1700,
+      "max_pull_close_us": 800,
+      "allowed_min_us": 800,
+      "allowed_max_us": 1700,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": 8
+    },
+    {
+      "channel": 12,
+      "name": "소지 TIP",
+      "gpio": 27,
+      "least_pull_open_us": 2000,
+      "max_pull_close_us": 800,
+      "allowed_min_us": 800,
+      "allowed_max_us": 2000,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": null
+    },
+    {
+      "channel": 13,
+      "name": "엄지 왼쪽 당김",
+      "gpio": 13,
+      "least_pull_open_us": 2100,
+      "max_pull_close_us": 700,
+      "allowed_min_us": 700,
+      "allowed_max_us": 2100,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": null
+    },
+    {
+      "channel": 14,
+      "name": "엄지 TIP",
+      "gpio": 14,
+      "least_pull_open_us": 700,
+      "max_pull_close_us": 1900,
+      "allowed_min_us": 700,
+      "allowed_max_us": 1900,
+      "pull_direction": "PWM 증가",
+      "legacy_calibration_label": null
+    },
+    {
+      "channel": 15,
+      "name": "엄지 오른쪽 당김",
+      "gpio": 18,
+      "least_pull_open_us": 2300,
+      "max_pull_close_us": 700,
+      "allowed_min_us": 700,
+      "allowed_max_us": 2300,
+      "pull_direction": "PWM 감소",
+      "legacy_calibration_label": null
+    }
+  ],
+  "pending_not_active": {
+    "receive_ceiling_us": 2300,
+    "firmware_tag": "bdad07a4",
+    "middle_lower_close_us": 1850,
+    "actual_1850_sent": false,
+    "flash_or_live_sdk_activation_confirmed": false
+  }
+}

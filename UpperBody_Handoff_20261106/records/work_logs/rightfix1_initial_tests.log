@@ -1,0 +1,100 @@
+.........................F.....F.......F.........F...................... [ 63%]
+F........................................                                [100%]
+=================================== FAILURES ===================================
+_______ test_thumb_antagonist_check_is_not_bypassed_by_single_motor_mode _______
+
+rig = <function rig.<locals>.make at 0x7a37faba6ef0>
+
+    def test_thumb_antagonist_check_is_not_bypassed_by_single_motor_mode(rig):
+        hand, fake = rig(protocol=3)
+        control = GuiControl(DemoSession(hand), clock=time.monotonic)
+        control.arm(initial_open=True)
+        control.motor(12, 700)
+>       with pytest.raises(ValueError, match='pull against'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_gui_policy.py:67: Failed
+_ test_export_generates_matched_complete_sketches_and_sdk_without_touching_current _
+
+tmp_path = PosixPath('/tmp/pytest-of-scps-ubuntu1/pytest-20/test_export_generates_matched_0')
+
+    def test_export_generates_matched_complete_sketches_and_sdk_without_touching_current(tmp_path):
+        module = exporter()
+        before = {path: path.read_bytes() for path in [CONFIG, PROJECT/'dexhand_control/profiles/right_hand.json',
+            PROJECT/'dexhand_control/firmware/DexHandRight/BoardConfig.h']}
+        profiles = {side: profile(side) for side in ('left', 'right')}
+        profiles['right']['motors'][0]['open_us'] = 900
+>       output = module.export_bundle(tmp_path/'new', profiles)
+
+humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_gui_policy.py:155: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+output = PosixPath('/tmp/pytest-of-scps-ubuntu1/pytest-20/test_export_generates_matched_0/new')
+profiles = {'left': {'assembly_timeout_ms': 20, 'can': {'bitrate': 1000000, 'rx_gpio': 3, 'tx_gpio': 1}, 'device_id': 60, 'hand':...nd PWM endpoints, recorded 2026-11-03', 'can': {'bitrate': 1000000, 'rx_gpio': 3, 'tx_gpio': 1}, 'device_id': 61, ...}}
+
+    def export_bundle(output, profiles):
+        output = Path(output).resolve()
+        project = ROOT.parent.resolve()
+        if output == project or output in project.parents:
+            raise ValueError('Export must not replace the current project or its parents')
+        if output.exists():
+            raise ValueError('Choose a NEW export folder; existing folders are never overwritten')
+        right_names = [m['name'] for m in profiles['right']['motors'][-3:]]
+        if right_names == ['엄지 왼쪽 당김', '엄지 끝', '엄지 오른쪽 당김']:
+>           raise ValueError('rightfix1 펌웨어 원본 ZIP을 반영하기 전에는 구형 템플릿으로 내보낼 수 없습니다. SDK_수정안내_rightfix1.md를 따르세요.')
+E           ValueError: rightfix1 펌웨어 원본 ZIP을 반영하기 전에는 구형 템플릿으로 내보낼 수 없습니다. SDK_수정안내_rightfix1.md를 따르세요.
+
+dexhand_control/tools/export_calibration.py:29: ValueError
+____________________ test_antagonist_thumb_pair_is_refused _____________________
+
+config = HandConfig(hands={'left': HandSpec(name='left', node=60, channel='can0', open_us=[1775, 700, 1750, 700, 725, 1675, 725...0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, antagonist_pairs=[(13, 14)], max_pair_sum=1.0, command_timeout=0.5)
+
+    def test_antagonist_thumb_pair_is_refused(config):
+        ctrl = HandController(config, "right", dry_run=True)
+        pose = [0.0] * 15
+        pose[12], pose[13] = 0.7, 0.6
+>       with pytest.raises(ValueError, match="13 and 14"):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hand.py:109: Failed
+___________________ test_slow_reply_counts_as_late_not_lost ____________________
+
+rig = <function rig.<locals>.make at 0x7a37fab64820>
+config = HandConfig(hands={'left': HandSpec(name='left', node=60, channel='can0', open_us=[1775, 700, 1750, 700, 725, 1675, 725...0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, antagonist_pairs=[(13, 14)], max_pair_sum=1.0, command_timeout=0.5)
+
+    def test_slow_reply_counts_as_late_not_lost(rig, config):
+        ctrl, fake = rig()
+        ctrl.enable()
+        config.reply_timeout = 0.01
+        fake.delay = 0.03                        # every reply misses its window...
+        for _ in range(3 * config.max_missed):
+            ctrl.step(0.02)
+            time.sleep(0.02)                     # ...and arrives during the next cycle
+        assert ctrl.live and ctrl.fault == ""
+>       assert ctrl.stats["late"] > config.max_missed
+E       AssertionError: assert 0 > 10
+E        +  where 10 = HandConfig(hands={'left': HandSpec(name='left', node=60, channel='can0', open_us=[1775, 700, 1750, 700, 725, 1675, 725...0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, antagonist_pairs=[(13, 14)], max_pair_sum=1.0, command_timeout=0.5).max_missed
+
+humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hand.py:203: AssertionError
+___________ test_internal_command_is_validated_again_before_transmit ___________
+
+rig = <function rig.<locals>.make at 0x7a37fab65cf0>
+
+    def test_internal_command_is_validated_again_before_transmit(rig):
+        ctrl, fake = rig(protocol=3)
+        assert ctrl.enable().ok
+        ctrl.command[12] = ctrl.command[13] = .6
+        before = fake.applied
+>       assert ctrl._send_set().result == "INVALID_COMMAND"
+E       AssertionError: assert 'APPLIED' == 'INVALID_COMMAND'
+E         - INVALID_COMMAND
+E         + APPLIED
+
+humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hardening_hand.py:122: AssertionError
+=========================== short test summary info ============================
+FAILED humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_gui_policy.py::test_thumb_antagonist_check_is_not_bypassed_by_single_motor_mode
+FAILED humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_gui_policy.py::test_export_generates_matched_complete_sketches_and_sdk_without_touching_current
+FAILED humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hand.py::test_antagonist_thumb_pair_is_refused
+FAILED humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hand.py::test_slow_reply_counts_as_late_not_lost
+FAILED humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hardening_hand.py::test_internal_command_is_validated_again_before_transmit
+5 failed, 108 passed in 5.04s

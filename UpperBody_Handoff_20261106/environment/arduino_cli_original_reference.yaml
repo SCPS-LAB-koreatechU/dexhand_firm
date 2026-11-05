@@ -1,0 +1,6 @@
+board_manager:
+  additional_urls:
+    - https://espressif.github.io/arduino-esp32/package_esp32_index.json
+directories:
+  data: /home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/work/arduino_oneway/data
+  downloads: /home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/work/arduino_oneway/downloads

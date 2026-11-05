@@ -1,0 +1,2782 @@
+{
+  "format_version": 1,
+  "created_kst": "2026-11-06T00:54:26.928347+09:00",
+  "description": "Portable SDK source, current robot RAM/persistent snapshots, historical records and pending firmware/SDK changes. No automatic robot actions.",
+  "files": [
+    {
+      "path": "CONTINUE_AGENT.txt",
+      "size": 1603,
+      "sha256": "817a12cd718044604462b7b10843353dd22b70b290dc3b66f24392c0b868100d"
+    },
+    {
+      "path": "HANDOFF_CONTEXT.txt",
+      "size": 17919,
+      "sha256": "48206062144b02db7044cc338e2bfc0407c81f73def80ce636bd198a44fbe2cf"
+    },
+    {
+      "path": "HANDOFF_STATE.json",
+      "size": 2801,
+      "sha256": "092fb4f09113654b84683e78e077374f2e9299a6baecd58f891c40ec593e4372"
+    },
+    {
+      "path": "RIGHT_HAND_PINMAP.json",
+      "size": 4890,
+      "sha256": "a1282287b020ed701ced4d891fe350391917f8c61ad80c93d158c95557f3fee1"
+    },
+    {
+      "path": "RIGHT_HAND_PINMAP.txt",
+      "size": 2475,
+      "sha256": "861ae7535c949069e53125e1499752b1a8de5f0b80bdcb832c65e767a6b678fe"
+    },
+    {
+      "path": "START_HERE.txt",
+      "size": 4330,
+      "sha256": "1d31e1f9e336076201a24212798746e6564ffe1e4223fec50906fbad66d6a795"
+    },
+    {
+      "path": "VERIFY_PACKAGE.py",
+      "size": 848,
+      "sha256": "add60f2eab3141f97837d7d33c74f8d8fb97dcec1cd82f7dcee80267d681faef"
+    },
+    {
+      "path": "artifacts/DexHandRight_RXOnly_PWMCap2300_20261105.zip",
+      "size": 377891,
+      "sha256": "fd436dfd5183651ab9f79b48a144d778ea8654cd49f27e2c267f3d83d4236b68"
+    },
+    {
+      "path": "artifacts/DexHandRight_RXOnly_PWMTask_20261105.zip",
+      "size": 3121746,
+      "sha256": "6a4bc049ddd3fb9ed3e1c6e73ea134d198134dbbcd26f3c5374d44a5ae94dde9"
+    },
+    {
+      "path": "artifacts/MiddleLower1850_operating_profile_20261105.zip",
+      "size": 7369,
+      "sha256": "b49ba68cf25feee88285ee60c7de9b23b17947c8fd322fa42868ca0114792bbe"
+    },
+    {
+      "path": "artifacts/SDK_PWMCap2300_20261105_patch.zip",
+      "size": 45274,
+      "sha256": "a22723c08de3b0cb5a0b7f516c8c65b112577353ad0a5bdfdaf5ea5a10003679"
+    },
+    {
+      "path": "environment/TRANSFER_CONTENTS.json",
+      "size": 154359,
+      "sha256": "56c22d1e1e874f941816132ae212f7922c9c5384148a1196095ab7e161363651"
+    },
+    {
+      "path": "environment/arduino_cli_original_reference.yaml",
+      "size": 338,
+      "sha256": "29aca983ff6c50d36811a6032d43ea4727cc5416d1d86a13e621fb28e3da1b44"
+    },
+    {
+      "path": "environment/original_paths.json",
+      "size": 652,
+      "sha256": "ba833bdf45e1055cb6524318ac19516ad93eb48961ee1b67ee312c0756ecd1d2"
+    },
+    {
+      "path": "environment/robot_packages.json",
+      "size": 1005,
+      "sha256": "c9da58e58c51a71328219e554a5b4a9f1971f5bbab1d361fd0da809df5a7db83"
+    },
+    {
+      "path": "records/outputs/33V 표시 원인 분석.txt",
+      "size": 4102,
+      "sha256": "99c9d1c125b5d575b802a95fe0d18fd1547d4285a1fe33fb182720834fdc8a9a"
+    },
+    {
+      "path": "records/outputs/CAN13_업데이트_안내.txt",
+      "size": 2638,
+      "sha256": "8952b19bd51eaa291e8723ef57d8f01956f4da52f6cf2d30625b3957d5013282"
+    },
+    {
+      "path": "records/outputs/CAN_펌웨어_지연_분석.txt",
+      "size": 4040,
+      "sha256": "6b27ea550531b8bd94cf29f58f375f15e4e55268040b42b1ff6ff6b36ea18933"
+    },
+    {
+      "path": "records/outputs/NO_REPLY_원인_검수.txt",
+      "size": 1892,
+      "sha256": "98a0785eebe36eb75dbf96b1891429ae6137e69f734b980abe2078be5cb4e2f9"
+    },
+    {
+      "path": "records/outputs/ONEWAY_PWM_안내.md",
+      "size": 4755,
+      "sha256": "b50df71cd0a7e3270e08b25841c0b0712cbbcd2749b26f7470f4439d2519c72e"
+    },
+    {
+      "path": "records/outputs/SDK020_설치_팔제어_확인.txt",
+      "size": 6183,
+      "sha256": "4f21641314fce5e8d6265405fcbac26ac0f9d80018802e373be7547df7317157"
+    },
+    {
+      "path": "records/outputs/SD카드_USB_원인분석_20261105.txt",
+      "size": 4832,
+      "sha256": "ee97665095cb5357861dbb01a3d3596c38f3df36c18eff2549f0557e720df83c"
+    },
+    {
+      "path": "records/outputs/arm-board-inspection.json",
+      "size": 14637,
+      "sha256": "a28af87f358779eb2e3b5b8bd2ac9bebe4351d5cc4eac47ec19dff78f8927077"
+    },
+    {
+      "path": "records/outputs/arm-can-verification.json",
+      "size": 13454,
+      "sha256": "74ee3e7ef2e226ada9951f7dd0cae297a1d04ce8ab6ed1230b7d4b9ceba786ee"
+    },
+    {
+      "path": "records/outputs/arm-current-torque-log.jsonl.gz",
+      "size": 645309,
+      "sha256": "688aa4b4b21dce20e7f54f158c4c4e1846bfbffc8186b40081e333fff33550bf"
+    },
+    {
+      "path": "records/outputs/arm-full-measurements.jsonl.gz",
+      "size": 2340205,
+      "sha256": "317b94b012fb37cac1ccbe4160af95d318c35f5a2991915aaba5a737ee0de96b"
+    },
+    {
+      "path": "records/outputs/arm-full-verification.json",
+      "size": 34670,
+      "sha256": "01cf7711291ddf6e73133ed7d1dad709cfea3a1d038508d54126fbd736e78040"
+    },
+    {
+      "path": "records/outputs/arm-hold-review.txt",
+      "size": 6810,
+      "sha256": "3572649beb9f82805c02de6b9362b13e62f0bc67d6aee04d5d7276b09bc9fdfa"
+    },
+    {
+      "path": "records/outputs/bhl_left_shoulder_hold_test.yaml",
+      "size": 1947,
+      "sha256": "8ed415435992f975f2aa5cd1ec0168216430051af3bbb4b6f0bd9bff0f82554e"
+    },
+    {
+      "path": "records/outputs/board_power_drop_investigation_20261105.json",
+      "size": 268,
+      "sha256": "91d337d5fe7aaa396c7b95eb4bd7c06cf4685a2223dcef3711e3b5f0474468ab"
+    },
+    {
+      "path": "records/outputs/camera_calibration_ready_20261105.json",
+      "size": 832,
+      "sha256": "0240c630389504118a2718c00b6cc40090aa2ae9c5285cc17eab8d84895429cd"
+    },
+    {
+      "path": "records/outputs/camera_retarget_deployment.json",
+      "size": 3533,
+      "sha256": "13aa9cd76be3538334c03c366f4e84125ddddd75076aa3e386f666c4da10d9c0"
+    },
+    {
+      "path": "records/outputs/camera_usb_storage_kernel_20261105.log",
+      "size": 67135,
+      "sha256": "067f51af2025e33ea959928dfae1040bd272556d56cd57f953ae513684e3af73"
+    },
+    {
+      "path": "records/outputs/can13_deployment.json",
+      "size": 822,
+      "sha256": "9af8b53a783dc7420f030011ee4f48635241a18b9e0888455688e0d6cd6cdd37"
+    },
+    {
+      "path": "records/outputs/can1_after_en_reset_20261105.jsonl",
+      "size": 2777,
+      "sha256": "d88dcfa11f761277dcbcc4b2dd116736d4cd4328356c912288203cc74b53850d"
+    },
+    {
+      "path": "records/outputs/can1_connected_test_20261105/can1_current_blocker.json",
+      "size": 2636,
+      "sha256": "c446e6480daeecf54ca24d53db2dd913c2d21f2d21c70ceba9f758ced0f06a45"
+    },
+    {
+      "path": "records/outputs/can1_single_query_20261105.jsonl",
+      "size": 2915,
+      "sha256": "eb9261b7c15a3722a8f809dd712a118f66337615a1564e5c75539ed271b27195"
+    },
+    {
+      "path": "records/outputs/can1_socket_only_20261105.json",
+      "size": 2089,
+      "sha256": "52d9ed6652a5e7e8f29d4ac0c3317f82d7e739021425a4cea498ae2010fecbde"
+    },
+    {
+      "path": "records/outputs/can1_test_progress_20261105.json",
+      "size": 1268,
+      "sha256": "38dbbbf174a4dc96aa635d92f3f7cc810bd782f7316a2c42cafdd04ff8883d7e"
+    },
+    {
+      "path": "records/outputs/can1_usb_loopback_20261105.json",
+      "size": 2627,
+      "sha256": "76e3f3dc0273ef6e5db910701bfbcf9bc5435e3d20b7ac49606641eba9f317b0"
+    },
+    {
+      "path": "records/outputs/can_historical_timing_analysis.json",
+      "size": 2021,
+      "sha256": "43d31b1de7edc1a72abc7fdf8bcf235bc1100e4cce1576b5aa8dc48553af95c3"
+    },
+    {
+      "path": "records/outputs/can_roundtrip_readonly.json",
+      "size": 1741,
+      "sha256": "b99902c37c14da67a1c7df7ce69c59e4a193b50803b41da10e2d9f2e50a3425d"
+    },
+    {
+      "path": "records/outputs/driver-voltage-analysis.png",
+      "size": 102849,
+      "sha256": "53c67b0e6eb19e8875c03cae8fbddb73bbeeba39a646f162e20cec69e7ae06ad"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_monitor_20261105.jsonl",
+      "size": 2827,
+      "sha256": "958164fa68f92ac61e595e66871e10e1dd85ac8bfdffc5747a00885abc1908d3"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_post_trial_20261105.json",
+      "size": 3873,
+      "sha256": "a539bc5df2bbfb47a28f3a0d30dd6692d5b5459c677abcdda6c1ab1154ca6204"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_repeat_result_20261105.json",
+      "size": 2364,
+      "sha256": "31271d38f943c2aa837af8b432f37b826bc2de03f19c81567a45a9015b5f438d"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_repeat_snapshot_20261105.json",
+      "size": 3265,
+      "sha256": "864b3b2271b5b84ffef1fe4c31e91624549e46d67c31bed028060c749ebb362e"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_test_notes_20261105.txt",
+      "size": 2425,
+      "sha256": "fcb69a0f1cabbbb7e3c2043e66b201b6577f32eedd92125655b6aab7b38ba371"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_trial_20261105.jsonl",
+      "size": 2820119,
+      "sha256": "dbc0466bf92bd5d938c496774e2cb8163d68b49186c678d709b06d748a5ba03b"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_trial_repeat_1793886159118.jsonl",
+      "size": 1075,
+      "sha256": "881ccde4947d52e10cabdf57457461c5a448f19576b66e66d3a8de15054a4c5d"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_trial_repeat_1793886302663.jsonl",
+      "size": 780173,
+      "sha256": "c096fc92aa9f00c51a923b3bc8b343117a5af21aa32af4f4fe76d8fb61b5a942"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_trial_repeat_1793886502969.jsonl",
+      "size": 2951391,
+      "sha256": "84b549bb239e49df21132e07bbfd6f2c45dd7e1ac18530b453cd5efd66cac6ce"
+    },
+    {
+      "path": "records/outputs/four_finger_camera_trial_result_20261105.json",
+      "size": 2606,
+      "sha256": "71a8e1d2e3c02de8691bb19325207d0a33a4eb33cdc3df49c7adbfb5d1b8e028"
+    },
+    {
+      "path": "records/outputs/four_finger_human_preview_preparation_20261106.json",
+      "size": 714,
+      "sha256": "bd7c61305526f17a2018744c4208918e067d901044553e4265abe046eb5b91db"
+    },
+    {
+      "path": "records/outputs/gui-redesign-prompt.txt",
+      "size": 2838,
+      "sha256": "2a18907f390da228af726e6eac592a5f798e64077ded591138de1f5381d54300"
+    },
+    {
+      "path": "records/outputs/gui-redesign.png",
+      "size": 1455305,
+      "sha256": "ef604ee47514150078ff64662f1c00077ad5d4ce98e06a5bc85151cc5ae2f62b"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/calibration/autosave_correspondence.json",
+      "size": 936,
+      "sha256": "3a67422d87512880d617dea703d1e06090d1705fe05801ed625fe20bd0d1bc33"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/calibration/four_finger_camera_trial.json",
+      "size": 1205,
+      "sha256": "9f897aa02e9c1a22cc9c0550787800e1291645764a249b73015613d3c457b724"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/index_trial_state.json",
+      "size": 536,
+      "sha256": "2069d8a0e4ff6963b416dd2d6819c2310b2da990ee7566442ab516ec3ed3c49b"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_222129_064455.jsonl",
+      "size": 1395415,
+      "sha256": "4a5114599be81cb6ac5e4a03c001c3ce8b3d4d7ee2942f8e3c5e3407dc08e9dd"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_222352_174461.jsonl",
+      "size": 208,
+      "sha256": "f4ffec1cc9362040c15fad4405ad170d060a73e71437e2daf3566c9251d9601a"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_222520_119107.jsonl",
+      "size": 33448,
+      "sha256": "68e9329dc7a0b5bcd66c067fe64b02e743dda5d8c999a8df4b87b36303f3660f"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_222615_304823.jsonl",
+      "size": 519700,
+      "sha256": "4d48552c0b02a16fdbb982850e27429213deec484581498b58f9aeef08f3cb01"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_222632_283580.jsonl",
+      "size": 401542,
+      "sha256": "69e06667122123366369e1ded0ad6f8b8d64ba46db0539ad2991815b8739e052"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_222817_134056.jsonl",
+      "size": 585482,
+      "sha256": "d7f34e8f5b819a578dba7cf9e7727d4d7a751b0b7356bea60f72b406752278d2"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_223253_044270.jsonl",
+      "size": 4150502,
+      "sha256": "c9e1de0b45c824b2aa290ebed319c20c8fd44c20fd5185ee8f073bca4c1942f4"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_223303_376535.jsonl",
+      "size": 2774978,
+      "sha256": "69273b9cc63903aec9ce96178c155fa9731185692320511741d9884db7183357"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_224240_083937.jsonl",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_224503_554025.jsonl",
+      "size": 766730,
+      "sha256": "a5ca6b0946613a92b002d6f3ea81bb2f1fa95be240460f624bf8f664833ae0fb"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/logs/20261105_224823_945897.jsonl",
+      "size": 2893851,
+      "sha256": "a0b8661a4c8481b7951aa81f74bf03075cefb9a440dc977a3f47884fe998dbe8"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/data/preview.json",
+      "size": 817,
+      "sha256": "1a032138c0ea8ec989fa28b275f3bdcf611c0a1e5117e975042b48a31764a1ca"
+    },
+    {
+      "path": "records/outputs/hand_camera_repeat_1793886502969/gui.log",
+      "size": 3040,
+      "sha256": "0754f42d9112a6ce3a77e3fd3bde4044791f2db2b233aade9bd18e7e7deb6ab3"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/backup_status.json",
+      "size": 177,
+      "sha256": "6ce00654ded5cce47a02e04d8c2539df29514f9ec472fabe66cc0b67faf325ae"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/calibration/autosave_correspondence.json",
+      "size": 936,
+      "sha256": "3a67422d87512880d617dea703d1e06090d1705fe05801ed625fe20bd0d1bc33"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/calibration/four_finger_camera_trial.json",
+      "size": 1205,
+      "sha256": "9f897aa02e9c1a22cc9c0550787800e1291645764a249b73015613d3c457b724"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/can0_hand_ping.json",
+      "size": 5028,
+      "sha256": "244aa8b5368617441888314d2519181680eb4f543b06a513099b1aa633bf3dcb"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/can0_internal_loopback.json",
+      "size": 5507,
+      "sha256": "aea3ff3ee6aa6d94b29a4f72a7c5673002dce789eb8f6563ded0d06084ac43c4"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/can1_after_upload_probe.json",
+      "size": 6427,
+      "sha256": "201a3d4f3fb6534628c72776186ea3b7e7301826403bcc062bc298687633d527"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/can1_connected_preflight.json",
+      "size": 3686,
+      "sha256": "0adba5d296c7ef108d28cedc7342bcf2973440664d242c3e80e0176628786033"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/can1_isolated_timing_probe.json",
+      "size": 10808,
+      "sha256": "a2bf79b607c3dbcde76803d6069b8d16ea78a03b1de22e7a5777233955d87d14"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/index_trial_state.json",
+      "size": 729,
+      "sha256": "98e2c87b31ab8d6a24c372eccaeb8715e8475b947115c62f1126880f67dfde8b"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/inference_benchmark.json",
+      "size": 797,
+      "sha256": "ec6039f9a0df1a3c29c246f999ad2ec84d2f92428088e37c54a4796c7c67fe28"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_155058_566287.jsonl",
+      "size": 228626,
+      "sha256": "9d3bbf50ca0f0a488d0cc89e730cb449db29f945d7f6e74d6e9644a4580873ed"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_155430_637961.jsonl",
+      "size": 386662,
+      "sha256": "fc9e25654bcf4320a659bbacc99287bd0b235740eace929a79707d8691380f89"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_155749_902939.jsonl",
+      "size": 42005365,
+      "sha256": "c4d110bc0cfa82807f12211140e7c79f7305f4317d5020e3496bf16a6bba4124"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_215928_532374.jsonl",
+      "size": 175195,
+      "sha256": "bd76416dd25b647a6fa4307967bd6cf01416007e4659de28f897635ff74c432a"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_222129_064455.jsonl",
+      "size": 1395415,
+      "sha256": "4a5114599be81cb6ac5e4a03c001c3ce8b3d4d7ee2942f8e3c5e3407dc08e9dd"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_222352_174461.jsonl",
+      "size": 208,
+      "sha256": "f4ffec1cc9362040c15fad4405ad170d060a73e71437e2daf3566c9251d9601a"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_222520_119107.jsonl",
+      "size": 33448,
+      "sha256": "68e9329dc7a0b5bcd66c067fe64b02e743dda5d8c999a8df4b87b36303f3660f"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_222615_304823.jsonl",
+      "size": 519700,
+      "sha256": "4d48552c0b02a16fdbb982850e27429213deec484581498b58f9aeef08f3cb01"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_222632_283580.jsonl",
+      "size": 401542,
+      "sha256": "69e06667122123366369e1ded0ad6f8b8d64ba46db0539ad2991815b8739e052"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_222817_134056.jsonl",
+      "size": 585482,
+      "sha256": "d7f34e8f5b819a578dba7cf9e7727d4d7a751b0b7356bea60f72b406752278d2"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_223253_044270.jsonl",
+      "size": 712627,
+      "sha256": "573c312b887275826c4e626a63cbc476688f1292894e0c6b651d6e41553f1cc7"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/logs/20261105_223303_376535.jsonl",
+      "size": 2774978,
+      "sha256": "69273b9cc63903aec9ce96178c155fa9731185692320511741d9884db7183357"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/post_reboot_can_check.json",
+      "size": 2123,
+      "sha256": "09bcd1cbf4b30247a704085d3f294c006cf02ac707af8426d9ee7a332b3c1949"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/data/preview.json",
+      "size": 838,
+      "sha256": "a8eec0255fc07a5d3fa0cab55baf86b25d28ab20148e26f6f0758e947310fef9"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/gui.log",
+      "size": 823,
+      "sha256": "25771f4221d0e4d083ec7899100f1013387daa8eae13bf7ce2d04dd5af525af1"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/gui_post_four_finger_trial.log",
+      "size": 3040,
+      "sha256": "0754f42d9112a6ce3a77e3fd3bde4044791f2db2b233aade9bd18e7e7deb6ab3"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/gui_post_trial.log",
+      "size": 1520,
+      "sha256": "e7ab3f58c2f4dd7f3f798846da9adb56a2a455029a8156ab80863afb7a144af6"
+    },
+    {
+      "path": "records/outputs/hand_camera_session_20261105/status.json",
+      "size": 870,
+      "sha256": "f6f01ae96de92adb7c56e6eadedf0f9dbcbd44be6a3e6f476b1c91cf478343b3"
+    },
+    {
+      "path": "records/outputs/hand_readonly_audit.json",
+      "size": 1487,
+      "sha256": "0120426911d5c8c813b219699ab665f80e4f132c9309ecde6101afcf42169784"
+    },
+    {
+      "path": "records/outputs/handoff_remote_snapshot_20261106.json",
+      "size": 7385,
+      "sha256": "8b1e66a7424477f7cc5ceb3c703c59f1749655a343b7a1f0e20c3bbb3db3d39c"
+    },
+    {
+      "path": "records/outputs/handoff_robot_paths_20261106.json",
+      "size": 652,
+      "sha256": "ba833bdf45e1055cb6524318ac19516ad93eb48961ee1b67ee312c0756ecd1d2"
+    },
+    {
+      "path": "records/outputs/index_camera_physical_trial_20261105.jsonl",
+      "size": 480,
+      "sha256": "c7e25a43cead22915ad0ccd091d398ceb906650e75c23ff5d4e62dd03659f54d"
+    },
+    {
+      "path": "records/outputs/index_camera_physical_trial_20261105_retry1.jsonl",
+      "size": 35501,
+      "sha256": "5449c3874bd23dc22fe4dd723d5e4a76843b2d9a250c8ea98bf2831c09ff4950"
+    },
+    {
+      "path": "records/outputs/index_camera_physical_trial_20261105_retry2.jsonl",
+      "size": 428727,
+      "sha256": "0e23649ba0a98e8a688763ae6d645507679aa316dc03a259a2f9d397b809ea2c"
+    },
+    {
+      "path": "records/outputs/index_camera_post_trial_snapshot_20261105.json",
+      "size": 4273,
+      "sha256": "4693a876d4aef122d585d511da4eedd126b4c391d7e4681536b0cd19a87f3686"
+    },
+    {
+      "path": "records/outputs/index_camera_trial_result_20261105.json",
+      "size": 1297,
+      "sha256": "a515f5b833f0b7a898efd61c7c1960cd8c3d011e761bd391d1b68ca2c1505ec4"
+    },
+    {
+      "path": "records/outputs/index_trial_pending_20261105.json",
+      "size": 698,
+      "sha256": "83bf87960007c4ae485555dcd9bfe3d2620f19c08f1466be2308cbaa24193b8a"
+    },
+    {
+      "path": "records/outputs/middle_calibration_diagnostic_result_20261105.json",
+      "size": 2316,
+      "sha256": "5363d45bc0f2f56a2eb82d0cc098a4438b090be6f233cf6b4cb8833865874172"
+    },
+    {
+      "path": "records/outputs/middle_calibration_post_tests_20261105.json",
+      "size": 1778,
+      "sha256": "32089301d2130d25faa8a5605f180bac3ae804533e1056cb66384ee49a63c120"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/calibration/autosave_correspondence.json",
+      "size": 936,
+      "sha256": "3a67422d87512880d617dea703d1e06090d1705fe05801ed625fe20bd0d1bc33"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/calibration/four_finger_camera_trial.before_1793887200068073649.json",
+      "size": 1205,
+      "sha256": "9f897aa02e9c1a22cc9c0550787800e1291645764a249b73015613d3c457b724"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/calibration/four_finger_camera_trial.json",
+      "size": 1278,
+      "sha256": "222ecc4fa4d496d1678af4ac9f0e0479ff882acac124c31294016ae5c5aa7844"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/index_trial_state.json",
+      "size": 528,
+      "sha256": "6e7c53996c6371a1f3e0606f6402b620d42bb25f302cfd949d571b9cc374cb30"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_222129_064455.jsonl",
+      "size": 1395415,
+      "sha256": "4a5114599be81cb6ac5e4a03c001c3ce8b3d4d7ee2942f8e3c5e3407dc08e9dd"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_222352_174461.jsonl",
+      "size": 208,
+      "sha256": "f4ffec1cc9362040c15fad4405ad170d060a73e71437e2daf3566c9251d9601a"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_222520_119107.jsonl",
+      "size": 33448,
+      "sha256": "68e9329dc7a0b5bcd66c067fe64b02e743dda5d8c999a8df4b87b36303f3660f"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_222615_304823.jsonl",
+      "size": 519700,
+      "sha256": "4d48552c0b02a16fdbb982850e27429213deec484581498b58f9aeef08f3cb01"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_222632_283580.jsonl",
+      "size": 401542,
+      "sha256": "69e06667122123366369e1ded0ad6f8b8d64ba46db0539ad2991815b8739e052"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_222817_134056.jsonl",
+      "size": 585482,
+      "sha256": "d7f34e8f5b819a578dba7cf9e7727d4d7a751b0b7356bea60f72b406752278d2"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_223253_044270.jsonl",
+      "size": 6925856,
+      "sha256": "de7140414400528a3bd6d54f76e59232e1aab6402fd25333a1c5e6b765ebd88d"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_223303_376535.jsonl",
+      "size": 2774978,
+      "sha256": "69273b9cc63903aec9ce96178c155fa9731185692320511741d9884db7183357"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_224240_083937.jsonl",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_224503_554025.jsonl",
+      "size": 766730,
+      "sha256": "a5ca6b0946613a92b002d6f3ea81bb2f1fa95be240460f624bf8f664833ae0fb"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_224823_945897.jsonl",
+      "size": 2893851,
+      "sha256": "a0b8661a4c8481b7951aa81f74bf03075cefb9a440dc977a3f47884fe998dbe8"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_225926_918263.jsonl",
+      "size": 1117,
+      "sha256": "8dde26a04d3d274ef607eb1cef7d23d86e5223bb4465ee4784c609dfb5e3e087"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_230103_900367.jsonl",
+      "size": 1177810,
+      "sha256": "5fd136e9cd9041486a9f11ca42d6fd82aaa9c334b96115a1c0ba124649cdcdd8"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/logs/20261105_230515_047190.jsonl",
+      "size": 417929,
+      "sha256": "dbdf284b9d389896aadbdd175c81990c1962454b1e9f031186ae2978f545227e"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/data/preview.json",
+      "size": 847,
+      "sha256": "8477d3efb684e28699e6bcdc4c24e991bcd451850c7d236bbeddbb89bab9f791"
+    },
+    {
+      "path": "records/outputs/middle_calibration_session_20261105/gui.log",
+      "size": 3040,
+      "sha256": "0754f42d9112a6ce3a77e3fd3bde4044791f2db2b233aade9bd18e7e7deb6ab3"
+    },
+    {
+      "path": "records/outputs/middle_camera_calibration_1793887165949.jsonl",
+      "size": 980,
+      "sha256": "bb7d79f93542e985a783d26cd804edc455b2f8ba1101ee709e7b5a29f802ab3a"
+    },
+    {
+      "path": "records/outputs/middle_camera_recalibrated_references_20261105.json",
+      "size": 1278,
+      "sha256": "222ecc4fa4d496d1678af4ac9f0e0479ff882acac124c31294016ae5c5aa7844"
+    },
+    {
+      "path": "records/outputs/middle_camera_validation_1793887262909.jsonl",
+      "size": 1193875,
+      "sha256": "71bab542a195e3ba4eaabc8e4e1d9f107097b824a9cfc273b020050a07f2830e"
+    },
+    {
+      "path": "records/outputs/middle_flex_existing_firmware_1793889841178.jsonl",
+      "size": 530601,
+      "sha256": "17d8ae0fdf72247e2fd92e9de644a809aa6803ae9ee9e0e1629ac280a2c1b3ed"
+    },
+    {
+      "path": "records/outputs/middle_lower_1850_20261105/README.txt",
+      "size": 1875,
+      "sha256": "235122d31e7be0bb67462359abd1a799a9dca4043bd494184b5ef0c5d3ad37ee"
+    },
+    {
+      "path": "records/outputs/middle_lower_1850_20261105/validation.json",
+      "size": 307,
+      "sha256": "dee08f676bcffcfe7a55f15bc2284b9e714f14ddb205a92e3b3db89d6372d4b4"
+    },
+    {
+      "path": "records/outputs/middle_lower_isolation_1793887514064.jsonl",
+      "size": 446090,
+      "sha256": "d8d22d600613a93a317fa1ae2940f1abcab31ce67eeca99d0e31d1770e20700e"
+    },
+    {
+      "path": "records/outputs/middle_lower_zed_observation_1793888073362.jsonl",
+      "size": 546690,
+      "sha256": "107526d71da24bbc51186be9dc362c95711e425984c920c2a630be6841162964"
+    },
+    {
+      "path": "records/outputs/middle_lower_zed_slow_1793888407567.jsonl",
+      "size": 1095607,
+      "sha256": "0002371e86dbb2b1b941e393c5f989e56a362550518196f06814847746884ac3"
+    },
+    {
+      "path": "records/outputs/middle_recalibration_can_after_reset_20261105.json",
+      "size": 2396,
+      "sha256": "c2ad04b43654387526606cb5cbd1ef87580a60b081f03403254a9e44da323c3d"
+    },
+    {
+      "path": "records/outputs/middle_recalibration_can_preflight_20261105.json",
+      "size": 2459,
+      "sha256": "b31acb0510c7d09857f6a849402954d020c730e76ce3ec09028ffdcea37106e1"
+    },
+    {
+      "path": "records/outputs/motor_voltage_monitor.py",
+      "size": 33438,
+      "sha256": "d88921aa5b8e5a8cb7117383e7e12ecb2eb1076bf1d8db950a76c12b14a962e3"
+    },
+    {
+      "path": "records/outputs/no_can_code_diagnostic_20261105.jsonl",
+      "size": 13552,
+      "sha256": "c0e8da292c35ec1cc8f73126232c45e1893e3f1b3f8dce66528c1c650c6a87d8"
+    },
+    {
+      "path": "records/outputs/no_can_code_diagnostic_summary_20261105.json",
+      "size": 694,
+      "sha256": "f7749ae582b4c30a6a163bc9817c19ecd33e27166a8c4f208830acc7151a9def"
+    },
+    {
+      "path": "records/outputs/no_can_code_test_20261105/logs/20261105_220649_832962.jsonl",
+      "size": 2160801,
+      "sha256": "c2c2fa18ef53c71a5abaa2c4197e99a0608f620e616de9a881d48bd16c2c4797"
+    },
+    {
+      "path": "records/outputs/no_can_code_test_20261105/no_can_gui.log",
+      "size": 823,
+      "sha256": "cb41db75774ac6c46902fab8ca442b6659ae1f25c822cbda5e5e11ce0946629c"
+    },
+    {
+      "path": "records/outputs/no_can_code_test_20261105/no_can_status.json",
+      "size": 538,
+      "sha256": "e22785b3da72e0a4817e643725e69fa563aa776dcab2ba4d3b7396267375633a"
+    },
+    {
+      "path": "records/outputs/no_reply_latency_analysis.json",
+      "size": 20368,
+      "sha256": "aa30b6c01cf14521ff1aae5d0ae1cb197dca26ee203a5aeaffc7f94e03a9c497"
+    },
+    {
+      "path": "records/outputs/oneway_manifest.json",
+      "size": 1769,
+      "sha256": "b8b90553ecd7e47aae643701c225fe5e55b2f27c3c57345ff997a8877d53b6f6"
+    },
+    {
+      "path": "records/outputs/pinky_readonly_diagnostic.json",
+      "size": 2305,
+      "sha256": "8363bcfc1c48998364eac031656df20fa7abfb53a33a58a6dc6dc35d0ba12103"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/README.txt",
+      "size": 2333,
+      "sha256": "b62e92b2ab61867397696bd15711f511c9b94d2cad844e41d6358cfeeabdb1ae"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/apply_sdk_patch.py",
+      "size": 3943,
+      "sha256": "703ecc1973cd5ed49e2c01e50615d624c16eb0a3d15d37a859fa13250410c86b"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/firmware/DexHandRight/BoardConfig.h",
+      "size": 2996,
+      "sha256": "fa804fa67365d562c101b43b7cb23cda35deb837f711bc73ea439c63d3482815"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/firmware/DexHandRight/SDK_설정값.md",
+      "size": 2165,
+      "sha256": "e8170ddba0e41450fd493cede23489afb6c39640e65990e021b571252c2127bf"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/firmware/DexHandRight/calibration.json",
+      "size": 2819,
+      "sha256": "2643df6e8640eefee8082701a957e1e15e1920d226a4d49ee7b3b5d9ba9e9253"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/firmware/DexHandRight/update_config.py",
+      "size": 8083,
+      "sha256": "72a0ea80d2e50bc73ef3ee0567a1bb66d0cba3c4131b0e9b5f3e9b8a3cd6c174"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/pc/hand_can.py",
+      "size": 6128,
+      "sha256": "1f03627fcc36cc206b6a0cb04c92dd69592d4e740d3272ff864ff9b9500dac69"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/profiles/right_hand.json",
+      "size": 2819,
+      "sha256": "2643df6e8640eefee8082701a957e1e15e1920d226a4d49ee7b3b5d9ba9e9253"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/tests/test_hand_can.py",
+      "size": 11065,
+      "sha256": "d6cff3aeb78e401208cc6c0dd4144fa0a19fd18ac7b55765d38e45283aa3319a"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/tools/generate_board_config.py",
+      "size": 2512,
+      "sha256": "b79d1b62659725a4fd8d529d57dfcd277e77b81f9e97e0265ee96d20ccab7003"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/dexhand_control/tools/generate_sdk_config.py",
+      "size": 1622,
+      "sha256": "0b15f2f257bfbc6c7b7accd3e677782f76506f58cd6bc9643a8b23d0bdd42638"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/config.py",
+      "size": 9640,
+      "sha256": "e26bc1dbced86fd27f7a54b64bca1dd734600189a9124e8270c46f5f3a0f746f"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand.yaml",
+      "size": 1445,
+      "sha256": "384212ae124f3558c087218e6ba695152d022f607045e914818382d55e78cb1f"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_camera.yaml",
+      "size": 1540,
+      "sha256": "cb577dcf8f4f96609bf17f013f55d9d9f70ab940603daa081ccfaaddf5ff1a3f"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_oneway.yaml",
+      "size": 1364,
+      "sha256": "04bb6a76411f4bf05342b6132794c31e1d2033bb41e799e793127b5250ca2ac4"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_oneway.py",
+      "size": 3765,
+      "sha256": "ab7c38592c2e4f47a483be39bac69d43d9e9ffb26b4514933da63deaa483562f"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/before/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_rightfix1.py",
+      "size": 3538,
+      "sha256": "f2318130ab8f6c6b0e1989fecfb4736f395d86ef5191d35796f7c2dd899c2d87"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/changed_paths.json",
+      "size": 852,
+      "sha256": "2ae45f4f8b82d3dca3032e2b4577fa79a04d59ac7a3e446b196cbad8f6825b2a"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/manifest.json",
+      "size": 8387,
+      "sha256": "def059170ae408a0f0d60f279703cdefeae13e1d5dbdb680a9deb6af037077f2"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/robot_stage_check.json",
+      "size": 761,
+      "sha256": "f1ec48a3fed9c8e7df0da575b0ccceab063037d7cba933515d16f56f308e242b"
+    },
+    {
+      "path": "records/outputs/pwm_cap_2300_20261105/validation_report.json",
+      "size": 10304,
+      "sha256": "07b0c4e9727bc25d057160f4757c9e7600d7b1a1751c7d14f33143a7e4249ee9"
+    },
+    {
+      "path": "records/outputs/right_hand_gpio_pwm_pinmap_20261106.json",
+      "size": 4890,
+      "sha256": "a1282287b020ed701ced4d891fe350391917f8c61ad80c93d158c95557f3fee1"
+    },
+    {
+      "path": "records/outputs/rightfix1_deployment.json",
+      "size": 789,
+      "sha256": "6700bfb45f61c34460159f8f9419cd1ec2a95655e1e5a26a98d59cbd0a078208"
+    },
+    {
+      "path": "records/outputs/rightfix1_적용_확인.txt",
+      "size": 3554,
+      "sha256": "ed29ce23101bce200332434f7d17aff704d08925b37b4a4a06d96010f0f384df"
+    },
+    {
+      "path": "records/outputs/robot_observation_session_20261105.txt",
+      "size": 1060,
+      "sha256": "e2e969492ec25f9c6d4d0ef6c0c44bfe4bc040871306cb51dd5837ec8c0577ef"
+    },
+    {
+      "path": "records/outputs/run_voltage_monitor.sh",
+      "size": 131,
+      "sha256": "7bbaa9d1a2ba93044e0a2e2e6a82853644dfc1fe55887fbfc156a304dd9d776e"
+    },
+    {
+      "path": "records/outputs/sd_camera_diagnostics_20261105.json",
+      "size": 9725,
+      "sha256": "866213e199bd204d80810de06635d6c4cdfa3037b62794bad76047ae29cd3c42"
+    },
+    {
+      "path": "records/outputs/sd_camera_kernel_followup_20261105.log",
+      "size": 67135,
+      "sha256": "d03f4de7541d7a8a77990eeb60343efa4bea920efb3646cb16ac7eb3741e7b22"
+    },
+    {
+      "path": "records/outputs/sdk020_arm_acceptance.json",
+      "size": 527,
+      "sha256": "b5873cbe9fbeefa965c186d35df4ede7f91e826444fcb5f3c23501a8b3465676"
+    },
+    {
+      "path": "records/outputs/sdk020_deployed_tests.log",
+      "size": 261,
+      "sha256": "e8cea779ddb283c00db59e9815c85f53615f02d9180d27d0d24537084cc2f46b"
+    },
+    {
+      "path": "records/outputs/sdk020_deployment.json",
+      "size": 1254,
+      "sha256": "097d721867c3eadec566b6dd814bca504fee8a649734e935b9e2de4a640af561"
+    },
+    {
+      "path": "records/outputs/sdk020_upperbody_acceptance.json",
+      "size": 12533,
+      "sha256": "3db26158055289762bad78307955ca68e9a0febedd849f5cc8b6e4f24f8e5b57"
+    },
+    {
+      "path": "records/outputs/simple_hand_gui.py",
+      "size": 13269,
+      "sha256": "c59b80d636fcc7d11691c4e08caedc854190bbf02bfd5aa6ec1e0e8ac01bdcc1"
+    },
+    {
+      "path": "records/outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020208.jpg",
+      "size": 62774,
+      "sha256": "d6a15ff4ec20924f75ab1b14fb5899290ef43ab7c153e88ede636753bf94a410"
+    },
+    {
+      "path": "records/outputs/zed_middle_flex_existing_20261105/middle_flex_1793889842114565353/frame_00020322.jpg",
+      "size": 62274,
+      "sha256": "ca675e04533563a67ba370e809c289ef62fa2e9acdf2522db60eb85117a413da"
+    },
+    {
+      "path": "records/outputs/zed_middle_flex_existing_selected_20261105.json",
+      "size": 1808,
+      "sha256": "23b758895ee93ebdc3a7afe25c6c6101bf7c0f07d76e972fba721d391bd8eef9"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_comparison_20261105.png",
+      "size": 213691,
+      "sha256": "5465284f59d8a0dede5110d7766cb5170edb4d040b25fa13d6f256865b382f41"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000942.jpg",
+      "size": 65553,
+      "sha256": "739606d5430a223fa4e02d81b4d8d01bbc5e6862887783d4751dcc2583016f6e"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001009.jpg",
+      "size": 65459,
+      "sha256": "5af880723b407f807172a6d3ee6141689fa80225712ac06dd69bdc4e992b1b66"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001082.jpg",
+      "size": 65658,
+      "sha256": "4e5d807ae57cf5aa7c608d41a8386c490867fbd67a3f33448e20e2cfedefb675"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_observation_20261105/observation.mp4",
+      "size": 900027,
+      "sha256": "568140a198f3871e2e8524ea0080577b0951258f1bef505dbc9c1b467689a7a6"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_observation_result_20261105.json",
+      "size": 2019,
+      "sha256": "877ccc0333408312ce2125aa0733c50c434a37748fc82f9213eb9cbf1ab86280"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_post_test_20261105.json",
+      "size": 3198,
+      "sha256": "4faada8a0e2b67fa4e8a4548fc2711e1c10925eb5800ff7c74ebcc656c885849"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_selected_frames_20261105.json",
+      "size": 2839,
+      "sha256": "6512ae48fa6b8a0cd20b16b8a264edb91d236ff7ac75baf71911b4ecfe9c3e46"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_slow_20261105/commands.srt",
+      "size": 35975,
+      "sha256": "b8f0c8bcc8ca74bc66a57b42ac6d3fd15fdc3b6dec5c337ce97db99a33a1f930"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004620.jpg",
+      "size": 64780,
+      "sha256": "8d249cf013c41a3f694cfc5b8ceffa4a2778e159853fdaa20214847b61b647f2"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004755.jpg",
+      "size": 64766,
+      "sha256": "b7f465e0a6de874715b4dfcc31b5141f681cc064263f30bc01db6487c89df6b9"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_slow_20261105/middle_lower_1793888408529114785/frame_00004906.jpg",
+      "size": 64546,
+      "sha256": "0925bdfa2fe2642f482de647a73ffadb90e337932a5cf8feb9eac696c605565c"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_slow_20261105/observation_with_pwm.mp4",
+      "size": 1837812,
+      "sha256": "a03e4c90e1a8ae4ee22284f4818d9607d5eec79f5236ce7ec6799de7aec7cce1"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_slow_result_20261105.json",
+      "size": 1645,
+      "sha256": "ca64037c38d92d352a30812f6beb8b2da0bdf0c0c2171622703d51e0a47d718d"
+    },
+    {
+      "path": "records/outputs/zed_middle_lower_slow_selected_frames_20261105.json",
+      "size": 2702,
+      "sha256": "e117f824743336ee3f93e44f07319b42364b70d7382b3a7959138af271b64776"
+    },
+    {
+      "path": "records/outputs/과열 CAN 검증.json",
+      "size": 4037,
+      "sha256": "94d8749a6a0041f82db7c18e1068716a90d2127fdc23f475d578c14ded98e3ff"
+    },
+    {
+      "path": "records/outputs/과열 로그 분석.txt",
+      "size": 6639,
+      "sha256": "31440ce6845e9111e1982dabaaff49b69518af8cc97b2d0dec9ddfab699c0a26"
+    },
+    {
+      "path": "records/outputs/모터_진단_GUI_안내.txt",
+      "size": 1978,
+      "sha256": "614884e0c29362ae1c996bc6678108be850d4579fd2a74e53c47484432667860"
+    },
+    {
+      "path": "records/outputs/새끼손가락_지연_진단.txt",
+      "size": 3516,
+      "sha256": "31a6d832db6887a07772de99bfc6eddaf57ab1fe2863f485d1a611c9495d6301"
+    },
+    {
+      "path": "records/outputs/손_간단_GUI_사용법.txt",
+      "size": 714,
+      "sha256": "013fd975bbf0f9a9a4d311ba8dee49c57f0fe701788637cd238c2ccfa9dccb72"
+    },
+    {
+      "path": "records/outputs/실물 실행과 측정 확인.txt",
+      "size": 6443,
+      "sha256": "c1009138e3ea3eb06a06e071f9c69da7048dd340a6552dcf1903f54078d51792"
+    },
+    {
+      "path": "records/outputs/엄지_캘리브레이션_및_재연결_안내.txt",
+      "size": 4980,
+      "sha256": "5a83c1cd2f6cd8cd9bd9a3f89772f61092db7ee5e0c1e6578e609b985a4f98f5"
+    },
+    {
+      "path": "records/outputs/오른손_GPIO_PWM_핀맵_20261106.txt",
+      "size": 2475,
+      "sha256": "861ae7535c949069e53125e1499752b1a8de5f0b80bdcb832c65e767a6b678fe"
+    },
+    {
+      "path": "records/outputs/오른손_엄지값_수정_안내.md",
+      "size": 2814,
+      "sha256": "5993cef5207deb13b8436ab45692e05261d3e86e3b7cb514f19f472d7669c05f"
+    },
+    {
+      "path": "records/outputs/진단로그_변경설명.txt",
+      "size": 2785,
+      "sha256": "efbf55255e7f27686d4fedc2f17a1cf8a794fa85451f3088d7efc872d5ed1697"
+    },
+    {
+      "path": "records/outputs/진단로그_적용전해시.json",
+      "size": 605,
+      "sha256": "a7f24aa8ef407f84412db41fb6de437d6fe648c65682626d179e17f8e0bd0267"
+    },
+    {
+      "path": "records/outputs/카메라_캘리브레이션_사용안내.md",
+      "size": 11032,
+      "sha256": "8fa787a78bea0bc451f5ed78c2911176c5e3e60bc6ca386d310c2a8be292a9db"
+    },
+    {
+      "path": "records/outputs/팔 제어 실행 가이드.txt",
+      "size": 12462,
+      "sha256": "2e07ec6267b79bf8ca6ad9239cb51225760b652d0693d6982f25b46fe18b221c"
+    },
+    {
+      "path": "records/work_logs/calibration_full_tests.log",
+      "size": 260,
+      "sha256": "121a13a23bcb997b2ba82af333a33e3e037199d9beb93e4edd46e672a2168387"
+    },
+    {
+      "path": "records/work_logs/calibration_hand_tests.log",
+      "size": 179,
+      "sha256": "e138daac06426052069613eeffb1a7c37f8cd85bba9bb0e2c0da84eb7cbb1213"
+    },
+    {
+      "path": "records/work_logs/calibration_initial_tests.log",
+      "size": 179,
+      "sha256": "eada28ed7c121a8ca672b5935ba017441c92195fbe6362cd193e204201adc795"
+    },
+    {
+      "path": "records/work_logs/calibration_recovery_tests.log",
+      "size": 98,
+      "sha256": "31bf122c812d50de13828d3b593d44d2f2e09b962d9186d6e9e7bddef6bc4a60"
+    },
+    {
+      "path": "records/work_logs/calibration_tk_test.log",
+      "size": 215,
+      "sha256": "96febe4308c626049c95b22c372456c19773f451acdc3cdd776f5c3e973dd6ea"
+    },
+    {
+      "path": "records/work_logs/camera_retarget_all_tests.log",
+      "size": 191,
+      "sha256": "b85119a9d155ccb518e20850f11efccfa7dad6ddff8a79aab49517211c12536a"
+    },
+    {
+      "path": "records/work_logs/camera_retarget_core_tests.log",
+      "size": 98,
+      "sha256": "efb4cc1ce219481f3402d2af55e9136236d8c64373d15989442ebcea41df9cb3"
+    },
+    {
+      "path": "records/work_logs/camera_retarget_gui_test.log",
+      "size": 209,
+      "sha256": "0ac60216ddef6b43634308d2c20ed32f2bfda62a067309391cc051c9c19cd164"
+    },
+    {
+      "path": "records/work_logs/camera_retarget_ros_smoke.log",
+      "size": 5240,
+      "sha256": "b73d627542ca86f87b4f7c059570a39eb776e488a693a6db6c7117f58bf1213c"
+    },
+    {
+      "path": "records/work_logs/camera_retarget_visual.log",
+      "size": 60,
+      "sha256": "d50e99fe02dbf95e597c37552051a11f7f4ff9a47db5cccaad0e7b4c91c0089a"
+    },
+    {
+      "path": "records/work_logs/camera_session_backup.log",
+      "size": 1196,
+      "sha256": "798e3c159503cbf58e71f160b0a8a4857c21e4518767ffa00967e6f3be94a4fc"
+    },
+    {
+      "path": "records/work_logs/camera_session_gui_test.log",
+      "size": 209,
+      "sha256": "0ac60216ddef6b43634308d2c20ed32f2bfda62a067309391cc051c9c19cd164"
+    },
+    {
+      "path": "records/work_logs/camera_session_tests.log",
+      "size": 191,
+      "sha256": "db1e84909a2e4388ba77b435cc5faec551530e638b2ec766ce0e8114795316fe"
+    },
+    {
+      "path": "records/work_logs/can13_original_verify.log",
+      "size": 955,
+      "sha256": "c554398971e8621bb39a918343235cd015652a1ec4b4aaf3d86e460fb69b1e51"
+    },
+    {
+      "path": "records/work_logs/can13_patched_verify.log",
+      "size": 955,
+      "sha256": "8045dff2f72d86dd3beb00a08127a1770acecb04129a3b81524b566f5305bb4e"
+    },
+    {
+      "path": "records/work_logs/extended-monitor-final.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/work_logs/hand_can_controls_core_tests.log",
+      "size": 179,
+      "sha256": "5cb118e3a5bec4cae44f504c3abe594a927b349d73f1be92705be1e4aa0d2832"
+    },
+    {
+      "path": "records/work_logs/hand_gui_usability_regression.log",
+      "size": 168,
+      "sha256": "90a9883b5dc6ba631c9159be2d251613d1c3809fabc198a67a92e01fb368c127"
+    },
+    {
+      "path": "records/work_logs/hand_gui_usability_test.log",
+      "size": 168,
+      "sha256": "90a9883b5dc6ba631c9159be2d251613d1c3809fabc198a67a92e01fb368c127"
+    },
+    {
+      "path": "records/work_logs/hand_open_gui_test.log",
+      "size": 168,
+      "sha256": "90a9883b5dc6ba631c9159be2d251613d1c3809fabc198a67a92e01fb368c127"
+    },
+    {
+      "path": "records/work_logs/motor-dashboard-final.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/work_logs/motor-dashboard-redesign.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/work_logs/oneway_new_tests.log",
+      "size": 98,
+      "sha256": "f299cb0ffb4580215f4b9643a2f31cdf09e6c57c46f955b1d1c6a26a088f6fb3"
+    },
+    {
+      "path": "records/work_logs/oneway_pwm_native_test.log",
+      "size": 153,
+      "sha256": "c112dbea5c40c16589a5db020ae246adcb60cdb3e10d4f2d842b8d9a8bb68ca5"
+    },
+    {
+      "path": "records/work_logs/oneway_sdk_tests.log",
+      "size": 260,
+      "sha256": "0cc24bfd20af217630d32d7a83fd0575359dfa919ca1b5aa2a398029a2b592d9"
+    },
+    {
+      "path": "records/work_logs/oneway_tk_test.log",
+      "size": 144,
+      "sha256": "122c7eda982f6fac7c4ecff8c642156e83e0e116ba3aeebdcc57a5f1c7a3accf"
+    },
+    {
+      "path": "records/work_logs/pinky_diag_tk_test.log",
+      "size": 144,
+      "sha256": "122c7eda982f6fac7c4ecff8c642156e83e0e116ba3aeebdcc57a5f1c7a3accf"
+    },
+    {
+      "path": "records/work_logs/pinky_diagnostics_tests.log",
+      "size": 260,
+      "sha256": "85ca4f7dd3bac8503f67d68f85a58bc354cb99b1d7a7f939dcd6cfac27371d1f"
+    },
+    {
+      "path": "records/work_logs/pwm_cap_2300_compile.log",
+      "size": 207,
+      "sha256": "d9f1fd8e5d791d6e3c322232d604c6e6abb8c5322f0afa9df0cd7ff74dd0a66d"
+    },
+    {
+      "path": "records/work_logs/pwm_cap_2300_tests.log",
+      "size": 260,
+      "sha256": "de01f5b1c3d8105a1e205b8ebd22ddbe638831ed29405bbc8378daa28e95af91"
+    },
+    {
+      "path": "records/work_logs/rightfix1_gui_test.log",
+      "size": 228,
+      "sha256": "8a1a6c2e201f3ebb00e09510c37ee42835366a025f2b25610a2680d756d9caeb"
+    },
+    {
+      "path": "records/work_logs/rightfix1_initial_tests.log",
+      "size": 6362,
+      "sha256": "3d20271675ea2840aaa1e9e9606cf625f429d32733bbcdf124f155dedc9003ee"
+    },
+    {
+      "path": "records/work_logs/rightfix1_tests.log",
+      "size": 260,
+      "sha256": "d4d7e8d3425ec0f09a8a7a249df2206ce69c808ba7aba926f932f8c7bbfc2f43"
+    },
+    {
+      "path": "records/work_logs/simple_can_controls_test.log",
+      "size": 228,
+      "sha256": "8a1a6c2e201f3ebb00e09510c37ee42835366a025f2b25610a2680d756d9caeb"
+    },
+    {
+      "path": "records/work_logs/simple_hand_gui_test.log",
+      "size": 182,
+      "sha256": "01b2d9b2fb5282c4bbea5accaf4d58d50f1a3e033ef2f3a35fc006ccd22286ce"
+    },
+    {
+      "path": "records/work_logs/thumbfix2_pc_tests.log",
+      "size": 99,
+      "sha256": "7b5ab41a6447fb409d2fa009970d63ddec9af5939138fddb27339e8dad9ad520"
+    },
+    {
+      "path": "records/work_logs/thumbfix2_preview.log",
+      "size": 289,
+      "sha256": "a2ab2e6fed74f872059719c9f83fe0caa80dbb0dbdb35fa424ce3d22ce7d7b32"
+    },
+    {
+      "path": "records/work_logs/thumbfix2_sdk_tests.log",
+      "size": 260,
+      "sha256": "f0ac58d89a275a99cc187b7228834e113b0e4f5c05d9cc27d15af68526f2c690"
+    },
+    {
+      "path": "records/work_logs/thumbfix2_tk_test.log",
+      "size": 144,
+      "sha256": "122c7eda982f6fac7c4ecff8c642156e83e0e116ba3aeebdcc57a5f1c7a3accf"
+    },
+    {
+      "path": "records/work_logs/uploaded_can_atomic_test.log",
+      "size": 180,
+      "sha256": "dc985685c888b137612c49f980cbaa883107acc343552a76f4bcc0807059f9a8"
+    },
+    {
+      "path": "records/work_logs/voltage-monitor-live.log",
+      "size": 45519,
+      "sha256": "ccd9afbada72b32458b7658aa26f74c689b35d01f3d151253e98528c4f509d46"
+    },
+    {
+      "path": "records/work_logs/voltage-monitor.log",
+      "size": 1036270,
+      "sha256": "ab9535570e8c1a1ec9b52412ee2e881e8142f3aa3c50fa826b41908290515176"
+    },
+    {
+      "path": "runtime/robot_ram_snapshot_20261106.tar.gz",
+      "size": 63060798,
+      "sha256": "a9ef6fe58055408faa229626201ba2e103d02ad38b38ab547ac35ca266c6777e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/CAN13_업데이트_안내.txt",
+      "size": 2638,
+      "sha256": "8952b19bd51eaa291e8723ef57d8f01956f4da52f6cf2d30625b3957d5013282"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/ONEWAY_PWM_안내.md",
+      "size": 4755,
+      "sha256": "b50df71cd0a7e3270e08b25841c0b0712cbbcd2749b26f7470f4439d2519c72e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/PC_진단_모니터.sh",
+      "size": 138,
+      "sha256": "f9d568f472e655af0add15183a41a8db4ad4fa9ffb21bd4dbff4f31bb2ce4224"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/PC_팔_슬라이더.sh",
+      "size": 278,
+      "sha256": "83b5febff1585d9b38f763a323825d54ea2afe933345148518c77b1ebd9862c9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/README.md",
+      "size": 2985,
+      "sha256": "c07fae27fe7f31d636d21b270d34ba36f88b978c0768eba825f135687c4879fb"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/RIGHTFIX1_SDK_NOTE.txt",
+      "size": 1067,
+      "sha256": "3a7b6b7f358f90c1b8109f14b9fe07d5872266c305f95eaf9d073f51db55beda"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/RIGHTFIX1_적용_확인.txt",
+      "size": 3714,
+      "sha256": "e8fb69c6506e4e892baec66e76eb1172ea9ac465ae6ad668f2678bc59ea4bff7"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/SDK_수정안내_rightfix1.md",
+      "size": 10733,
+      "sha256": "1c2f3ab7ced10333e370e4406d712ee2b7174d67e1aa8b1a14e823f983b5d82c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/THUMBFIX2_안내.md",
+      "size": 2814,
+      "sha256": "5993cef5207deb13b8436ab45692e05261d3e86e3b7cb514f19f472d7669c05f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/before_pinky_diagnostics/controller.py",
+      "size": 29318,
+      "sha256": "76b64f24792baa8ca7cfe0d603b34946a1fee2745ec650420b65cd6f6cacf2d3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/before_pinky_diagnostics/gui_worker.py",
+      "size": 13261,
+      "sha256": "b61e21358af930420e1e1335d97666677ef0accd44d071b0c9d5d79087fd6ee6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/before_pinky_diagnostics/simple_gui.py",
+      "size": 17708,
+      "sha256": "13117a4090d1055229d46658deeb269cbef8d0b6d6bd1342ea83003136cde032"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_calibration_ready_20261105.json",
+      "size": 832,
+      "sha256": "0240c630389504118a2718c00b6cc40090aa2ae9c5285cc17eab8d84895429cd"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_build_local.log",
+      "size": 97,
+      "sha256": "86af2f68d2e1f05f3ad38656ffe0137805314ab52530174277ab3e206847dbbf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_build_robot.log",
+      "size": 286,
+      "sha256": "3389e6e84b11e2368f08b809da86c884615f9a7593b474abdef8cb7540fdfeaf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_build_robot_final.log",
+      "size": 97,
+      "sha256": "37760d7487aef32645b1ede7f5c6c0a4cd756ed5f62712a5cc892e64a807a3ef"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_manifest.json",
+      "size": 3533,
+      "sha256": "13aa9cd76be3538334c03c366f4e84125ddddd75076aa3e386f666c4da10d9c0"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_model_robot.log",
+      "size": 903,
+      "sha256": "37b45e105ed9d44a9bc93269340e7cfaf78309da6e8ad30892ff9a2ec02f5026"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_robot_status.json",
+      "size": 1207,
+      "sha256": "48bd69ba3233d05f9b94f498561e88168bbe37e40053675a0296235d000d4d6f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_ros_result.log",
+      "size": 141,
+      "sha256": "758dd4cd9222a64ea12386a7ddcd6863afc4aed63556a22c83dbe96ba9429e45"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_ros_smoke.log",
+      "size": 5240,
+      "sha256": "b73d627542ca86f87b4f7c059570a39eb776e488a693a6db6c7117f58bf1213c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tests.log",
+      "size": 191,
+      "sha256": "b85119a9d155ccb518e20850f11efccfa7dad6ddff8a79aab49517211c12536a"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tests_robot.log",
+      "size": 192,
+      "sha256": "f5c4561e1ac574b5e07b2d9a0585d6f26cacf34cddf95da5faaf07e17ce62122"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tests_robot_final.log",
+      "size": 192,
+      "sha256": "b0aba7c8d220d7db25e15db04f6af6a0daff2b0fbe7c8f579f9011620e9db5a7"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tk_robot.log",
+      "size": 297,
+      "sha256": "284d105da8b07027f59d3878a217e36e38ceb06d71bef2ff85403524c9ce575c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tk_robot_final.log",
+      "size": 276,
+      "sha256": "4f8509e8097ba91252621a791eccc95c8f27f1853cd59bf1c24d980eb41e69d9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tk_robot_optimized.log",
+      "size": 399,
+      "sha256": "4579c9893e8fc4b37d9df11750f7d86f18d3ba6209c6986647969ed1e6e6a519"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tk_robot_retry.log",
+      "size": 297,
+      "sha256": "284d105da8b07027f59d3878a217e36e38ceb06d71bef2ff85403524c9ce575c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_retarget_tk_test.log",
+      "size": 209,
+      "sha256": "0ac60216ddef6b43634308d2c20ed32f2bfda62a067309391cc051c9c19cd164"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_session_gui_test.log",
+      "size": 209,
+      "sha256": "0ac60216ddef6b43634308d2c20ed32f2bfda62a067309391cc051c9c19cd164"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/camera_session_tests.log",
+      "size": 191,
+      "sha256": "db1e84909a2e4388ba77b435cc5faec551530e638b2ec766ce0e8114795316fe"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/hand_can_controls_and_ack_fix.patch",
+      "size": 20024,
+      "sha256": "fdc33e41eeada5d43fe5b4593cfa077c92dacbc4644c89b1b6a61030b96b0167"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/hand_gui_usability.patch",
+      "size": 12336,
+      "sha256": "f5756462851dd6fb019fffc8c2865672953daed484281790b9a8b02866b5361c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/hand_gui_usability_and_open.patch",
+      "size": 14477,
+      "sha256": "98dff5825038f555b3ff85b5b6af88df2a39b3653a3150c6214468b43fdae6c5"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_compile.log",
+      "size": 207,
+      "sha256": "d9f1fd8e5d791d6e3c322232d604c6e6abb8c5322f0afa9df0cd7ff74dd0a66d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_manifest.json",
+      "size": 1769,
+      "sha256": "b8b90553ecd7e47aae643701c225fe5e55b2f27c3c57345ff997a8877d53b6f6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_native_tests/oneway_pwm_native_test.cpp",
+      "size": 2986,
+      "sha256": "2ce5951b5f9ea76e833db1bed6e306d6936ebb50e7cb25d55d95bd2d874f61b7"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_native_tests/run.py",
+      "size": 460,
+      "sha256": "79348611ea9af675463b2b32c867f0ec52f24e89db49811332bc8661b2675438"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_native_tests/stubs/Arduino.h",
+      "size": 227,
+      "sha256": "fd5bf033bcf844e17d383f8cdfce3fb0e8acf5acae79a060faaf9bc0b872d92d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_native_tests/stubs/freertos/FreeRTOS.h",
+      "size": 429,
+      "sha256": "3db8a2031fac68ef64682bb4e453dc32b06612739d40db2218f4b8f5bdc10aaa"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_native_tests/stubs/freertos/task.h",
+      "size": 847,
+      "sha256": "10bc628d58da97a5e6242a52729521057eacdc2fdbcedb406a05c1754c1e2327"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_pwm_native_test.log",
+      "size": 153,
+      "sha256": "c112dbea5c40c16589a5db020ae246adcb60cdb3e10d4f2d842b8d9a8bb68ca5"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_tests_local.log",
+      "size": 260,
+      "sha256": "0cc24bfd20af217630d32d7a83fd0575359dfa919ca1b5aa2a398029a2b592d9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/oneway_tk_test.log",
+      "size": 144,
+      "sha256": "122c7eda982f6fac7c4ecff8c642156e83e0e116ba3aeebdcc57a5f1c7a3accf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/original_source/bhl_arm_sdk/bhl_arm_sdk/node.py",
+      "size": 15806,
+      "sha256": "9b2d684bc3b6be7767106c8d50a51d4b8a5f39551f0fd7ba0d6b2bda11bf49b3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/original_source/bhl_arm_sdk/bhl_arm_sdk/sequence.py",
+      "size": 5559,
+      "sha256": "2f37a6b089c8121fbd318a3e00dfb8472fb16a63b37df2d7154f9eb883d41457"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/original_source/bhl_arm_sdk/bhl_arm_sdk/slider_gui.py",
+      "size": 11038,
+      "sha256": "107ee857d5e15c904cab9946b5964fdd1b01fecd3914aced11168c6caad391e0"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/original_source/bhl_arm_sdk/bhl_arm_sdk/trace_node.py",
+      "size": 1972,
+      "sha256": "07a00e9537865a37d9be0baace2551efcb542cc1556120b74957ef0a30c29188"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/original_source/bhl_upper_body_sdk/bhl_upper_body_sdk/node.py",
+      "size": 6721,
+      "sha256": "a389f805921e164eb6357293459413fd49898592ee5c72fe2175e5db9c28a1db"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/original_source/bhl_upper_body_sdk/examples/validate_ros_dry_run.py",
+      "size": 5804,
+      "sha256": "ebb3ff0cca6f1f8ee3bdcb5d0c9297150279249078d7dd4e4ba91a979d4987a2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/right_hand_firmware_values.json",
+      "size": 1036,
+      "sha256": "e44d55924c594c9a15e50adc15455f394d76729ef98475e6139ace6692d79abf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/rightfix1_sdk.patch",
+      "size": 8738,
+      "sha256": "477f46aa229ae84a9748911d8245867d099b5af8039fe43285414cbd9fbca265"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/runtime_fixes.patch",
+      "size": 11009,
+      "sha256": "ce17a82d31881f4c5932df2af0e8aed12a92fd0b5c727d7246bab5cc0fca5540"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/thumbfix2_manifest.json",
+      "size": 1994,
+      "sha256": "631ce90601b3c971fcb27bafc55dbf74497a6bfa3fc0dcc3f92ae6ba68d1b684"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/thumbfix2_pc_tests.log",
+      "size": 99,
+      "sha256": "7b5ab41a6447fb409d2fa009970d63ddec9af5939138fddb27339e8dad9ad520"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/thumbfix2_sdk_tests.log",
+      "size": 260,
+      "sha256": "f0ac58d89a275a99cc187b7228834e113b0e4f5c05d9cc27d15af68526f2c690"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/deployment/thumbfix2_tk_test.log",
+      "size": 144,
+      "sha256": "122c7eda982f6fac7c4ecff8c642156e83e0e116ba3aeebdcc57a5f1c7a3accf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/.gitignore",
+      "size": 42,
+      "sha256": "9d202f24ef157779225a0b9bb384e61c9844da33ae20eb6933f5c6b1bfcfd048"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/camera_calibration.sh",
+      "size": 383,
+      "sha256": "754f529202ab2c20c4677eee23605c68e64c42e316626d8ad970ce444e68dd16"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/examples/left_open_us.json",
+      "size": 84,
+      "sha256": "d63181a1502e36329cf84a362a4268faafbd0f3e8b18a3995ca0edc3ffedd96e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/examples/right_open_us.json",
+      "size": 84,
+      "sha256": "129ab627df7740fc7305f63f3c8f65c3f221303836fdfdc4051922e1a34124ba"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandCan/BoardConfig.h",
+      "size": 1002,
+      "sha256": "b744d49176327b68b34801cc33bdad54254be41d4ec10ab0198ec874c7d37198"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandCan/DexHandCan.ino",
+      "size": 7568,
+      "sha256": "9220cb275a22a059c8f3a6a258834ae975231ace45f2824cbff6c8cdce9b9919"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandCan/HandController.h",
+      "size": 9663,
+      "sha256": "728a6940ed3883a494aa353dbd05cafa20f87a714f519efe69ad37a9df119f62"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandCan/PoseReceiver.h",
+      "size": 3357,
+      "sha256": "7168f2f71f080072b18da9ae3cb771cf29dbe53d54e26d40ab604786b8b984bf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandCan/ServoOutput.h",
+      "size": 1283,
+      "sha256": "3a09e4eb76a98fe3fcc19b364b06c1aa84c8fc5555811a748e8dc3b1ecf6b522"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandCan/StatusReport.h",
+      "size": 2615,
+      "sha256": "93a635385e552a2e97175981fd5c6d0e3771783d06500864fd929f7dd1baee1b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandLeft/BoardConfig.h",
+      "size": 1002,
+      "sha256": "b744d49176327b68b34801cc33bdad54254be41d4ec10ab0198ec874c7d37198"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandLeft/DexHandLeft.ino",
+      "size": 7770,
+      "sha256": "2a21ff8d0dd8a71841aff53f145f68d26e05e19f2d2232f33caed90363cb473d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandLeft/HandController.h",
+      "size": 9663,
+      "sha256": "728a6940ed3883a494aa353dbd05cafa20f87a714f519efe69ad37a9df119f62"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandLeft/PoseReceiver.h",
+      "size": 3357,
+      "sha256": "7168f2f71f080072b18da9ae3cb771cf29dbe53d54e26d40ab604786b8b984bf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandLeft/ServoOutput.h",
+      "size": 1283,
+      "sha256": "3a09e4eb76a98fe3fcc19b364b06c1aa84c8fc5555811a748e8dc3b1ecf6b522"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandLeft/StatusReport.h",
+      "size": 2552,
+      "sha256": "3c8c352c6895a8a26c6f546540b488c25eb65825607ccf7322f31d0698dc0f0d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/BoardConfig.h",
+      "size": 3074,
+      "sha256": "9aec75546fef02cfbcfb3560b130b87209b2f3d54177b5309798275162e2e373"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/DexHandRight.ino",
+      "size": 7662,
+      "sha256": "7499f1a010d62b6933476d9be7b2c04a0ca7786da3e762423fb204baa084b6c6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/HandController.h",
+      "size": 10498,
+      "sha256": "7937cf9a02867ba68843a0788203f752f42161d48afa1be0761f2fb2fcb3f7b4"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/LatestPoseMailbox.h",
+      "size": 782,
+      "sha256": "5451bab17c814d31486831febdfc421177b3858df81cbec4046d91e9cf350951"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/PoseReceiver.h",
+      "size": 3357,
+      "sha256": "7168f2f71f080072b18da9ae3cb771cf29dbe53d54e26d40ab604786b8b984bf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/SDK_설정값.md",
+      "size": 2400,
+      "sha256": "2890ef19287015ac11da1e1df10e376328529fa9ba53e195dfcd44b300e5ad6f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/ServoOutput.h",
+      "size": 2938,
+      "sha256": "d1d10afc063774978b8c9e2cc87a0e8b4e7438db890a6e16655769a8abdaea0f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/StatusReport.h",
+      "size": 2552,
+      "sha256": "3c8c352c6895a8a26c6f546540b488c25eb65825607ccf7322f31d0698dc0f0d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/calibration.json",
+      "size": 2846,
+      "sha256": "f7ce50935eb087a1d40a8bf0bdffd2da796663bc4281fc87c7d45b390a20c1a3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/update_config.py",
+      "size": 9004,
+      "sha256": "c1bc8278f2cf3cae8051d4e750a28332c04f5ed0db40fefae23a1c30e63f81d9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/DexHandRight/엄지_재캘리브레이션.md",
+      "size": 152,
+      "sha256": "4572cc88ec97dcde36761bff1be57845bf9e0cd5ffd2546dde19474ec59e740d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/BUILD_MANIFEST_20261104.json",
+      "size": 28084,
+      "sha256": "b1df6bf252f2cdbe3a92a37e832ece3d2eaa0fcd6d239d96fe82f2a852d23704"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/CAN_WIRING_GPIO1_3.md",
+      "size": 3475,
+      "sha256": "db5d87f83c69914261c791f2a5e9be40421eb2e2219cadccb6885d793fea3f3f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/CURRENT_SETUP_20261104.md",
+      "size": 16064,
+      "sha256": "c01811756b7db741867448b4414e26fd45ef7af9d760fc3f4e846239079abbba"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/FIRMWARE_STRUCTURE.md",
+      "size": 6160,
+      "sha256": "a7a42487233f57f66bbea5db11197d5ed8b7ebd71bf2666c6b42d045b2d38052"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/HAND_GUI.md",
+      "size": 6897,
+      "sha256": "79ccb739b37c13be12be9463c28827df39e0058e81dafee8555c46fbf564bc70"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/HAND_TEST_QUICKSTART.md",
+      "size": 7622,
+      "sha256": "4af7e087650b96838b54d322e7a209feed96d75b8314f902df2449cf17010c61"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/PROTOCOL.md",
+      "size": 4349,
+      "sha256": "b494fc7ff2f107557bc27fdd81ae7515b109635f387b7ac11e6f27376cff99f2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/PROTOCOL_v3.md",
+      "size": 9031,
+      "sha256": "11017be897a9ea6a78030ea533c5391d790683225bc0e4852e64e5ae0143f5fa"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/README.md",
+      "size": 10951,
+      "sha256": "7c18092d2ce1e0a5bea155c212c799a7d79239e4c3d0ffab30baba133a7baaf0"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/RIGHT_HAND_PINMAP.md",
+      "size": 935,
+      "sha256": "b379ebbd04e8fd28b71f14f7a4022c1dd1f5158713f020bb0ff814d1bd26e1e3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/SDK_INTEGRATION.md",
+      "size": 7701,
+      "sha256": "391fb9546bc7be270d56a236c48f0d134ded3c015e68abd0a578c65b0aa2c7f0"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/SDK_V2_COMPARISON_20261104.md",
+      "size": 20107,
+      "sha256": "a449a90d1f6369db0d33f0794af837f3daba99fba6463c8baf6a29758e40f61a"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/UPLOAD_GUIDE.md",
+      "size": 4515,
+      "sha256": "d055a152a889bc948e2fdbc92b1bbff7f56ff0d57a5089900ef3d565c0b6813b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/UPPER_BODY_SDK_v020.md",
+      "size": 15982,
+      "sha256": "28a3f582de0dab4c562cbcdf486b0ebf90833cebdc725dbd89ad8246a2da2048"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/VERIFICATION.md",
+      "size": 9107,
+      "sha256": "f40ff2ce05ecafa2eb963db9e3653e0cc0ddd6801f0fcbf5912f2a718cf85278"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/firmware/안내사항/hand_can_integration.md",
+      "size": 17305,
+      "sha256": "1648460c312e8d900dfd3a0a60ace968ff30b512acf6f7b454f058bf23a2a1d9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/gui_hand.sh",
+      "size": 120,
+      "sha256": "493190eee0b8eaf99d13d951b63e17ced0202169fa7834c0b33f17d4c65d35bc"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/gui_hand_advanced.sh",
+      "size": 691,
+      "sha256": "7f8611714e544e50ed841412329b7da42e700ec2d39ec830257c69cd6c2cee67"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/hand-camera-requirements.txt",
+      "size": 79,
+      "sha256": "818dc202e5042481c3ae979ece5e80aad8f673e2e7902656a81d387882df651f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/hand-test-requirements.txt",
+      "size": 32,
+      "sha256": "800d917f4a98b552800d93abc0d00da4585582da24f8fe931639c4b16a2a5d7d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/pc/hand_can.py",
+      "size": 6626,
+      "sha256": "e6d228ca9af72cfe43cefd76b43357b7ee5a1096c0fd23ad9ffa37c91d310943"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/pc/ownership.py",
+      "size": 1848,
+      "sha256": "bfccfb6a84750c4a417601c6a89d762737b33fa98379d142998c30ff24c9e67d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/pc/send_hand.py",
+      "size": 2261,
+      "sha256": "54cb2ec0f6461224c60f81b00a620cad4285ede9ca24ecd69d5aaaaeefe809c6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/preview_hand.sh",
+      "size": 322,
+      "sha256": "b8fd1cb2d3ac7048f99628c974f3e8167e0ff33c4c9ff6c5e4c855f8c3c76b65"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/profiles/left_hand.json",
+      "size": 1506,
+      "sha256": "8167212a4c0922511a8b250bb20822cfa46d262e126146fbe4f5113c9e2aee1c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/profiles/right_hand.json",
+      "size": 2846,
+      "sha256": "f7ce50935eb087a1d40a8bf0bdffd2da796663bc4281fc87c7d45b390a20c1a3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/requirements.txt",
+      "size": 19,
+      "sha256": "dc46212daceffe90e3748eabb56dd03db4e4b446aa85dfa200002ad4252db756"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/requirements_camera_rdk_x5.txt",
+      "size": 173,
+      "sha256": "6c051375d030c8da0444e17d27f011a7be2e551fb62cab6ff6258b494256e3a5"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/setup_hand_camera.sh",
+      "size": 1097,
+      "sha256": "df217f5f6068940e1b2f7f4e5ffb8cbb6c5f9bd642d319f460d3b9d8e7d3d948"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/setup_hand_test.sh",
+      "size": 1391,
+      "sha256": "d1cb0252c62898512503215ad0aa9195c7cb0b296a564329962a22e7386c3110"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/simple_hand.sh",
+      "size": 317,
+      "sha256": "7ab7ae4df93695ae8cc34d54f5d7a6b044146989fb19ff61b81efebf364b74e5"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/test_hand.sh",
+      "size": 834,
+      "sha256": "1d1e6c8c7bbe01fcb09bf8bf5b5d26cccf1ad2de7e53fd0744cb138106338c06"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tests/ack_test.cpp",
+      "size": 10272,
+      "sha256": "6e4cff7922b82d47a4d1b837d87cca1bb1c59abfc05521a2607a33db1ba3a3f3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tests/controller_test.cpp",
+      "size": 6044,
+      "sha256": "69bb5009bed17b5692c6ad19139eef96071ba68ebc4ec38b443eee9875aa634d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tests/receiver_test.cpp",
+      "size": 3658,
+      "sha256": "a45b9f07e39266b654c9d64d0945cfd537d2941833e934adc11bc73a8e15ecd6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tests/right_hardware_bounds_test.cpp",
+      "size": 1397,
+      "sha256": "256c9345e12974381d18f67bb19d2a09449397164be2efffda71a64e40431c9e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tests/test_hand_can.py",
+      "size": 11862,
+      "sha256": "522f1c605fdb1c5ba95fbd6d3f85b3c0792a45f69f04237e635ba85f99da5710"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tests/test_wire_firmware.py",
+      "size": 5893,
+      "sha256": "fbf3e4aadefa10c252e2c2cd35c9890e9b5c23134d1856c74dc400d594e72806"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tests/wire_harness.cpp",
+      "size": 1652,
+      "sha256": "5efe6831d3f9e45243269423e53fb1b6c5d936490496498f6aaaea7211cdb48b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/check_camera_preview.py",
+      "size": 2917,
+      "sha256": "a1cf878ef3d0dfd6dcbee1c08f5f58b7ca5871fec53991859574b76cb759f530"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/check_camera_runtime.py",
+      "size": 1173,
+      "sha256": "53d1520fc6fd26f7220c21924fde60e4aa84cf90593c58533f34841d945a6bae"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/check_hand_gui.py",
+      "size": 7020,
+      "sha256": "4a75c1a67f596670ec3f00977af71eb4195a6f598f0e25693164642bddd1b7bb"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/check_hand_model.py",
+      "size": 1019,
+      "sha256": "1176f112825ec84cea08885bd62b9cbe7802ecccffbd1f7decde8d9598da5629"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/export_calibration.py",
+      "size": 4229,
+      "sha256": "db80d9fd77c098fc02b10a8055324d7409faf8e48f90998033edac76ad743883"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/fetch_hand_model.py",
+      "size": 1415,
+      "sha256": "569634d12e7978938b7e183257edd51623db19688ed5379a9c0a9362bea53f29"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/generate_board_config.py",
+      "size": 2679,
+      "sha256": "2aedad616c59f110fcc6a47b04a089449947ad67469c47e668999254d79c10a4"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/generate_sdk_config.py",
+      "size": 1793,
+      "sha256": "80291b7cf8269726aea1de3ae41670e7301a6e184f2e61a4e7fea922bf332623"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/package_release.py",
+      "size": 3086,
+      "sha256": "e95058fcd58da3d431fcd2a0b397c7dcc9978f915a2099619d9ca95e2d29c97d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/prepare_firmware.py",
+      "size": 4902,
+      "sha256": "6b94ab46af14bc50fd4c17c8a7d3b24e733a3592b7b7d468aac650c330eb971d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/sync_release_docs.py",
+      "size": 1006,
+      "sha256": "80bccd7018cb42d86e180323faea2bdef572ab3c64f7c783de10b03ffc541280"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/dexhand_control/tools/verify.py",
+      "size": 3764,
+      "sha256": "a80ec14e89b611288567712a6aa027c9f4a6b316a1d3ce7f8a0b1985741ded69"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/.gitignore",
+      "size": 65,
+      "sha256": "b5f02c02bd2dea662ecbd928c490fa1cc8829fec0b3fb09bf2e263e1e9f89a1c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/README.md",
+      "size": 4421,
+      "sha256": "958b837205b1d34cdd22b77c5ff9eb476c0c2096c71b8ef8ce717f1ce90966cc"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/env.sh",
+      "size": 1270,
+      "sha256": "ffb701e868fe6beed2dfc6cdd6fe9f26de52e84d3c92f5c7b1839937a593b6cc"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/humanoid.repos",
+      "size": 1066,
+      "sha256": "88b590a49934b5bfd61a43648571b19edbbe88afef3cbfef50b704bb7ceaf94d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/README.md",
+      "size": 9885,
+      "sha256": "00470facd942f257ebf71f8d47972128af736136af46178397c5ed408a6ebdd9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/__init__.py",
+      "size": 257,
+      "sha256": "be09ae5e2aaced19c1bb1c17c0a3cf66a0e3f24236dacca97023c5b3dcbedd32"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/config.py",
+      "size": 7946,
+      "sha256": "ea3e1f384cb0b11c1e9d4e058472e789a7baa6e2c4f7ab2e2361de4989911992"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/controller.py",
+      "size": 29108,
+      "sha256": "703733fa8326ea6677a580690f4fcb08c25c583254700caebbf589708fcb93de"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/coordination.py",
+      "size": 1745,
+      "sha256": "cd87aabc91b5a03f6e503dac2aea6d9014f800ace9fd55506756384509b115b9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/diagnostics.py",
+      "size": 3831,
+      "sha256": "8d5173a325c2452ee7a38e73975e5cc2091719ae8d6fa5aafe4941b72a7dcc5d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/node.py",
+      "size": 15827,
+      "sha256": "b95a69f126674336c1a40e4a20186f0050195f8d11a3dc41d547077b887a152b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/ownership.py",
+      "size": 1802,
+      "sha256": "91268b65723d4d9e8a18818bda8b0720c08d88c0edcf9f969fcedc51639d6e51"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/recoil_can.py",
+      "size": 10529,
+      "sha256": "5a58c3dffb1a59669a5ea4ae906657d01010d50f3ab06a55acdb3f3e0dbb1ea6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/sequence.py",
+      "size": 6612,
+      "sha256": "0d2272526b2a2784ec3665bfe78b62582d5716218d03f96bcd6bd81259173c13"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/slider_gui.py",
+      "size": 11996,
+      "sha256": "2be52c6be4d7ec011162be73710c72eb7cddd136f0d066e6a07b2eb24326ea5c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/trace_node.py",
+      "size": 1993,
+      "sha256": "b4166a62e72b8df465e07c8ba285f60834871c8d2e34f9bfca62d99d43cea605"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/config/arm_sdk.rviz",
+      "size": 1130,
+      "sha256": "7f1f0c063af6d2e399ae582ea81b87053c08a50fc91754c1ca3d951c5b3a3fa1"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/config/bhl_arms.yaml",
+      "size": 3496,
+      "sha256": "f97807270938e5539aa863c70d2b8828df567c04fe91c82db47773c33cbc1c58"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/config/bhl_arms_berkeley_reference.yaml",
+      "size": 2096,
+      "sha256": "20656eaad8008bc74d136589f2ba01dbe7646b76394023f0af76ba2c1e2ba45d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/docs/holding_and_current.md",
+      "size": 10595,
+      "sha256": "86de9fc2de0f709b63f75610ceb29807e15f1a7700b99b0cd60d40b1ceb242ea"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/launch/arm_sdk.launch.py",
+      "size": 4372,
+      "sha256": "4419be0de885a79ec0b8337bc9c59a3abf362d61c1a2513cdeb07b1f456d9752"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/package.xml",
+      "size": 1269,
+      "sha256": "12c17b3214416d8bb308afe296e19c3efb80cf48ee0e2aaa58bd32612a56f58c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/resource/bhl_arm_sdk",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/setup.cfg",
+      "size": 91,
+      "sha256": "3b7347e7d1697ed2ee590844802a83ea5790d3c00f36136f09fbaa895b231108"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/setup.py",
+      "size": 1123,
+      "sha256": "8a1f85e0f1c79d0efbdc26ff00d126fec26e6e25ae20870053683227c63e83b4"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/test/conftest.py",
+      "size": 254,
+      "sha256": "2b8117bfd73e13816a396e4e78e7d61ee2356264970554afff591dc7f650265b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/test/test_core.py",
+      "size": 12697,
+      "sha256": "4f601431a8c45e767d54b9f47eb5e9b5ad576e895191f4078a3a4ade8be0fc90"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/test/test_hardening.py",
+      "size": 5630,
+      "sha256": "862d057740ae6d07651c8690a296b8c80be2666268b826b39aaad5820ede82c2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_arm_sdk/test/test_hardware_health.py",
+      "size": 6329,
+      "sha256": "ddf215dfad133ff9690ec28753e50a7cd143d335689b98028d4d804ac86db6dd"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/README.md",
+      "size": 11300,
+      "sha256": "1f18c1dfc42ff21aa5945b41de40fa63270b7b6f17a4834b346e24df4814c8a1"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/bhl_bringup/__init__.py",
+      "size": 65,
+      "sha256": "7adf440d8c3f302d24f3f1e299b62999e0453d4b80944badc6cb8631e77902cb"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/config/bringup.rviz",
+      "size": 1359,
+      "sha256": "538f23f02d8534c960de8d420dcd832c79fe8ef81ff3717255d0d405718217ed"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/config/fastdds_unicast.xml",
+      "size": 1591,
+      "sha256": "2af7186f5583bd52be0572a4126248fa5082da9c6ad7e2bac5998db7f4f849c8"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/launch/demo.launch.py",
+      "size": 2309,
+      "sha256": "9ff9b35fc497effa65f88ab8aa3941d2e6872dd34ccc036e229c1ce29e7ef0ac"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/launch/remote.launch.py",
+      "size": 2797,
+      "sha256": "2076e5278f3790a84f57d4caac55688e9efb61b9aea42c24a2d86c9acba703bc"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/launch/robot.launch.py",
+      "size": 11257,
+      "sha256": "d14fb37da9c1558c33bc53d7b69dd31bb9ee4a2d767e8ffde0ca65054b0d2c0f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/package.xml",
+      "size": 1637,
+      "sha256": "22979d5ea499de6ecb03d5956315a363c0ce5c97e1d319e7d71280f7e6fa7a69"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/resource/bhl_bringup",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/scripts/can_up.sh",
+      "size": 698,
+      "sha256": "16ace4e644fe1ad18a0e8c95f66c2fe3d747ef91da02d211a15f0ef34f8b576f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/setup.cfg",
+      "size": 91,
+      "sha256": "49b525ea14fb92091d5e16eac514101aade329a90e48ebba4a27b4d6edc6fb1e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/setup.py",
+      "size": 932,
+      "sha256": "8cc2095197bef657f29a9aad5549b59603361b957b46b747a3cb47ab47fffee7"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/system/80-can.network",
+      "size": 688,
+      "sha256": "4c47aef328bdd45e71b174d01a495f4de11a8689dd6f52c5355358f4ca06311a"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/system/bhl-robot@.service",
+      "size": 1119,
+      "sha256": "8f989b82f79c464b02879105a56fc736eef685f9aa99be7396c9613035759cba"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_bringup/test/test_launch.py",
+      "size": 16382,
+      "sha256": "7b3a35a198ff4ae909bf5423d33c86a36cacb62649faa3405a72877800f9cbf3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/README.md",
+      "size": 5714,
+      "sha256": "7b5be0a9654ec8f99765a992c8f7f3bf3e6f45b36def544a2d13b2e219590421"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/__init__.py",
+      "size": 261,
+      "sha256": "11ec3e2220b93cd8c87af2ac8d06e89638e13012d3075c02f510b7d91380a4c6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/camera_source.py",
+      "size": 11952,
+      "sha256": "a928aa192c37d64b572fafac0c41c0b7cca3decc41c4b88cf65662de54030fa3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/cli.py",
+      "size": 5879,
+      "sha256": "bcf422db3eecfb2da26e84039cf12b5234ebd92005f431a4e3f702da5f84b10e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/config.py",
+      "size": 10881,
+      "sha256": "9520ff7e01ff61c0c4cee55c8868e5ff0c7b41674f6582b1656e75a7a83a2e80"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/controller.py",
+      "size": 31358,
+      "sha256": "2edaf9894e4dde9ba8605918597ba68cb7507680264be9e8dff38b4e3ed2629f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/coordination.py",
+      "size": 1745,
+      "sha256": "cd87aabc91b5a03f6e503dac2aea6d9014f800ace9fd55506756384509b115b9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/data_paths.py",
+      "size": 561,
+      "sha256": "36ef8cb9580769180388cf28169204d002e98cba74ad0ed989ed47bdffac1b09"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/demo.py",
+      "size": 9598,
+      "sha256": "8c57c4c5ecea3ce668072ff53ea4e30e6a13bbd30a61cbbb74c6f5b4b4e49527"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/demo_session.py",
+      "size": 8918,
+      "sha256": "4abc7be9a08027bff9d27bd7e26ecf3a5e2c21f62c00408ed65a3d476277aacc"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/diagnostics.py",
+      "size": 2176,
+      "sha256": "2d5f58153f12481aa226f9bf6581753a248f647673cebc274b967ea96d388854"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/four_finger_trial.py",
+      "size": 4331,
+      "sha256": "12d1abb403f9b1df037d070d6a10ab251bbf2043624547bc71d1fa044ef2e1f9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/gui.py",
+      "size": 29645,
+      "sha256": "ceeba47a19777f0d13fb55d543ff50c5c0bfa91124af78f25ebb6a4502b246c4"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/gui_model.py",
+      "size": 6758,
+      "sha256": "92843a093658dcabb9104b6bb929fa4fa43188f333cfb76fca89822d412f9d22"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/gui_worker.py",
+      "size": 15444,
+      "sha256": "b65cc3573a6da1c7117c8f897079b9a2aaf835cfd87956d473654ef174fdd7d3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/hand_can.py",
+      "size": 8487,
+      "sha256": "b58ab7a421c3e10fd9ff1944bc3b4ce7d5f2dc8f0da9b21c9b85d2336063355c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/hand_retarget.py",
+      "size": 10254,
+      "sha256": "063e8b99febeec2cea07976eba90899b03cad922f0b3627f57e337015f76e38b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/hand_tracking_gui.py",
+      "size": 37817,
+      "sha256": "7b3850b0e9d5c98096238c212c4bc3dab1fd3c3041e565b3e3076d69ffca4602"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/index_trial.py",
+      "size": 1677,
+      "sha256": "9d34b60400638d47ea277864dafab97b82bd4db41c3381abf785705f6ca69dcf"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/io_diagnostics.py",
+      "size": 1181,
+      "sha256": "024c35ae3988ca17b49fa698da013adb42800ef699dac302fbd90a23bae31a8b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/node.py",
+      "size": 14959,
+      "sha256": "7052ba827b9279f3e44ba0bf77bf8c8af263433744ca552c1e70cdb3ec6110d2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/observation_capture.py",
+      "size": 1528,
+      "sha256": "d92356f673415f8cee90d2b785de2520fef784b6b71acf7e0dc706822253863d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/ownership.py",
+      "size": 1802,
+      "sha256": "91268b65723d4d9e8a18818bda8b0720c08d88c0edcf9f969fcedc51639d6e51"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/preview_state.py",
+      "size": 2484,
+      "sha256": "bdd72393f25ab92c6a32a8e54e8d3ba6b5262470e5e4d98ff282a52e1405097a"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/simple_gui.py",
+      "size": 20583,
+      "sha256": "2879413bae684991cc6322f8346a0d966268f797fc54183fc78a8782fe45905a"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/ui_trace.py",
+      "size": 1717,
+      "sha256": "5684242fc6d69868d45995b94c039e3e4345baa4d6c38622fd61f55c4e787550"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand.yaml",
+      "size": 1471,
+      "sha256": "5e3af8b43aa1ec08636714772d9bfa666b78306b294180754838aa54b09cf4b6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_camera.yaml",
+      "size": 1566,
+      "sha256": "4d28f73e093d93989272a0a448c8bdf45d06cc7b875bc2b919468193bc45276c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_camera_middle1850.yaml",
+      "size": 1899,
+      "sha256": "d7906d42409583440283656a0a86bf75877952f918757c542c8f5873ac5dd827"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_oneway.yaml",
+      "size": 1390,
+      "sha256": "15fca89583da67797e964e9b1c8f7896d9b4713ff1e9abfe8e4de55c52b62923"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/firmware/PROTOCOL_v2.md",
+      "size": 6329,
+      "sha256": "c8a90f3e9b4d538f4b081789be517a657e11050f8e9e38ec1086807871ea2b57"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/firmware/PROTOCOL_v3.md",
+      "size": 9031,
+      "sha256": "11017be897a9ea6a78030ea533c5391d790683225bc0e4852e64e5ae0143f5fa"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/launch/estimated_hand.launch.py",
+      "size": 1316,
+      "sha256": "f7f4cbe24e353cae4cbc74fb6a2d2550216c3e44ee4f2b88155d2db3e8ef14bb"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/launch/hand_sdk.launch.py",
+      "size": 2047,
+      "sha256": "c3ce2e19620a93fe4d91b9b8166e8f1183ff91b3d0c0dfb5cf956646dae66f3f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/package.xml",
+      "size": 1319,
+      "sha256": "a3207e62ddaccd91a4008330ced9846e20dfb0b1e916d445e7bae2bcdf26b919"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/ATTRIBUTION.txt",
+      "size": 463,
+      "sha256": "dd090488393a53ade234814a120fca29b85e4b6c52c4f4d7d939edc3c2b9f878"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/LICENSE",
+      "size": 20848,
+      "sha256": "9e502ba75fd0fd30cea5497b438a4bc12f07f02bc932a7a6041fd6a18b8f46a0"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/estimated.rviz",
+      "size": 972,
+      "sha256": "98afa717fd3b029655fde914ec9592820002cb4abe7d8fd209e1d9a80fa2d608"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/estimated_right_hand.urdf",
+      "size": 38685,
+      "sha256": "adb3d84fff8523eb2b438a8f112cd4f6b2feeea4da37c4d5f8d83c96b31acbd5"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Index_Knuckle_1.stl",
+      "size": 485584,
+      "sha256": "ff02bb83bee05f1a4f6766e826d75188eb14fccab5bd896cb30a81d0f0df74b9"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Index_Knuckle_Cross_1.stl",
+      "size": 473984,
+      "sha256": "751023a5bde5576d2f933baa6a5dc3e4f2d31930b0d54930859f4c012c6e2958"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Index_Middle_1.stl",
+      "size": 303484,
+      "sha256": "678235c984d9c21cb18aa5ccfcdd84a82eb3410d326395d319a07251ef893282"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Index_Tip_1.stl",
+      "size": 400384,
+      "sha256": "5daf8877a893e50ab568dabf0f6b37b2310a7fcde1fa2aca8b074f2e4e267cb8"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Middle_Knuckle_1.stl",
+      "size": 487884,
+      "sha256": "cfd4076060fff0dbb83f5cf4acbbc7623b568ebb4442337b36b6d34df9aef8ec"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Middle_Knuckle_Cross_1.stl",
+      "size": 477084,
+      "sha256": "807b9fe676e6ab0ec4c93eb40ba4b362a4cf9ae2cf288d8b44b0dd0d89435ad3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Middle_Middle_1.stl",
+      "size": 307284,
+      "sha256": "5608348b0d866edc7ce2296699da0f5ac90f83e805d5dbf02bb72cef2d0183e2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Midle_Tip_1.stl",
+      "size": 414384,
+      "sha256": "57ae365a3ebabc3dcdda80a953765341071cf5daaf43957aaecbffee20a7a43a"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Pinky_Knuckle_1.stl",
+      "size": 477484,
+      "sha256": "13d4449408bc6da3cf0cf92caea040bc1df4c8235ac99be6589d34e52aa84a5f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Pinky_Knuckle_Cross_1.stl",
+      "size": 458784,
+      "sha256": "0fcd96cb73d44124dd337da8e6fc6329dd62233720ad64cfadcc025089becc0f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Pinky_Middle_1.stl",
+      "size": 296284,
+      "sha256": "3e06eedf1245d342b060f22f4758efa9a36400f02ed6b5d96e46790417b23cc2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Pinky_Tip_1.stl",
+      "size": 398484,
+      "sha256": "d632572fc03c14834c0cf08f74e17176835a23f81cbfd67067ef80cc97be83de"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Ring_Knuckle_1.stl",
+      "size": 482884,
+      "sha256": "c7867c7e2d2c86cbc9762ce803044094be91a2016b84c12c9a37d33fa0899cc1"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Ring_Knuckle_Cross_1.stl",
+      "size": 473984,
+      "sha256": "450f3e0060f8459738165b2ae4da7c5d223b4dc5703650a80aef4141291b2fa7"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Ring_Middle_1.stl",
+      "size": 300684,
+      "sha256": "7cb9d6d8220e5079874395ba793f6e9cdf729c02ba288c0241361d83139c49ac"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Ring_Tip_1.stl",
+      "size": 400384,
+      "sha256": "33c78b495660c30e174b230b2d67c4bcf479c831e75f26c7fd7ef5b5dc7a6e4c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Thumb_Dist_KC_1.stl",
+      "size": 378284,
+      "sha256": "41844868c74f87eefb822f8382c8c23fc2a283f58c3827895f9b2dab57d5d22f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Thumb_Knuckle_1.stl",
+      "size": 590584,
+      "sha256": "0565ec3f3b776b542c0b8c3091d059e65f29ed2dd3887fbcbd7887e8cf8496a1"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Thumb_Middle_1.stl",
+      "size": 362084,
+      "sha256": "73f72e48c7eade1dc85178e786046d2d1236c5e2637587e94fdadf2d33cef459"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Thumb_Prox_KC_1.stl",
+      "size": 335184,
+      "sha256": "b454817b93e6839eb460c288b0159f329d4a3ebf6d5c1292f18d1ba133b49a92"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/Thumb_Tip_1.stl",
+      "size": 366684,
+      "sha256": "b5fd4c82b5d6be54128657cb09f63a758f472f8fe9652b63ab6bdc70be72363b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/preview_model/meshes/right/base_link.stl",
+      "size": 1156684,
+      "sha256": "60e76c235dfbeeaa51ea4727a1b92ad3e9a35db0f5a49cf8f21b9068903d1329"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/resource/bhl_hand_sdk",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/setup.cfg",
+      "size": 93,
+      "sha256": "186c74d153421900a1cfd02e1edf3856ddf6ee431251a02a75f03acbdee87349"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/setup.py",
+      "size": 1443,
+      "sha256": "955ba78d33af20c6ac40116792bfb27183e86203af66450617b1fb1cab58bba7"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/conftest.py",
+      "size": 180,
+      "sha256": "d090a63edc5d54df50282ca7c3b794d31c8d3db3fd150258c8962fe2b59d13e6"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/fake_hand.py",
+      "size": 7340,
+      "sha256": "04c08a8c6346f2133da5a69fe27e1fa46fa77967642ee503023a251227f679d2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_camera_calibration_stability.py",
+      "size": 1036,
+      "sha256": "0ad6828b467f02b9981f461966d3f855de958396586b01762d22b258f8abc810"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_camera_preview.py",
+      "size": 1378,
+      "sha256": "19516f5d13b2ff397a7cccfa4286040fc4e60fa9f15670b2d5542fc82cd8019e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_camera_session.py",
+      "size": 3283,
+      "sha256": "59d7ebdb437e77945a9d7b3e1e58c8c6083abb645fcf3de45daf75fe3d74ad6b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_connection_recovery.py",
+      "size": 4909,
+      "sha256": "bd454e380e4c0516eab8586cb1945e7d3bfc6e5fd6f2ad034fdc6a3ce87baecc"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_demo.py",
+      "size": 6726,
+      "sha256": "a19a8ad5212f7e11024ccfec23a99a5e2df751cfc789030d2b860995259f1303"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_four_finger_trial.py",
+      "size": 4935,
+      "sha256": "2fe240b8902e0247a427707fd146dc82209d1205991d8b76565e2dd331205d86"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_gui_policy.py",
+      "size": 8992,
+      "sha256": "9947f587c0fa79f9ef9433a1640265456ef85d3c5cb4e63396bdfbe275b48d8a"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hand.py",
+      "size": 10345,
+      "sha256": "87387419bb6ca51e8e29b676ea127be868ba9d88c4030e4233b5f30f7ba46bcd"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hardening_hand.py",
+      "size": 6402,
+      "sha256": "5ad48dd63bf7b26ce989dc31e15c83aab2d2d905b88e73564be065d9a9784742"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_hardware_ceiling.py",
+      "size": 1200,
+      "sha256": "b19e2cf6ad62279ba604f7efc1ecf901f9ef70c64d2372d1b370080152eb1711"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_index_trial.py",
+      "size": 1599,
+      "sha256": "7e6c101961b722b6b2c5ec80e6ad386a67f812716e72234260942e218a87c867"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_io_timing.py",
+      "size": 3141,
+      "sha256": "f7061f0ae1af68c76998f8dcc46694addbc802150be0c2d84b3e7526bedbb45d"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_observation_capture.py",
+      "size": 1306,
+      "sha256": "37e50b7d57bad6c3fcb963436436d2b153581beb61bab85ab76932b674507a5c"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_oneway.py",
+      "size": 3765,
+      "sha256": "2cf745a9918e85e9ca42952391e1fab4b5f3e29745bc7b70f33704eca0d4711f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_retarget.py",
+      "size": 3955,
+      "sha256": "17ebd8fa404efc8df810fd2ddbe3ad4260ae7f30a851bab0258a78907e92d07e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_rightfix1.py",
+      "size": 3538,
+      "sha256": "6f1fe9fb623a792a78ee02ea07a2be1fc065b76d1ad81dbf2295dad9cbcc282b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/README.md",
+      "size": 15982,
+      "sha256": "28a3f582de0dab4c562cbcdf486b0ebf90833cebdc725dbd89ad8246a2da2048"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/__init__.py",
+      "size": 101,
+      "sha256": "335b613e2160d2ea6bd07ac77b116337aa4e77e0934b8dc7a8d22c2c79e41b1e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/adapters.py",
+      "size": 3090,
+      "sha256": "3d744ccc2e66e2b506e0ed38b11d273b7c572b64562f4a1478695b9c102bfe29"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/client.py",
+      "size": 2867,
+      "sha256": "ecac072077685a182e5c3a625700958259ef113224d3a3018bfbfebf01d68426"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/commissioning.py",
+      "size": 6988,
+      "sha256": "7c90222982f79ed99e60568c9bae69e05e417736d7ef3046ed0ff86c724e57bc"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/contract.py",
+      "size": 3654,
+      "sha256": "6a9fd1064eec727f6bb8aa76b6132279d398bc88e0543dd6dd83afc086aa8a03"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/node.py",
+      "size": 6742,
+      "sha256": "43c8e3604497ed8bdb72e73cddc19371d62716e6c819142061403a9c01428b33"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/ros_endpoint.py",
+      "size": 2004,
+      "sha256": "a85569bfc844f47a67542f0c90c43ab37f78c46fe40d30ec4f5093f5d0a4902f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/transaction.py",
+      "size": 8383,
+      "sha256": "a87347a192e73b1b9394acd182c4fc8b2192a4ccdd09fb6a9e0c046661808e7f"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/config/robot_model.yaml",
+      "size": 340,
+      "sha256": "a13f7d2f8071a9baf796d6f54f6136c5c88554585a5a7a2b1bcb0bbc62e04682"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/examples/stream_current_pose.py",
+      "size": 1395,
+      "sha256": "8a7915b1f9590b7f4e85ad9cc601e631aa0215c6fa4a6419ee68e4afbc3ef831"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/examples/validate_ros_dry_run.py",
+      "size": 5967,
+      "sha256": "c756462c4dc71b586861c2e34243589da9c86b4e5ac218514e4220add1f8e416"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/package.xml",
+      "size": 654,
+      "sha256": "5e03b35098a06d98d732298e526fb577134f8d8b3bdcf3461525a6a7c6a1e840"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/resource/bhl_upper_body_sdk",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/setup.cfg",
+      "size": 105,
+      "sha256": "fd929aa510560909867c4d39790be602d325e975545ba4ed753f7ace9e79226e"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/setup.py",
+      "size": 875,
+      "sha256": "c5d5774a909efe04ac0ca6901b316f05b1397bc6025cca58de135b35e12cbee8"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/test/test_commissioning.py",
+      "size": 2443,
+      "sha256": "b7c9c0f1e3f3dcbdf0e2f73b0214b9e35be54e86bff4f4fed77be26e3d8c5fe3"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/test/test_controllers.py",
+      "size": 3751,
+      "sha256": "31bbb331ae034bae86fa260c4d2c768dec235f27f52ff1854a668fb12f5fb1e2"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/test/test_ros_path.py",
+      "size": 7190,
+      "sha256": "c249e8e715d939b79ff249ba72f492d5b3e298207bd64bf9da6733a5b17e7dd1"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/test/test_transactions.py",
+      "size": 6385,
+      "sha256": "b5ded18272c03f8b4cf3ce952bf7305f67ae9c7d7d89fcae911c1b0a7ee731ca"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/humanoid_sdk-main/ros2_ws/src/conftest.py",
+      "size": 206,
+      "sha256": "61b4ec8677efef8a78f0295bc1b8f77d99354d353fc399a970fcbe4ebb0a67ef"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/새끼손가락_지연_진단.txt",
+      "size": 3516,
+      "sha256": "31a6d832db6887a07772de99bfc6eddaf57ab1fe2863f485d1a611c9495d6301"
+    },
+    {
+      "path": "source/SDK_prepared_cap2300/카메라_캘리브레이션_사용안내.md",
+      "size": 11032,
+      "sha256": "8fa787a78bea0bc451f5ed78c2911176c5e3e60bc6ca386d310c2a8be292a9db"
+    },
+    {
+      "path": "source/robot_persistent_default_20261106.tar.gz",
+      "size": 276432,
+      "sha256": "427a858cde8381cb1293955f45fef8d28c3b2207397203d5400108d17c590ab1"
+    },
+    {
+      "path": "tools/extract_snapshot.py",
+      "size": 1233,
+      "sha256": "92b0fc8230b693303d4bf3c559947d715abd7e67dad3872fb289750028974d72"
+    },
+    {
+      "path": "tools/inspect_robot_readonly.py",
+      "size": 1556,
+      "sha256": "6fcfd0e804427c9da4dcfe60ab0e6e6182ae86faaf8f02bb16d58f52901824d2"
+    },
+    {
+      "path": "work/camera_ram_stage/export_session.py",
+      "size": 1998,
+      "sha256": "e1c23539a3946e6c8fa42dd18bd378648eb07942442db19c5dcffa419fd2abfc"
+    },
+    {
+      "path": "work/camera_ram_stage/launch_no_can_diagnostic.py",
+      "size": 3602,
+      "sha256": "8d50a181facdef61178b53def5b59d925c4bd65e304541618e71b0960e573af9"
+    },
+    {
+      "path": "work/camera_ram_stage/launch_session.py",
+      "size": 7533,
+      "sha256": "be9447ab0e0b28a72a6707d2ed0741e741e043f7fe5663fac873179872fbc780"
+    },
+    {
+      "path": "work/camera_ram_stage/monitor_no_can.py",
+      "size": 1792,
+      "sha256": "67b60db525de0c7bfa4d39d7bed8f6f137761adec0b2d4aec7d1183d940d5f6a"
+    },
+    {
+      "path": "work/camera_ram_stage/run_four_finger_trial.py",
+      "size": 11085,
+      "sha256": "dd131a75c97a97ce9d563b111ad4e48620904dbe2eb577643866bd7db8e038e0"
+    },
+    {
+      "path": "work/camera_ram_stage/run_index_trial.py",
+      "size": 6356,
+      "sha256": "653f9b31c811cc06ae5c329a34a72f3022661d1a49781efed047688643f4920c"
+    },
+    {
+      "path": "work/camera_ram_stage/run_middle_flex_test.py",
+      "size": 6136,
+      "sha256": "1bb7aa5024ccfd7e79ba0f2b085af400320b816fbb9a60f416ba425b7a784f3e"
+    },
+    {
+      "path": "work/camera_ram_stage/run_middle_lower_test.py",
+      "size": 5410,
+      "sha256": "00717850093b7401b9cb24767b7796efcebcbc934f79bd4870c482b146a2cce1"
+    },
+    {
+      "path": "work/camera_ram_stage/run_tracking_preview.py",
+      "size": 2824,
+      "sha256": "e8f250d2b14291ac678c5d30734b1a1d239a3b41881ee252b26502aec72fb848"
+    },
+    {
+      "path": "work/camera_session_backup.py",
+      "size": 2730,
+      "sha256": "a8bbf91ff8ddd5ca43cc504b11935d703c16e053afc3ebf376915371a938bb78"
+    }
+  ]
+}

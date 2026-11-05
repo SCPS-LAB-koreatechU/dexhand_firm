@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "dry_run_only": true,
+  "hardware_accessed": false,
+  "domain": 189,
+  "tests": [
+    "sequence reached requested 20 degrees and held beyond streaming timeout",
+    "slider GUI one-shot target reached 35 degrees and did not trigger stream timeout",
+    "out-of-range GUI target rejected without changing goal",
+    "explicit HOLD and resume services work",
+    "arm_trace wrote valid actual ROS status JSONL with source=arm",
+    "streamed target still expires and latches HOLD; protection retained"
+  ]
+}

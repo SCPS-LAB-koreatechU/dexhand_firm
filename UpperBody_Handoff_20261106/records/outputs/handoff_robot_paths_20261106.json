@@ -1,0 +1,21 @@
+{
+  "humanoid_sdk": {
+    "exists": true,
+    "resolved": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_thumbfix2/humanoid_sdk-main",
+    "git_head": null
+  },
+  "humanoid_sdk_camera": {
+    "exists": true,
+    "resolved": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_camera_retarget/humanoid_sdk-main",
+    "git_head": null
+  },
+  "dexhand_control": {
+    "exists": false,
+    "resolved": "/home/sunrise/dexhand_control"
+  },
+  "dexhand_control_camera": {
+    "exists": true,
+    "resolved": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_camera_retarget/dexhand_control",
+    "git_head": null
+  }
+}

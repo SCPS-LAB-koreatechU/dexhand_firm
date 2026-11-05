@@ -1,0 +1,247 @@
+휴머노이드 팔 제어 실행 가이드
+작성일: 2026-11-02, Asia/Seoul
+
+현재 사용 중인 장비와 경로
+
+조작 PC: jm-ubuntu / scps-ubuntu1
+  프로젝트: /home/scps-ubuntu1/teleop
+  환경 설정: /home/scps-ubuntu1/teleop/env.sh
+
+로봇 서버: sunrise@172.18.49.21
+  프로젝트: /home/sunrise/humanoid_sdk
+  환경 설정: /home/sunrise/humanoid_sdk/env.sh
+  CAN 인터페이스: can_left
+
+공통 ROS_DOMAIN_ID: 기본 92
+PC의 /home/scps-ubuntu1/humanoid_sdk는 이전 저장소이며 이 실행 구성의 환경 설정 경로가 아니다.
+서버에 적용한 위치 유지·보드 진단·로그 확장 수정은 서버 작업 트리에 있다. PC의 기존 GUI와 목표/서비스 형식은 호환된다. PC GUI에는 새 보드 진단 툴팁이 아직 반영되지 않았으므로 상세 측정은 서버 arm_log에서 확인한다.
+
+현재 실행 상태(작성 중 확인한 스냅샷)
+
+PC: remote.launch.py, RViz, slider_gui 실행 중.
+서버: robot.launch.py dry_run:=false, arm_controller 실행 중.
+이미 실행 중이면 아래 시작 명령을 추가로 실행하지 않는다.
+최신 기록에서 왼팔 ID1/3/5/9는 live:true, 실제 MODE:POSITION이었다.
+왼쪽 팔꿈치 ID7과 오른팔 ID2/4/6/8/10은 NO_REPLY였다. 이 관절들은 정상 제어 중이라고 가정하지 않는다. 해당 연결·전원 상태를 먼저 확인한다.
+이 문서 작성 중에는 실행 프로그램이나 모터 상태를 변경하지 않았다.
+
+1. 실행 구조
+
+[조작 PC]
+  SDK 슬라이더 GUI → 목표 관절각, 켜기/끄기/비상정지 서비스
+  RViz ← 서버의 로봇 모델, 관절 상태, TF
+         │ ROS 2 / 도메인92
+[로봇 서버]
+  arm_controller → 위치 유지 코어 → Recoil CAN → 실제 모터
+       ├ 관절 상태, MODE/ERROR, 전류/토크/전압
+       ├ robot_state_publisher / joint_state_publisher → RViz용 상태
+       └ JSONL 자동 기록 → arm_log 화면 / CSV
+
+RViz는 표시 역할이다. bhl_arm_sdk의 슬라이더가 실제 목표를 보낸다.
+joint_state_publisher_gui로 모델의 관절만 움직이는 것은 실물 모터 명령이 아니다.
+
+2. 처음부터 시작하는 순서
+
+터미널 A — PC에서 서버에 SSH 접속하고 실물 제어기 시작:
+
+  ssh sunrise@172.18.49.21
+  source /home/sunrise/humanoid_sdk/env.sh
+  ros2 launch bhl_bringup robot.launch.py dry_run:=false
+
+출력은 꺼진 상태로 시작한다. 자동으로 보드 상태·설정·엔코더 보정 테이블을 읽고 로그를 만든다. 시작 콘솔에 Telemetry JSONL 경로가 표시된다. 이 터미널을 유지한다.
+
+터미널 B — jm-ubuntu PC에서 GUI와 RViz 시작:
+
+  source /home/scps-ubuntu1/teleop/env.sh
+  ros2 launch bhl_bringup remote.launch.py
+
+이 명령은 GUI와 RViz만 실행하고 팔 제어기는 실행하지 않는다.
+
+GUI만 필요한 경우(remote 실행과 중복해서 실행하지 않음):
+
+  source /home/scps-ubuntu1/teleop/env.sh
+  ros2 launch bhl_bringup remote.launch.py rviz:=false
+
+또는 SDK GUI를 단독으로 직접 실행:
+
+  source /home/scps-ubuntu1/teleop/env.sh
+  ros2 run bhl_arm_sdk slider_gui
+
+RViz만 필요한 경우:
+
+  source /home/scps-ubuntu1/teleop/env.sh
+  ros2 launch bhl_bringup remote.launch.py gui:=false
+
+실물 운영 중 demo.launch.py 또는 별도 arm_sdk.launch.py를 추가로 띄우지 않는다. 둘 다 추가 arm_controller를 만들 수 있다. 특히 demo의 기본값은 연습 모드다.
+
+3. GUI 사용법
+
+- 상단 표시에서 연습 모드가 아닌 실물 모드인지 확인한다.
+- 상태가 NO_REPLY인 관절은 움직일 수 있다고 가정하지 않는다.
+- 팔을 받치고 기준 자세를 확인한 뒤 '토크 켜기'를 누른다.
+- 응답하는 각 관절의 현재 자세를 기준으로 위치 제어가 시작된다.
+- '최대 속도'는 목표까지 이동하는 속도의 상한이다.
+- 각 관절 슬라이더는 목표 각도[도]를 지정한다. '측정'은 기준 영점에 대한 모터 피드백 각도다.
+- 목표에 도달해도 서버 arm_controller는 위치 명령을 계속 보낸다. GUI를 닫는 것 자체는 서버 제어기를 종료하지 않는다.
+- '모두 0°'는 enable 시 잡은 기준 자세에 대한 0°이다. 공장 영점 또는 항상 팔을 아래로 내리는 명령이라는 뜻은 아니다.
+- '토크 끄기'는 DAMPING 전환이다. 특정 자세를 계속 붙잡는 기능이 아니다.
+- '비상정지'도 DAMPING으로 전환한다. 팔의 무게를 지탱하는 기계식 브레이크가 아니다.
+- '비상정지 해제'는 정지 잠금만 풀며 자동으로 모터를 켜지 않는다.
+- 서버 제어기를 종료하면 이 제어기가 활성화했던 모터에 IDLE을 보낸다. 위치 유지가 해제될 수 있으므로 팔을 받친 상태에서 종료한다.
+
+서버의 새 코어는 측정보다 명령이 과도하게 앞서면 목표 진행을 기다리되 기존 위치 명령은 유지한다. 이 대기 상태와 실제 MODE는 서버 로그/arm_log에서 확인한다. 기존 PC GUI의 '구동 중' 표시만으로 실제 보드가 POSITION인지 단정하지 않는다.
+
+4. 측정 화면과 로그
+
+터미널 C — 별도 SSH 접속:
+
+  ssh sunrise@172.18.49.21
+  source /home/sunrise/humanoid_sdk/env.sh
+  ros2 run bhl_arm_sdk arm_log
+
+이 명령은 최신 로그 파일을 1초마다 읽어 보여준다. 로봇에 명령을 보내지 않는다. Ctrl+C로 화면만 종료할 수 있다.
+
+한 번만 출력:
+
+  ros2 run bhl_arm_sdk arm_log --once
+
+모든 상태 요약 필드를 CSV로 내보내기:
+
+  ros2 run bhl_arm_sdk arm_log --csv /home/sunrise/bhl_logs/arm_latest.csv
+
+특정 실행의 기록 선택:
+
+  ros2 run bhl_arm_sdk arm_log --file /home/sunrise/bhl_logs/arm_telemetry/arm_YYYYMMDDTHHMMSS.ffffffZ.jsonl --once
+
+위 예시 파일명은 실제 기록 파일명으로 바꾼다.
+
+자동 저장 위치:
+  /home/sunrise/bhl_logs/arm_telemetry/
+
+화면에서 확인할 것:
+  HARDWARE/DRY RUN, 기록 UTC 시각, MODE, fault/warning,
+  목표/명령/측정 각도, Iq, 보드 추정 토크, 전압, 조회 경과시간,
+  log_dropped, log_error, can_capture_error.
+
+서버가 종료된 뒤에도 뷰어는 마지막 파일을 표시할 수 있으므로 UTC 시각이 갱신되는지 확인한다.
+
+주요 수집 내용:
+  - 매 제어 주기의 목표/명령/측정 각도, 속도, 출력 상태, 오류, 처리 시간.
+  - 10Hz 전체 상태 요약 및 항목별 조회 경과시간.
+  - 보드 레지스터68항목: MODE/ERROR, 기어비·게인·제한값,
+    전류·토크·전압·위치·속도 지령/측정, 적분값, 엔코더 원시값 등.
+  - 전기적 엔코더 보정 테이블128개/응답 모터, 시작 시 수집.
+  - 원본 CAN 프레임과 커널 시각, 상태 전환 이벤트, 실행 설정 및 소스 해시.
+
+전류/토크 등 보드값은 순환 조회하므로 모든 항목이 동시에50Hz로 측정되는 것은 아니다. 실제 board_age_s를 확인한다. 원본 JSONL에는 CSV 요약에 없는 제어 주기 기록과 CAN 프레임·보정 테이블이 있으므로 분석 시 JSONL도 보관한다.
+
+Iq는 dq 상전류이며 배터리/전원공급기 전류가 아니다. 토크는 전류 기반 보드 추정치이며 출력축 토크 센서의 측정값이 아니다. 지원 펌웨어가 제공하지 않는 실제 온도·출력축 각도·배터리 전류는 측정했다고 표시하지 않는다.
+
+파일당100MB, 이전9개 파일로 세션당 약1GB까지 회전한다. 그보다 오래된 회전분은 삭제될 수 있다. 다른 실행 세션은 자동 삭제하지 않는다.
+
+5. 필요한 코드와 수정 위치
+
+조작 PC의 코드 기준:
+  /home/scps-ubuntu1/teleop/ros2_ws/src/
+
+  /home/scps-ubuntu1/teleop/env.sh
+    ROS 2와 PC 워크스페이스, 도메인92/DDS 환경 설정.
+
+  /home/scps-ubuntu1/teleop/ros2_ws/src/bhl_bringup/launch/remote.launch.py
+    RViz + SDK GUI 실행. 실물 제어기 추가 실행 없음.
+
+  /home/scps-ubuntu1/teleop/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/slider_gui.py
+    슬라이더·버튼·속도 UI와 ROS 목표/서비스 전송.
+
+  /home/scps-ubuntu1/teleop/ros2_ws/src/bhl_bringup/config/bringup.rviz
+    RViz 표시 설정.
+
+로봇 서버의 코드 기준:
+  /home/sunrise/humanoid_sdk/ros2_ws/src/
+
+  /home/sunrise/humanoid_sdk/env.sh
+    서버 ROS/DDS 환경과 로봇 description 경로 설정.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_bringup/launch/robot.launch.py
+    실물 제어기, 관절 상태 병합, 로봇 모델/TF 실행.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/node.py
+    ROS 노드 진입점. 목표·서비스·제어 타이머·자동 진단/기록.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/controller.py
+    위치 유지, 이동 속도/가속도, 추종 대기, 활성화·해제·보호 로직.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/config/bhl_arms.yaml
+    can_left, 모터ID, 방향, 감속비, 게인, 토크 상한, 관절 범위, 속도 설정.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/config.py
+    설정 로딩과 관절각 ↔ 모터 위치 환산.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/recoil_can.py
+    Recoil CAN 프레임, SDO 요청/응답 추적, PDO 교환.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/health.py
+    지원 펌웨어의 레지스터 주소·단위·상태/오류 해석.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/telemetry.py
+    비동기 JSONL 저장 및 읽기 전용 원본 CAN 캡처.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/log_view.py
+    arm_log 화면 및 CSV 내보내기. 로봇 제어 기능 없음.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/diagnostics.py
+    /diagnostics 구성.
+
+  /home/sunrise/humanoid_sdk/ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/sequence.py
+    GUI 대신 목표 자세를 지정하는 시퀀스. 서버 수정본은 기본 목표 유지,
+    명시적 --release일 때만 복귀·출력 해제.
+
+src를 수정하고 필요한 패키지를 빌드한다. install의 복사본을 직접 편집하지 않는다.
+
+서버 코드 수정 후 빌드(실행 중인 컨트롤러를 임의로 끊지 말고, 팔을 받치고 정상 종료한 뒤 적용):
+
+  cd /home/sunrise/humanoid_sdk/ros2_ws
+  source /opt/ros/humble/setup.bash
+  colcon build --packages-select bhl_arm_sdk bhl_bringup
+  source /home/sunrise/humanoid_sdk/env.sh
+
+PC GUI 코드 수정 후 빌드:
+
+  cd /home/scps-ubuntu1/teleop/ros2_ws
+  source /opt/ros/humble/setup.bash
+  colcon build --packages-select bhl_arm_sdk bhl_bringup
+  source /home/scps-ubuntu1/teleop/env.sh
+
+현재 실행만 하는 경우 다시 빌드할 필요는 없다.
+
+6. 통신 확인과 주요 인터페이스
+
+각 장비에서 해당 env.sh를 source한 새 터미널에서:
+
+  echo $ROS_DOMAIN_ID
+  ros2 node list
+  ros2 topic list
+  ros2 topic info /arm_controller/status --verbose
+  ros2 topic echo /arm_controller/status std_msgs/msg/String --once --full-length
+
+도메인은 양쪽 모두92여야 한다. /arm_controller가 중복되거나 상태 발행자가 여러 개면 예전 demo/연습 제어기와 실물 제어기가 겹치는지 확인한다.
+
+  /arm_controller/target           목표 입력, sensor_msgs/JointState, 라디안
+  /arm_controller/status           측정/상태 JSON 출력
+  /arm_controller/joint_states     팔 상태 출력(robot bring-up에서 리맵)
+  /joint_states                   전체 모델의 관절 상태
+  /robot_description, /tf          RViz 표시 정보
+  /diagnostics                    보드·관절 진단
+  /arm_controller/enable          위치 제어 켜기/해제, GUI 버튼이 호출
+  /arm_controller/estop           DAMPING + 잠금
+  /arm_controller/reset_estop     잠금 해제, 자동 활성화 없음
+  /arm_controller/home           모든 목표를 기준0도로
+  /arm_controller/inspect         출력 off 상태의 읽기 전용 보드 점검
+
+7. 종료 순서
+
+팔을 물리적으로 받친 뒤 출력 해제를 진행한다.
+PC GUI/RViz 터미널은 Ctrl+C로 종료한다.
+서버 제어기는 팔을 받친 상태에서 Ctrl+C로 종료한다.
+로그 화면은 언제든 Ctrl+C로 종료할 수 있으며 제어기에는 영향이 없다.
+GUI를 닫아도 서버 위치 유지가 계속될 수 있으며, 서버 종료는 위치 유지를 해제할 수 있다.

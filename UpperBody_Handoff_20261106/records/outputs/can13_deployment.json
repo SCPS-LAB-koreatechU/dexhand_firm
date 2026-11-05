@@ -1,0 +1,19 @@
+{
+  "zip_sha256": "00a88ecdb18b6582f1897a820a7c82d40db866a8000f37d5dd2a5ef90440003b",
+  "previous_sdk_path": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1/humanoid_sdk-main",
+  "sdk_path": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1_can13/humanoid_sdk-main",
+  "runtime_can": "can1",
+  "speed_deg_s": 10,
+  "acceleration_deg_s2": 30,
+  "esp32_uploaded": false,
+  "real_can_tested": true,
+  "active_sdk": "/home/sunrise/humanoid_sdk",
+  "previous_link": "/home/sunrise/humanoid_sdk.link_before_can13_20261104_225231",
+  "offline_tests": 200,
+  "deployed_tests": 177,
+  "ros_acceptance_passed": true,
+  "activated_kst": "2026-11-04T22:52:31.327770+09:00",
+  "gui_pid": 215727,
+  "right_ping_result": "NO_PONG",
+  "real_motion_tested": false
+}

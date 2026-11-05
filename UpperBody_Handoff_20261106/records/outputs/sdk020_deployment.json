@@ -1,0 +1,32 @@
+{
+  "backup_archive": "/home/sunrise/sdk_backups/humanoid_sdk_before_020_20261104_214851.tar.gz",
+  "release": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1",
+  "original_sdk": "/home/sunrise/humanoid_sdk",
+  "zip_sha256": "5a6171e5b9c24ade82fa9112f058ac6c0b289bd4213ca734f86947434fea1ae3",
+  "runtime_can": "can1",
+  "runtime_speed_deg_s": 10,
+  "runtime_acceleration_deg_s2": 30,
+  "env": "previous network and URDF overlay retained",
+  "sdk_path": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1/humanoid_sdk-main",
+  "previous_sdk_directory": "/home/sunrise/humanoid_sdk.previous_20261104_215349",
+  "active_sdk": "/home/sunrise/humanoid_sdk",
+  "activated_kst": "2026-11-04T21:53:49.281810+09:00",
+  "verified_dry_run": true,
+  "real_can_tested": false,
+  "offline_tests_passed": 177,
+  "ros_acceptance_domains": [
+    188,
+    189
+  ],
+  "can1_rx_after": 0,
+  "can1_tx_after": 0,
+  "patch_file": "deployment/runtime_fixes.patch",
+  "patch_files": [
+    "bhl_arm_sdk/node.py",
+    "bhl_arm_sdk/trace_node.py",
+    "bhl_arm_sdk/slider_gui.py",
+    "bhl_arm_sdk/sequence.py",
+    "bhl_upper_body_sdk/node.py",
+    "bhl_upper_body_sdk/examples/validate_ros_dry_run.py"
+  ]
+}

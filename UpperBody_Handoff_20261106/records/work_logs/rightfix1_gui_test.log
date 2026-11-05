@@ -1,0 +1,1 @@
+PASS: CAN check alone never enables; repeat check;  real Tk simple UI, explicit open/enable, single slider isolation, displayed PWM and percentage, applied ACK, rapid drag, all-open, HOLD/reopen, NO_REPLY lockout; no CAN opened

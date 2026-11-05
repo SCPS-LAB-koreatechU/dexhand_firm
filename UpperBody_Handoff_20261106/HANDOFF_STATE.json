@@ -1,0 +1,82 @@
+{
+  "prepared_kst": "2026-11-06T00:45:46.241789+09:00",
+  "objective": "Track a human right hand with robot right index/middle/ring/little fingers; thumb stays open.",
+  "current_phase": "Human-input preview prepared; physical tracking NOT restarted. User then requested moving code and records to another PC.",
+  "robot_ssh": "sunrise@172.18.49.21",
+  "remote_ram_base": "/run/user/1000/bhl_hand_camera_session",
+  "latest_remote_snapshot": "records/outputs/handoff_remote_snapshot_20261106.json",
+  "can1_present_at_handoff": false,
+  "can1_error": "Device \"can1\" does not exist.",
+  "camera_role": "human_control",
+  "output_mode": "preview",
+  "human_preview_status": {
+    "utc": 1793891429.280912,
+    "valid": false,
+    "frame_id": 3262,
+    "camera_age_s": 0.11134799699993891,
+    "source_hand": null,
+    "goal_fraction": null,
+    "goal_us": null,
+    "motor_commands_sent": 0,
+    "physical_output": false,
+    "profile_tag": "79610de6",
+    "message": "비구동 미리보기 종료 · 실물 모터 명령 없음"
+  },
+  "last_command_us": [
+    850,
+    1700,
+    850,
+    1700,
+    825,
+    1750,
+    1750,
+    700,
+    700,
+    2000,
+    2000,
+    2000,
+    2100,
+    700,
+    2300
+  ],
+  "actual_servo_state_measured": false,
+  "hand_power_state_known": false,
+  "middle_extension_interference_resolved": false,
+  "firmware_current_expected_tag": "79610de6",
+  "firmware_current_binary_verified": false,
+  "firmware_cap2300_prepared_tag": "bdad07a4",
+  "cap2300_flash_confirmed": false,
+  "cap2300_live_sdk_activated": false,
+  "middle1850_operating_profile_active": false,
+  "remote_paths": {
+    "humanoid_sdk": {
+      "exists": true,
+      "resolved": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_thumbfix2/humanoid_sdk-main",
+      "git_head": null
+    },
+    "humanoid_sdk_camera": {
+      "exists": true,
+      "resolved": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_camera_retarget/humanoid_sdk-main",
+      "git_head": null
+    },
+    "dexhand_control": {
+      "exists": false,
+      "resolved": "/home/sunrise/dexhand_control"
+    },
+    "dexhand_control_camera": {
+      "exists": true,
+      "resolved": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261105_camera_retarget/dexhand_control",
+      "git_head": null
+    }
+  },
+  "ssh_ed25519_fingerprint": "256 SHA256:K8oyEoddaZ4keNu39exAqMJLDEcncgoQGcRPQ898Bb4",
+  "source_sdk_prepared_original_path": "/home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261105_camera_retarget",
+  "original_workspace": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21",
+  "never_automatically_execute": [
+    "firmware upload",
+    "cap2300 SDK activation",
+    "middle1850 actuation",
+    "initial whole-hand open",
+    "ROS arm demos or auto-start services"
+  ]
+}

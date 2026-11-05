@@ -1,0 +1,126 @@
+{
+  "read_only": true,
+  "pongs": [
+    {
+      "node": 61,
+      "version": 3,
+      "flags": 0,
+      "profile_tag": "b09f98b0",
+      "stamp": 128951.542644522
+    },
+    {
+      "node": 61,
+      "version": 3,
+      "flags": 0,
+      "profile_tag": "b09f98b0",
+      "stamp": 128952.328694512
+    },
+    {
+      "node": 61,
+      "version": 3,
+      "flags": 0,
+      "profile_tag": "b09f98b0",
+      "stamp": 128953.118884604
+    }
+  ],
+  "snapshots": [
+    {
+      "boot_id": 461318476,
+      "applied": 0,
+      "flags": 0,
+      "sequence": 0,
+      "pulses": null
+    },
+    {
+      "boot_id": 461318476,
+      "applied": 0,
+      "flags": 0,
+      "sequence": 0,
+      "pulses": null
+    },
+    {
+      "boot_id": 461318476,
+      "applied": 0,
+      "flags": 0,
+      "sequence": 0,
+      "pulses": null
+    }
+  ],
+  "heartbeats": [
+    {
+      "type": "Status",
+      "node": 61,
+      "sequence": 0,
+      "result": 32,
+      "flags": 0,
+      "detail": 255,
+      "applied": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "stamp": 128951.61582795
+    },
+    {
+      "type": "Status",
+      "node": 61,
+      "sequence": 0,
+      "result": 32,
+      "flags": 0,
+      "detail": 255,
+      "applied": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "stamp": 128952.115896427
+    },
+    {
+      "type": "Boot",
+      "node": 61,
+      "boot_id": 461318476,
+      "uptime_ms": 124010,
+      "stamp": 128952.125591015
+    },
+    {
+      "type": "Status",
+      "node": 61,
+      "sequence": 0,
+      "result": 32,
+      "flags": 0,
+      "detail": 255,
+      "applied": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "stamp": 128952.616089072
+    },
+    {
+      "type": "Status",
+      "node": 61,
+      "sequence": 0,
+      "result": 32,
+      "flags": 0,
+      "detail": 255,
+      "applied": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "stamp": 128953.116133883
+    },
+    {
+      "type": "Boot",
+      "node": 61,
+      "boot_id": 461318476,
+      "uptime_ms": 125010,
+      "stamp": 128953.125816178
+    },
+    {
+      "type": "Status",
+      "node": 61,
+      "sequence": 0,
+      "result": 32,
+      "flags": 0,
+      "detail": 255,
+      "applied": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "stamp": 128953.616165068
+    }
+  ],
+  "host_sets_sent": 0
+}

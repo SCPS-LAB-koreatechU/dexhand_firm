@@ -1,0 +1,12 @@
+{
+  "gpio": 22,
+  "can_channel": 6,
+  "requested_close_us": 1850,
+  "existing_close_us": 1750,
+  "open_us": 850,
+  "all_other_targets_unchanged": true,
+  "required_firmware_tag": "bdad07a4",
+  "same_cap2300_firmware_zip": true,
+  "base_sdk_profile_not_replaced": true,
+  "actual_1850_command_sent": false
+}

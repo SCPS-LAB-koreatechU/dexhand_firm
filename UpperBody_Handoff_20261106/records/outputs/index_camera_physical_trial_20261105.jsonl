@@ -1,0 +1,2 @@
+{"event": "state", "utc": 1793885032.1828578, "phase": "WAIT_OPEN", "active": false, "mapping": "uncalibrated 15% index-only trial", "message": "오른손 하나의 검지를 펴고 1초 유지하세요 · 아직 모터 출력 꺼짐"}
+{"event": "state", "utc": 1793885092.20171, "phase": "NOT_STARTED", "active": false, "mapping": "uncalibrated 15% index-only trial", "message": "편 오른손 인식 대기 만료 · 모터는 시작하지 않았습니다", "command_us": null}

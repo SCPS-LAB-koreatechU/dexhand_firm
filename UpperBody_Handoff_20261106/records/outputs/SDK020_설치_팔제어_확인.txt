@@ -1,0 +1,80 @@
+SDK 0.2.0 설치 및 팔 제어 확인 — 2026-11-04
+
+로컬 압축 해제 폴더:
+/home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1
+원본 ZIP은 Downloads에 그대로 보존.
+로봇: sunrise@172.18.49.21
+현재 SDK: /home/sunrise/humanoid_sdk (아래 버전별 SDK를 가리키는 심볼릭 링크)
+버전별 실제 경로: /home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1/humanoid_sdk-main
+이전 SDK 보존: /home/sunrise/humanoid_sdk.previous_20261104_215349
+압축 백업: /home/sunrise/sdk_backups/humanoid_sdk_before_020_20261104_214851.tar.gz
+
+설치된 패키지: bhl_arm_sdk, bhl_hand_sdk, bhl_upper_body_sdk, bhl_bringup (0.2.0)
+로봇별 적용 설정: USB gs_usb 어댑터 can1, 양팔 및 손 공통 채널. can0는 내장 m_can이며 현재 USB가 아님.
+USB를 다시 꽂으면 인터페이스 이름이 바뀔 수 있으므로 ip -details link show can1에서 gs_usb인지 확인.
+기존 네트워크 pinning, ROS 도메인 92, 별도 Berkeley description 워크스페이스 source 유지.
+속도 10도/초, 가속도 30도/초² 유지. 배포 ZIP 기본 30/60으로 높이지 않음.
+CAN ID 1 토크 제한 0.5 N·m, ID 3은 1.2 N·m. 보드 전류 제한은 읽기만 하며 변경하지 않음.
+기본 좌표는 zero:start: enable 시 현재 자세가 0도. 절대좌표 보정이 끝난 설정이 아님.
+실물 통합 UpperBodyClient 목표는 고정 영점 및 검증 기록 필요. 기본 설정만으로 실물 통합 사용 준비가 끝난 것은 아님.
+
+팔을 움직이는 코드:
+ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/controller.py : 각도 변환, 속도/가속도, CAN PDO, 위치 유지 및 고장 감시
+ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/recoil_can.py : Recoil CAN 프로토콜
+ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/node.py : /arm_controller 목표·서비스·상태
+ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/slider_gui.py : 팔 슬라이더
+ros2_ws/src/bhl_arm_sdk/bhl_arm_sdk/sequence.py : 목표→유지→선택적 복귀/해제
+ros2_ws/src/bhl_arm_sdk/config/bhl_arms.yaml : ID·방향·관절범위·게인·토크
+
+발견 및 보완한 문제 (deployment/runtime_fixes.patch와 원본 사본 보존):
+1. GUI/시퀀스가 /target에 한 번만 발행하면 새 streaming timeout 0.5초와 충돌해 이동 중 HOLD 가능.
+   벤치의 유한 위치 목표는 파라미터 서비스로 변경. 외부 /target 스트리밍의 TTL 보호는 유지.
+2. 시퀀스는 실제 요청 목표와 서버 목표/측정을 함께 비교하도록 수정. HOLD, enable 거절, 도달 실패를 성공으로 처리하지 않음.
+3. Humble에서 callback(message, info)로 해석될 수 있는 기본인자 lambda를 partial로 고정: 팔의 손 상태 수신, 통합 상태 수신, arm_trace 로깅.
+4. ARM PC의 느린 초기화에 맞춰 ROS acceptance가 세 노드 상태를 모두 기다리도록 보완.
+5. 슬라이더에 HOLD / 이동 재개 버튼 추가.
+원본 ZIP은 수정하지 않았고, 바탕화면의 소스와 로봇 설치본에 보완 적용.
+
+검증:
+원본 오프라인 테스트 177개 통과. Ubuntu pytest 기본 nose 호환 플러그인의 setup 이름 충돌을 피하기 위해 -p no:nose 사용.
+로봇 PC에서 팔·손 통합 ROS dry_run: 목표 수락, 손 PWM 응답 연관, TTL 만료 HOLD 검증 통과.
+로봇 PC에서 팔 ROS dry_run: 시퀀스 20도 도달·유지, GUI 35도 도달·유지, 범위 밖 목표 거절, HOLD·재개, arm_trace JSONL 저장, 스트리밍 TTL 보호 확인.
+실물 CAN 및 팔 구동은 이번 설치 작업에서 실행하지 않음.
+
+로봇 PC 터미널 — 연습 모드로 시작:
+source ~/humanoid_sdk/env.sh
+ros2 launch bhl_bringup robot.launch.py dry_run:=true
+
+로봇 PC의 다른 터미널 — 팔 GUI:
+source ~/humanoid_sdk/env.sh
+ros2 run bhl_arm_sdk slider_gui
+
+현재 Ubuntu PC에서 최신 팔 GUI:
+bash /home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1/PC_팔_슬라이더.sh
+현재 Ubuntu PC에서 읽기 전용 진단:
+bash /home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1/PC_진단_모니터.sh
+위 PC 스크립트는 컨트롤러를 새로 띄우지 않으며 도메인 92의 상태를 사용.
+
+실물 실행을 선택할 때 사용할 로봇 명령 (이번에는 실행하지 않음):
+source ~/humanoid_sdk/env.sh
+ros2 launch bhl_bringup robot.launch.py dry_run:=false
+시작 시 출력 꺼짐. GUI의 토크 켜기는 실제 구동 활성화.
+오른팔이 연결되지 않은 왼팔 전용 벤치 구성은 아래 프로필 사용. 양팔 기본 구성에서 일부 모터가 미응답이면 PARTIAL_ENABLE로 HOLD됨.
+ros2 launch bhl_bringup robot.launch.py dry_run:=false config:=$(ros2 pkg prefix bhl_arm_sdk)/share/bhl_arm_sdk/config/bhl_arms_left_bench.yaml
+
+손은 기본적으로 실행되지 않음(hands:=none). 손까지 연습하려면:
+ros2 launch bhl_bringup robot.launch.py hands:=both upper_body:=true dry_run:=true
+이번 작업은 ESP32/ESC 펌웨어를 업로드하지 않음. 손 하드웨어는 프로토콜3 및 pinrev2 펌웨어/프로필 일치가 필요.
+
+측정·로그 차이:
+새 SDK 상태에는 전압·MODE·오류·각도·피드백 경과 시간·전류 제한 등은 있지만 실측 Iq/상전류/토크/온도가 없음.
+기존 진단 GUI를 새 상태 형식에도 대응시켰으며, 없는 전류·토크·온도 수치는 미수신 표시. 전류 제한은 실측 전류가 아님.
+새 arm_trace는 ROS 상태 JSON을 기록. 이전 컨트롤러의 68레지스터·원본CAN 수집과 동일하지 않음.
+기존 /home/sunrise/bhl_logs/ 로그는 보존됨.
+진단 GUI PC 로그: /home/scps-ubuntu1/bhl_logs/pc_motor_monitor/실행시각/ (JSONL+CSV)
+로봇 상태 로그 실행: ros2 run bhl_arm_sdk arm_trace
+기본 로봇 로그: /home/sunrise/.local/state/bhl/upper_body.jsonl
+
+복구 (컨트롤러를 종료한 상태에서):
+현재 ~/humanoid_sdk 심볼릭 링크를 다른 이름으로 옮긴 뒤, 위 previous 폴더를 ~/humanoid_sdk로 되돌리면 기존 SDK 복구 가능.
+배포 상세: deployment/manifest.json, 패치 및 원본: deployment/runtime_fixes.patch, deployment/original_source/

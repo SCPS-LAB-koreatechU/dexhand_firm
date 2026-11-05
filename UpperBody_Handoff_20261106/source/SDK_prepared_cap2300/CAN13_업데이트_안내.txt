@@ -1,0 +1,37 @@
+CAN13 SDK 확인·배포 — 2026-11-04
+
+배포 파일: UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1_can13.zip
+SHA256: 00a88ecdb18b6582f1897a820a7c82d40db866a8000f37d5dd2a5ef90440003b
+바탕화면: /home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1_can13
+로봇 실제 설치: /home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1_can13/humanoid_sdk-main
+로봇 기본 경로: /home/sunrise/humanoid_sdk (새 SDK로 링크 교체)
+이전 SDK는 upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1 아래 그대로 보존.
+
+변경 확인:
+양손 CAN TX=GPIO1(TX0), RX=GPIO3(RX0), 1Mbps, 표준 11비트 CAN, 프로토콜3.
+왼손 노드60 / 오른손 노드61. 15개 서보의 GPIO와 보정값은 이전 ZIP과 동일.
+CAN 핀을 프로필에 포함하므로 식별 해시도 변경됨. 이번 펌웨어와 이번 PC 설정을 함께 사용.
+SDK 파일만 교체해도 ESP32 내부 펌웨어는 바뀌지 않음. 이번 작업에서는 ESP32 업로드하지 않음.
+업로드 시 GPIO1/3과 USB-UART 공유에 대한 절차는 dexhand_control/firmware/안내사항/CAN_WIRING_GPIO1_3.md 참고.
+
+로봇별 유지 설정:
+ROS_DOMAIN_ID=92, DDS 유선 주소 지정, 기존 Berkeley URDF overlay 유지.
+팔 속도10도/초, 가속도30도/초², 게인·토크 제한 유지.
+USB-CAN 채널 can1 사용. 내장 can0로 자동 대체하지 않음.
+새 손 프로필/해시는 이전 값으로 되돌리지 않음.
+기존 팔 GUI·시퀀스 0.5초 timeout 충돌 보완, 요청 목표 도달 판정, Humble 콜백 및 로그 보완 유지.
+변경 패치와 원본 사본: deployment/runtime_fixes.patch, deployment/original_source/
+
+손 GUI(로봇 HDMI 터미널):
+cd ~/humanoid_sdk/../dexhand_control
+bash gui_hand.sh --hand right --channel can1
+GUI 실행만으로 CAN 연결이나 PWM 출력을 시작하지 않음.
+통신만 확인: bash test_hand.sh right ping --channel can1
+
+현재 PC 팔 GUI: 압축 해제 폴더의 PC_팔_슬라이더.sh
+현재 PC 진단: 압축 해제 폴더의 PC_진단_모니터.sh
+팔 기본 시작: source ~/humanoid_sdk/env.sh 후 ros2 launch bhl_bringup robot.launch.py dry_run:=true
+실측 전류·토크·온도는 SDK 상태에 없어 진단 GUI에서 미수신 표시.
+
+검증: 원본/보완본 모두 자동 검사200개 및 C++ 검사 통과. 로봇 ROS dry-run 검증 기록은 deployment/에 보존.
+배포 후 USB-CAN이 다시 나타나 오른손 노드61에 PING만 시도했으나 NO_PONG. 손가락 출력은 시작하지 않았음. ESP32 내부 can13 펌웨어 적용 및 실제 왕복 통신은 미확인.

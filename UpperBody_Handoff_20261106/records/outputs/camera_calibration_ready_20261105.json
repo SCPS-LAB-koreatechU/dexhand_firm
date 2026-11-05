@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-05",
+  "camera_preview_verified": true,
+  "visible_on_robot_hdmi": true,
+  "stereo_view": "left",
+  "single_eye_size": [
+    672,
+    376
+  ],
+  "received_frame_count": 1174,
+  "landmark_detection_verified": false,
+  "physical_motor_commands_sent": false,
+  "live_calibration_ready": false,
+  "live_calibration_blocker": "hand USB CAN can1 is not present",
+  "unit_tests": {
+    "passed": 134,
+    "skipped": 6
+  },
+  "mock_gui": "PASS",
+  "log_and_profile_storage": "robot RAM; automatically copied to current PC",
+  "ram_root": "/run/user/1000/bhl_hand_camera_session",
+  "backup_folder": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/hand_camera_session_20261105",
+  "read_only_sd_unmodified": true,
+  "median_inference_ms": 67.84,
+  "median_host_capture_to_gui_ms": 99.54
+}

@@ -1,0 +1,258 @@
+--- a/dexhand_control/profiles/right_hand.json
++++ b/dexhand_control/profiles/right_hand.json
+@@ -2,7 +2,11 @@
+   "profile_version": 1,
+   "hand": "right",
+   "device_id": 61,
+-  "can": {"tx_gpio": 1, "rx_gpio": 3, "bitrate": 1000000},
++  "can": {
++    "tx_gpio": 1,
++    "rx_gpio": 3,
++    "bitrate": 1000000
++  },
+   "pwm_frequency_hz": 50,
+   "watchdog_ms": 1000,
+   "assembly_timeout_ms": 20,
+@@ -11,20 +15,118 @@
+   "wiring_revision": 2,
+   "numbering_note": "id is the CAN array position in the same anatomical order as the left hand. calibration_motor_id preserves the user's original right-hand upper/lower test labels.",
+   "motors": [
+-    {"id": 1, "name": "소지 위", "calibration_motor_id": 7, "gpio": 19, "open_us": 850, "close_us": 1775},
+-    {"id": 2, "name": "소지 아래", "calibration_motor_id": 8, "gpio": 21, "open_us": 1700, "close_us": 800},
+-    {"id": 3, "name": "약지 위", "calibration_motor_id": 5, "gpio": 23, "open_us": 1700, "close_us": 800},
+-    {"id": 4, "name": "약지 아래", "calibration_motor_id": 6, "gpio": 26, "open_us": 850, "close_us": 1725},
+-    {"id": 5, "name": "중지 위", "calibration_motor_id": 3, "gpio": 33, "open_us": 1750, "close_us": 825},
+-    {"id": 6, "name": "중지 아래", "calibration_motor_id": 4, "gpio": 22, "open_us": 850, "close_us": 1750},
+-    {"id": 7, "name": "검지 위", "calibration_motor_id": 1, "gpio": 32, "open_us": 1750, "close_us": 700},
+-    {"id": 8, "name": "검지 아래", "calibration_motor_id": 2, "gpio": 25, "open_us": 700, "close_us": 1725},
+-    {"id": 9, "name": "검지 끝", "gpio": 16, "open_us": 700, "close_us": 2100},
+-    {"id": 10, "name": "중지 끝", "gpio": 17, "open_us": 700, "close_us": 2000},
+-    {"id": 11, "name": "약지 끝", "gpio": 4, "open_us": 2000, "close_us": 750},
+-    {"id": 12, "name": "소지 끝", "gpio": 27, "open_us": 2000, "close_us": 800},
+-    {"id": 13, "name": "엄지 오른쪽 당김", "gpio": 13, "open_us": 2300, "close_us": 700},
+-    {"id": 14, "name": "엄지 왼쪽 당김", "gpio": 14, "open_us": 2100, "close_us": 700},
+-    {"id": 15, "name": "엄지 끝", "gpio": 18, "open_us": 700, "close_us": 1900}
++    {
++      "id": 1,
++      "name": "소지 위",
++      "calibration_motor_id": 7,
++      "gpio": 19,
++      "open_us": 850,
++      "close_us": 1775
++    },
++    {
++      "id": 2,
++      "name": "소지 아래",
++      "calibration_motor_id": 8,
++      "gpio": 21,
++      "open_us": 1700,
++      "close_us": 800
++    },
++    {
++      "id": 3,
++      "name": "약지 위",
++      "calibration_motor_id": 5,
++      "gpio": 23,
++      "open_us": 850,
++      "close_us": 1725
++    },
++    {
++      "id": 4,
++      "name": "약지 아래",
++      "calibration_motor_id": 6,
++      "gpio": 26,
++      "open_us": 1700,
++      "close_us": 800
++    },
++    {
++      "id": 5,
++      "name": "중지 위",
++      "calibration_motor_id": 3,
++      "gpio": 33,
++      "open_us": 1750,
++      "close_us": 825
++    },
++    {
++      "id": 6,
++      "name": "중지 아래",
++      "calibration_motor_id": 4,
++      "gpio": 22,
++      "open_us": 850,
++      "close_us": 1750
++    },
++    {
++      "id": 7,
++      "name": "검지 위",
++      "calibration_motor_id": 1,
++      "gpio": 32,
++      "open_us": 1750,
++      "close_us": 700
++    },
++    {
++      "id": 8,
++      "name": "검지 아래",
++      "calibration_motor_id": 2,
++      "gpio": 25,
++      "open_us": 700,
++      "close_us": 1725
++    },
++    {
++      "id": 9,
++      "name": "검지 끝",
++      "gpio": 16,
++      "open_us": 700,
++      "close_us": 2100
++    },
++    {
++      "id": 10,
++      "name": "중지 끝",
++      "gpio": 17,
++      "open_us": 700,
++      "close_us": 2000
++    },
++    {
++      "id": 11,
++      "name": "약지 끝",
++      "gpio": 4,
++      "open_us": 2000,
++      "close_us": 750
++    },
++    {
++      "id": 12,
++      "name": "소지 끝",
++      "gpio": 27,
++      "open_us": 2000,
++      "close_us": 800
++    },
++    {
++      "id": 13,
++      "name": "엄지 왼쪽 당김",
++      "gpio": 13,
++      "open_us": 2300,
++      "close_us": 700
++    },
++    {
++      "id": 14,
++      "name": "엄지 끝",
++      "gpio": 14,
++      "open_us": 2100,
++      "close_us": 700
++    },
++    {
++      "id": 15,
++      "name": "엄지 오른쪽 당김",
++      "gpio": 18,
++      "open_us": 700,
++      "close_us": 1900
++    }
+   ]
+ }
+--- a/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand.yaml
++++ b/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand.yaml
+@@ -1,4 +1,3 @@
+-# Generated calibration from dexhand_control/profiles; regenerate with tools/generate_sdk_config.py.
+ defaults:
+   channel: can0
+   protocol: 3
+@@ -40,12 +39,12 @@
+     - 1900
+   right:
+     node: 61
+-    profile_tag: 8f317a7f
++    profile_tag: b09f98b0
+     open_us:
+     - 850
+     - 1700
++    - 850
+     - 1700
+-    - 850
+     - 1750
+     - 850
+     - 1750
+@@ -60,8 +59,8 @@
+     close_us:
+     - 1775
+     - 800
++    - 1725
+     - 800
+-    - 1725
+     - 825
+     - 1750
+     - 700
+--- a/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/config.py
++++ b/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/config.py
+@@ -37,6 +37,14 @@
+ )
+ 
+ 
++RIGHT_CHANNEL_NAMES = CHANNEL_NAMES[:12] + ("thumb_pull_left", "thumb_tip", "thumb_pull_right")
++CHANNEL_NAMES_BY_HAND = {"left": CHANNEL_NAMES, "right": RIGHT_CHANNEL_NAMES}
++
++
++def channel_names(hand):
++    return CHANNEL_NAMES_BY_HAND[hand]
++
++
+ @dataclass
+ class HandSpec:
+     name: str                       # left | right
+@@ -46,6 +54,10 @@
+     close_us: list[int]
+     protocol: int = 3               # 1: firmware sends no replies, 2: STATUS / PONG
+     profile_tag: str = ""           # first 8 hex digits of the firmware profile SHA-256
++
++    @property
++    def channel_names(self):
++        return channel_names(self.name)
+ 
+     def __post_init__(self) -> None:
+         if len(self.open_us) != CHANNELS or len(self.close_us) != CHANNELS:
+--- a/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/controller.py
++++ b/humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/controller.py
+@@ -62,14 +62,19 @@
+ 
+ class HandController:
+     def __init__(self, config: HandConfig, hand: str, dry_run: bool = True, bus=None) -> None:
+-        self.config = config
+-        self.spec: HandSpec = config.hand(hand)
++        # rightfix1: isolated per-hand rules; raw goals remain in actual CAN order.
++        self.config = copy.deepcopy(config)
++        self.spec: HandSpec = self.config.hand(hand)
++        if hand == "right":
++            self.config.antagonist_pairs = [(13, 15)]
++            self.config.grips = {name: list(g[:12]) + [g[13], g[14], g[12]]
++                                 for name, g in self.config.grips.items()}
+         self.dry_run = dry_run
+         self.protocol = self.spec.protocol
+         self.bus = None
+         if not dry_run:
+             self.bus = bus if bus is not None else HandBus(self.spec.channel, [self.spec.node])
+-        open_pose = list(config.grips["open"])
++        open_pose = list(self.config.grips["open"])
+         self.goal = list(open_pose)
+         self.command = list(open_pose)
+         self.live = False             # streaming pose sets every step
+--- a/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/contract.py
++++ b/humanoid_sdk-main/ros2_ws/src/bhl_upper_body_sdk/bhl_upper_body_sdk/contract.py
+@@ -57,7 +57,8 @@
+         else:
+             if not isinstance(values, list) or len(values) != 15 or any(not number(v) or not 0 <= v <= 1 for v in values):
+                 raise ValueError("each hand requires 15 pull fractions in 0..1")
+-            if values[12] + values[13] > 1 + 1e-9:
++            a, b = (12, 14) if part == "hand_right" else (12, 13)
++            if values[a] + values[b] > 1 + 1e-9:
+                 raise ValueError("opposing thumb pull sum exceeds 1")
+     return command
+ 
+--- a/dexhand_control/tools/export_calibration.py
++++ b/dexhand_control/tools/export_calibration.py
+@@ -24,6 +24,9 @@
+         raise ValueError('Export must not replace the current project or its parents')
+     if output.exists():
+         raise ValueError('Choose a NEW export folder; existing folders are never overwritten')
++    right_names = [m['name'] for m in profiles['right']['motors'][-3:]]
++    if right_names == ['엄지 왼쪽 당김', '엄지 끝', '엄지 오른쪽 당김']:
++        raise ValueError('rightfix1 펌웨어 원본 ZIP을 반영하기 전에는 구형 템플릿으로 내보낼 수 없습니다. SDK_수정안내_rightfix1.md를 따르세요.')
+     prepared = {}
+     config = yaml.safe_load((project / 'humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand.yaml').read_text(encoding='utf-8'))
+     for side in ('left', 'right'):

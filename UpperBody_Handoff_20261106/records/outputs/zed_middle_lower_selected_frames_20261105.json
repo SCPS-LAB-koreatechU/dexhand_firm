@@ -1,0 +1,125 @@
+{
+  "open": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00000942.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 942,
+      "captured_at": 4293.6471706,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 68.3336860001873
+      },
+      "published_at": 4293.71954739
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ],
+    "software_capture_timestamp": true
+  },
+  "max_pull": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001009.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 1009,
+      "captured_at": 4299.81852121,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 70.3460280001309
+      },
+      "published_at": 4299.892950634
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      1750,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ],
+    "software_capture_timestamp": true
+  },
+  "returned": {
+    "image_path": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028/frame_00001082.jpg",
+    "camera": {
+      "kind": "frame",
+      "frame_id": 1082,
+      "captured_at": 4306.544119621,
+      "input_role": "robot_observation",
+      "detection_valid": false,
+      "landmarks": null,
+      "source_hand": null,
+      "handedness_score": 0.0,
+      "image_landmarks": null,
+      "candidate_hand_count": 0,
+      "frame_size": [
+        672,
+        376
+      ],
+      "timing_ms": {
+        "inference": 67.9198070001803
+      },
+      "published_at": 4306.616363908
+    },
+    "command_at_capture_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ],
+    "software_capture_timestamp": true
+  }
+}

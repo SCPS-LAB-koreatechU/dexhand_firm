@@ -1,0 +1,322 @@
+--- a/simple_gui.py
++++ b/simple_gui.py
+@@ -8,6 +8,7 @@
+ from tkinter import ttk, messagebox
+ from .gui_worker import GuiWorker
+ from .config import load_config
++from .ui_trace import UiTrace
+ 
+ 
+ class SimpleHandGui:
+@@ -18,8 +19,12 @@
+         self.connected=False;self.active=False;self.pending_open=False;self.arming=False;self.open_request_id=0
+         self.refreshing=False;self.closing=False;self.error='';self.last_status=None
+         self.dragging=set();self.dirty_until={};self.values=[];self.percent=[];self.targets=[];self.sent=[];self.applied=[];self.sliders=[]
++        self.trace=UiTrace()
+         self.worker=GuiWorker(config)
+-        root.title('손 간단 제어 · GPIO1/3');root.geometry('1180x840');root.minsize(1030,800)
++        self.connecting=False
++        self.can_text=tk.StringVar(value='CAN: 미연결 · 연결 확인은 모터를 시작하지 않습니다.')
++        self.diagnostic_text=tk.StringVar(value='마지막 응답 / 전송 통계: 대기')
++        root.title('손 간단 제어 · GPIO1/3');root.geometry('1240x930');root.minsize(1120,870)
+         style=ttk.Style(root);style.theme_use('clam')
+         style.configure('.',font=('Noto Sans CJK KR',11),foreground='#101828',background='#f8fafc')
+         style.configure('TButton',padding=(14,9));style.configure('Open.TButton',font=('Noto Sans CJK KR',13,'bold'))
+@@ -27,11 +32,15 @@
+         bar=ttk.Frame(outer);bar.pack(fill='x')
+         ttk.Label(bar,text=('오른손' if hand=='right' else '왼손')+' · 손가락 제어',font=('Noto Sans CJK KR',20,'bold')).pack(side='left')
+         ttk.Label(bar,text=f'{channel} · ID {self.config.hand(hand).node}'+(' · 모의 실행' if dry_run else ' · 실물')).pack(side='right')
++        connection=ttk.Frame(outer);connection.pack(fill='x',pady=(8,0))
++        self.can_button=ttk.Button(connection,text='CAN 연결 확인',command=self.check_can);self.can_button.pack(side='left')
++        self.disconnect_button=ttk.Button(connection,text='연결 해제',command=self.disconnect);self.disconnect_button.pack(side='left',padx=8)
++        ttk.Label(connection,textvariable=self.can_text,wraplength=810).pack(side='left',padx=10)
+         actions=ttk.Frame(outer);actions.pack(fill='x',pady=12)
+         self.open_button=ttk.Button(actions,text='손 펼치기',style='Open.TButton',command=self.open_hand);self.open_button.pack(side='left')
+         ttk.Button(actions,text='멈춤 · HOLD (Esc)',command=self.hold).pack(side='left',padx=10)
+-        ttk.Label(actions,text='손 펼치기 → 슬라이더로 조절\n0%=풀림 · 100%=보정된 최대 당김').pack(side='left',padx=12)
+-        self.status=tk.StringVar(value='손 펼치기를 누르면 CAN을 확인하고 실제 손 출력을 시작합니다.')
++        ttk.Label(actions,text='CAN 연결 확인 → 손 펼치기 → 슬라이더 조절\n0%=풀림 · 100%=보정된 최대 당김').pack(side='left',padx=12)
++        self.status=tk.StringVar(value='먼저 CAN 연결 확인을 누르세요. 연결 확인만으로는 손가락을 움직이지 않습니다.')
+         self.status_label=ttk.Label(outer,textvariable=self.status,wraplength=1110,font=('Noto Sans CJK KR',11,'bold'));self.status_label.pack(fill='x',pady=(0,10))
+         grid=ttk.Frame(outer);grid.pack(fill='both',expand=True);grid.columnconfigure(1,weight=1)
+         for i,text in enumerate(('손가락 / GPIO','당김 슬라이더','목표 %','목표 PWM µs','전송 명령 µs','마지막 확인 µs')):
+@@ -47,19 +56,40 @@
+             self.values.append(v);self.percent.append(percent);self.targets.append(target);self.sent.append(sent);self.applied.append(applied);self.sliders.append(slider)
+         self.delivery=tk.StringVar(value='전송 대기 · 실제 손가락 위치를 측정하는 화면은 아닙니다.')
+         ttk.Label(outer,textvariable=self.delivery,wraplength=1110).pack(fill='x',pady=(12,4))
++        ttk.Label(outer,textvariable=self.diagnostic_text,wraplength=1180,foreground='#475467').pack(fill='x',pady=(4,3))
+         ttk.Label(outer,text='목표=슬라이더 설정 / 전송 명령=속도 제한을 거친 PWM / 확인 PWM=ESP32 응답으로 확인한 마지막 명령\n전송 주기 최대 50Hz · 값은 µs(펄스폭), 각도가 아닙니다. 멈춤은 마지막 출력을 유지합니다.',foreground='#475467',font=('Noto Sans CJK KR',9)).pack(fill='x')
++        ttk.Label(outer,text='로그: '+str(self.trace.path),foreground='#475467',font=('Noto Sans CJK KR',8)).pack(fill='x',pady=(3,0))
+         self.update_controls();root.bind('<Escape>',lambda event:self.hold());root.protocol('WM_DELETE_WINDOW',self.close);root.after(30,self.pump)
+ 
+     def update_controls(self):
+         for s in self.sliders:s.configure(state='normal' if self.active and not self.error and not self.pending_open else 'disabled')
+-        self.open_button.configure(state='disabled' if self.pending_open else 'normal')
++        self.open_button.configure(state='normal' if self.connected and not self.connecting and not self.pending_open else 'disabled')
++        self.can_button.configure(state='disabled' if self.connecting or self.pending_open or self.active else 'normal')
++        self.disconnect_button.configure(state='normal' if self.connected and not self.pending_open else 'disabled')
++
++    def check_can(self):
++        if self.active or self.pending_open or self.connecting:return
++        self.error='';self.connecting=True
++        self.status.set('통신만 확인 중 · PWM 출력 시작 명령은 보내지 않습니다.')
++        self.trace.submit({'ui_action':'check_can','already_connected':self.connected})
++        if self.connected:self.worker.post('check')
++        else:self.worker.post('connect',hand=self.side,channel=self.channel,dry_run=self.dry_run)
++        self.update_controls()
++
++    def disconnect(self):
++        self.pending_open=False;self.active=False
++        self.worker.post('disconnect');self.update_controls()
++        self.trace.submit({'ui_action':'disconnect'})
+ 
+     def open_hand(self):
++        if not self.connected:
++            self.status.set('먼저 CAN 연결 확인을 누르세요. 손 출력은 시작하지 않았습니다.')
++            return
+         if self.pending_open:return
++        self.trace.submit({'ui_action':'open_hand'})
+         self.error='';self.pending_open=True;self.arming=False;self.open_request_id+=1
+-        self.status.set('CAN 확인 중… 응답 확인 후 펼침 출력을 시작합니다.');self.update_controls()
+-        if not self.connected:self.worker.post('connect',hand=self.side,channel=self.channel,dry_run=self.dry_run)
+-        else:self.start_output()
++        self.status.set('손 펼침 출력 준비 중…');self.update_controls()
++        self.start_output()
+ 
+     def start_output(self):
+         self.arming=True;self.status.set('펼침 출력 준비 중…')
+@@ -77,6 +107,7 @@
+         if self.refreshing or not self.active or self.error or self.pending_open:return
+         m=self.motors[index];pulse=round(m['open_us']+value/100*(m['close_us']-m['open_us']))
+         self.percent[index].set(f'{value:.0f}%');self.targets[index].set(str(pulse));self.dirty_until[index]=time.monotonic()+.3
++        self.trace.submit({'ui_action':'slider','index':index,'percent':value,'target_us':pulse})
+         self.worker.move(index,pulse)
+ 
+     def hold(self):
+@@ -88,15 +119,20 @@
+         for _ in range(64):
+             try:event=self.worker.events.get_nowait()
+             except queue.Empty:break
++            self.trace.submit({'worker_event':event})
+             kind=event['kind']
+-            if kind=='connected':
+-                self.connected=True
+-                if self.pending_open:self.start_output()
++            if kind in ('connected','checked'):
++                self.connected=True;self.connecting=False;self.error=''
++                self.can_text.set(('모의 연결' if self.dry_run else 'CAN 응답 확인')+f": ID {event['node']} · 프로필 {event['tag']}")
++                self.status.set('연결 확인 완료 · 손 출력은 시작하지 않았습니다. 펼치려면 손 펼치기를 누르세요.')
+             elif kind=='open_goal_set':
+                 if event.get('request_id')==self.open_request_id:self.pending_open=False
+-            elif kind=='disconnected':self.connected=False;self.active=False
++            elif kind=='disconnected':
++                self.connected=False;self.active=False;self.connecting=False
++                self.can_text.set('CAN: 연결 해제')
++                self.status.set('연결 해제됨 · 다시 CAN 연결 확인을 누르세요.')
+             elif kind=='error':
+-                self.error=event['message'];self.active=False;self.pending_open=False;self.arming=False
++                self.error=event.get('stage','unknown')+' · '+event['message'];self.active=False;self.pending_open=False;self.arming=False;self.connecting=False
+             elif kind=='status':
+                 self.last_status=event;self.active=event['active']
+                 if self.pending_open and self.arming and self.active:self.send_open_goal()
+@@ -108,11 +144,15 @@
+                         m=self.motors[i];pct=100*(pulse-m['open_us'])/(m['close_us']-m['open_us'])
+                         self.values[i].set(pct);self.percent[i].set(f'{pct:.0f}%');self.targets[i].set(str(pulse))
+                 self.refreshing=False
++                diag=event.get('diagnostics',{});age=diag.get('last_response_age_s');stats=diag.get('stats',{})
++                self.diagnostic_text.set('마지막 응답 '+('미확인' if age is None else f'{age:.2f}초 전')+' | 단계 '+str(diag.get('stage','—'))+f" | 전송 {stats.get('sets_sent',0)} · 적용 ACK {stats.get('applied',0)} · 미응답 {stats.get('no_reply',0)} · 지연 ACK {stats.get('late',0)} | 응답 대기 {diag.get('reply_timeout_s',0)*1000:.0f}ms")
+                 d=event['delivery'];self.delivery.set(f"{'모의 응답' if event['dry_run'] else 'CAN 응답'}: {d['result']}  |  {'미확인' if d['latency_ms']<0 else str(round(d['latency_ms'],1))+' ms'}  |  실제 손가락 위치는 미측정")
+                 if not self.error and not self.pending_open:self.status.set(('모의 실행 · ' if self.dry_run else '')+('조절 가능 · 슬라이더를 움직이면 값이 실시간 전송됩니다.' if self.active else '멈춤 상태 · 다시 움직이려면 손 펼치기를 누르세요.'))
+             elif kind=='closed':
+                 if self.worker.shutdown_error:messagebox.showwarning('HOLD 응답 미확인',self.worker.shutdown_error,parent=self.root)
+-                self.root.destroy();return
++                self.trace.close();self.root.destroy();return
++        if self.trace.error or self.trace.dropped:
++            self.diagnostic_text.set('로그 저장 오류: '+self.trace.error+f' / 누락 {self.trace.dropped}')
+         if self.error:
+             self.active=False
+             self.status.set('응답 오류 · '+self.error+' · 실제 적용 상태 미확인. 슬라이더 잠김.')
+--- a/gui_worker.py
++++ b/gui_worker.py
+@@ -27,6 +27,7 @@
+         self.control = None
+         self.vision = None
+         self.shutdown_error = None
++        self.stage = "idle"
+         self.thread = threading.Thread(target=self._run, name='DexHand-CAN', daemon=True)
+         self.thread.start()
+ 
+@@ -94,6 +95,7 @@
+ 
+     def _execute(self, command):
+         action = command['action']
++        self.stage = action
+         if action == 'disconnect':
+             try:
+                 self._disconnect()
+@@ -104,7 +106,7 @@
+             self._disconnect()
+             config = load_config(self.config_path)
+             config.max_speed = min(config.max_speed, .25)
+-            config.reply_timeout = max(.02, config.reply_timeout)
++            config.reply_timeout = max(.05, config.reply_timeout)  # measured APPLIED delays 21-26 ms on this USB CAN
+             config.ping_timeout = max(.2, config.ping_timeout)
+             config.hand(command['hand']).channel = command['channel']
+             hand = self.factory(config, command['hand'], dry_run=command['dry_run'])
+@@ -116,6 +118,14 @@
+                 raise
+             self.control = GuiControl(session, clock=time.monotonic)
+             self.events.put(dict(kind='connected', hand=hand.spec.name, node=pong.node,
++                                 tag=pong.profile_tag, dry_run=hand.dry_run))
++            return
++        if action == 'check' and self.control:
++            if self.control.session.active:
++                raise ValueError('동작 중 통신 점검은 HOLD 후 실행하세요')
++            pong = self.control.session.ping()
++            hand = self.control.session.hand
++            self.events.put(dict(kind='checked', node=pong.node, version=pong.version,
+                                  tag=pong.profile_tag, dry_run=hand.dry_run))
+             return
+         if self.control is None:
+@@ -201,11 +211,21 @@
+                         for index, (pulse, stamp) in motors.items():
+                             if time.monotonic()-stamp <= .35:
+                                 self.control.motor(index, pulse)
++                        self.stage = 'stream'
+                         self.control.tick(max(1e-6, now-last), self._sample())
++                        if not self.control.session.active and not self.control.session.hand.dry_run:
++                            self.control.session.hand.poll()
+                         if now-published >= .1:
+-                            self.events.put(dict(kind='status', **self.control.status()))
++                            hand = self.control.session.hand
++                            diagnostics = dict(stage=getattr(hand,'io_stage',self.stage),
++                                stats=dict(getattr(hand,'stats',{})),
++                                reply_timeout_s=hand.config.reply_timeout,
++                                last_response_age_s=None if not getattr(hand,'last_heard',0) else max(0,time.monotonic()-hand.last_heard),
++                                firmware_fault=getattr(hand,'fault',''), boot_id=getattr(hand,'boot_id',None))
++                            self.events.put(dict(kind='status', diagnostics=diagnostics, **self.control.status()))
+                             published = now
+                 except Exception as error:
++                    failed_stage = getattr(error,'io_stage',None) or (getattr(self.control.session.hand,'io_stage',self.stage) if self.control else self.stage)
+                     self._clear_motion()
+                     try:
+                         if self.control:
+@@ -214,7 +234,7 @@
+                         self.events.put(dict(kind='error', message=str(hold_error)))
+                     if self.vision:
+                         self._camera_stop()
+-                    self.events.put(dict(kind='error', message=str(error)))
++                    self.events.put(dict(kind='error', message=str(error), stage=failed_stage, failure_stats=getattr(error,'evidence',{})))
+                 last = now
+                 self.quit.wait(max(0, .02-(time.monotonic()-now)))
+         finally:
+--- a/controller.py
++++ b/controller.py
+@@ -202,6 +202,7 @@
+ 
+     # --------------------------------------------------------------- commands
+     def ping(self) -> Pong | None:
++        self.io_stage = "PING/PONG"
+         if self.dry_run:
+             return Pong(self.spec.node, self.protocol, Flag.PWM_ON if self.live else 0, self.spec.profile_tag,
+                         time.monotonic())
+@@ -213,6 +214,7 @@
+ 
+     def read_snapshot(self) -> Snapshot | None:
+         """Protocol 3: atomic last-command readback, never an actual measurement."""
++        self.io_stage = "STATE/SNAPSHOT"
+         if self.protocol < 3 or self.dry_run:
+             return None
+         self.poll()
+@@ -246,6 +248,7 @@
+ 
+     def _control(self, mode: int) -> Delivery:
+         name = MODE_NAMES[mode]
++        self.io_stage = "CONTROL/" + name
+         if self.dry_run:
+             return Delivery(True, "CONTROL_ACK", detail=mode, message=f"{name} (dry run)")
+         self.poll()  # discard already queued ACKs before the fresh correlated request
+@@ -264,6 +267,7 @@
+                         latency_ms=(reply.stamp - sent_at) * 1e3, message=name)
+ 
+     def _send_set(self) -> Delivery:
++        self.io_stage = "POSE/APPLIED"
+         problem = self.config.check_pose(self.command)
+         if problem:
+             return self._fail("INVALID_COMMAND", problem)
+@@ -285,9 +289,13 @@
+         if not self.confirmed:
+             return Delivery(True, "SENT", sequence, message="v1 firmware: delivery not confirmed")
+         self._awaiting = sequence
+-        reply = self._await(lambda f: isinstance(f, Status) and f.sequence == sequence and
+-                            f.result not in (Result.HEARTBEAT, Result.CONTROL_ACK),
+-                            self.config.reply_timeout)
++        try:
++            reply = self._await(lambda f: isinstance(f, Status) and f.sequence == sequence and
++                                f.result not in (Result.HEARTBEAT, Result.CONTROL_ACK),
++                                self.config.reply_timeout)
++        finally:
++            # Late ACKs during HOLD/poll must not be mistaken for an active wait.
++            self._awaiting = -1
+         if self.fault in ("DEVICE_REBOOT", "COUNTER_RESET"):
+             return Delivery(False, self.fault, sequence, message=self.message)
+         if reply is None:
+--- a/demo_session.py
++++ b/demo_session.py
+@@ -38,8 +38,12 @@
+         result = self.hand.enable()
+         self._note(result)
+         if not result.ok:
++            stage = getattr(self.hand, 'io_stage', 'ENABLE')
++            evidence = dict(getattr(self.hand, 'stats', {}))
+             self.stop("ENABLE: " + result.result)
+-            raise RuntimeError("enable failed: " + result.result + " " + result.message)
++            error = RuntimeError("enable failed: " + result.result + " " + result.message)
++            error.io_stage, error.evidence = stage, evidence
++            raise error
+         self.active, self.reason = True, "ARMED"
+         return result
+ 
+@@ -61,8 +65,12 @@
+             raise RuntimeError(self.reason)
+         self._note(result)
+         if not result.ok:
++            stage = getattr(self.hand, 'io_stage', 'POSE/APPLIED')
++            evidence = dict(getattr(self.hand, 'stats', {}))
+             self.stop("CAN_RESULT: " + result.result)
+-            raise RuntimeError(self.reason)
++            error = RuntimeError(self.reason)
++            error.io_stage, error.evidence = stage, evidence
++            raise error
+         return result
+ 
+     def stop(self, reason):
+--- /dev/null
++++ b/ui_trace.py
+@@ -0,0 +1,26 @@
++"""Nonblocking UI/worker event trace; no motor or CAN access."""
++from datetime import datetime,timezone,timedelta
++from pathlib import Path
++import json,queue,threading,time
++
++class UiTrace:
++    def __init__(self):
++        folder=Path.home()/'bhl_logs/hand_gui';folder.mkdir(parents=True,exist_ok=True)
++        self.path=folder/(datetime.now(timezone(timedelta(hours=9))).strftime('%Y%m%d_%H%M%S_%f')+'.jsonl')
++        self.q=queue.Queue(maxsize=2000);self.dropped=0;self.error=''
++        self.thread=threading.Thread(target=self.run,daemon=True);self.thread.start()
++    def submit(self,event):
++        entry={'utc':datetime.now(timezone.utc).isoformat(),'monotonic_s':time.monotonic(),**event}
++        try:self.q.put_nowait(entry)
++        except queue.Full:self.dropped+=1
++    def run(self):
++        with self.path.open('a',encoding='utf-8') as f:
++            while True:
++                entry=self.q.get()
++                try:
++                    if entry is None:return
++                    f.write(json.dumps(entry,ensure_ascii=False,allow_nan=False)+'\n');f.flush()
++                except Exception as exc:self.error=str(exc)
++                finally:self.q.task_done()
++    def close(self):
++        self.q.put(None);self.thread.join(timeout=2)

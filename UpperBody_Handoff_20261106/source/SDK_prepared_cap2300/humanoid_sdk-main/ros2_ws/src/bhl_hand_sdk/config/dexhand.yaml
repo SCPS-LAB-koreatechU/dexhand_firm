@@ -1,0 +1,137 @@
+# Generated calibration from dexhand_control/profiles; regenerate with tools/generate_sdk_config.py.
+defaults:
+  channel: can0
+  protocol: 3
+hands:
+  left:
+    node: 60
+    profile_tag: a5b23746
+    open_us:
+    - 1775
+    - 700
+    - 1750
+    - 700
+    - 725
+    - 1675
+    - 725
+    - 1750
+    - 2000
+    - 2000
+    - 700
+    - 700
+    - 1000
+    - 2100
+    - 700
+    close_us:
+    - 700
+    - 1625
+    - 700
+    - 1675
+    - 1675
+    - 725
+    - 1700
+    - 875
+    - 700
+    - 700
+    - 2000
+    - 2000
+    - 1900
+    - 700
+    - 1900
+  right:
+    node: 61
+    profile_tag: bdad07a4
+    open_us:
+    - 850
+    - 1700
+    - 850
+    - 1700
+    - 1750
+    - 850
+    - 1750
+    - 700
+    - 700
+    - 700
+    - 2000
+    - 2000
+    - 2100
+    - 700
+    - 2300
+    close_us:
+    - 1775
+    - 800
+    - 1725
+    - 800
+    - 825
+    - 1750
+    - 700
+    - 1725
+    - 2100
+    - 2000
+    - 750
+    - 800
+    - 700
+    - 1900
+    - 700
+    hardware_max_us: 2300
+control:
+  control_rate_hz: 50.0
+  max_speed: 2.0
+  reply_timeout: 0.005
+  max_missed: 10
+  ping_timeout: 0.05
+  estop_action: hold
+  antagonist_pairs:
+  - - 13
+    - 14
+  max_pair_sum: 1.0
+  command_timeout: 0.5
+grips:
+  power:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  pinch:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  point:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1

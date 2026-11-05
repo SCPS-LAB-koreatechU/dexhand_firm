@@ -1,0 +1,41 @@
+UpperBody / DexHand 작업 인수인계 — 다른 PC용 (2026-11-06)
+
+1. ZIP 전체를 짧은 경로에 압축 해제한다. 예: Linux ~/RobotHandoff, Windows C:\RobotHandoff.
+2. Python 3.10 이상으로 다음을 실행한다. 이 단계는 파일만 검증한다.
+   Linux/macOS: python3 VERIFY_PACKAGE.py
+   Windows:     py -3 VERIFY_PACKAGE.py
+3. HANDOFF_CONTEXT.txt와 HANDOFF_STATE.json을 읽는다. 오른손 핀/당김값은 RIGHT_HAND_PINMAP.txt와 RIGHT_HAND_PINMAP.json에 정리했다. 다른 채팅/에이전트로 이어갈 때는 CONTINUE_AGENT.txt 내용을 전달한다.
+4. 로봇에는 먼저 SSH 연결만 확인한다. 개인키/비밀번호는 포함하지 않았으므로 새 PC에서 별도로 인증을 설정한다.
+   ssh sunrise@172.18.49.21
+   같은 사설 네트워크/VPN이 필요하다.
+5. 인증이 준비된 뒤 아래 도구로 읽기 전용 상태를 조회한다.
+   python3 tools/inspect_robot_readonly.py --out inspection_now.json
+   이 도구는 CAN 프레임 송신, 인터페이스 재설정, 프로세스 종료/시작, 펌웨어 변경을 하지 않는다.
+
+현재 중요한 상태
+- 목표는 사람의 오른손을 따라 로봇 검지·중지·약지·소지를 움직이는 것. 로봇 손을 카메라로 관찰하는 작업과 구분한다.
+- 마지막 조회: can1 인터페이스 없음. 먼저 UCAN/전원/배선/인터페이스 이름을 다시 확인해야 한다.
+- GUI는 human_control / preview. 5분 비구동 미리보기 프로세스는 종료됐고 GUI는 남아 있었다. 유효한 사람 손 인식은 확인하지 못했다.
+- 중지를 펼칠 때 옆 손가락에 실제로 걸린다고 사용자가 확인했다. 아직 해결 확인을 받지 못했다.
+- 마지막 송신은 중지 위 825 / 아래 1750 / TIP 2000us HOLD. 실제 서보 전원·위치·현재 힘은 미측정이다. CAN이 없어도 펌웨어의 마지막 PWM이 유지될 수 있다. 간섭을 손으로 정리할 때는 서보 전원을 먼저 끈다.
+- 시작 시 전체 펼침을 자동으로 넣으면 같은 간섭이 날 수 있어, 실물 추종을 자동 재개하면 안 된다.
+- 새 cap2300 펌웨어 bdad07a4와 SDK 패치는 준비만 됐다. 업로드/활성화 완료 확인은 없다.
+- 1850us는 별도 운용 목표 설정만 준비됐다. 기존 펌웨어 79610de6은 중지 아래 1750us 초과를 거부한다.
+
+폴더 구분
+source/SDK_prepared_cap2300 : 이 PC의 최신 SDK 소스. cap2300/1850 대기 수정 포함. 실제 로봇 실행 설정과 다르므로 그대로 실물 구동하지 않는다.
+source/robot_persistent_default_20261106.tar.gz : 로봇의 기본 ~/humanoid_sdk가 가리키는 구형 thumbfix2 영구 소스. 최신 RAM 코드가 아니다.
+runtime/robot_ram_snapshot_20261106.tar.gz : 작업 시점의 RAM 코드, 기존 활성 설정 79610de6, 모델, 폰트, 로그, 캘리브레이션, 영상 프레임. PID/캐시/개인키 제외.
+work/camera_ram_stage : 최신 실행/관찰/미리보기 도구 원본. 새 PC 로컬에서 무작정 실행하지 말고 원격 경로/상태를 먼저 확인한다.
+artifacts : 기존/대기 펌웨어 ZIP, SDK 패치, 1850 운용 설정, 검증 보고서. 압축 해제만으로는 보드에 적용되지 않는다.
+records/outputs : 원래 작업 폴더의 분석 결과, 로그, 선택 프레임, 비교 그림과 PWM 자막 영상.
+
+RAM 스냅샷을 로컬에서 읽으려면:
+   python3 tools/extract_snapshot.py --out ram_snapshot_review
+이 명령은 새 로컬 폴더에만 압축을 푼다. 로봇에 복원하거나 프로그램을 실행하지 않는다. 안의 status/PID 관련 정보는 과거 기록이며 현재 하드웨어 상태가 아니다.
+
+환경 주의
+- 로봇은 aarch64/RDK X5, 새 PC는 다른 CPU/OS일 수 있다. .venv, ROS build/install, Arduino 도구 캐시는 복사하지 않았다.
+- 새 PC가 SSH 제어만 한다면 ROS/MediaPipe 전체를 먼저 설치할 필요는 없다. 기존 로봇 환경에서 실행한다.
+- 실제 로봇에서 관찰한 패키지 버전은 environment/robot_packages.json에 있다. SDK의 requirements와 버전이 다를 수 있으니 자동 업그레이드하지 않는다.
+- 이 묶음에는 SSH 개인키, 비밀번호, .git 이력이 없다. 소스 파일 스냅샷이며 git clone/pull/merge를 자동 실행하지 않는다.

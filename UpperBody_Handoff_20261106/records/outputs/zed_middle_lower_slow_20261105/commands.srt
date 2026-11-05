@@ -1,0 +1,1394 @@
+1
+00:00:00,000 --> 00:00:00,092
+GPIO22 command: unknown (pre-command frame) | frame time 0.0s
+Command only; no joint-angle or tension measurement
+
+2
+00:00:00,092 --> 00:00:00,183
+GPIO22 command: 850 us | frame time 0.1s
+Command only; no joint-angle or tension measurement
+
+3
+00:00:00,183 --> 00:00:00,278
+GPIO22 command: 850 us | frame time 0.2s
+Command only; no joint-angle or tension measurement
+
+4
+00:00:00,278 --> 00:00:00,371
+GPIO22 command: 850 us | frame time 0.3s
+Command only; no joint-angle or tension measurement
+
+5
+00:00:00,371 --> 00:00:00,464
+GPIO22 command: 850 us | frame time 0.4s
+Command only; no joint-angle or tension measurement
+
+6
+00:00:00,464 --> 00:00:00,558
+GPIO22 command: 850 us | frame time 0.5s
+Command only; no joint-angle or tension measurement
+
+7
+00:00:00,558 --> 00:00:00,652
+GPIO22 command: 850 us | frame time 0.6s
+Command only; no joint-angle or tension measurement
+
+8
+00:00:00,652 --> 00:00:00,744
+GPIO22 command: 850 us | frame time 0.7s
+Command only; no joint-angle or tension measurement
+
+9
+00:00:00,744 --> 00:00:00,835
+GPIO22 command: 850 us | frame time 0.7s
+Command only; no joint-angle or tension measurement
+
+10
+00:00:00,835 --> 00:00:00,926
+GPIO22 command: 850 us | frame time 0.8s
+Command only; no joint-angle or tension measurement
+
+11
+00:00:00,926 --> 00:00:01,017
+GPIO22 command: 850 us | frame time 0.9s
+Command only; no joint-angle or tension measurement
+
+12
+00:00:01,017 --> 00:00:01,204
+GPIO22 command: 850 us | frame time 1.0s
+Command only; no joint-angle or tension measurement
+
+13
+00:00:01,204 --> 00:00:01,295
+GPIO22 command: 850 us | frame time 1.2s
+Command only; no joint-angle or tension measurement
+
+14
+00:00:01,295 --> 00:00:01,386
+GPIO22 command: 850 us | frame time 1.3s
+Command only; no joint-angle or tension measurement
+
+15
+00:00:01,386 --> 00:00:01,480
+GPIO22 command: 850 us | frame time 1.4s
+Command only; no joint-angle or tension measurement
+
+16
+00:00:01,480 --> 00:00:01,571
+GPIO22 command: 850 us | frame time 1.5s
+Command only; no joint-angle or tension measurement
+
+17
+00:00:01,571 --> 00:00:01,662
+GPIO22 command: 850 us | frame time 1.6s
+Command only; no joint-angle or tension measurement
+
+18
+00:00:01,662 --> 00:00:01,753
+GPIO22 command: 850 us | frame time 1.7s
+Command only; no joint-angle or tension measurement
+
+19
+00:00:01,753 --> 00:00:01,844
+GPIO22 command: 850 us | frame time 1.8s
+Command only; no joint-angle or tension measurement
+
+20
+00:00:01,844 --> 00:00:01,935
+GPIO22 command: 850 us | frame time 1.8s
+Command only; no joint-angle or tension measurement
+
+21
+00:00:01,935 --> 00:00:02,116
+GPIO22 command: 850 us | frame time 1.9s
+Command only; no joint-angle or tension measurement
+
+22
+00:00:02,116 --> 00:00:02,207
+GPIO22 command: 850 us | frame time 2.1s
+Command only; no joint-angle or tension measurement
+
+23
+00:00:02,207 --> 00:00:02,301
+GPIO22 command: 850 us | frame time 2.2s
+Command only; no joint-angle or tension measurement
+
+24
+00:00:02,301 --> 00:00:02,392
+GPIO22 command: 850 us | frame time 2.3s
+Command only; no joint-angle or tension measurement
+
+25
+00:00:02,392 --> 00:00:02,483
+GPIO22 command: 850 us | frame time 2.4s
+Command only; no joint-angle or tension measurement
+
+26
+00:00:02,483 --> 00:00:02,578
+GPIO22 command: 850 us | frame time 2.5s
+Command only; no joint-angle or tension measurement
+
+27
+00:00:02,578 --> 00:00:02,670
+GPIO22 command: 850 us | frame time 2.6s
+Command only; no joint-angle or tension measurement
+
+28
+00:00:02,670 --> 00:00:02,764
+GPIO22 command: 850 us | frame time 2.7s
+Command only; no joint-angle or tension measurement
+
+29
+00:00:02,764 --> 00:00:02,857
+GPIO22 command: 850 us | frame time 2.8s
+Command only; no joint-angle or tension measurement
+
+30
+00:00:02,857 --> 00:00:02,951
+GPIO22 command: 850 us | frame time 2.9s
+Command only; no joint-angle or tension measurement
+
+31
+00:00:02,951 --> 00:00:03,045
+GPIO22 command: 850 us | frame time 3.0s
+Command only; no joint-angle or tension measurement
+
+32
+00:00:03,045 --> 00:00:03,137
+GPIO22 command: 850 us | frame time 3.0s
+Command only; no joint-angle or tension measurement
+
+33
+00:00:03,137 --> 00:00:03,319
+GPIO22 command: 850 us | frame time 3.1s
+Command only; no joint-angle or tension measurement
+
+34
+00:00:03,319 --> 00:00:03,410
+GPIO22 command: 850 us | frame time 3.3s
+Command only; no joint-angle or tension measurement
+
+35
+00:00:03,410 --> 00:00:03,502
+GPIO22 command: 850 us | frame time 3.4s
+Command only; no joint-angle or tension measurement
+
+36
+00:00:03,502 --> 00:00:03,596
+GPIO22 command: 850 us | frame time 3.5s
+Command only; no joint-angle or tension measurement
+
+37
+00:00:03,596 --> 00:00:03,689
+GPIO22 command: 850 us | frame time 3.6s
+Command only; no joint-angle or tension measurement
+
+38
+00:00:03,689 --> 00:00:03,782
+GPIO22 command: 850 us | frame time 3.7s
+Command only; no joint-angle or tension measurement
+
+39
+00:00:03,782 --> 00:00:03,875
+GPIO22 command: 850 us | frame time 3.8s
+Command only; no joint-angle or tension measurement
+
+40
+00:00:03,875 --> 00:00:03,966
+GPIO22 command: 850 us | frame time 3.9s
+Command only; no joint-angle or tension measurement
+
+41
+00:00:03,966 --> 00:00:04,060
+GPIO22 command: 850 us | frame time 4.0s
+Command only; no joint-angle or tension measurement
+
+42
+00:00:04,060 --> 00:00:04,152
+GPIO22 command: 850 us | frame time 4.1s
+Command only; no joint-angle or tension measurement
+
+43
+00:00:04,152 --> 00:00:04,247
+GPIO22 command: 858 us | frame time 4.2s
+Command only; no joint-angle or tension measurement
+
+44
+00:00:04,247 --> 00:00:04,341
+GPIO22 command: 867 us | frame time 4.2s
+Command only; no joint-angle or tension measurement
+
+45
+00:00:04,341 --> 00:00:04,529
+GPIO22 command: 878 us | frame time 4.3s
+Command only; no joint-angle or tension measurement
+
+46
+00:00:04,529 --> 00:00:04,623
+GPIO22 command: 898 us | frame time 4.5s
+Command only; no joint-angle or tension measurement
+
+47
+00:00:04,623 --> 00:00:04,715
+GPIO22 command: 910 us | frame time 4.6s
+Command only; no joint-angle or tension measurement
+
+48
+00:00:04,715 --> 00:00:04,809
+GPIO22 command: 921 us | frame time 4.7s
+Command only; no joint-angle or tension measurement
+
+49
+00:00:04,809 --> 00:00:04,902
+GPIO22 command: 930 us | frame time 4.8s
+Command only; no joint-angle or tension measurement
+
+50
+00:00:04,902 --> 00:00:04,996
+GPIO22 command: 942 us | frame time 4.9s
+Command only; no joint-angle or tension measurement
+
+51
+00:00:04,996 --> 00:00:05,090
+GPIO22 command: 951 us | frame time 5.0s
+Command only; no joint-angle or tension measurement
+
+52
+00:00:05,090 --> 00:00:05,184
+GPIO22 command: 962 us | frame time 5.1s
+Command only; no joint-angle or tension measurement
+
+53
+00:00:05,184 --> 00:00:05,278
+GPIO22 command: 973 us | frame time 5.2s
+Command only; no joint-angle or tension measurement
+
+54
+00:00:05,278 --> 00:00:05,371
+GPIO22 command: 982 us | frame time 5.3s
+Command only; no joint-angle or tension measurement
+
+55
+00:00:05,371 --> 00:00:05,466
+GPIO22 command: 994 us | frame time 5.4s
+Command only; no joint-angle or tension measurement
+
+56
+00:00:05,466 --> 00:00:05,559
+GPIO22 command: 1005 us | frame time 5.5s
+Command only; no joint-angle or tension measurement
+
+57
+00:00:05,559 --> 00:00:05,651
+GPIO22 command: 1014 us | frame time 5.6s
+Command only; no joint-angle or tension measurement
+
+58
+00:00:05,651 --> 00:00:05,834
+GPIO22 command: 1025 us | frame time 5.7s
+Command only; no joint-angle or tension measurement
+
+59
+00:00:05,834 --> 00:00:05,926
+GPIO22 command: 1046 us | frame time 5.8s
+Command only; no joint-angle or tension measurement
+
+60
+00:00:05,926 --> 00:00:06,018
+GPIO22 command: 1057 us | frame time 5.9s
+Command only; no joint-angle or tension measurement
+
+61
+00:00:06,018 --> 00:00:06,112
+GPIO22 command: 1066 us | frame time 6.0s
+Command only; no joint-angle or tension measurement
+
+62
+00:00:06,112 --> 00:00:06,207
+GPIO22 command: 1077 us | frame time 6.1s
+Command only; no joint-angle or tension measurement
+
+63
+00:00:06,207 --> 00:00:06,300
+GPIO22 command: 1089 us | frame time 6.2s
+Command only; no joint-angle or tension measurement
+
+64
+00:00:06,300 --> 00:00:06,393
+GPIO22 command: 1098 us | frame time 6.3s
+Command only; no joint-angle or tension measurement
+
+65
+00:00:06,393 --> 00:00:06,486
+GPIO22 command: 1109 us | frame time 6.4s
+Command only; no joint-angle or tension measurement
+
+66
+00:00:06,486 --> 00:00:06,578
+GPIO22 command: 1118 us | frame time 6.5s
+Command only; no joint-angle or tension measurement
+
+67
+00:00:06,578 --> 00:00:06,672
+GPIO22 command: 1130 us | frame time 6.6s
+Command only; no joint-angle or tension measurement
+
+68
+00:00:06,672 --> 00:00:06,765
+GPIO22 command: 1141 us | frame time 6.7s
+Command only; no joint-angle or tension measurement
+
+69
+00:00:06,765 --> 00:00:06,857
+GPIO22 command: 1150 us | frame time 6.8s
+Command only; no joint-angle or tension measurement
+
+70
+00:00:06,857 --> 00:00:07,040
+GPIO22 command: 1161 us | frame time 6.9s
+Command only; no joint-angle or tension measurement
+
+71
+00:00:07,040 --> 00:00:07,132
+GPIO22 command: 1182 us | frame time 7.0s
+Command only; no joint-angle or tension measurement
+
+72
+00:00:07,132 --> 00:00:07,222
+GPIO22 command: 1193 us | frame time 7.1s
+Command only; no joint-angle or tension measurement
+
+73
+00:00:07,222 --> 00:00:07,313
+GPIO22 command: 1202 us | frame time 7.2s
+Command only; no joint-angle or tension measurement
+
+74
+00:00:07,313 --> 00:00:07,405
+GPIO22 command: 1213 us | frame time 7.3s
+Command only; no joint-angle or tension measurement
+
+75
+00:00:07,405 --> 00:00:07,496
+GPIO22 command: 1222 us | frame time 7.4s
+Command only; no joint-angle or tension measurement
+
+76
+00:00:07,496 --> 00:00:07,587
+GPIO22 command: 1234 us | frame time 7.5s
+Command only; no joint-angle or tension measurement
+
+77
+00:00:07,587 --> 00:00:07,678
+GPIO22 command: 1243 us | frame time 7.6s
+Command only; no joint-angle or tension measurement
+
+78
+00:00:07,678 --> 00:00:07,770
+GPIO22 command: 1254 us | frame time 7.7s
+Command only; no joint-angle or tension measurement
+
+79
+00:00:07,770 --> 00:00:07,864
+GPIO22 command: 1263 us | frame time 7.8s
+Command only; no joint-angle or tension measurement
+
+80
+00:00:07,864 --> 00:00:08,054
+GPIO22 command: 1274 us | frame time 7.9s
+Command only; no joint-angle or tension measurement
+
+81
+00:00:08,054 --> 00:00:08,147
+GPIO22 command: 1295 us | frame time 8.1s
+Command only; no joint-angle or tension measurement
+
+82
+00:00:08,147 --> 00:00:08,239
+GPIO22 command: 1306 us | frame time 8.1s
+Command only; no joint-angle or tension measurement
+
+83
+00:00:08,239 --> 00:00:08,332
+GPIO22 command: 1318 us | frame time 8.2s
+Command only; no joint-angle or tension measurement
+
+84
+00:00:08,332 --> 00:00:08,425
+GPIO22 command: 1327 us | frame time 8.3s
+Command only; no joint-angle or tension measurement
+
+85
+00:00:08,425 --> 00:00:08,519
+GPIO22 command: 1338 us | frame time 8.4s
+Command only; no joint-angle or tension measurement
+
+86
+00:00:08,519 --> 00:00:08,612
+GPIO22 command: 1347 us | frame time 8.5s
+Command only; no joint-angle or tension measurement
+
+87
+00:00:08,612 --> 00:00:08,705
+GPIO22 command: 1358 us | frame time 8.6s
+Command only; no joint-angle or tension measurement
+
+88
+00:00:08,705 --> 00:00:08,798
+GPIO22 command: 1370 us | frame time 8.7s
+Command only; no joint-angle or tension measurement
+
+89
+00:00:08,798 --> 00:00:08,890
+GPIO22 command: 1379 us | frame time 8.8s
+Command only; no joint-angle or tension measurement
+
+90
+00:00:08,890 --> 00:00:08,983
+GPIO22 command: 1390 us | frame time 8.9s
+Command only; no joint-angle or tension measurement
+
+91
+00:00:08,983 --> 00:00:09,077
+GPIO22 command: 1399 us | frame time 9.0s
+Command only; no joint-angle or tension measurement
+
+92
+00:00:09,077 --> 00:00:09,170
+GPIO22 command: 1410 us | frame time 9.1s
+Command only; no joint-angle or tension measurement
+
+93
+00:00:09,170 --> 00:00:09,357
+GPIO22 command: 1422 us | frame time 9.2s
+Command only; no joint-angle or tension measurement
+
+94
+00:00:09,357 --> 00:00:09,451
+GPIO22 command: 1442 us | frame time 9.4s
+Command only; no joint-angle or tension measurement
+
+95
+00:00:09,451 --> 00:00:09,544
+GPIO22 command: 1453 us | frame time 9.5s
+Command only; no joint-angle or tension measurement
+
+96
+00:00:09,544 --> 00:00:09,638
+GPIO22 command: 1462 us | frame time 9.5s
+Command only; no joint-angle or tension measurement
+
+97
+00:00:09,638 --> 00:00:09,731
+GPIO22 command: 1474 us | frame time 9.6s
+Command only; no joint-angle or tension measurement
+
+98
+00:00:09,731 --> 00:00:09,824
+GPIO22 command: 1485 us | frame time 9.7s
+Command only; no joint-angle or tension measurement
+
+99
+00:00:09,824 --> 00:00:09,917
+GPIO22 command: 1494 us | frame time 9.8s
+Command only; no joint-angle or tension measurement
+
+100
+00:00:09,917 --> 00:00:10,009
+GPIO22 command: 1506 us | frame time 9.9s
+Command only; no joint-angle or tension measurement
+
+101
+00:00:10,009 --> 00:00:10,103
+GPIO22 command: 1515 us | frame time 10.0s
+Command only; no joint-angle or tension measurement
+
+102
+00:00:10,103 --> 00:00:10,196
+GPIO22 command: 1526 us | frame time 10.1s
+Command only; no joint-angle or tension measurement
+
+103
+00:00:10,196 --> 00:00:10,288
+GPIO22 command: 1537 us | frame time 10.2s
+Command only; no joint-angle or tension measurement
+
+104
+00:00:10,288 --> 00:00:10,381
+GPIO22 command: 1546 us | frame time 10.3s
+Command only; no joint-angle or tension measurement
+
+105
+00:00:10,381 --> 00:00:10,568
+GPIO22 command: 1558 us | frame time 10.4s
+Command only; no joint-angle or tension measurement
+
+106
+00:00:10,568 --> 00:00:10,660
+GPIO22 command: 1578 us | frame time 10.6s
+Command only; no joint-angle or tension measurement
+
+107
+00:00:10,660 --> 00:00:10,754
+GPIO22 command: 1589 us | frame time 10.7s
+Command only; no joint-angle or tension measurement
+
+108
+00:00:10,754 --> 00:00:10,847
+GPIO22 command: 1598 us | frame time 10.8s
+Command only; no joint-angle or tension measurement
+
+109
+00:00:10,847 --> 00:00:10,941
+GPIO22 command: 1610 us | frame time 10.8s
+Command only; no joint-angle or tension measurement
+
+110
+00:00:10,941 --> 00:00:11,035
+GPIO22 command: 1621 us | frame time 10.9s
+Command only; no joint-angle or tension measurement
+
+111
+00:00:11,035 --> 00:00:11,129
+GPIO22 command: 1630 us | frame time 11.0s
+Command only; no joint-angle or tension measurement
+
+112
+00:00:11,129 --> 00:00:11,221
+GPIO22 command: 1641 us | frame time 11.1s
+Command only; no joint-angle or tension measurement
+
+113
+00:00:11,221 --> 00:00:11,314
+GPIO22 command: 1653 us | frame time 11.2s
+Command only; no joint-angle or tension measurement
+
+114
+00:00:11,314 --> 00:00:11,405
+GPIO22 command: 1662 us | frame time 11.3s
+Command only; no joint-angle or tension measurement
+
+115
+00:00:11,405 --> 00:00:11,498
+GPIO22 command: 1673 us | frame time 11.4s
+Command only; no joint-angle or tension measurement
+
+116
+00:00:11,498 --> 00:00:11,589
+GPIO22 command: 1682 us | frame time 11.5s
+Command only; no joint-angle or tension measurement
+
+117
+00:00:11,589 --> 00:00:11,771
+GPIO22 command: 1694 us | frame time 11.6s
+Command only; no joint-angle or tension measurement
+
+118
+00:00:11,771 --> 00:00:11,862
+GPIO22 command: 1714 us | frame time 11.8s
+Command only; no joint-angle or tension measurement
+
+119
+00:00:11,862 --> 00:00:11,954
+GPIO22 command: 1723 us | frame time 11.9s
+Command only; no joint-angle or tension measurement
+
+120
+00:00:11,954 --> 00:00:12,047
+GPIO22 command: 1734 us | frame time 12.0s
+Command only; no joint-angle or tension measurement
+
+121
+00:00:12,047 --> 00:00:12,139
+GPIO22 command: 1746 us | frame time 12.0s
+Command only; no joint-angle or tension measurement
+
+122
+00:00:12,139 --> 00:00:12,235
+GPIO22 command: 1750 us | frame time 12.1s
+Command only; no joint-angle or tension measurement
+
+123
+00:00:12,235 --> 00:00:12,329
+GPIO22 command: 1750 us | frame time 12.2s
+Command only; no joint-angle or tension measurement
+
+124
+00:00:12,329 --> 00:00:12,421
+GPIO22 command: 1750 us | frame time 12.3s
+Command only; no joint-angle or tension measurement
+
+125
+00:00:12,421 --> 00:00:12,514
+GPIO22 command: 1750 us | frame time 12.4s
+Command only; no joint-angle or tension measurement
+
+126
+00:00:12,514 --> 00:00:12,607
+GPIO22 command: 1750 us | frame time 12.5s
+Command only; no joint-angle or tension measurement
+
+127
+00:00:12,607 --> 00:00:12,700
+GPIO22 command: 1750 us | frame time 12.6s
+Command only; no joint-angle or tension measurement
+
+128
+00:00:12,700 --> 00:00:12,884
+GPIO22 command: 1750 us | frame time 12.7s
+Command only; no joint-angle or tension measurement
+
+129
+00:00:12,884 --> 00:00:12,976
+GPIO22 command: 1750 us | frame time 12.9s
+Command only; no joint-angle or tension measurement
+
+130
+00:00:12,976 --> 00:00:13,070
+GPIO22 command: 1750 us | frame time 13.0s
+Command only; no joint-angle or tension measurement
+
+131
+00:00:13,070 --> 00:00:13,163
+GPIO22 command: 1750 us | frame time 13.1s
+Command only; no joint-angle or tension measurement
+
+132
+00:00:13,163 --> 00:00:13,255
+GPIO22 command: 1750 us | frame time 13.2s
+Command only; no joint-angle or tension measurement
+
+133
+00:00:13,255 --> 00:00:13,348
+GPIO22 command: 1750 us | frame time 13.3s
+Command only; no joint-angle or tension measurement
+
+134
+00:00:13,348 --> 00:00:13,442
+GPIO22 command: 1750 us | frame time 13.3s
+Command only; no joint-angle or tension measurement
+
+135
+00:00:13,442 --> 00:00:13,537
+GPIO22 command: 1750 us | frame time 13.4s
+Command only; no joint-angle or tension measurement
+
+136
+00:00:13,537 --> 00:00:13,629
+GPIO22 command: 1750 us | frame time 13.5s
+Command only; no joint-angle or tension measurement
+
+137
+00:00:13,629 --> 00:00:13,724
+GPIO22 command: 1750 us | frame time 13.6s
+Command only; no joint-angle or tension measurement
+
+138
+00:00:13,724 --> 00:00:13,818
+GPIO22 command: 1750 us | frame time 13.7s
+Command only; no joint-angle or tension measurement
+
+139
+00:00:13,818 --> 00:00:13,912
+GPIO22 command: 1750 us | frame time 13.8s
+Command only; no joint-angle or tension measurement
+
+140
+00:00:13,912 --> 00:00:14,012
+GPIO22 command: 1750 us | frame time 13.9s
+Command only; no joint-angle or tension measurement
+
+141
+00:00:14,012 --> 00:00:14,110
+GPIO22 command: 1750 us | frame time 14.0s
+Command only; no joint-angle or tension measurement
+
+142
+00:00:14,110 --> 00:00:14,296
+GPIO22 command: 1750 us | frame time 14.1s
+Command only; no joint-angle or tension measurement
+
+143
+00:00:14,296 --> 00:00:14,390
+GPIO22 command: 1750 us | frame time 14.3s
+Command only; no joint-angle or tension measurement
+
+144
+00:00:14,390 --> 00:00:14,481
+GPIO22 command: 1750 us | frame time 14.4s
+Command only; no joint-angle or tension measurement
+
+145
+00:00:14,481 --> 00:00:14,575
+GPIO22 command: 1750 us | frame time 14.5s
+Command only; no joint-angle or tension measurement
+
+146
+00:00:14,575 --> 00:00:14,667
+GPIO22 command: 1750 us | frame time 14.6s
+Command only; no joint-angle or tension measurement
+
+147
+00:00:14,667 --> 00:00:14,759
+GPIO22 command: 1750 us | frame time 14.7s
+Command only; no joint-angle or tension measurement
+
+148
+00:00:14,759 --> 00:00:14,852
+GPIO22 command: 1750 us | frame time 14.8s
+Command only; no joint-angle or tension measurement
+
+149
+00:00:14,852 --> 00:00:14,946
+GPIO22 command: 1750 us | frame time 14.9s
+Command only; no joint-angle or tension measurement
+
+150
+00:00:14,946 --> 00:00:15,038
+GPIO22 command: 1750 us | frame time 14.9s
+Command only; no joint-angle or tension measurement
+
+151
+00:00:15,038 --> 00:00:15,130
+GPIO22 command: 1750 us | frame time 15.0s
+Command only; no joint-angle or tension measurement
+
+152
+00:00:15,130 --> 00:00:15,221
+GPIO22 command: 1750 us | frame time 15.1s
+Command only; no joint-angle or tension measurement
+
+153
+00:00:15,221 --> 00:00:15,405
+GPIO22 command: 1750 us | frame time 15.2s
+Command only; no joint-angle or tension measurement
+
+154
+00:00:15,405 --> 00:00:15,497
+GPIO22 command: 1750 us | frame time 15.4s
+Command only; no joint-angle or tension measurement
+
+155
+00:00:15,497 --> 00:00:15,589
+GPIO22 command: 1750 us | frame time 15.5s
+Command only; no joint-angle or tension measurement
+
+156
+00:00:15,589 --> 00:00:15,679
+GPIO22 command: 1750 us | frame time 15.6s
+Command only; no joint-angle or tension measurement
+
+157
+00:00:15,679 --> 00:00:15,771
+GPIO22 command: 1750 us | frame time 15.7s
+Command only; no joint-angle or tension measurement
+
+158
+00:00:15,771 --> 00:00:15,862
+GPIO22 command: 1750 us | frame time 15.8s
+Command only; no joint-angle or tension measurement
+
+159
+00:00:15,862 --> 00:00:15,955
+GPIO22 command: 1750 us | frame time 15.9s
+Command only; no joint-angle or tension measurement
+
+160
+00:00:15,955 --> 00:00:16,048
+GPIO22 command: 1750 us | frame time 16.0s
+Command only; no joint-angle or tension measurement
+
+161
+00:00:16,048 --> 00:00:16,141
+GPIO22 command: 1750 us | frame time 16.0s
+Command only; no joint-angle or tension measurement
+
+162
+00:00:16,141 --> 00:00:16,234
+GPIO22 command: 1744 us | frame time 16.1s
+Command only; no joint-angle or tension measurement
+
+163
+00:00:16,234 --> 00:00:16,326
+GPIO22 command: 1735 us | frame time 16.2s
+Command only; no joint-angle or tension measurement
+
+164
+00:00:16,326 --> 00:00:16,510
+GPIO22 command: 1724 us | frame time 16.3s
+Command only; no joint-angle or tension measurement
+
+165
+00:00:16,510 --> 00:00:16,603
+GPIO22 command: 1703 us | frame time 16.5s
+Command only; no joint-angle or tension measurement
+
+166
+00:00:16,603 --> 00:00:16,695
+GPIO22 command: 1692 us | frame time 16.6s
+Command only; no joint-angle or tension measurement
+
+167
+00:00:16,695 --> 00:00:16,789
+GPIO22 command: 1683 us | frame time 16.7s
+Command only; no joint-angle or tension measurement
+
+168
+00:00:16,789 --> 00:00:16,881
+GPIO22 command: 1672 us | frame time 16.8s
+Command only; no joint-angle or tension measurement
+
+169
+00:00:16,881 --> 00:00:16,974
+GPIO22 command: 1660 us | frame time 16.9s
+Command only; no joint-angle or tension measurement
+
+170
+00:00:16,974 --> 00:00:17,066
+GPIO22 command: 1651 us | frame time 17.0s
+Command only; no joint-angle or tension measurement
+
+171
+00:00:17,066 --> 00:00:17,158
+GPIO22 command: 1640 us | frame time 17.1s
+Command only; no joint-angle or tension measurement
+
+172
+00:00:17,158 --> 00:00:17,251
+GPIO22 command: 1631 us | frame time 17.2s
+Command only; no joint-angle or tension measurement
+
+173
+00:00:17,251 --> 00:00:17,343
+GPIO22 command: 1619 us | frame time 17.3s
+Command only; no joint-angle or tension measurement
+
+174
+00:00:17,343 --> 00:00:17,436
+GPIO22 command: 1610 us | frame time 17.3s
+Command only; no joint-angle or tension measurement
+
+175
+00:00:17,436 --> 00:00:17,620
+GPIO22 command: 1599 us | frame time 17.4s
+Command only; no joint-angle or tension measurement
+
+176
+00:00:17,620 --> 00:00:17,713
+GPIO22 command: 1579 us | frame time 17.6s
+Command only; no joint-angle or tension measurement
+
+177
+00:00:17,713 --> 00:00:17,803
+GPIO22 command: 1567 us | frame time 17.7s
+Command only; no joint-angle or tension measurement
+
+178
+00:00:17,803 --> 00:00:17,894
+GPIO22 command: 1558 us | frame time 17.8s
+Command only; no joint-angle or tension measurement
+
+179
+00:00:17,894 --> 00:00:17,985
+GPIO22 command: 1547 us | frame time 17.9s
+Command only; no joint-angle or tension measurement
+
+180
+00:00:17,985 --> 00:00:18,076
+GPIO22 command: 1538 us | frame time 18.0s
+Command only; no joint-angle or tension measurement
+
+181
+00:00:18,076 --> 00:00:18,167
+GPIO22 command: 1527 us | frame time 18.1s
+Command only; no joint-angle or tension measurement
+
+182
+00:00:18,167 --> 00:00:18,260
+GPIO22 command: 1518 us | frame time 18.2s
+Command only; no joint-angle or tension measurement
+
+183
+00:00:18,260 --> 00:00:18,352
+GPIO22 command: 1506 us | frame time 18.3s
+Command only; no joint-angle or tension measurement
+
+184
+00:00:18,352 --> 00:00:18,444
+GPIO22 command: 1495 us | frame time 18.4s
+Command only; no joint-angle or tension measurement
+
+185
+00:00:18,444 --> 00:00:18,628
+GPIO22 command: 1486 us | frame time 18.4s
+Command only; no joint-angle or tension measurement
+
+186
+00:00:18,628 --> 00:00:18,720
+GPIO22 command: 1466 us | frame time 18.6s
+Command only; no joint-angle or tension measurement
+
+187
+00:00:18,720 --> 00:00:18,811
+GPIO22 command: 1454 us | frame time 18.7s
+Command only; no joint-angle or tension measurement
+
+188
+00:00:18,811 --> 00:00:18,903
+GPIO22 command: 1445 us | frame time 18.8s
+Command only; no joint-angle or tension measurement
+
+189
+00:00:18,903 --> 00:00:18,995
+GPIO22 command: 1434 us | frame time 18.9s
+Command only; no joint-angle or tension measurement
+
+190
+00:00:18,995 --> 00:00:19,088
+GPIO22 command: 1422 us | frame time 19.0s
+Command only; no joint-angle or tension measurement
+
+191
+00:00:19,088 --> 00:00:19,180
+GPIO22 command: 1413 us | frame time 19.1s
+Command only; no joint-angle or tension measurement
+
+192
+00:00:19,180 --> 00:00:19,272
+GPIO22 command: 1402 us | frame time 19.2s
+Command only; no joint-angle or tension measurement
+
+193
+00:00:19,272 --> 00:00:19,365
+GPIO22 command: 1393 us | frame time 19.3s
+Command only; no joint-angle or tension measurement
+
+194
+00:00:19,365 --> 00:00:19,458
+GPIO22 command: 1382 us | frame time 19.4s
+Command only; no joint-angle or tension measurement
+
+195
+00:00:19,458 --> 00:00:19,550
+GPIO22 command: 1370 us | frame time 19.5s
+Command only; no joint-angle or tension measurement
+
+196
+00:00:19,550 --> 00:00:19,736
+GPIO22 command: 1361 us | frame time 19.6s
+Command only; no joint-angle or tension measurement
+
+197
+00:00:19,736 --> 00:00:19,828
+GPIO22 command: 1341 us | frame time 19.7s
+Command only; no joint-angle or tension measurement
+
+198
+00:00:19,828 --> 00:00:19,922
+GPIO22 command: 1330 us | frame time 19.8s
+Command only; no joint-angle or tension measurement
+
+199
+00:00:19,922 --> 00:00:20,014
+GPIO22 command: 1318 us | frame time 19.9s
+Command only; no joint-angle or tension measurement
+
+200
+00:00:20,014 --> 00:00:20,105
+GPIO22 command: 1309 us | frame time 20.0s
+Command only; no joint-angle or tension measurement
+
+201
+00:00:20,105 --> 00:00:20,198
+GPIO22 command: 1298 us | frame time 20.1s
+Command only; no joint-angle or tension measurement
+
+202
+00:00:20,198 --> 00:00:20,290
+GPIO22 command: 1289 us | frame time 20.2s
+Command only; no joint-angle or tension measurement
+
+203
+00:00:20,290 --> 00:00:20,381
+GPIO22 command: 1277 us | frame time 20.3s
+Command only; no joint-angle or tension measurement
+
+204
+00:00:20,381 --> 00:00:20,475
+GPIO22 command: 1268 us | frame time 20.4s
+Command only; no joint-angle or tension measurement
+
+205
+00:00:20,475 --> 00:00:20,568
+GPIO22 command: 1257 us | frame time 20.5s
+Command only; no joint-angle or tension measurement
+
+206
+00:00:20,568 --> 00:00:20,660
+GPIO22 command: 1246 us | frame time 20.6s
+Command only; no joint-angle or tension measurement
+
+207
+00:00:20,660 --> 00:00:20,842
+GPIO22 command: 1237 us | frame time 20.7s
+Command only; no joint-angle or tension measurement
+
+208
+00:00:20,842 --> 00:00:20,933
+GPIO22 command: 1216 us | frame time 20.8s
+Command only; no joint-angle or tension measurement
+
+209
+00:00:20,933 --> 00:00:21,025
+GPIO22 command: 1205 us | frame time 20.9s
+Command only; no joint-angle or tension measurement
+
+210
+00:00:21,025 --> 00:00:21,117
+GPIO22 command: 1196 us | frame time 21.0s
+Command only; no joint-angle or tension measurement
+
+211
+00:00:21,117 --> 00:00:21,207
+GPIO22 command: 1184 us | frame time 21.1s
+Command only; no joint-angle or tension measurement
+
+212
+00:00:21,207 --> 00:00:21,299
+GPIO22 command: 1175 us | frame time 21.2s
+Command only; no joint-angle or tension measurement
+
+213
+00:00:21,299 --> 00:00:21,389
+GPIO22 command: 1164 us | frame time 21.3s
+Command only; no joint-angle or tension measurement
+
+214
+00:00:21,389 --> 00:00:21,482
+GPIO22 command: 1155 us | frame time 21.4s
+Command only; no joint-angle or tension measurement
+
+215
+00:00:21,482 --> 00:00:21,572
+GPIO22 command: 1144 us | frame time 21.5s
+Command only; no joint-angle or tension measurement
+
+216
+00:00:21,572 --> 00:00:21,665
+GPIO22 command: 1135 us | frame time 21.6s
+Command only; no joint-angle or tension measurement
+
+217
+00:00:21,665 --> 00:00:21,847
+GPIO22 command: 1123 us | frame time 21.7s
+Command only; no joint-angle or tension measurement
+
+218
+00:00:21,847 --> 00:00:21,938
+GPIO22 command: 1103 us | frame time 21.8s
+Command only; no joint-angle or tension measurement
+
+219
+00:00:21,938 --> 00:00:22,029
+GPIO22 command: 1092 us | frame time 21.9s
+Command only; no joint-angle or tension measurement
+
+220
+00:00:22,029 --> 00:00:22,120
+GPIO22 command: 1083 us | frame time 22.0s
+Command only; no joint-angle or tension measurement
+
+221
+00:00:22,120 --> 00:00:22,211
+GPIO22 command: 1071 us | frame time 22.1s
+Command only; no joint-angle or tension measurement
+
+222
+00:00:22,211 --> 00:00:22,303
+GPIO22 command: 1062 us | frame time 22.2s
+Command only; no joint-angle or tension measurement
+
+223
+00:00:22,303 --> 00:00:22,395
+GPIO22 command: 1051 us | frame time 22.3s
+Command only; no joint-angle or tension measurement
+
+224
+00:00:22,395 --> 00:00:22,488
+GPIO22 command: 1042 us | frame time 22.4s
+Command only; no joint-angle or tension measurement
+
+225
+00:00:22,488 --> 00:00:22,581
+GPIO22 command: 1030 us | frame time 22.5s
+Command only; no joint-angle or tension measurement
+
+226
+00:00:22,581 --> 00:00:22,674
+GPIO22 command: 1019 us | frame time 22.6s
+Command only; no joint-angle or tension measurement
+
+227
+00:00:22,674 --> 00:00:22,858
+GPIO22 command: 1010 us | frame time 22.7s
+Command only; no joint-angle or tension measurement
+
+228
+00:00:22,858 --> 00:00:22,949
+GPIO22 command: 990 us | frame time 22.9s
+Command only; no joint-angle or tension measurement
+
+229
+00:00:22,949 --> 00:00:23,040
+GPIO22 command: 978 us | frame time 22.9s
+Command only; no joint-angle or tension measurement
+
+230
+00:00:23,040 --> 00:00:23,130
+GPIO22 command: 969 us | frame time 23.0s
+Command only; no joint-angle or tension measurement
+
+231
+00:00:23,130 --> 00:00:23,221
+GPIO22 command: 958 us | frame time 23.1s
+Command only; no joint-angle or tension measurement
+
+232
+00:00:23,221 --> 00:00:23,312
+GPIO22 command: 949 us | frame time 23.2s
+Command only; no joint-angle or tension measurement
+
+233
+00:00:23,312 --> 00:00:23,403
+GPIO22 command: 938 us | frame time 23.3s
+Command only; no joint-angle or tension measurement
+
+234
+00:00:23,403 --> 00:00:23,494
+GPIO22 command: 929 us | frame time 23.4s
+Command only; no joint-angle or tension measurement
+
+235
+00:00:23,494 --> 00:00:23,585
+GPIO22 command: 917 us | frame time 23.5s
+Command only; no joint-angle or tension measurement
+
+236
+00:00:23,585 --> 00:00:23,677
+GPIO22 command: 908 us | frame time 23.6s
+Command only; no joint-angle or tension measurement
+
+237
+00:00:23,677 --> 00:00:23,859
+GPIO22 command: 897 us | frame time 23.7s
+Command only; no joint-angle or tension measurement
+
+238
+00:00:23,859 --> 00:00:23,951
+GPIO22 command: 876 us | frame time 23.9s
+Command only; no joint-angle or tension measurement
+
+239
+00:00:23,951 --> 00:00:24,041
+GPIO22 command: 865 us | frame time 24.0s
+Command only; no joint-angle or tension measurement
+
+240
+00:00:24,041 --> 00:00:24,132
+GPIO22 command: 856 us | frame time 24.0s
+Command only; no joint-angle or tension measurement
+
+241
+00:00:24,132 --> 00:00:24,225
+GPIO22 command: 850 us | frame time 24.1s
+Command only; no joint-angle or tension measurement
+
+242
+00:00:24,225 --> 00:00:24,318
+GPIO22 command: 850 us | frame time 24.2s
+Command only; no joint-angle or tension measurement
+
+243
+00:00:24,318 --> 00:00:24,409
+GPIO22 command: 850 us | frame time 24.3s
+Command only; no joint-angle or tension measurement
+
+244
+00:00:24,409 --> 00:00:24,501
+GPIO22 command: 850 us | frame time 24.4s
+Command only; no joint-angle or tension measurement
+
+245
+00:00:24,501 --> 00:00:24,592
+GPIO22 command: 850 us | frame time 24.5s
+Command only; no joint-angle or tension measurement
+
+246
+00:00:24,592 --> 00:00:24,684
+GPIO22 command: 850 us | frame time 24.6s
+Command only; no joint-angle or tension measurement
+
+247
+00:00:24,684 --> 00:00:24,867
+GPIO22 command: 850 us | frame time 24.7s
+Command only; no joint-angle or tension measurement
+
+248
+00:00:24,867 --> 00:00:24,960
+GPIO22 command: 850 us | frame time 24.9s
+Command only; no joint-angle or tension measurement
+
+249
+00:00:24,960 --> 00:00:25,053
+GPIO22 command: 850 us | frame time 25.0s
+Command only; no joint-angle or tension measurement
+
+250
+00:00:25,053 --> 00:00:25,147
+GPIO22 command: 850 us | frame time 25.1s
+Command only; no joint-angle or tension measurement
+
+251
+00:00:25,147 --> 00:00:25,238
+GPIO22 command: 850 us | frame time 25.1s
+Command only; no joint-angle or tension measurement
+
+252
+00:00:25,238 --> 00:00:25,330
+GPIO22 command: 850 us | frame time 25.2s
+Command only; no joint-angle or tension measurement
+
+253
+00:00:25,330 --> 00:00:25,424
+GPIO22 command: 850 us | frame time 25.3s
+Command only; no joint-angle or tension measurement
+
+254
+00:00:25,424 --> 00:00:25,517
+GPIO22 command: 850 us | frame time 25.4s
+Command only; no joint-angle or tension measurement
+
+255
+00:00:25,517 --> 00:00:25,610
+GPIO22 command: 850 us | frame time 25.5s
+Command only; no joint-angle or tension measurement
+
+256
+00:00:25,610 --> 00:00:25,701
+GPIO22 command: 850 us | frame time 25.6s
+Command only; no joint-angle or tension measurement
+
+257
+00:00:25,701 --> 00:00:25,793
+GPIO22 command: 850 us | frame time 25.7s
+Command only; no joint-angle or tension measurement
+
+258
+00:00:25,793 --> 00:00:25,977
+GPIO22 command: 850 us | frame time 25.8s
+Command only; no joint-angle or tension measurement
+
+259
+00:00:25,977 --> 00:00:26,068
+GPIO22 command: 850 us | frame time 26.0s
+Command only; no joint-angle or tension measurement
+
+260
+00:00:26,068 --> 00:00:26,159
+GPIO22 command: 850 us | frame time 26.1s
+Command only; no joint-angle or tension measurement
+
+261
+00:00:26,159 --> 00:00:26,250
+GPIO22 command: 850 us | frame time 26.2s
+Command only; no joint-angle or tension measurement
+
+262
+00:00:26,250 --> 00:00:26,341
+GPIO22 command: 850 us | frame time 26.2s
+Command only; no joint-angle or tension measurement
+
+263
+00:00:26,341 --> 00:00:26,432
+GPIO22 command: 850 us | frame time 26.3s
+Command only; no joint-angle or tension measurement
+
+264
+00:00:26,432 --> 00:00:26,522
+GPIO22 command: 850 us | frame time 26.4s
+Command only; no joint-angle or tension measurement
+
+265
+00:00:26,522 --> 00:00:26,613
+GPIO22 command: 850 us | frame time 26.5s
+Command only; no joint-angle or tension measurement
+
+266
+00:00:26,613 --> 00:00:26,704
+GPIO22 command: 850 us | frame time 26.6s
+Command only; no joint-angle or tension measurement
+
+267
+00:00:26,704 --> 00:00:26,885
+GPIO22 command: 850 us | frame time 26.7s
+Command only; no joint-angle or tension measurement
+
+268
+00:00:26,885 --> 00:00:26,978
+GPIO22 command: 850 us | frame time 26.9s
+Command only; no joint-angle or tension measurement
+
+269
+00:00:26,978 --> 00:00:27,068
+GPIO22 command: 850 us | frame time 27.0s
+Command only; no joint-angle or tension measurement
+
+270
+00:00:27,068 --> 00:00:27,160
+GPIO22 command: 850 us | frame time 27.1s
+Command only; no joint-angle or tension measurement
+
+271
+00:00:27,160 --> 00:00:27,252
+GPIO22 command: 850 us | frame time 27.2s
+Command only; no joint-angle or tension measurement
+
+272
+00:00:27,252 --> 00:00:27,344
+GPIO22 command: 850 us | frame time 27.3s
+Command only; no joint-angle or tension measurement
+
+273
+00:00:27,344 --> 00:00:27,436
+GPIO22 command: 850 us | frame time 27.3s
+Command only; no joint-angle or tension measurement
+
+274
+00:00:27,436 --> 00:00:27,529
+GPIO22 command: 850 us | frame time 27.4s
+Command only; no joint-angle or tension measurement
+
+275
+00:00:27,529 --> 00:00:27,620
+GPIO22 command: 850 us | frame time 27.5s
+Command only; no joint-angle or tension measurement
+
+276
+00:00:27,620 --> 00:00:27,711
+GPIO22 command: 850 us | frame time 27.6s
+Command only; no joint-angle or tension measurement
+
+277
+00:00:27,711 --> 00:00:27,895
+GPIO22 command: 850 us | frame time 27.7s
+Command only; no joint-angle or tension measurement
+
+278
+00:00:27,895 --> 00:00:27,986
+GPIO22 command: 850 us | frame time 27.9s
+Command only; no joint-angle or tension measurement
+
+279
+00:00:27,986 --> 00:00:28,086
+GPIO22 command: 850 us | frame time 28.0s
+Command only; no joint-angle or tension measurement

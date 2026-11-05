@@ -1,0 +1,82 @@
+{
+  "human_calibration_only_completed": true,
+  "recalibrated_finger": "middle",
+  "other_human_references_unchanged": true,
+  "pwm_endpoints_increased": false,
+  "servo_channels": {
+    "5": {
+      "gpio": 33,
+      "open_us": 1750,
+      "close_us": 825
+    },
+    "6": {
+      "gpio": 22,
+      "open_us": 850,
+      "close_us": 1750
+    },
+    "10": {
+      "gpio": 17,
+      "open_us": 700,
+      "close_us": 2000
+    }
+  },
+  "camera_test": {
+    "final_state": "COMPLETE",
+    "sets": 993,
+    "max_goal_fraction": 1.0,
+    "lower_us_range": [
+      850,
+      1750
+    ],
+    "lower_1750_samples": 95,
+    "tracking_modes": {
+      "TRACK": 966,
+      "FREEZE": 27
+    },
+    "freeze_command_changed": 0,
+    "other_fingers_remained_open": true,
+    "user_feedback": "No sufficient improvement. Lower pulley rotates but finger does not curl sufficiently."
+  },
+  "isolated_lower_test": {
+    "final_state": "COMPLETE",
+    "sets": 696,
+    "lower_us_range": [
+      850,
+      1750
+    ],
+    "other_commands_constant": true,
+    "final_command_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ],
+    "user_feedback": "awaiting observation"
+  },
+  "source_review": "Provided firmware ZIP maps channel 6 to GPIO22, inclusive 850..1750us; no distinct middle-lower software reduction found. Actual flashed binary/PWM output not measured.",
+  "physical_position_measured": false,
+  "next_uncertainty": "Tendon slack/slippage, constraint by another tendon, or mechanical travel/load; must distinguish by physical observation.",
+  "calibration_log": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/middle_camera_calibration_1793887165949.jsonl",
+  "camera_test_log": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/middle_camera_validation_1793887262909.jsonl",
+  "isolation_log": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/middle_lower_isolation_1793887514064.jsonl",
+  "can_error_delta_since_reset": {
+    "restarts": 0,
+    "bus_error": 0,
+    "arbitration_lost": 0,
+    "error_warning": 0,
+    "error_passive": 0,
+    "bus_off": 0
+  },
+  "can_state_after": "ERROR-ACTIVE"
+}

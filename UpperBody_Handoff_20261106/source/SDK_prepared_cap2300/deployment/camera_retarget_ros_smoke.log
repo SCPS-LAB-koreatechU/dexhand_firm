@@ -1,0 +1,42 @@
+[INFO] [launch]: All log files can be found below /home/scps-ubuntu1/.ros/log/2026-11-05-13-16-11-374377-jm-ubuntu-2147174
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [hand_preview_state-1]: process started with pid [2147177]
+[INFO] [robot_state_publisher-2]: process started with pid [2147179]
+[robot_state_publisher-2] [WARN] [1793852171.530442311] [kdl_parser]: The root link camera_hand_base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1793852171.530529030] [hand_preview.robot_state_publisher]: got segment camera_hand_Index_Knuckle_1
+[robot_state_publisher-2] [INFO] [1793852171.530561338] [hand_preview.robot_state_publisher]: got segment camera_hand_Index_Knuckle_Cross_1
+[robot_state_publisher-2] [INFO] [1793852171.530566950] [hand_preview.robot_state_publisher]: got segment camera_hand_Index_Middle_1
+[robot_state_publisher-2] [INFO] [1793852171.530571037] [hand_preview.robot_state_publisher]: got segment camera_hand_Index_Tip_1
+[robot_state_publisher-2] [INFO] [1793852171.530575171] [hand_preview.robot_state_publisher]: got segment camera_hand_Middle_Knuckle_1
+[robot_state_publisher-2] [INFO] [1793852171.530578972] [hand_preview.robot_state_publisher]: got segment camera_hand_Middle_Knuckle_Cross_1
+[robot_state_publisher-2] [INFO] [1793852171.530582787] [hand_preview.robot_state_publisher]: got segment camera_hand_Middle_Middle_1
+[robot_state_publisher-2] [INFO] [1793852171.530586562] [hand_preview.robot_state_publisher]: got segment camera_hand_Midle_Tip_1
+[robot_state_publisher-2] [INFO] [1793852171.530590247] [hand_preview.robot_state_publisher]: got segment camera_hand_Pinky_Knuckle_1
+[robot_state_publisher-2] [INFO] [1793852171.530593796] [hand_preview.robot_state_publisher]: got segment camera_hand_Pinky_Knuckle_Cross_1
+[robot_state_publisher-2] [INFO] [1793852171.530597512] [hand_preview.robot_state_publisher]: got segment camera_hand_Pinky_Middle_1
+[robot_state_publisher-2] [INFO] [1793852171.530601110] [hand_preview.robot_state_publisher]: got segment camera_hand_Pinky_Tip_1
+[robot_state_publisher-2] [INFO] [1793852171.530604954] [hand_preview.robot_state_publisher]: got segment camera_hand_Ring_Knuckle_1
+[robot_state_publisher-2] [INFO] [1793852171.530608589] [hand_preview.robot_state_publisher]: got segment camera_hand_Ring_Knuckle_Cross_1
+[robot_state_publisher-2] [INFO] [1793852171.530612379] [hand_preview.robot_state_publisher]: got segment camera_hand_Ring_Middle_1
+[robot_state_publisher-2] [INFO] [1793852171.530615997] [hand_preview.robot_state_publisher]: got segment camera_hand_Ring_Tip_1
+[robot_state_publisher-2] [INFO] [1793852171.530619743] [hand_preview.robot_state_publisher]: got segment camera_hand_Thumb_Dist_KC_1
+[robot_state_publisher-2] [INFO] [1793852171.530623350] [hand_preview.robot_state_publisher]: got segment camera_hand_Thumb_Knuckle_1
+[robot_state_publisher-2] [INFO] [1793852171.530627072] [hand_preview.robot_state_publisher]: got segment camera_hand_Thumb_Middle_1
+[robot_state_publisher-2] [INFO] [1793852171.530630677] [hand_preview.robot_state_publisher]: got segment camera_hand_Thumb_Prox_KC_1
+[robot_state_publisher-2] [INFO] [1793852171.530634361] [hand_preview.robot_state_publisher]: got segment camera_hand_Thumb_Tip_1
+[robot_state_publisher-2] [INFO] [1793852171.530637904] [hand_preview.robot_state_publisher]: got segment camera_hand_base_link
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [hand_preview_state-1]: sending signal 'SIGINT' to process[hand_preview_state-1]
+[robot_state_publisher-2] [INFO] [1793852171.807209506] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1793852171.809000725] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[hand_preview_state-1] Traceback (most recent call last):
+[hand_preview_state-1]   File "/home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261105_camera_retarget/humanoid_sdk-main/ros2_ws/install/bhl_hand_sdk/lib/bhl_hand_sdk/hand_preview_state", line 33, in <module>
+[hand_preview_state-1]     sys.exit(load_entry_point('bhl-hand-sdk==0.2.0', 'console_scripts', 'hand_preview_state')())
+[hand_preview_state-1]   File "/home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261105_camera_retarget/humanoid_sdk-main/ros2_ws/install/bhl_hand_sdk/lib/python3.10/site-packages/bhl_hand_sdk/preview_state.py", line 42, in main
+[hand_preview_state-1]     finally:node.destroy_node();rclpy.shutdown()
+[hand_preview_state-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1696, in destroy_node
+[hand_preview_state-1]     self.__node.destroy_when_not_in_use()
+[hand_preview_state-1] KeyboardInterrupt
+[ERROR] [hand_preview_state-1]: process has died [pid 2147177, exit code -2, cmd '/home/scps-ubuntu1/Desktop/UpperBody_SDK_0.2.0_20261105_camera_retarget/humanoid_sdk-main/ros2_ws/install/bhl_hand_sdk/lib/bhl_hand_sdk/hand_preview_state --ros-args --params-file /tmp/launch_params_4gfzy4qz'].
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 2147179]

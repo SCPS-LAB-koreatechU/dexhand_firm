@@ -1,0 +1,98 @@
+# Optional supported-arm test: ID3 only; no other motor is enabled.
+buses:
+  left: can_left
+  right: can_left
+control:
+  zero: start
+  control_rate_hz: 50.0
+  max_speed_deg: 2.0
+  max_acceleration_deg: 4.0
+  max_command_lead_deg: 5.0
+  health_timeout: 0.002
+  reply_timeout: 0.004
+  heartbeat_period: 0.2
+defaults:
+  firmware_gear_ratio: 1.0
+  gear_ratio: 15.0
+  kp: 0.3
+  kd: 0.01
+  torque_limit: 0.5
+joints:
+  arm_left_shoulder_pitch_joint:
+    bus: left
+    device_id: 1
+    direction: -1
+    lower_deg: -90.0
+    upper_deg: 45.0
+    enabled: false
+  arm_left_shoulder_roll_joint:
+    bus: left
+    device_id: 3
+    direction: -1
+    lower_deg: -15.0
+    upper_deg: 75.0
+    kp: 1.0
+    kd: 0.01
+    torque_limit: 1.2
+    enabled: true
+  arm_left_shoulder_yaw_joint:
+    bus: left
+    device_id: 5
+    direction: 1
+    lower_deg: -45.0
+    upper_deg: 45.0
+    enabled: false
+  arm_left_elbow_pitch_joint:
+    bus: left
+    device_id: 7
+    direction: 1
+    lower_deg: 0.0
+    upper_deg: 90.0
+    enabled: false
+  arm_left_elbow_roll_joint:
+    bus: left
+    device_id: 9
+    direction: 1
+    lower_deg: -45.0
+    upper_deg: 45.0
+    enabled: false
+  arm_right_shoulder_pitch_joint:
+    bus: right
+    device_id: 2
+    direction: 1
+    lower_deg: -45.0
+    upper_deg: 90.0
+    enabled: false
+  arm_right_shoulder_roll_joint:
+    bus: right
+    device_id: 4
+    direction: -1
+    lower_deg: -75.0
+    upper_deg: 15.0
+    enabled: false
+  arm_right_shoulder_yaw_joint:
+    bus: right
+    device_id: 6
+    direction: 1
+    lower_deg: -45.0
+    upper_deg: 45.0
+    enabled: false
+  arm_right_elbow_pitch_joint:
+    bus: right
+    device_id: 8
+    direction: 1
+    lower_deg: -90.0
+    upper_deg: 0.0
+    kp: 0.8
+    kd: 0.01
+    torque_limit: 0.5
+    estop: range
+    range_margin_deg: 5.0
+    enabled: false
+  arm_right_elbow_roll_joint:
+    bus: right
+    device_id: 10
+    direction: 1
+    lower_deg: -45.0
+    upper_deg: 45.0
+    enabled: false

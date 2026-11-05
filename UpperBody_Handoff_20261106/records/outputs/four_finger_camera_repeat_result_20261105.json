@@ -1,0 +1,109 @@
+{
+  "raw_log": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/four_finger_camera_trial_repeat_1793886502969.jsonl",
+  "final_state": "COMPLETE",
+  "active_seconds": 45.018869161605835,
+  "command_sets": 2235,
+  "delivery_results": [
+    "SENT"
+  ],
+  "tracking_modes": {
+    "TRACK": 2235
+  },
+  "freeze_goal_advancement_count": 0,
+  "camera_age_s": {
+    "min": 0.12034385499964628,
+    "mean": 0.18938737297896227,
+    "p95": 0.24919573700026376,
+    "max": 0.2869503449996955
+  },
+  "can_error_counter_delta_since_original_45s_trial": {
+    "restarts": 0,
+    "bus_error": 0,
+    "arbitration_lost": 0,
+    "error_warning": 0,
+    "error_passive": 0,
+    "bus_off": 0
+  },
+  "can_state": "ERROR-ACTIVE",
+  "boot_id_unchanged": true,
+  "human_references_reused": true,
+  "user_confirmed_middle_clearance_resolved": true,
+  "user_reports_remaining_finger_tuning": true,
+  "remaining_finger_detail": "User confirmed middle finger under-pulls; disconnecting temporarily. No further actuation authorized during disconnection.",
+  "physical_position_feedback": false,
+  "app_ack_feedback": false,
+  "brief_input_loss_behavior": "freeze current command up to 0.3s; do not advance previous goal",
+  "persistent_input_loss_behavior": "latched HOLD; no auto re-arm",
+  "wrong_hand_behavior": "immediate latched HOLD",
+  "hold_delivery": {
+    "ok": true,
+    "result": "SENT",
+    "sequence": -1,
+    "latency_ms": -1.0,
+    "detail": 2,
+    "message": "HOLD sent (v1: no confirmation)"
+  },
+  "command_us_ranges": {
+    "1": [
+      850,
+      1681
+    ],
+    "2": [
+      891,
+      1700
+    ],
+    "3": [
+      850,
+      1718
+    ],
+    "4": [
+      807,
+      1700
+    ],
+    "5": [
+      980,
+      1750
+    ],
+    "6": [
+      850,
+      1599
+    ],
+    "7": [
+      700,
+      1750
+    ],
+    "8": [
+      700,
+      1725
+    ],
+    "9": [
+      700,
+      2100
+    ],
+    "10": [
+      700,
+      1782
+    ],
+    "11": [
+      760,
+      2000
+    ],
+    "12": [
+      922,
+      2000
+    ],
+    "13": [
+      2100,
+      2100
+    ],
+    "14": [
+      700,
+      700
+    ],
+    "15": [
+      2300,
+      2300
+    ]
+  },
+  "next_diagnostic": "Compare live human middle-finger reference to saved open/fist mapping before changing any PWM endpoints; last run goal max ~85.8%, lower command max 1599us vs existing 1750us endpoint."
+}

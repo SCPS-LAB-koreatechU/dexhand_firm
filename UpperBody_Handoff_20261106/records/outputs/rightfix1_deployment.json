@@ -1,0 +1,16 @@
+{
+  "reference_document": "SDK_\uc218\uc815\uc548\ub0b4_rightfix1.md",
+  "reference_sha256": "1c2f3ab7ced10333e370e4406d712ee2b7174d67e1aa8b1a14e823f983b5d82c",
+  "previous_sdk": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_pinrev2_handdemo1_gui1_can13/humanoid_sdk-main",
+  "sdk_path": "/home/sunrise/upperbody_releases/UpperBody_SDK_0.2.0_20261104_rightfix1/humanoid_sdk-main",
+  "right_profile_tag": "b09f98b0",
+  "left_profile_tag": "a5b23746",
+  "firmware_uploaded_by_agent": false,
+  "motors_moved_by_agent": false,
+  "active_sdk": "/home/sunrise/humanoid_sdk",
+  "previous_link": "/home/sunrise/humanoid_sdk.link_before_rightfix1_20261105_000647",
+  "tests_passed": 185,
+  "ros_dry_run_passed": true,
+  "pong_profile_tag": "b09f98b0",
+  "can_ping_verified": true
+}

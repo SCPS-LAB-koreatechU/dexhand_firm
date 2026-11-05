@@ -1,0 +1,30 @@
+{
+  "human_frames_replayed": 4469,
+  "target_fraction_ranges": {
+    "index": [
+      0.0,
+      1.0
+    ],
+    "middle": [
+      0.0,
+      1.0
+    ],
+    "ring": [
+      0.0,
+      1.0
+    ],
+    "pinky": [
+      0.0,
+      1.0
+    ]
+  },
+  "profile_tag": "79610de6",
+  "middle_lower_close_us": 1750,
+  "all_targets_within_original_calibrated_bounds": true,
+  "thumb_held_open": true,
+  "can_commands_sent": 0,
+  "live_preview_mode": "human_control / preview",
+  "physical_tracking_started": false,
+  "physical_blocker": "middle extension catches neighboring finger; user has not confirmed resolved",
+  "camera_input_blocker": "No valid human right hand currently detected; camera was reported aimed at robot"
+}

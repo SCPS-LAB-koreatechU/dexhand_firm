@@ -1,0 +1,133 @@
+{
+  "phase": "COMPLETE",
+  "active_seconds": 45.00629949569702,
+  "sets_sent": 2234,
+  "all_sets_result": [
+    "SENT"
+  ],
+  "physical_position_measured": false,
+  "user_feedback": {
+    "all_four_fingers_moved": true,
+    "middle_lower_curl_appeared_insufficient": true,
+    "user_clarification": "Robot middle finger may collide with adjacent fingers if curled further",
+    "middle_lower_gpio": 22,
+    "middle_lower_existing_max_us": 1750,
+    "middle_lower_max_command_samples": 405,
+    "response": "No endpoint increase and no further physical test; coordinated middle tendon calibration requires clearance checking",
+    "robot_collision_avoidance_implemented": false
+  },
+  "camera_control_source": "camera worker atomic RAM sample, bypasses Tk GUI status",
+  "camera_age_s": {
+    "min": 0.1217042160001256,
+    "mean": 0.20162195672202213,
+    "p95": 0.2876980519999961,
+    "max": 0.3408729919999587
+  },
+  "camera_stale_hold_during_test": false,
+  "final_hold_delivery": {
+    "ok": true,
+    "result": "SENT",
+    "sequence": -1,
+    "latency_ms": -1.0,
+    "detail": 2,
+    "message": "HOLD sent (v1: no confirmation)"
+  },
+  "hold_means": "Stop target updates and retain last commanded PWM; not power off",
+  "can_state": "ERROR-ACTIVE",
+  "can_error_delta": {
+    "restarts": 0,
+    "bus_error": 0,
+    "arbitration_lost": 0,
+    "error_warning": 0,
+    "error_passive": 0,
+    "bus_off": 0
+  },
+  "tx_frame_delta": 11177,
+  "boot_unchanged": true,
+  "finger_goal_fraction_ranges": {
+    "index": [
+      0.0,
+      1.0
+    ],
+    "middle": [
+      0.0,
+      1.0
+    ],
+    "ring": [
+      0.0,
+      1.0
+    ],
+    "pinky": [
+      0.0,
+      1.0
+    ]
+  },
+  "command_us_ranges": {
+    "1": [
+      850,
+      1775
+    ],
+    "2": [
+      800,
+      1700
+    ],
+    "3": [
+      850,
+      1725
+    ],
+    "4": [
+      800,
+      1700
+    ],
+    "5": [
+      825,
+      1750
+    ],
+    "6": [
+      850,
+      1750
+    ],
+    "7": [
+      700,
+      1750
+    ],
+    "8": [
+      700,
+      1725
+    ],
+    "9": [
+      700,
+      2100
+    ],
+    "10": [
+      700,
+      2000
+    ],
+    "11": [
+      750,
+      2000
+    ],
+    "12": [
+      800,
+      2000
+    ],
+    "13": [
+      2100,
+      2100
+    ],
+    "14": [
+      700,
+      700
+    ],
+    "15": [
+      2300,
+      2300
+    ]
+  },
+  "max_range_fraction": 1.0,
+  "slew_limit_fraction_s": 0.25,
+  "thumb_target": "open",
+  "middle_endpoint_increased": false,
+  "automatic_restart": false,
+  "raw_log": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/four_finger_camera_trial_20261105.jsonl"
+}

@@ -1,0 +1,8 @@
+ZED robot observation session
+
+Camera is aimed at the robot hand. BHL_HAND_CAMERA_ROLE=robot_observation; these images are not human tracking/calibration input.
+Raw RGB frames and software capture timestamps are archived with the closest preceding sent PWM command. No hardware exposure timestamp, joint-angle measurement, tendon-force measurement or application ACK is available.
+Human MediaPipe landmarks were not detected on the robot in these tests. Do not reuse stale human hand feature values as robot joint feedback.
+Lower-only diagnostic range remains GPIO22=850..1750us. User observed catching on an adjacent finger during extension. The motion returned to the open command.
+PWM receive ceiling 2300us was requested separately, with all original open/close values unchanged. Compiled firmware and matched SDK patch are staged, not flashed/activated.
+This recovery bundle intentionally retains the active pre-flash profile 79610de6. After the new firmware is flashed, apply the matched cap2300 SDK patch and migrate compatible correspondence metadata.

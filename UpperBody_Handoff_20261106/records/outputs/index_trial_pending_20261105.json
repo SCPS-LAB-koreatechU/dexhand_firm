@@ -1,0 +1,19 @@
+{
+  "physical_trial_started": true,
+  "physical_motor_control_frames_sent": null,
+  "reason": "Physical index movement confirmed by user; stopped in HOLD on stale camera sample",
+  "can1_pre_reboot_query": "ERROR-ACTIVE, no error frames",
+  "index_channels_one_based": [
+    7,
+    8,
+    9
+  ],
+  "max_fraction": 0.15,
+  "max_speed_fraction_s": 0.1,
+  "firmware_upload_confirmed_by_user": true,
+  "neutral_initialization": "one explicit whole-hand open pose, then index only",
+  "other_fingers_target": "open",
+  "trial_script": "work/camera_ram_stage/run_index_trial.py",
+  "backup": "outputs/hand_camera_session_20261105",
+  "current_result": "outputs/index_camera_trial_result_20261105.json"
+}

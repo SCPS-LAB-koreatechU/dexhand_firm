@@ -1,0 +1,10 @@
+Starting >>> bhl_upper_body_sdk
+Finished <<< bhl_upper_body_sdk [8.93s]
+Starting >>> bhl_arm_sdk
+Starting >>> bhl_hand_sdk
+Finished <<< bhl_arm_sdk [9.17s]
+Finished <<< bhl_hand_sdk [9.26s]
+Starting >>> bhl_bringup
+Finished <<< bhl_bringup [6.95s]
+
+Summary: 4 packages finished [26.3s]

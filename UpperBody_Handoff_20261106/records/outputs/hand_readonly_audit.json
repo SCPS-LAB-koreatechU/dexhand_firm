@@ -1,0 +1,84 @@
+{
+  "commands_sent": "PING and STATE read only; no enable/pose/control",
+  "pings": [
+    {
+      "probe": 1,
+      "pong": {
+        "node": 61,
+        "version": 3,
+        "flags": 35,
+        "profile_tag": "8f317a7f",
+        "stamp": 121330.964509495
+      },
+      "elapsed_ms": 1.358
+    },
+    {
+      "probe": 2,
+      "pong": {
+        "node": 61,
+        "version": 3,
+        "flags": 35,
+        "profile_tag": "8f317a7f",
+        "stamp": 121331.066512369
+      },
+      "elapsed_ms": 1.795
+    },
+    {
+      "probe": 3,
+      "pong": {
+        "node": 61,
+        "version": 3,
+        "flags": 35,
+        "profile_tag": "8f317a7f",
+        "stamp": 121331.168490452
+      },
+      "elapsed_ms": 1.747
+    },
+    {
+      "probe": 4,
+      "pong": {
+        "node": 61,
+        "version": 3,
+        "flags": 35,
+        "profile_tag": "8f317a7f",
+        "stamp": 121331.270865494
+      },
+      "elapsed_ms": 2.552
+    },
+    {
+      "probe": 5,
+      "pong": {
+        "node": 61,
+        "version": 3,
+        "flags": 35,
+        "profile_tag": "8f317a7f",
+        "stamp": 121331.374103415
+      },
+      "elapsed_ms": 2.99
+    }
+  ],
+  "snapshot": {
+    "boot_id": 4183616502,
+    "applied": 3,
+    "flags": 35,
+    "sequence": 3,
+    "pulses": [
+      850,
+      1700,
+      1700,
+      850,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2300,
+      2100,
+      700
+    ]
+  },
+  "snapshot_elapsed_ms": 2.886
+}

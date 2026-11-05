@@ -1,0 +1,56 @@
+{
+  "raw_log": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/middle_lower_zed_observation_1793888073362.jsonl",
+  "final_state": {
+    "event": "state",
+    "utc": 1793888088.8461566,
+    "phase": "COMPLETE",
+    "active": false,
+    "scope": "four_fingers",
+    "mapping": "two human poses; three tendons per finger coupled; not independent DIP calibration",
+    "message": "중지 아래 단독 시험 종료 · 펼침 명령값 HOLD · 실물 관찰 필요",
+    "command_us": [
+      850,
+      1700,
+      850,
+      1700,
+      1750,
+      850,
+      1750,
+      700,
+      700,
+      700,
+      2000,
+      2000,
+      2100,
+      700,
+      2300
+    ],
+    "hold_delivery": {
+      "ok": true,
+      "result": "SENT",
+      "sequence": -1,
+      "latency_ms": -1.0,
+      "detail": 2,
+      "message": "HOLD sent (v1: no confirmation)"
+    }
+  },
+  "frames": 139,
+  "command_sets": 695,
+  "range_lower_us": [
+    850,
+    1750
+  ],
+  "other_channels_constant": true,
+  "landmark_detections": 0,
+  "camera_role": "robot_observation",
+  "camera_is_control_input": false,
+  "timestamp_basis": "Host monotonic timestamp before VideoCapture.read; not a hardware exposure timestamp",
+  "measured_joint_angles": false,
+  "measured_tendon_tension": false,
+  "visual_observation": "Middle finger changes image-plane orientation toward neighboring fingers during lower-only pull. Contact cannot be determined from this view. Return image differs from initial image, significance not yet established.",
+  "image_folder": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_observation_20261105/middle_lower_1793888074306159028",
+  "comparison_figure": "/home/scps-ubuntu1/Documents/Codex/2026-11-02/ssh-sunrise-172-18-49-21/outputs/zed_middle_lower_comparison_20261105.png",
+  "actual_contact": "awaiting user confirmation",
+  "user_observation": "Middle finger catches on an adjacent finger during extension",
+  "collision_resolved": false
+}

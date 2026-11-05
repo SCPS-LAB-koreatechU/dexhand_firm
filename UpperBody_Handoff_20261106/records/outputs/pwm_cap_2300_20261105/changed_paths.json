@@ -1,0 +1,16 @@
+[
+  "dexhand_control/pc/hand_can.py",
+  "dexhand_control/profiles/right_hand.json",
+  "dexhand_control/tools/generate_board_config.py",
+  "dexhand_control/tools/generate_sdk_config.py",
+  "dexhand_control/firmware/DexHandRight/calibration.json",
+  "dexhand_control/firmware/DexHandRight/BoardConfig.h",
+  "dexhand_control/firmware/DexHandRight/update_config.py",
+  "dexhand_control/firmware/DexHandRight/SDK_설정값.md",
+  "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/bhl_hand_sdk/config.py",
+  "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand.yaml",
+  "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_camera.yaml",
+  "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/config/dexhand_oneway.yaml",
+  "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_oneway.py",
+  "humanoid_sdk-main/ros2_ws/src/bhl_hand_sdk/test/test_rightfix1.py"
+]
